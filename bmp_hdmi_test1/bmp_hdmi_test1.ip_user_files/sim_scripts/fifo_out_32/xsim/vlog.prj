@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../sd_bmp_hdmi.gen/sources_1/ip/fifo_out_32/sim/fifo_out_32.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

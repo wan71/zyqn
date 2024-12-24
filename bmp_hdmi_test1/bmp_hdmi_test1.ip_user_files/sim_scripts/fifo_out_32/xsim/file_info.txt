@@ -1,0 +1,2 @@
+fifo_out_32.v,verilog,xil_defaultlib,../../../../sd_bmp_hdmi.gen/sources_1/ip/fifo_out_32/sim/fifo_out_32.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
