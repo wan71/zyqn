@@ -1,0 +1,405 @@
+
+*** Running vivado
+    with args -log design_1_uiFDMA_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_uiFDMA_0_1.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_1_uiFDMA_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 352.480 ; gain = 70.488
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/uifdma'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 377.355 ; gain = 24.875
+Command: synth_design -top design_1_uiFDMA_0_1 -part xc7z020clg400-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1096 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 831.898 ; gain = 179.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_uiFDMA_0_1' [g:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_uiFDMA_0_1/synth/design_1_uiFDMA_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ikun_FDMA' [g:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/42e5/src/ikun_FDMA.v:10]
+	Parameter M_AXI_ID_WIDTH bound to: 3 - type: integer 
+	Parameter M_AXI_ID bound to: 0 - type: integer 
+	Parameter M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter M_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter M_AXI_MAX_BURST_LEN bound to: 64 - type: integer 
+	Parameter AXI_BYTES bound to: 16 - type: integer 
+	Parameter MAX_BURST_LEN_SIZE bound to: 4'b0110 
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [g:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/42e5/src/ikun_FDMA.v:80]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [g:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/42e5/src/ikun_FDMA.v:80]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [g:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/42e5/src/ikun_FDMA.v:80]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [g:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/42e5/src/ikun_FDMA.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'ikun_FDMA' (1#1) [g:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/42e5/src/ikun_FDMA.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_uiFDMA_0_1' (2#1) [g:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_uiFDMA_0_1/synth/design_1_uiFDMA_0_1.v:58]
+WARNING: [Synth 8-3331] design ikun_FDMA has unconnected port M_AXI_BID[2]
+WARNING: [Synth 8-3331] design ikun_FDMA has unconnected port M_AXI_BID[1]
+WARNING: [Synth 8-3331] design ikun_FDMA has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design ikun_FDMA has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design ikun_FDMA has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design ikun_FDMA has unconnected port M_AXI_BVALID
+WARNING: [Synth 8-3331] design ikun_FDMA has unconnected port M_AXI_RID[2]
+WARNING: [Synth 8-3331] design ikun_FDMA has unconnected port M_AXI_RID[1]
+WARNING: [Synth 8-3331] design ikun_FDMA has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design ikun_FDMA has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design ikun_FDMA has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design ikun_FDMA has unconnected port M_AXI_RLAST
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 899.414 ; gain = 247.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 899.414 ; gain = 247.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 899.414 ; gain = 247.250
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1012.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.636 . Memory (MB): peak = 1014.887 ; gain = 2.215
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:53 ; elapsed = 00:01:20 . Memory (MB): peak = 1014.887 ; gain = 362.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:53 ; elapsed = 00:01:20 . Memory (MB): peak = 1014.887 ; gain = 362.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:01:20 . Memory (MB): peak = 1014.887 ; gain = 362.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:54 ; elapsed = 00:01:22 . Memory (MB): peak = 1014.887 ; gain = 362.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	                9 Bit    Registers := 4     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ikun_FDMA 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	                9 Bit    Registers := 4     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWID[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWID[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWID[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWSIZE[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWSIZE[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWSIZE[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWBURST[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWBURST[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWLOCK driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWCACHE[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWCACHE[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWCACHE[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWCACHE[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWPROT[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWPROT[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWPROT[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWQOS[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWQOS[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWQOS[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_AWQOS[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WID[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WID[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WID[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[15] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[14] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[13] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[12] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[11] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[10] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[9] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[8] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[7] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[6] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[5] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[4] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_WSTRB[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_BREADY driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARID[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARID[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARID[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARSIZE[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARSIZE[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARSIZE[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARBURST[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARBURST[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARLOCK driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARCACHE[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARCACHE[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARCACHE[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARCACHE[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARPROT[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARPROT[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARPROT[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARQOS[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARQOS[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARQOS[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_uiFDMA_0_1 has port M_AXI_ARQOS[0] driven by constant 0
+WARNING: [Synth 8-3331] design design_1_uiFDMA_0_1 has unconnected port M_AXI_BID[2]
+WARNING: [Synth 8-3331] design design_1_uiFDMA_0_1 has unconnected port M_AXI_BID[1]
+WARNING: [Synth 8-3331] design design_1_uiFDMA_0_1 has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design design_1_uiFDMA_0_1 has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design design_1_uiFDMA_0_1 has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design design_1_uiFDMA_0_1 has unconnected port M_AXI_BVALID
+WARNING: [Synth 8-3331] design design_1_uiFDMA_0_1 has unconnected port M_AXI_RID[2]
+WARNING: [Synth 8-3331] design design_1_uiFDMA_0_1 has unconnected port M_AXI_RID[1]
+WARNING: [Synth 8-3331] design design_1_uiFDMA_0_1 has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design design_1_uiFDMA_0_1 has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design design_1_uiFDMA_0_1 has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design design_1_uiFDMA_0_1 has unconnected port M_AXI_RLAST
+INFO: [Synth 8-3886] merging instance 'inst/rburst_len_reg[8]' (FDE) to 'inst/rburst_len_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/wburst_len_reg[8]' (FDE) to 'inst/wburst_len_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/rburst_len_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/wburst_len_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:33 . Memory (MB): peak = 1014.887 ; gain = 362.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:47 ; elapsed = 00:02:31 . Memory (MB): peak = 1014.887 ; gain = 362.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:47 ; elapsed = 00:02:32 . Memory (MB): peak = 1014.887 ; gain = 362.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:47 ; elapsed = 00:02:32 . Memory (MB): peak = 1014.887 ; gain = 362.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:58 ; elapsed = 00:02:46 . Memory (MB): peak = 1019.637 ; gain = 367.473
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:58 ; elapsed = 00:02:46 . Memory (MB): peak = 1019.637 ; gain = 367.473
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:58 ; elapsed = 00:02:46 . Memory (MB): peak = 1019.637 ; gain = 367.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:58 ; elapsed = 00:02:46 . Memory (MB): peak = 1019.637 ; gain = 367.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:58 ; elapsed = 00:02:46 . Memory (MB): peak = 1019.637 ; gain = 367.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:58 ; elapsed = 00:02:46 . Memory (MB): peak = 1019.637 ; gain = 367.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    34|
+|2     |LUT1   |     9|
+|3     |LUT2   |    10|
+|4     |LUT3   |    28|
+|5     |LUT4   |    99|
+|6     |LUT5   |    32|
+|7     |LUT6   |    22|
+|8     |FDRE   |   174|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |   408|
+|2     |  inst   |ikun_FDMA |   408|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:58 ; elapsed = 00:02:46 . Memory (MB): peak = 1019.637 ; gain = 367.473
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:24 ; elapsed = 00:02:32 . Memory (MB): peak = 1019.637 ; gain = 252.000
+Synthesis Optimization Complete : Time (s): cpu = 00:01:59 ; elapsed = 00:02:47 . Memory (MB): peak = 1019.637 ; gain = 367.473
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1034.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+82 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:29 ; elapsed = 00:03:37 . Memory (MB): peak = 1034.824 ; gain = 650.539
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1034.824 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'G:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/design_1_uiFDMA_0_1_synth_1/design_1_uiFDMA_0_1.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_uiFDMA_0_1, cache-ID = 29ec7290f2e93ace
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1034.824 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'G:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/design_1_uiFDMA_0_1_synth_1/design_1_uiFDMA_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_uiFDMA_0_1_utilization_synth.rpt -pb design_1_uiFDMA_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 10 17:13:25 2024...

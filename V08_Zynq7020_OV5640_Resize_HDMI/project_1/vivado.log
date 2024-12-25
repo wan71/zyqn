@@ -1,0 +1,582 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec 25 20:33:42 2024
+# Process ID: 39272
+# Current directory: D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent39144 D:\github_project\zyqn\zyqn\V08_Zynq7020_OV5640_Resize_HDMI\project_1\project_1.xpr
+# Log file: D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/project_1/vivado.log
+# Journal file: D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.xpr
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/wiat/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/uifdma'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_axi_interconnect_0_0
+design_1_s00_data_fifo_0
+design_1_auto_ds_0
+design_1_auto_pc_0
+
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'w_fifo' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'w_fifo' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'r_fifo' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'r_fifo' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'resize_fifo' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'resize_fifo' (customized with software release 2019.1) has a different revision in the IP Catalog.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1137.656 ; gain = 0.000
+update_compile_order -fileset sources_1
+save_project_as ov5640_project_2 D:/github_project/zyqn/zyqn/ov5640_project_2 -force
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_auto_ds_0' is locked:
+* IP definition 'AXI Data Width Converter (2.1)' for IP 'design_1_auto_ds_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_auto_pc_0' is locked:
+* IP definition 'AXI Protocol Converter (2.1)' for IP 'design_1_auto_pc_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_s00_data_fifo_0' is locked:
+* IP definition 'AXI Data FIFO (2.1)' for IP 'design_1_s00_data_fifo_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'r_fifo' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'r_fifo' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'resize_fifo' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'resize_fifo' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'w_fifo' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'w_fifo' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_axi_interconnect_0_0' is locked:
+* IP definition 'AXI Interconnect (2.1)' for IP 'design_1_axi_interconnect_0_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_s00_data_fifo_0' is locked:
+* IP definition 'AXI Data FIFO (2.1)' for IP 'design_1_s00_data_fifo_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_auto_ds_0' is locked:
+* IP definition 'AXI Data Width Converter (2.1)' for IP 'design_1_auto_ds_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_auto_pc_0' is locked:
+* IP definition 'AXI Protocol Converter (2.1)' for IP 'design_1_auto_pc_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_axi_interconnect_0_0
+design_1_s00_data_fifo_0
+design_1_auto_ds_0
+design_1_auto_pc_0
+
+save_project_as: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1137.656 ; gain = 0.000
+report_ip_status -name ip_status 
+upgrade_ip -srcset clk_wiz_0 [get_ips  {clk_wiz_0 r_fifo resize_fifo w_fifo design_1_axi_interconnect_0_0}] -log ip_upgrade.log
+Upgrading 'clk_wiz_0'
+INFO: [Project 1-386] Moving file 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded clk_wiz_0 (Clocking Wizard 6.0) from revision 3 to revision 6
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+Reading block design file <D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:user:ikun_FDMA:1.0 - uiFDMA_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Successfully read diagram <design_1> from block design file <D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'design_1_auto_ds_0'. Sub-design: 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'design_1_auto_pc_0'. Sub-design: 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'design_1_s00_data_fifo_0'. Sub-design: 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0.xci'.
+INFO: [IP_Flow 19-3422] Upgraded design_1_axi_interconnect_0_0 (AXI Interconnect 2.1) from revision 20 to revision 23
+Wrote  : <D:\github_project\zyqn\zyqn\ov5640_project_2\ov5640_project_2.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Upgrading 'r_fifo'
+INFO: [Project 1-386] Moving file 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/r_fifo/r_fifo.xci' from fileset 'r_fifo' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded r_fifo (FIFO Generator 13.2) from revision 4 to revision 5
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'r_fifo'...
+Upgrading 'resize_fifo'
+INFO: [Project 1-386] Moving file 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/resize_fifo/resize_fifo.xci' from fileset 'resize_fifo' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded resize_fifo (FIFO Generator 13.2) from revision 4 to revision 5
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'resize_fifo'...
+Upgrading 'w_fifo'
+INFO: [Project 1-386] Moving file 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/w_fifo/w_fifo.xci' from fileset 'w_fifo' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded w_fifo (FIFO Generator 13.2) from revision 4 to revision 5
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'w_fifo'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/github_project/zyqn/zyqn/ov5640_project_2/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1499.230 ; gain = 361.574
+export_ip_user_files -of_objects [get_ips {clk_wiz_0 r_fifo resize_fifo w_fifo design_1_axi_interconnect_0_0}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+copy_run -name impl_2_copy_1 [get_runs impl_2] -parent_run synth_2
+impl_2_copy_1
+set_property part xc7z010clg400-1 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'r_fifo' is locked:
+* Current project part 'xc7z010clg400-1' and the part 'xc7z020clg400-2' used to customize the IP 'r_fifo' do not match.
+WARNING: [IP_Flow 19-2162] IP 'w_fifo' is locked:
+* Current project part 'xc7z010clg400-1' and the part 'xc7z020clg400-2' used to customize the IP 'w_fifo' do not match.
+WARNING: [IP_Flow 19-2162] IP 'resize_fifo' is locked:
+* Current project part 'xc7z010clg400-1' and the part 'xc7z020clg400-2' used to customize the IP 'resize_fifo' do not match.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* Current project part 'xc7z010clg400-1' and the part 'xc7z020clg400-2' used to customize the IP 'clk_wiz_0' do not match.
+WARNING: [IP_Flow 19-2162] IP 'design_1_proc_sys_reset_0_0' is locked:
+* Current project part 'xc7z010clg400-1' and the part 'xc7z020clg400-2' used to customize the IP 'design_1_proc_sys_reset_0_0' do not match.
+WARNING: [IP_Flow 19-2162] IP 'design_1_uiFDMA_0_1' is locked:
+* Current project part 'xc7z010clg400-1' and the part 'xc7z020clg400-2' used to customize the IP 'design_1_uiFDMA_0_1' do not match.
+WARNING: [IP_Flow 19-2162] IP 'design_1_processing_system7_0_0' is locked:
+* Current project part 'xc7z010clg400-1' and the part 'xc7z020clg400-2' used to customize the IP 'design_1_processing_system7_0_0' do not match.
+reset_run synth_2
+reset_run design_1_proc_sys_reset_0_0_synth_1
+reset_run design_1_uiFDMA_0_1_synth_1
+reset_run design_1_processing_system7_0_0_synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 10
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_proc_sys_reset_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_processing_system7_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_s00_data_fifo_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_uiFDMA_0_1
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_uiFDMA_0_1/design_1_uiFDMA_0_1.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'd:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/r_fifo/r_fifo.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/w_fifo/w_fifo.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/resize_fifo/resize_fifo.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xci' in run design_1_proc_sys_reset_0_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_uiFDMA_0_1/design_1_uiFDMA_0_1.xci' in run design_1_uiFDMA_0_1_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci' in run design_1_processing_system7_0_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' in run clk_wiz_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/w_fifo/w_fifo.xci' in run w_fifo_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/r_fifo/r_fifo.xci' in run r_fifo_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/resize_fifo/resize_fifo.xci' in run resize_fifo_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'd:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0.xci' in run design_1_s00_data_fifo_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/w_fifo/w_fifo.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/r_fifo/r_fifo.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/resize_fifo/resize_fifo.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/design_1.bd
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/design_1.bd
+
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xci' in run design_1_proc_sys_reset_0_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_uiFDMA_0_1/design_1_uiFDMA_0_1.xci' in run design_1_uiFDMA_0_1_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci' in run design_1_processing_system7_0_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' in run clk_wiz_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/w_fifo/w_fifo.xci' in run w_fifo_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/r_fifo/r_fifo.xci' in run r_fifo_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/resize_fifo/resize_fifo.xci' in run resize_fifo_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'd:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0.xci' in run design_1_s00_data_fifo_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Wed Dec 25 20:37:32 2024] Launched design_1_proc_sys_reset_0_0_synth_1, design_1_uiFDMA_0_1_synth_1, design_1_processing_system7_0_0_synth_1, clk_wiz_0_synth_1, w_fifo_synth_1, r_fifo_synth_1, resize_fifo_synth_1, design_1_s00_data_fifo_0_synth_1, synth_2...
+Run output will be captured here:
+design_1_proc_sys_reset_0_0_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/design_1_proc_sys_reset_0_0_synth_1/runme.log
+design_1_uiFDMA_0_1_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/design_1_uiFDMA_0_1_synth_1/runme.log
+design_1_processing_system7_0_0_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/design_1_processing_system7_0_0_synth_1/runme.log
+clk_wiz_0_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/clk_wiz_0_synth_1/runme.log
+w_fifo_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/w_fifo_synth_1/runme.log
+r_fifo_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/r_fifo_synth_1/runme.log
+resize_fifo_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/resize_fifo_synth_1/runme.log
+design_1_s00_data_fifo_0_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/design_1_s00_data_fifo_0_synth_1/runme.log
+synth_2: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/synth_2/runme.log
+[Wed Dec 25 20:37:32 2024] Launched impl_2...
+Run output will be captured here: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/runme.log
+report_ip_status -name ip_status 
+upgrade_ip -srcset clk_wiz_0 [get_ips  {clk_wiz_0 r_fifo resize_fifo w_fifo design_1_processing_system7_0_0 design_1_uiFDMA_0_1 design_1_proc_sys_reset_0_0 design_1_axi_interconnect_0_0}] -log ip_upgrade.log
+Upgrading 'clk_wiz_0'
+INFO: [Project 1-386] Moving file 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated clk_wiz_0 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+Upgrading 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'design_1_proc_sys_reset_0_0'. Sub-design: 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'design_1_processing_system7_0_0'. Sub-design: 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'design_1_uiFDMA_0_1'. Sub-design: 'D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_uiFDMA_0_1/design_1_uiFDMA_0_1.xci'.
+INFO: [IP_Flow 19-3420] Updated design_1_axi_interconnect_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_proc_sys_reset_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_processing_system7_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_uiFDMA_0_1 to use current project options
+Wrote  : <D:\github_project\zyqn\zyqn\ov5640_project_2\ov5640_project_2.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Upgrading 'r_fifo'
+INFO: [Project 1-386] Moving file 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/r_fifo/r_fifo.xci' from fileset 'r_fifo' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated r_fifo to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'r_fifo'...
+Upgrading 'resize_fifo'
+INFO: [Project 1-386] Moving file 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/resize_fifo/resize_fifo.xci' from fileset 'resize_fifo' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated resize_fifo to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'resize_fifo'...
+Upgrading 'w_fifo'
+INFO: [Project 1-386] Moving file 'D:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/w_fifo/w_fifo.xci' from fileset 'w_fifo' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated w_fifo to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'w_fifo'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/github_project/zyqn/zyqn/ov5640_project_2/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1714.672 ; gain = 177.113
+export_ip_user_files -of_objects [get_ips {clk_wiz_0 r_fifo resize_fifo w_fifo design_1_processing_system7_0_0 design_1_uiFDMA_0_1 design_1_proc_sys_reset_0_0 design_1_axi_interconnect_0_0}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+open_bd_design {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/design_1.bd}
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_UIPARAM_DDR_PARTNO {MT41K128M16 HA-15E}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+Wrote  : <D:\github_project\zyqn\zyqn\ov5640_project_2\ov5640_project_2.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 10
+WARNING: [BD 41-927] Following properties on pin /uiFDMA_0/M_AXI_ACLK have been updated from connected ip, but BD cell '/uiFDMA_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 150000000 
+Please resolve any mismatches by directly setting properties on BD cell </uiFDMA_0> to completely resolve these warnings.
+Wrote  : <D:\github_project\zyqn\zyqn\ov5640_project_2\ov5640_project_2.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block uiFDMA_0 .
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/s00_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_ds_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_proc_sys_reset_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_processing_system7_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_s00_data_fifo_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_uiFDMA_0_1
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'r_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'w_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'resize_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+[Wed Dec 25 20:44:12 2024] Launched design_1_processing_system7_0_0_synth_1, design_1_uiFDMA_0_1_synth_1, design_1_proc_sys_reset_0_0_synth_1, clk_wiz_0_synth_1, w_fifo_synth_1, r_fifo_synth_1, resize_fifo_synth_1, design_1_s00_data_fifo_0_synth_1, design_1_auto_ds_0_synth_1, design_1_auto_pc_0_synth_1, synth_2...
+Run output will be captured here:
+design_1_processing_system7_0_0_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_uiFDMA_0_1_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/design_1_uiFDMA_0_1_synth_1/runme.log
+design_1_proc_sys_reset_0_0_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/design_1_proc_sys_reset_0_0_synth_1/runme.log
+clk_wiz_0_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/clk_wiz_0_synth_1/runme.log
+w_fifo_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/w_fifo_synth_1/runme.log
+r_fifo_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/r_fifo_synth_1/runme.log
+resize_fifo_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/resize_fifo_synth_1/runme.log
+design_1_s00_data_fifo_0_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/design_1_s00_data_fifo_0_synth_1/runme.log
+design_1_auto_ds_0_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/design_1_auto_ds_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/design_1_auto_pc_0_synth_1/runme.log
+synth_2: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/synth_2/runme.log
+[Wed Dec 25 20:44:13 2024] Launched impl_2...
+Run output will be captured here: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1898.398 ; gain = 160.605
+open_bd_design {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/design_1.bd}
+open_run impl_2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.199 . Memory (MB): peak = 1994.926 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 411 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.627 . Memory (MB): peak = 2661.531 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.627 . Memory (MB): peak = 2661.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2661.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 35 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2762.840 ; gain = 812.789
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2944.230 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 4475.668 ; gain = 1531.438
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/top.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+report_ip_status -name ip_status 
+close_hw_manager
+open_bd_design {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/design_1.bd}
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_UIPARAM_DDR_MEMORY_TYPE {DDR 3 (Low Voltage)} CONFIG.PCW_UIPARAM_DDR_PARTNO {MT41K128M16 JT-125}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+Wrote  : <D:\github_project\zyqn\zyqn\ov5640_project_2\ov5640_project_2.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/synth_2
+
+reset_run design_1_processing_system7_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/design_1_processing_system7_0_0_synth_1
+
+launch_runs impl_2 -to_step write_bitstream -jobs 10
+WARNING: [BD 41-927] Following properties on pin /uiFDMA_0/M_AXI_ACLK have been updated from connected ip, but BD cell '/uiFDMA_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 150000000 
+Please resolve any mismatches by directly setting properties on BD cell </uiFDMA_0> to completely resolve these warnings.
+Wrote  : <D:\github_project\zyqn\zyqn\ov5640_project_2\ov5640_project_2.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/s00_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_ds_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_processing_system7_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_s00_data_fifo_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = ce1793fd927b4069; cache size = 10.689 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 4b5334885a489915; cache size = 10.689 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_s00_data_fifo_0, cache-ID = f9c1df40772da938; cache size = 10.689 MB.
+[Wed Dec 25 20:57:40 2024] Launched design_1_processing_system7_0_0_synth_1, synth_2...
+Run output will be captured here:
+design_1_processing_system7_0_0_synth_1: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/design_1_processing_system7_0_0_synth_1/runme.log
+synth_2: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/synth_2/runme.log
+[Wed Dec 25 20:57:40 2024] Launched impl_2...
+Run output will be captured here: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 4580.777 ; gain = 47.305
+report_ip_status -name ip_status 
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 4592.852 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/top.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.207 . Memory (MB): peak = 4604.785 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 411 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.637 . Memory (MB): peak = 4604.785 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.637 . Memory (MB): peak = 4604.785 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 4604.785 ; gain = 11.934
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 10
+[Wed Dec 25 21:04:33 2024] Launched impl_2...
+Run output will be captured here: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 4825.828 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/top.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 25 21:07:33 2024...

@@ -1,0 +1,6 @@
+23:16:53 INFO  : Registering command handlers for SDK TCF services
+23:16:53 INFO  : Launching XSCT server: xsct.bat -interactive F:\Video_scaler\V08_Zynq7020_OV5640_Resize_HDMI\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+23:16:57 INFO  : XSCT server has started successfully.
+23:16:57 INFO  : Successfully done setting XSCT server connection channel  
+23:16:57 INFO  : Successfully done setting SDK workspace  
+23:16:57 INFO  : Processing command line option -hwspec F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.sdk/top.hdf.

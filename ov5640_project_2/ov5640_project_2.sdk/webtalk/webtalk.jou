@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Thu Oct 10 23:19:07 2024
+# Process ID: 16720
+# Current directory: F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.sdk/webtalk/webtalk.log
+# Journal file: F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

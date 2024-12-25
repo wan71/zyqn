@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec 25 00:06:38 2024
+# Process ID: 4840
+# Current directory: D:/github_project/zyqn/zyqn/bmp_hdmi_test1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20324 D:\github_project\zyqn\zyqn\bmp_hdmi_test1\bmp_hdmi_test1.xpr
+# Log file: D:/github_project/zyqn/zyqn/bmp_hdmi_test1/vivado.log
+# Journal file: D:/github_project/zyqn/zyqn/bmp_hdmi_test1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_project/zyqn/zyqn/bmp_hdmi_test1/bmp_hdmi_test1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/HDMI/sd_bmp_hdmi27/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1136.633 ; gain = 0.000
+update_compile_order -fileset sources_1
+save_project_as bmp_hdmi_test2 D:/github_project/zyqn/zyqn/bmp_hdmi_test2 -force
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'rst_n' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/HDMI/sd_bmp_hdmi27/ip_repo'.
+save_project_as: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.633 ; gain = 0.000
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Dec 25 00:07:57 2024] Launched impl_1...
+Run output will be captured here: D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.srcs/sources_1/ip/fifo_in_32/fifo_in_32.xci] -no_script -reset -force -quiet
+remove_files  D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.srcs/sources_1/ip/fifo_in_32/fifo_in_32.xci
+export_ip_user_files -of_objects  [get_files D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.srcs/sources_1/ip/fifo_out_32/fifo_out_32.xci] -no_script -reset -force -quiet
+remove_files  D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.srcs/sources_1/ip/fifo_out_32/fifo_out_32.xci
+file delete -force D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.srcs/sources_1/ip/fifo_out_32
+file delete -force d:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.gen/sources_1/ip/fifo_out_32
+update_module_reference system_Bic_top_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'rst_n' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/HDMI/sd_bmp_hdmi27/ip_repo'.
+Reading block design file <D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- openedv.com:user:DVI_Transmitter:1.0 - DVI_Transmitter_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s01_mmu
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s02_mmu
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_150M
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:module_ref:Bic_top:1.0 - Bic_top_0
+Successfully read diagram <system> from block design file <D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.srcs/sources_1/bd/system/system.bd>
+Upgrading 'D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.srcs/sources_1/bd/system/system.bd'
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'system_Bic_top_0_0'. Sub-design: 'D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.srcs/sources_1/bd/system/ip/system_Bic_top_0_0/system_Bic_top_0_0.xci'.
+INFO: [IP_Flow 19-1972] Upgraded system_Bic_top_0_0 from Bic_top_v1_0 1.0 to Bic_top_v1_0 1.0
+Wrote  : <D:\github_project\zyqn\zyqn\bmp_hdmi_test2\bmp_hdmi_test2.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+upgrade_ip: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1388.934 ; gain = 200.113
+update_module_reference: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1388.934 ; gain = 200.113
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 25 00:11:08 2024...

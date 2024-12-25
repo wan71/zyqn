@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec 25 21:07:36 2024
+# Process ID: 13324
+# Current directory: D:/github_project/zyqn/zyqn/bmp_hdmi_test2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32980 D:\github_project\zyqn\zyqn\bmp_hdmi_test2\bmp_hdmi_test2.xpr
+# Log file: D:/github_project/zyqn/zyqn/bmp_hdmi_test2/vivado.log
+# Journal file: D:/github_project/zyqn/zyqn/bmp_hdmi_test2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]

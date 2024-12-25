@@ -1,0 +1,1416 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 10 23:11:31 2024
+# Process ID: 3704
+# Current directory: F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/top.vds
+# Journal file: F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/uifdma'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top top -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2880 
+WARNING: [Synth 8-2507] parameter declaration becomes local in ov5640_rx with formal parameter declaration list [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_ov5640_rx/ov5640_rx.v:43]
+WARNING: [Synth 8-2507] parameter declaration becomes local in video_scale with formal parameter declaration list [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:86]
+WARNING: [Synth 8-2507] parameter declaration becomes local in video_scale with formal parameter declaration list [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:87]
+WARNING: [Synth 8-2507] parameter declaration becomes local in video_scale with formal parameter declaration list [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:330]
+WARNING: [Synth 8-2507] parameter declaration becomes local in video_scale with formal parameter declaration list [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:331]
+WARNING: [Synth 8-2507] parameter declaration becomes local in video_scale with formal parameter declaration list [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:332]
+WARNING: [Synth 8-2507] parameter declaration becomes local in video_scale with formal parameter declaration list [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:333]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 856.148 ; gain = 188.250
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/new/top.v:12]
+	Parameter SRC_VIDEO_WIDTH bound to: 1280 - type: integer 
+	Parameter SRC_VIDEO_HEIGTH bound to: 720 - type: integer 
+	Parameter DES_VIDEO_WIDTH bound to: 1920 - type: integer 
+	Parameter DES_VIDEO_HEIGTH bound to: 1080 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'helai_OVsensor' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_OVsensor.v:14]
+	Parameter DELAY bound to: 1 - type: integer 
+	Parameter DEVID bound to: 8'b01111000 
+	Parameter IMAGE_WIDTH bound to: 1280 - type: integer 
+	Parameter IMAGE_HEIGHT bound to: 720 - type: integer 
+	Parameter RGB_TYPE bound to: 1 - type: integer 
+	Parameter SENSOR_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'helai_ov5640_rx' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_ov5640_rx/helai_ov5640_rx.v:1]
+	Parameter BIT_CTRL bound to: 1 - type: integer 
+	Parameter DEVID bound to: 8'b01111000 
+	Parameter IMAGE_WIDTH bound to: 1280 - type: integer 
+	Parameter IMAGE_HEIGHT bound to: 720 - type: integer 
+	Parameter RGB_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'i2c_ov5640_rgb565_cfg' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_ov5640_rx/i2c_ov5640cfg/i2c_ov5640_rgb565_cfg.v:2]
+	Parameter REG_NUM bound to: 8'b11111010 
+INFO: [Synth 8-6155] done synthesizing module 'i2c_ov5640_rgb565_cfg' (2#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_ov5640_rx/i2c_ov5640cfg/i2c_ov5640_rgb565_cfg.v:2]
+INFO: [Synth 8-6157] synthesizing module 'i2c_dri' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_ov5640_rx/i2c_ov5640cfg/i2c_dri.v:2]
+	Parameter SLAVE_ADDR bound to: 8'b01111000 
+	Parameter CLK_FREQ bound to: 25000000 - type: integer 
+	Parameter I2C_FREQ bound to: 250000 - type: integer 
+	Parameter st_idle bound to: 8'b00000001 
+	Parameter st_sladdr bound to: 8'b00000010 
+	Parameter st_addr16 bound to: 8'b00000100 
+	Parameter st_addr8 bound to: 8'b00001000 
+	Parameter st_data_wr bound to: 8'b00010000 
+	Parameter st_addr_rd bound to: 8'b00100000 
+	Parameter st_data_rd bound to: 8'b01000000 
+	Parameter st_stop bound to: 8'b10000000 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_ov5640_rx/i2c_ov5640cfg/i2c_dri.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_dri' (3#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_ov5640_rx/i2c_ov5640cfg/i2c_dri.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ov5640_rx' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_ov5640_rx/ov5640_rx.v:3]
+	Parameter RGB_TYPE bound to: 1 - type: integer 
+	Parameter FRAM_FREE_CNT bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ov5640_rx' (4#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_ov5640_rx/ov5640_rx.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'helai_ov5640_rx' (5#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_ov5640_rx/helai_ov5640_rx.v:1]
+WARNING: [Synth 8-3848] Net ov5640_clk_ce in module/entity helai_OVsensor does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_OVsensor.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'helai_OVsensor' (6#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_OVsensor.v:14]
+INFO: [Synth 8-6157] synthesizing module 'helai_video_scale' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/helai_video_scale.v:11]
+	Parameter FIFO_TYPE bound to: xilinx - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter CHANNELS bound to: 3 - type: integer 
+	Parameter INPUT_X_RES_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_fifo' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/resize_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'resize_fifo' (7#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/resize_fifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'video_scale' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter CHANNELS bound to: 3 - type: integer 
+	Parameter DISCARD_CNT_WIDTH bound to: 8 - type: integer 
+	Parameter INPUT_X_RES_WIDTH bound to: 11 - type: integer 
+	Parameter INPUT_Y_RES_WIDTH bound to: 11 - type: integer 
+	Parameter OUTPUT_X_RES_WIDTH bound to: 11 - type: integer 
+	Parameter OUTPUT_Y_RES_WIDTH bound to: 11 - type: integer 
+	Parameter FRACTION_BITS bound to: 8 - type: integer 
+	Parameter SCALE_INT_BITS bound to: 4 - type: integer 
+	Parameter SCALE_FRAC_BITS bound to: 14 - type: integer 
+	Parameter BUFFER_SIZE bound to: 4 - type: integer 
+	Parameter COEFF_WIDTH bound to: 9 - type: integer 
+	Parameter SCALE_BITS bound to: 18 - type: integer 
+	Parameter BUFFER_SIZE_WIDTH bound to: 3 - type: integer 
+	Parameter RS_START bound to: 0 - type: integer 
+	Parameter RS_READ_LINE bound to: 1 - type: integer 
+	Parameter WS_START bound to: 0 - type: integer 
+	Parameter WS_DISCARD bound to: 1 - type: integer 
+	Parameter WS_READ bound to: 2 - type: integer 
+	Parameter WS_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ramFifo' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:12]
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 11 - type: integer 
+	Parameter BUFFER_SIZE bound to: 4 - type: integer 
+	Parameter BUFFER_SIZE_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ramDualPort' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramDualPort.v:12]
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ramDualPort' (8#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramDualPort.v:12]
+WARNING: [Synth 8-689] width (32) of port connection 'addrB' does not match port width (11) of module 'ramDualPort' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:99]
+WARNING: [Synth 8-689] width (32) of port connection 'addrB' does not match port width (11) of module 'ramDualPort' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:99]
+WARNING: [Synth 8-689] width (32) of port connection 'addrB' does not match port width (11) of module 'ramDualPort' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:99]
+WARNING: [Synth 8-689] width (32) of port connection 'addrB' does not match port width (11) of module 'ramDualPort' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:99]
+WARNING: [Synth 8-3848] Net ramDataOutA[15] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:78]
+WARNING: [Synth 8-3848] Net ramDataOutA[14] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:78]
+WARNING: [Synth 8-3848] Net ramDataOutA[13] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:78]
+WARNING: [Synth 8-3848] Net ramDataOutA[12] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:78]
+WARNING: [Synth 8-3848] Net ramDataOutA[11] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:78]
+WARNING: [Synth 8-3848] Net ramDataOutA[10] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:78]
+WARNING: [Synth 8-3848] Net ramDataOutA[9] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:78]
+WARNING: [Synth 8-3848] Net ramDataOutA[7] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:78]
+WARNING: [Synth 8-3848] Net ramDataOutA[6] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:78]
+WARNING: [Synth 8-3848] Net ramDataOutA[5] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:78]
+WARNING: [Synth 8-3848] Net ramDataOutA[3] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:78]
+WARNING: [Synth 8-3848] Net ramDataOutA[0] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:78]
+WARNING: [Synth 8-3848] Net ramDataOutB[15] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:79]
+WARNING: [Synth 8-3848] Net ramDataOutB[14] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:79]
+WARNING: [Synth 8-3848] Net ramDataOutB[13] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:79]
+WARNING: [Synth 8-3848] Net ramDataOutB[12] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:79]
+WARNING: [Synth 8-3848] Net ramDataOutB[11] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:79]
+WARNING: [Synth 8-3848] Net ramDataOutB[10] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:79]
+WARNING: [Synth 8-3848] Net ramDataOutB[9] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:79]
+WARNING: [Synth 8-3848] Net ramDataOutB[7] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:79]
+WARNING: [Synth 8-3848] Net ramDataOutB[6] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:79]
+WARNING: [Synth 8-3848] Net ramDataOutB[5] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:79]
+WARNING: [Synth 8-3848] Net ramDataOutB[3] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:79]
+WARNING: [Synth 8-3848] Net ramDataOutB[0] in module/entity ramFifo does not have driver. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'ramFifo' (9#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/ramFifo.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'video_scale' (10#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:11]
+WARNING: [Synth 8-689] width (32) of port connection 'i_src_image_x' does not match port width (11) of module 'video_scale' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/helai_video_scale.v:105]
+WARNING: [Synth 8-689] width (32) of port connection 'i_src_image_y' does not match port width (11) of module 'video_scale' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/helai_video_scale.v:106]
+WARNING: [Synth 8-689] width (32) of port connection 'i_des_image_x' does not match port width (11) of module 'video_scale' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/helai_video_scale.v:107]
+WARNING: [Synth 8-689] width (32) of port connection 'i_des_image_y' does not match port width (11) of module 'video_scale' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/helai_video_scale.v:108]
+WARNING: [Synth 8-689] width (32) of port connection 'i_scaler_x_ratio' does not match port width (18) of module 'video_scale' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/helai_video_scale.v:109]
+WARNING: [Synth 8-689] width (32) of port connection 'i_scaler_y_ratio' does not match port width (18) of module 'video_scale' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/helai_video_scale.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'helai_video_scale' (11#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/helai_video_scale.v:11]
+INFO: [Synth 8-6157] synthesizing module 'fdma_contrl' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/fdma_contrl.v:12]
+	Parameter VIDEO_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter VIDEO_WRITE_EN bound to: 1 - type: integer 
+	Parameter VIDEO_READ_EN bound to: 1 - type: integer 
+	Parameter VIDEO_H_SRTI_W bound to: 1920 - type: integer 
+	Parameter VIDEO_H_SIZE_W bound to: 1920 - type: integer 
+	Parameter VIDEO_V_SIZE_W bound to: 1080 - type: integer 
+	Parameter VIDEO_H_SRTI_R bound to: 1920 - type: integer 
+	Parameter VIDEO_H_SIZE_R bound to: 1920 - type: integer 
+	Parameter VIDEO_V_SIZE_R bound to: 1080 - type: integer 
+	Parameter VIDEO_ADDR_0 bound to: 268435456 - type: integer 
+	Parameter VIDEO_ADDR_1 bound to: 276729856 - type: integer 
+	Parameter VIDEO_ADDR_2 bound to: 285024256 - type: integer 
+	Parameter FDMA_TRANS_DIV bound to: 2 - type: integer 
+	Parameter FDMA_FRAME_NUM bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'w_fifo' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/w_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'w_fifo' (12#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/w_fifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'r_fifo' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/r_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'r_fifo' (13#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/r_fifo_stub.v:6]
+WARNING: [Synth 8-7023] instance 'u_r_fifo' of module 'r_fifo' has 12 connections declared, but only 10 given [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/fdma_contrl.v:292]
+WARNING: [Synth 8-6014] Unused sequential element FDMA_WRITE.fdma_w_h_cnt_reg was removed.  [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/fdma_contrl.v:102]
+WARNING: [Synth 8-6014] Unused sequential element FDMA_READ.fdma_r_h_cnt_reg was removed.  [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/fdma_contrl.v:236]
+INFO: [Synth 8-6155] done synthesizing module 'fdma_contrl' (14#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/fdma_contrl.v:12]
+WARNING: [Synth 8-689] width (24) of port connection 'vout_rgb' does not match port width (32) of module 'fdma_contrl' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/new/top.v:189]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_0_0' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:417]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:797]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (15#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (16#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_s00_data_fifo_0' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/design_1_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_s00_data_fifo_0' (17#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/design_1_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (18#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:797]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_0_0' (19#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:417]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (20#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'design_1_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:291]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (21#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 68 connections declared, but only 62 given [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:298]
+INFO: [Synth 8-6157] synthesizing module 'design_1_uiFDMA_0_1' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/design_1_uiFDMA_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_uiFDMA_0_1' (22#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/.Xil/Vivado-3704-LAPTOP-C5LS8KIA/realtime/design_1_uiFDMA_0_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'uiFDMA_0' of module 'design_1_uiFDMA_0_1' has 54 connections declared, but only 53 given [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:361]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (23#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'video_timing_control' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/video_timing_control.v:21]
+	Parameter VIDEO_H bound to: 1920 - type: integer 
+	Parameter VIDEO_V bound to: 1080 - type: integer 
+	Parameter VIDEO_START_X bound to: 0 - type: integer 
+	Parameter VIDEO_START_Y bound to: 0 - type: integer 
+	Parameter H_ACTIVE bound to: 1920 - type: integer 
+	Parameter H_FRONT_PORCH bound to: 88 - type: integer 
+	Parameter H_SYNC_TIME bound to: 44 - type: integer 
+	Parameter H_BACK_PORCH bound to: 148 - type: integer 
+	Parameter H_POLARITY bound to: 1 - type: integer 
+	Parameter V_ACTIVE bound to: 1080 - type: integer 
+	Parameter V_FRONT_PORCH bound to: 4 - type: integer 
+	Parameter V_SYNC_TIME bound to: 5 - type: integer 
+	Parameter V_BACK_PORCH bound to: 36 - type: integer 
+	Parameter V_POLARITY bound to: 1 - type: integer 
+	Parameter H_TOTAL_TIME bound to: 2200 - type: integer 
+	Parameter V_TOTAL_TIME bound to: 1125 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'video_timing_control' (24#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/video_timing_control.v:21]
+WARNING: [Synth 8-7023] instance 'video_timing' of module 'video_timing_control' has 12 connections declared, but only 8 given [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/new/top.v:251]
+INFO: [Synth 8-6157] synthesizing module 'helai_hdmi_out' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/helai_hdmi_out.v:13]
+INFO: [Synth 8-6157] synthesizing module 'asyn_rst_syn' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/asyn_rst_syn.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'asyn_rst_syn' (25#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/asyn_rst_syn.v:11]
+INFO: [Synth 8-6157] synthesizing module 'dvi_encoder' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:12]
+	Parameter CTRLTOKEN0 bound to: 10'b1101010100 
+	Parameter CTRLTOKEN1 bound to: 10'b0010101011 
+	Parameter CTRLTOKEN2 bound to: 10'b0101010100 
+	Parameter CTRLTOKEN3 bound to: 10'b1010101011 
+INFO: [Synth 8-6155] done synthesizing module 'dvi_encoder' (26#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:12]
+INFO: [Synth 8-6157] synthesizing module 'serializer_10_to_1' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/serializer_10_to_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:50071]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (27#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:50071]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:50071]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (27#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:50071]
+INFO: [Synth 8-6155] done synthesizing module 'serializer_10_to_1' (28#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/serializer_10_to_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:46012]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (29#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:46012]
+INFO: [Synth 8-6155] done synthesizing module 'helai_hdmi_out' (30#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/helai_hdmi_out.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'top' (31#1) [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/new/top.v:12]
+WARNING: [Synth 8-3917] design top has port o_hdmi_oen driven by constant 1
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[10]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[9]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[8]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[7]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[6]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[5]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[4]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[3]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[2]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[1]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[0]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[7]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[6]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[5]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[4]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[3]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[2]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[1]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[0]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port cmos_h_pixel[12]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port cmos_v_pixel[12]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port cmos_v_pixel[11]
+WARNING: [Synth 8-3331] design helai_OVsensor has unconnected port ov5640_clk_ce
+WARNING: [Synth 8-3331] design helai_OVsensor has unconnected port pclk_color
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 914.480 ; gain = 246.582
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 914.480 ; gain = 246.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 914.480 ; gain = 246.582
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'u_design_1/proc_sys_reset_0'
+Finished Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'u_design_1/proc_sys_reset_0'
+Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_uiFDMA_0_1/design_1_uiFDMA_0_1/design_1_uiFDMA_0_1_in_context.xdc] for cell 'u_design_1/uiFDMA_0'
+Finished Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_uiFDMA_0_1/design_1_uiFDMA_0_1/design_1_uiFDMA_0_1_in_context.xdc] for cell 'u_design_1/uiFDMA_0'
+Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'u_design_1/processing_system7_0'
+Finished Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'u_design_1/processing_system7_0'
+Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0_in_context.xdc] for cell 'u_design_1/axi_interconnect_0/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0_in_context.xdc] for cell 'u_design_1/axi_interconnect_0/s00_couplers/s00_data_fifo'
+Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'u_design_1/axi_interconnect_0/s00_couplers/auto_ds'
+Finished Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'u_design_1/axi_interconnect_0/s00_couplers/auto_ds'
+Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'u_design_1/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'u_design_1/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'hdmi_clk'
+Finished Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'hdmi_clk'
+Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/w_fifo/w_fifo/w_fifo_in_context.xdc] for cell 'ikun_fdma_contrl/FDMA_WRITE.u_w_fifo'
+Finished Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/w_fifo/w_fifo/w_fifo_in_context.xdc] for cell 'ikun_fdma_contrl/FDMA_WRITE.u_w_fifo'
+Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/r_fifo/r_fifo/r_fifo_in_context.xdc] for cell 'ikun_fdma_contrl/FDMA_READ.u_r_fifo'
+Finished Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_fdma_contrl/r_fifo/r_fifo/r_fifo_in_context.xdc] for cell 'ikun_fdma_contrl/FDMA_READ.u_r_fifo'
+Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/resize_fifo/resize_fifo/resize_fifo_in_context.xdc] for cell 'ikun_video_scale/u_resize_fifo'
+Finished Parsing XDC File [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/resize_fifo/resize_fifo/resize_fifo_in_context.xdc] for cell 'ikun_video_scale/u_resize_fifo'
+Parsing XDC File [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/constrs_1/new/pin.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'sys_clk_50m' completely overrides clock 'i_clk_50m'.
+New: create_clock -period 20.000 -name sys_clk_50m [get_ports i_clk_50m], [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/constrs_1/new/pin.xdc:5]
+Previous: create_clock -period 20.000 [get_ports i_clk_50m], [f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+WARNING: [Vivado 12-507] No nets matched 'cmos_pclk_i_IBUF'. [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/constrs_1/new/pin.xdc:13]
+Finished Parsing XDC File [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/constrs_1/new/pin.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/constrs_1/new/pin.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/dont_touch.xdc]
+Finished Parsing XDC File [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1074.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1074.766 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ikun_fdma_contrl/FDMA_READ.u_r_fifo' at clock pin 'rd_clk' is different from the actual clock period '6.723', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ikun_fdma_contrl/FDMA_WRITE.u_w_fifo' at clock pin 'rd_clk' is different from the actual clock period '6.666', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ikun_video_scale/u_resize_fifo' at clock pin 'rd_clk' is different from the actual clock period '6.723', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1074.766 ; gain = 406.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1074.766 ; gain = 406.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 132).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 133).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 134).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 135).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 136).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 137).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 138).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 139).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 140).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 141).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 142).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 143).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 148).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 149).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 175).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 176).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 177).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 178).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 179).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 180).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 181).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 182).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 183).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 184).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 185).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 186).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 187).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 188).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 189).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 190).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 191).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 192).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 193).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 194).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 195).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 196).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 197).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 198).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 199).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 200).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 201).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 202).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 203).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 204).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 205).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 206).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 207).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 208).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 209).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 210).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 211).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 212).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 213).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 214).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 215).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 216).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 217).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 218).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 219).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 220).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 221).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 222).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 223).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 224).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 225).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 226).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 227).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 228).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 229).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 230).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 231).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 232).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 233).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 234).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 235).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 236).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 237).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 238).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 239).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 240).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 241).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 242).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 243).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 244).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 245).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 246).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 247).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 248).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 249).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 250).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 251).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 252).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 253).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 254).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 255).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 256).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 257).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 258).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 259).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 260).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 261).
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk_50m. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk_50m. (constraint file  f:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 7).
+Applied set_property DONT_TOUCH = true for u_design_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_design_1/proc_sys_reset_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_design_1/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_design_1/uiFDMA_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_design_1/processing_system7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_design_1/axi_interconnect_0/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_design_1/axi_interconnect_0/s00_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_design_1/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for hdmi_clk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ikun_fdma_contrl/\FDMA_WRITE.u_w_fifo . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ikun_fdma_contrl/\FDMA_READ.u_r_fifo . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ikun_video_scale/u_resize_fifo. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1074.766 ; gain = 406.867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'i2c_dri'
+INFO: [Synth 8-5546] ROM "scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "scl" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "scl" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "sda_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "sda_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "sda_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "sda_dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sda_dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sda_dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sda_dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_data_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'FDMA_WRITE.W_ST_reg' in module 'fdma_contrl'
+INFO: [Synth 8-802] inferred FSM for state register 'FDMA_READ.R_ST_reg' in module 'fdma_contrl'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:118]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                         00000001 |                         00000001
+               st_sladdr |                         00000010 |                         00000010
+               st_addr16 |                         00000100 |                         00000100
+                st_addr8 |                         00001000 |                         00001000
+              st_data_wr |                         00010000 |                         00010000
+              st_addr_rd |                         00100000 |                         00100000
+              st_data_rd |                         01000000 |                         01000000
+                 st_stop |                         10000000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'i2c_dri'
+INFO: [Synth 8-3971] The signal "ramDualPort:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                             0000
+                  iSTATE |                               01 |                             0001
+                 iSTATE1 |                               10 |                             0010
+                 iSTATE0 |                               11 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'FDMA_WRITE.W_ST_reg' using encoding 'sequential' in module 'fdma_contrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                             0000
+                  iSTATE |                               01 |                             0001
+                 iSTATE1 |                               10 |                             0010
+                 iSTATE0 |                               11 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'FDMA_READ.R_ST_reg' using encoding 'sequential' in module 'fdma_contrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1074.766 ; gain = 406.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 11    
+	   2 Input     25 Bit       Adders := 1     
+	   4 Input     17 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 9     
+	   2 Input     11 Bit       Adders := 8     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   5 Input      5 Bit       Adders := 6     
+	   4 Input      5 Bit       Adders := 3     
+	   8 Input      4 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               32 Bit    Registers := 2     
+	               25 Bit    Registers := 3     
+	               24 Bit    Registers := 9     
+	               17 Bit    Registers := 12    
+	               16 Bit    Registers := 4     
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 9     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 8     
+	                8 Bit    Registers := 25    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 13    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 65    
++---Multipliers : 
+	                 8x32  Multipliers := 1     
+	                 9x32  Multipliers := 1     
++---RAMs : 
+	              48K Bit         RAMs := 4     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     29 Bit        Muxes := 2     
+	   4 Input     29 Bit        Muxes := 2     
+	   2 Input     25 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 6     
+	   5 Input     10 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 6     
+	   3 Input      9 Bit        Muxes := 4     
+	  22 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   9 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	  31 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 6     
+	  29 Input      7 Bit        Muxes := 1     
+	  33 Input      7 Bit        Muxes := 1     
+	  22 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 79    
+	  31 Input      1 Bit        Muxes := 6     
+	  29 Input      1 Bit        Muxes := 6     
+	  33 Input      1 Bit        Muxes := 5     
+	  22 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 5     
+	   9 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 23    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module i2c_ov5640_rgb565_cfg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module i2c_dri 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  22 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   9 Input      8 Bit        Muxes := 2     
+	  31 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 6     
+	  29 Input      7 Bit        Muxes := 1     
+	  33 Input      7 Bit        Muxes := 1     
+	  22 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+	  31 Input      1 Bit        Muxes := 6     
+	  29 Input      1 Bit        Muxes := 6     
+	  33 Input      1 Bit        Muxes := 5     
+	  22 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 5     
+	   9 Input      1 Bit        Muxes := 11    
+Module ov5640_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ramDualPort 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
++---RAMs : 
+	              48K Bit         RAMs := 1     
+Module ramFifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module video_scale 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     25 Bit       Adders := 1     
+	   4 Input     17 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 3     
+	               17 Bit    Registers := 12    
+	               11 Bit    Registers := 7     
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 16    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Multipliers : 
+	                 8x32  Multipliers := 1     
+	                 9x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 2     
+	   3 Input      9 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 19    
+Module helai_video_scale 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     12 Bit       Adders := 4     
+Module fdma_contrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     29 Bit        Muxes := 2     
+	   4 Input     29 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 13    
+Module video_timing_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module asyn_rst_syn 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module dvi_encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input      5 Bit       Adders := 2     
+	   4 Input      5 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "ikun_ov5640_rx/u_i2c_driver/scl" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "ikun_ov5640_rx/u_i2c_driver/sda_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "ikun_ov5640_rx/u_i2c_driver/sda_dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ikun_ov5640_rx/u_i2c_driver/sda_dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ikun_ov5640_rx/u_i2c_driver/st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ikun_ov5640_rx/u_i2c_driver/st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ikun_ov5640_rx/u_i2c_driver/st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ikun_ov5640_rx/u_i2c_driver/i2c_data_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ikun_ov5640_rx/u_i2c_driver/data_r" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP yScaleAmountNext0, operation Mode is: C+A*B.
+DSP Report: operator yScaleAmountNext0 is absorbed into DSP yScaleAmountNext0.
+DSP Report: operator yScaleAmountNext1 is absorbed into DSP yScaleAmountNext0.
+DSP Report: Generating DSP xScaleAmount1, operation Mode is: A*B.
+DSP Report: operator xScaleAmount1 is absorbed into DSP xScaleAmount1.
+DSP Report: Generating DSP coeff101, operation Mode is: (C:0x7f)+A*B.
+DSP Report: operator coeff101 is absorbed into DSP coeff101.
+DSP Report: operator coeff102 is absorbed into DSP coeff101.
+DSP Report: Generating DSP coeff001, operation Mode is: (C:0x7f)+A*B.
+DSP Report: operator coeff001 is absorbed into DSP coeff001.
+DSP Report: operator coeff002 is absorbed into DSP coeff001.
+DSP Report: Generating DSP writeNextValidLine1, operation Mode is: C+A*B.
+DSP Report: operator writeNextValidLine1 is absorbed into DSP writeNextValidLine1.
+DSP Report: operator writeNextValidLine2 is absorbed into DSP writeNextValidLine1.
+INFO: [Synth 8-4471] merging register 'encoder_g/de_q_reg' into 'encoder_b/de_q_reg' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:90]
+INFO: [Synth 8-4471] merging register 'encoder_g/de_reg_reg' into 'encoder_b/de_reg_reg' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:91]
+INFO: [Synth 8-4471] merging register 'encoder_g/c0_q_reg' into 'encoder_b/c0_q_reg' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:93]
+INFO: [Synth 8-4471] merging register 'encoder_g/c0_reg_reg' into 'encoder_b/c0_reg_reg' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:94]
+INFO: [Synth 8-4471] merging register 'encoder_g/c1_q_reg' into 'encoder_b/c1_q_reg' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:95]
+INFO: [Synth 8-4471] merging register 'encoder_g/c1_reg_reg' into 'encoder_b/c1_reg_reg' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:96]
+INFO: [Synth 8-4471] merging register 'encoder_r/de_q_reg' into 'encoder_b/de_q_reg' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:90]
+INFO: [Synth 8-4471] merging register 'encoder_r/de_reg_reg' into 'encoder_b/de_reg_reg' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:91]
+INFO: [Synth 8-4471] merging register 'encoder_r/c0_q_reg' into 'encoder_b/c0_q_reg' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:93]
+INFO: [Synth 8-4471] merging register 'encoder_r/c0_reg_reg' into 'encoder_b/c0_reg_reg' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:94]
+INFO: [Synth 8-4471] merging register 'encoder_r/c1_q_reg' into 'encoder_b/c1_q_reg' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:95]
+INFO: [Synth 8-4471] merging register 'encoder_r/c1_reg_reg' into 'encoder_b/c1_reg_reg' [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_hdmi_tx_rtl/dvi_encoder.v:96]
+WARNING: [Synth 8-3917] design top has port o_hdmi_oen driven by constant 1
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[10]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[9]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[8]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[7]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[6]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[5]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[4]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[3]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[2]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[1]
+WARNING: [Synth 8-3331] design video_scale has unconnected port i_des_image_y[0]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[7]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[6]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[5]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[4]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[3]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[2]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[1]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port i2c_data_r[0]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port cmos_h_pixel[12]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port cmos_v_pixel[12]
+WARNING: [Synth 8-3331] design i2c_ov5640_rgb565_cfg has unconnected port cmos_v_pixel[11]
+WARNING: [Synth 8-3331] design helai_OVsensor has unconnected port ov5640_clk_ce
+WARNING: [Synth 8-3331] design helai_OVsensor has unconnected port pclk_color
+WARNING: [Synth 8-6014] Unused sequential element ram_generate[0].ram_inst_i/ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element ram_generate[1].ram_inst_i/ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element ram_generate[2].ram_inst_i/ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element ram_generate[3].ram_inst_i/ram_reg was removed. 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ikun_video_scale/u_video_scale/\xBlend_reg[8] )
+INFO: [Synth 8-3886] merging instance 'hdmi_out/encoder_b/n0q_m_reg[0]' (FD) to 'hdmi_out/encoder_b/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_out/encoder_g/n0q_m_reg[0]' (FD) to 'hdmi_out/encoder_g/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_out/encoder_r/n0q_m_reg[0]' (FD) to 'hdmi_out/encoder_r/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ikun_sensor/ikun_ov5640_rx/i2c_ov5640/i2c_data_reg[23]' (FDC) to 'ikun_sensor/ikun_ov5640_rx/i2c_ov5640/i2c_data_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ikun_sensor/\ikun_ov5640_rx/i2c_ov5640/i2c_data_reg[14] )
+INFO: [Synth 8-3886] merging instance 'ikun_sensor/ikun_ov5640_rx/u_i2c_driver/addr_t_reg[15]' (FDCE) to 'ikun_sensor/ikun_ov5640_rx/u_i2c_driver/addr_t_reg[6]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1074.766 ; gain = 406.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+-------------------------------------+---------------+----------------+
+|Module Name    | RTL Object                          | Depth x Width | Implemented As | 
++---------------+-------------------------------------+---------------+----------------+
+|i2c_dri        | scl                                 | 128x1         | LUT            | 
+|i2c_dri        | sda_out                             | 128x1         | LUT            | 
+|helai_OVsensor | ikun_ov5640_rx/u_i2c_driver/scl     | 128x1         | LUT            | 
+|helai_OVsensor | ikun_ov5640_rx/u_i2c_driver/sda_out | 128x1         | LUT            | 
++---------------+-------------------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++-------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ramDualPort: | ram_reg    | 2 K x 24(WRITE_FIRST)  | W | R | 2 K x 24(WRITE_FIRST)  | W | R | Port A and B     | 1      | 1      | 
+|ramDualPort: | ram_reg    | 2 K x 24(WRITE_FIRST)  | W | R | 2 K x 24(WRITE_FIRST)  | W | R | Port A and B     | 1      | 1      | 
+|ramDualPort: | ram_reg    | 2 K x 24(WRITE_FIRST)  | W | R | 2 K x 24(WRITE_FIRST)  | W | R | Port A and B     | 1      | 1      | 
+|ramDualPort: | ram_reg    | 2 K x 24(WRITE_FIRST)  | W | R | 2 K x 24(WRITE_FIRST)  | W | R | Port A and B     | 1      | 1      | 
++-------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|video_scale | C+A*B        | 18     | 12     | 14     | -      | 25     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|video_scale | A*B          | 18     | 12     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|video_scale | (C:0x7f)+A*B | 17     | 8      | 7      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|video_scale | (C:0x7f)+A*B | 17     | 9      | 7      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|video_scale | C+A*B        | 18     | 11     | 14     | -      | 25     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_0/ram_generate[0].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_0/ram_generate[0].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_0/ram_generate[0].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_0/ram_generate[0].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_2/ram_generate[1].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_2/ram_generate[1].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_2/ram_generate[1].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_2/ram_generate[1].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_3/ram_generate[2].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_3/ram_generate[2].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_3/ram_generate[2].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_3/ram_generate[2].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_4/ram_generate[3].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_4/ram_generate[3].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_4/ram_generate[3].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/i_4/ram_generate[3].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:202]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:76]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:202]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:76]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_design_1/processing_system7_0/FCLK_CLK0' to pin 'u_design_1/processing_system7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'hdmi_clk/clk_hdmi' to pin 'hdmi_clk/bbstub_clk_hdmi/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'hdmi_clk/clk_hdmiX5' to pin 'hdmi_clk/bbstub_clk_hdmiX5/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'hdmi_clk/clk_sensor' to pin 'hdmi_clk/bbstub_clk_sensor/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'hdmi_clk/pclk_color' to pin 'hdmi_clk/bbstub_pclk_color/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1091.254 ; gain = 423.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1120.336 ; gain = 452.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++-------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ramDualPort: | ram_reg    | 2 K x 24(WRITE_FIRST)  | W | R | 2 K x 24(WRITE_FIRST)  | W | R | Port A and B     | 1      | 1      | 
+|ramDualPort: | ram_reg    | 2 K x 24(WRITE_FIRST)  | W | R | 2 K x 24(WRITE_FIRST)  | W | R | Port A and B     | 1      | 1      | 
+|ramDualPort: | ram_reg    | 2 K x 24(WRITE_FIRST)  | W | R | 2 K x 24(WRITE_FIRST)  | W | R | Port A and B     | 1      | 1      | 
+|ramDualPort: | ram_reg    | 2 K x 24(WRITE_FIRST)  | W | R | 2 K x 24(WRITE_FIRST)  | W | R | Port A and B     | 1      | 1      | 
++-------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:79]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:211]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:209]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:304]
+INFO: [Synth 8-3886] merging instance 'i_8854' (FDC) to 'i_8864'
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:202]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:76]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:202]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:76]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/helai_video_scale/video_scale.v:303]
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[0].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[0].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[0].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[0].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[1].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[1].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[1].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[1].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[2].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[2].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[2].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[2].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[3].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[3].ram_inst_i/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[3].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ikun_video_scale/u_video_scale/ramRB/ram_generate[3].ram_inst_i/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1187.168 ; gain = 519.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1191.809 ; gain = 523.910
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1191.809 ; gain = 523.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1191.809 ; gain = 523.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1191.809 ; gain = 523.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1191.848 ; gain = 523.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1191.848 ; gain = 523.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |design_1_auto_ds_0              |         1|
+|2     |design_1_auto_pc_0              |         1|
+|3     |design_1_s00_data_fifo_0        |         1|
+|4     |design_1_proc_sys_reset_0_0     |         1|
+|5     |design_1_processing_system7_0_0 |         1|
+|6     |design_1_uiFDMA_0_1             |         1|
+|7     |clk_wiz_0                       |         1|
+|8     |w_fifo                          |         1|
+|9     |r_fifo                          |         1|
+|10    |resize_fifo                     |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |clk_wiz_0                       |     1|
+|2     |design_1_auto_ds_0              |     1|
+|3     |design_1_auto_pc_0              |     1|
+|4     |design_1_proc_sys_reset_0_0     |     1|
+|5     |design_1_processing_system7_0_0 |     1|
+|6     |design_1_s00_data_fifo_0        |     1|
+|7     |design_1_uiFDMA_0_1             |     1|
+|8     |r_fifo                          |     1|
+|9     |resize_fifo                     |     1|
+|10    |w_fifo                          |     1|
+|11    |BUFG                            |     2|
+|12    |CARRY4                          |   205|
+|13    |DSP48E1                         |     4|
+|14    |DSP48E1_1                       |     1|
+|15    |LUT1                            |    38|
+|16    |LUT2                            |   385|
+|17    |LUT3                            |   362|
+|18    |LUT4                            |   317|
+|19    |LUT5                            |   425|
+|20    |LUT6                            |  1182|
+|21    |MUXF7                           |    12|
+|22    |OSERDESE2                       |     4|
+|23    |OSERDESE2_1                     |     4|
+|24    |RAMB18E1                        |     4|
+|25    |RAMB36E1                        |     4|
+|26    |FDCE                            |   615|
+|27    |FDPE                            |    12|
+|28    |FDRE                            |   286|
+|29    |FDSE                            |    12|
+|30    |IBUF                            |    11|
+|31    |OBUF                            |     4|
+|32    |OBUFDS                          |     4|
+|33    |OBUFT                           |     1|
++------+--------------------------------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+------------------------------+------+
+|      |Instance                             |Module                        |Cells |
++------+-------------------------------------+------------------------------+------+
+|1     |top                                  |                              |  5498|
+|2     |  u_design_1                         |design_1                      |  1387|
+|3     |    axi_interconnect_0               |design_1_axi_interconnect_0_0 |   864|
+|4     |      s00_couplers                   |s00_couplers_imp_O7FAN0       |   864|
+|5     |  hdmi_out                           |helai_hdmi_out                |   364|
+|6     |    encoder_b                        |dvi_encoder                   |   122|
+|7     |    encoder_g                        |dvi_encoder_3                 |   114|
+|8     |    encoder_r                        |dvi_encoder_4                 |   114|
+|9     |    reset_syn                        |asyn_rst_syn                  |     2|
+|10    |    serializer_b                     |serializer_10_to_1            |     2|
+|11    |    serializer_clk                   |serializer_10_to_1_5          |     2|
+|12    |    serializer_g                     |serializer_10_to_1_6          |     2|
+|13    |    serializer_r                     |serializer_10_to_1_7          |     2|
+|14    |  ikun_fdma_contrl                   |fdma_contrl                   |   459|
+|15    |  ikun_sensor                        |helai_OVsensor                |   438|
+|16    |    ikun_ov5640_rx                   |helai_ov5640_rx               |   438|
+|17    |      i2c_ov5640                     |i2c_ov5640_rgb565_cfg         |   239|
+|18    |      u_i2c_driver                   |i2c_dri                       |   146|
+|19    |      u_ov5640_rx                    |ov5640_rx                     |    53|
+|20    |  ikun_video_scale                   |helai_video_scale             |  2643|
+|21    |    u_video_scale                    |video_scale                   |  2615|
+|22    |      ramRB                          |ramFifo                       |   305|
+|23    |        \ram_generate[0].ram_inst_i  |ramDualPort                   |    14|
+|24    |        \ram_generate[1].ram_inst_i  |ramDualPort_0                 |    14|
+|25    |        \ram_generate[2].ram_inst_i  |ramDualPort_1                 |   110|
+|26    |        \ram_generate[3].ram_inst_i  |ramDualPort_2                 |   122|
+|27    |  video_timing                       |video_timing_control          |   154|
++------+-------------------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1191.848 ; gain = 523.949
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1191.848 ; gain = 363.664
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1191.848 ; gain = 523.949
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 234 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1191.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+186 Infos, 113 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1191.848 ; gain = 805.484
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1191.848 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/Video_scaler/V08_Zynq7020_OV5640_Resize_HDMI/project_1/project_1.runs/synth_2/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 10 23:12:36 2024...
