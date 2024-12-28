@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Wed Oct 23 11:26:16 2019
+# Process ID: 11260
+# Current directory: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.sdk/webtalk/webtalk.log
+# Journal file: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

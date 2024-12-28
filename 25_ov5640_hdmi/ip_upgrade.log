@@ -1,0 +1,256 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Oct 23 11:01:46 2019
+| Host         : cx-office running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_v_vid_in_axi4s_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_v_vid_in_axi4s_0_0 (xilinx.com:ip:v_vid_in_axi4s:4.0 (Rev. 9)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Oct 23 11:01:46 2019
+| Host         : cx-office running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_v_tc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_v_tc_0_0 (xilinx.com:ip:v_tc:6.1 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Oct 23 11:01:46 2019
+| Host         : cx-office running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_v_axi4s_vid_out_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_v_axi4s_vid_out_0_0 (xilinx.com:ip:v_axi4s_vid_out:4.0 (Rev. 10)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Oct 23 11:01:46 2019
+| Host         : cx-office running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_rst_ps7_0_50M_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_rst_ps7_0_50M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Oct 23 11:01:46 2019
+| Host         : cx-office running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ps7_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_ps7_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1 (Rev. 19)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Oct 23 11:01:46 2019
+| Host         : cx-office running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5 (Rev. 6)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_USE_AXI_NONSECURE with default value 0 : a parameter called PCW_USE_AXI_NONSECURE already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP0_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP0_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP1_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP1_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP0_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP1_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Oct 23 11:01:46 2019
+| Host         : cx-office running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ov5640_capture_data_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_ov5640_capture_data_0_1 (alientek.com:user:ov5640_capture_data:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Oct 23 11:01:46 2019
+| Host         : cx-office running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_vdma_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axi_vdma_0_0 (xilinx.com:ip:axi_vdma:6.3 (Rev. 6)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Oct 23 11:01:46 2019
+| Host         : cx-office running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_smc_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axi_smc_0 (xilinx.com:ip:smartconnect:1.0 (Rev. 10)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_axi_smc_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_axi_smc_0'. These changes may impact your design.
+
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Oct 23 11:01:46 2019
+| Host         : cx-office running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_dynclk_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axi_dynclk_0_0 (digilentinc.com:ip:axi_dynclk:1.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Oct 23 11:01:46 2019
+| Host         : cx-office running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_DVI_Transmitter_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_DVI_Transmitter_0_0 (openedv.com:user:DVI_Transmitter:1.0 (Rev. 1)) to Vivado generation flows.
+

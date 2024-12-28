@@ -1,0 +1,195 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct 23 11:00:01 2019
+# Process ID: 1884
+# Current directory: F:/ZYNQ/Embedded_System/ov5640_hdmi
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5168 F:\ZYNQ\Embedded_System\ov5640_hdmi\ov5640_hdmi.xpr
+# Log file: F:/ZYNQ/Embedded_System/ov5640_hdmi/vivado.log
+# Journal file: F:/ZYNQ/Embedded_System/ov5640_hdmi\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.xpr
+INFO: [Project 1-313] Project file moved from 'F:/ZYNQ/¡Ï∫Ω’ﬂ7020/ov5640_hdmi' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/ZYNQ/Embedded_System/ov5640_hdmi/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/EDA/xilinx/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_processing_system7_0_0
+design_1_axi_vdma_0_0
+design_1_axi_dynclk_0_0
+design_1_v_vid_in_axi4s_0_0
+design_1_v_tc_0_0
+design_1_v_axi4s_vid_out_0_0
+design_1_rst_ps7_0_50M_0
+design_1_axi_smc_0
+design_1_ps7_0_axi_periph_0
+design_1_ov5640_capture_data_0_1
+design_1_DVI_Transmitter_0_0
+design_1_xbar_0
+design_1_auto_pc_0
+
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 800.910 ; gain = 215.336
+update_compile_order -fileset sources_1
+open_bd_design {F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- openedv.com:user:DVI_Transmitter:1.0 - DVI_Transmitter_0
+Adding cell -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- alientek.com:user:ov5640_capture_data:1.0 - ov5640_capture_data_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ov5640_capture_data_0/cmos_frame_ce(undef) and /v_vid_in_axi4s_0/vid_io_in_ce(ce)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /DVI_Transmitter_0/reset_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /ov5640_capture_data_0/rst_n(rst)
+Successfully read diagram <design_1> from BD file <F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/design_1.bd>
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {design_1_axi_dynclk_0_0 design_1_rst_ps7_0_50M_0 design_1_v_tc_0_0 design_1_axi_vdma_0_0 design_1_axi_smc_0 design_1_ps7_0_axi_periph_0 design_1_v_axi4s_vid_out_0_0 design_1_processing_system7_0_0 design_1_ov5640_capture_data_0_1 design_1_DVI_Transmitter_0_0 design_1_v_vid_in_axi4s_0_0}] -log ip_upgrade.log
+Upgrading 'F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_DVI_Transmitter_0_0 to use current project options
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /DVI_Transmitter_0_upgraded_ipi/reset_n(rst)
+INFO: [IP_Flow 19-3420] Updated design_1_axi_dynclk_0_0 to use current project options
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ov5640_capture_data_0/rst_n(rst) and /axi_dynclk_0_upgraded_ipi/LOCKED_O(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /DVI_Transmitter_0/reset_n(rst) and /axi_dynclk_0_upgraded_ipi/LOCKED_O(undef)
+INFO: [IP_Flow 19-3420] Updated design_1_axi_smc_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_axi_vdma_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_ov5640_capture_data_0_1 to use current project options
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /ov5640_capture_data_0_upgraded_ipi/rst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /v_vid_in_axi4s_0/vid_io_in_ce(ce) and /ov5640_capture_data_0_upgraded_ipi/cmos_frame_ce(undef)
+INFO: [IP_Flow 19-3420] Updated design_1_processing_system7_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_ps7_0_axi_periph_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_rst_ps7_0_50M_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_v_axi4s_vid_out_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_v_tc_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_v_vid_in_axi4s_0_0 to use current project options
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ov5640_capture_data_0/cmos_frame_ce(undef) and /v_vid_in_axi4s_0_upgraded_ipi/vid_io_in_ce(ce)
+Wrote  : <F:\ZYNQ\Embedded_System\ov5640_hdmi\ov5640_hdmi.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/ZYNQ/Embedded_System/ov5640_hdmi/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1625.984 ; gain = 0.000
+export_ip_user_files -of_objects [get_ips {design_1_axi_dynclk_0_0 design_1_rst_ps7_0_50M_0 design_1_v_tc_0_0 design_1_axi_vdma_0_0 design_1_axi_smc_0 design_1_ps7_0_axi_periph_0 design_1_v_axi4s_vid_out_0_0 design_1_processing_system7_0_0 design_1_ov5640_capture_data_0_1 design_1_DVI_Transmitter_0_0 design_1_v_vid_in_axi4s_0_0}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_UIPARAM_DDR_PARTNO {MT41J128M16 HA-125}] [get_bd_cells processing_system7_0]
+endgroup
+generate_target all [get_files  F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-927] Following properties on pin /DVI_Transmitter_0/pclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /DVI_Transmitter_0/pclk_x5 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/REF_CLK_I have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/PXL_CLK_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/PXL_CLK_5X_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_axi_dynclk_0_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/s00_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /ov5640_capture_data_0/cmos_frame_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ov5640_capture_data_0_1_cmos_frame_clk 
+Wrote  : <F:\ZYNQ\Embedded_System\ov5640_hdmi\ov5640_hdmi.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dynclk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+Exporting to file f:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file f:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File f:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov5640_capture_data_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DVI_Transmitter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1625.984 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all design_1_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_vdma_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_v_vid_in_axi4s_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_v_tc_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_dynclk_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_v_axi4s_vid_out_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_smc_0] }
+catch { config_ip_cache -export [get_ips -all design_1_rst_ps7_0_50M_0] }
+catch { config_ip_cache -export [get_ips -all design_1_ov5640_capture_data_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_DVI_Transmitter_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xbar_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 2 {design_1_processing_system7_0_0_synth_1 design_1_axi_vdma_0_0_synth_1 design_1_v_vid_in_axi4s_0_0_synth_1 design_1_v_tc_0_0_synth_1 design_1_axi_dynclk_0_0_synth_1 design_1_v_axi4s_vid_out_0_0_synth_1 design_1_axi_smc_0_synth_1 design_1_rst_ps7_0_50M_0_synth_1 design_1_ov5640_capture_data_0_1_synth_1 design_1_DVI_Transmitter_0_0_synth_1 design_1_xbar_0_synth_1 design_1_auto_pc_0_synth_1}
+[Wed Oct 23 11:03:51 2019] Launched design_1_processing_system7_0_0_synth_1, design_1_axi_vdma_0_0_synth_1, design_1_v_vid_in_axi4s_0_0_synth_1, design_1_v_tc_0_0_synth_1, design_1_axi_dynclk_0_0_synth_1, design_1_v_axi4s_vid_out_0_0_synth_1, design_1_axi_smc_0_synth_1, design_1_rst_ps7_0_50M_0_synth_1, design_1_ov5640_capture_data_0_1_synth_1, design_1_DVI_Transmitter_0_0_synth_1, design_1_xbar_0_synth_1, design_1_auto_pc_0_synth_1...
+Run output will be captured here:
+design_1_processing_system7_0_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_axi_vdma_0_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_axi_vdma_0_0_synth_1/runme.log
+design_1_v_vid_in_axi4s_0_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_v_vid_in_axi4s_0_0_synth_1/runme.log
+design_1_v_tc_0_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_v_tc_0_0_synth_1/runme.log
+design_1_axi_dynclk_0_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_axi_dynclk_0_0_synth_1/runme.log
+design_1_v_axi4s_vid_out_0_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_v_axi4s_vid_out_0_0_synth_1/runme.log
+design_1_axi_smc_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_axi_smc_0_synth_1/runme.log
+design_1_rst_ps7_0_50M_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_rst_ps7_0_50M_0_synth_1/runme.log
+design_1_ov5640_capture_data_0_1_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_ov5640_capture_data_0_1_synth_1/runme.log
+design_1_DVI_Transmitter_0_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_DVI_Transmitter_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_xbar_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.ip_user_files/sim_scripts -ip_user_files_dir F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.ip_user_files -ipstatic_source_dir F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.cache/compile_simlib/modelsim} {questa=F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.cache/compile_simlib/questa} {riviera=F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.cache/compile_simlib/riviera} {activehdl=F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+make_wrapper -files [get_files F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Oct 23 11:04:56 2019] Launched design_1_axi_vdma_0_0_synth_1, design_1_v_vid_in_axi4s_0_0_synth_1, design_1_v_tc_0_0_synth_1, design_1_axi_dynclk_0_0_synth_1, design_1_v_axi4s_vid_out_0_0_synth_1, design_1_axi_smc_0_synth_1, design_1_rst_ps7_0_50M_0_synth_1, design_1_ov5640_capture_data_0_1_synth_1, design_1_DVI_Transmitter_0_0_synth_1, design_1_xbar_0_synth_1, design_1_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_axi_vdma_0_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_axi_vdma_0_0_synth_1/runme.log
+design_1_v_vid_in_axi4s_0_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_v_vid_in_axi4s_0_0_synth_1/runme.log
+design_1_v_tc_0_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_v_tc_0_0_synth_1/runme.log
+design_1_axi_dynclk_0_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_axi_dynclk_0_0_synth_1/runme.log
+design_1_v_axi4s_vid_out_0_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_v_axi4s_vid_out_0_0_synth_1/runme.log
+design_1_axi_smc_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_axi_smc_0_synth_1/runme.log
+design_1_rst_ps7_0_50M_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_rst_ps7_0_50M_0_synth_1/runme.log
+design_1_ov5640_capture_data_0_1_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_ov5640_capture_data_0_1_synth_1/runme.log
+design_1_DVI_Transmitter_0_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_DVI_Transmitter_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_xbar_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/design_1_auto_pc_0_synth_1/runme.log
+synth_1: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/synth_1/runme.log
+[Wed Oct 23 11:04:59 2019] Launched impl_1...
+Run output will be captured here: F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1625.984 ; gain = 0.000
+open_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 483 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1625.984 ; gain = 0.000
+INFO: [Common 17-344] 'open_run' was cancelled
+file mkdir F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.sdk
+write_hwdef -force  -file F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.sdk/design_1_wrapper.hdf
+file copy -force F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.runs/impl_1/design_1_wrapper.sysdef F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.sdk -hwspec F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.sdk -hwspec F:/ZYNQ/Embedded_System/ov5640_hdmi/ov5640_hdmi.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 23 11:26:30 2019...

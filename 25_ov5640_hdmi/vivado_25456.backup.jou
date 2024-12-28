@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec 27 21:32:20 2024
+# Process ID: 25456
+# Current directory: D:/BaiduNetdiskDownload/【正点原子】启明星ZYNQ开发板资料 资料盘(A盘)/启明星ZYNQ开发板资料盘(A盘)/4_SourceCode/2_Embedded_System/ZYNQ_7010_SDK/ZYNQ_7010_SDK/25_ov5640_hdmi
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20152 D:\BaiduNetdiskDownload\【正点原子】启明星ZYNQ开发板资料 资料盘(A盘)\启明星ZYNQ开发板资料盘(A盘)\4_SourceCode\2_Embedded_System\ZYNQ_7010_SDK\ZYNQ_7010_SDK\25_ov5640_hdmi\ov5640_hdmi.xpr
+# Log file: D:/BaiduNetdiskDownload/【正点原子】启明星ZYNQ开发板资料 资料盘(A盘)/启明星ZYNQ开发板资料盘(A盘)/4_SourceCode/2_Embedded_System/ZYNQ_7010_SDK/ZYNQ_7010_SDK/25_ov5640_hdmi/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/【正点原子】启明星ZYNQ开发板资料 资料盘(A盘)/启明星ZYNQ开发板资料盘(A盘)/4_SourceCode/2_Embedded_System/ZYNQ_7010_SDK/ZYNQ_7010_SDK/25_ov5640_hdmi\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/BaiduNetdiskDownload/【正点原子】启明星ZYNQ开发板资料 资料盘(A盘)/启明星ZYNQ开发板资料盘(A盘)/4_SourceCode/2_Embedded_System/ZYNQ_7010_SDK/ZYNQ_7010_SDK/25_ov5640_hdmi/ov5640_hdmi.xpr}
+update_compile_order -fileset sources_1

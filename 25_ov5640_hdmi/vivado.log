@@ -1,0 +1,107 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec 27 21:34:20 2024
+# Process ID: 30440
+# Current directory: D:/github_project/zyqn/zyqn/25_ov5640_hdmi
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent41300 D:\github_project\zyqn\zyqn\25_ov5640_hdmi\ov5640_hdmi.xpr
+# Log file: D:/github_project/zyqn/zyqn/25_ov5640_hdmi/vivado.log
+# Journal file: D:/github_project/zyqn/zyqn/25_ov5640_hdmi\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_project/zyqn/zyqn/25_ov5640_hdmi/ov5640_hdmi.xpr
+INFO: [Project 1-313] Project file moved from 'D:/BaiduNetdiskDownload/【正点原子】启明星ZYNQ开发板资料 资料盘(A盘)/启明星ZYNQ开发板资料盘(A盘)/4_SourceCode/2_Embedded_System/ZYNQ_7010_SDK/ZYNQ_7010_SDK/25_ov5640_hdmi' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/github_project/zyqn/zyqn/25_ov5640_hdmi/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_axi_vdma_0_0
+design_1_v_tc_0_0
+design_1_v_axi4s_vid_out_0_0
+design_1_axi_smc_0
+design_1_xbar_0
+design_1_ps7_0_axi_periph_0
+design_1_auto_pc_0
+
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1136.395 ; gain = 0.000
+update_compile_order -fileset sources_1
+save_project_as ov5640_hdmi_2 D:/github_project/zyqn/zyqn/ov5640_hdmi_2 -force
+WARNING: [IP_Flow 19-2162] IP 'design_1_auto_pc_0' is locked:
+* IP definition 'AXI Protocol Converter (2.1)' for IP 'design_1_auto_pc_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_axi_smc_0' is locked:
+* IP definition 'AXI SmartConnect (1.0)' for IP 'design_1_axi_smc_0' (customized with software release 2018.3) has a different revision in the IP Catalog. * IP 'design_1_axi_smc_0' contains one or more locked subcores.
+WARNING: [IP_Flow 19-2162] IP 'design_1_axi_vdma_0_0' is locked:
+* IP definition 'AXI Video Direct Memory Access (6.3)' for IP 'design_1_axi_vdma_0_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_v_axi4s_vid_out_0_0' is locked:
+* IP definition 'AXI4-Stream to Video Out (4.0)' for IP 'design_1_v_axi4s_vid_out_0_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_v_tc_0_0' is locked:
+* IP definition 'Video Timing Controller (6.1)' for IP 'design_1_v_tc_0_0' (customized with software release 2018.3) has a newer minor version in the IP Catalog. * The IP Data in the repository is incompatible with the current instance (despite having identical Version and Revision). You will need to upgrade the IP before viewing the customization and generating outputs.
+WARNING: [IP_Flow 19-2162] IP 'design_1_xbar_0' is locked:
+* IP definition 'AXI Crossbar (2.1)' for IP 'design_1_xbar_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_axi_vdma_0_0' is locked:
+* IP definition 'AXI Video Direct Memory Access (6.3)' for IP 'design_1_axi_vdma_0_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_v_tc_0_0' is locked:
+* IP definition 'Video Timing Controller (6.1)' for IP 'design_1_v_tc_0_0' (customized with software release 2018.3) has a newer minor version in the IP Catalog. * The IP Data in the repository is incompatible with the current instance (despite having identical Version and Revision). You will need to upgrade the IP before viewing the customization and generating outputs.
+WARNING: [IP_Flow 19-2162] IP 'design_1_v_axi4s_vid_out_0_0' is locked:
+* IP definition 'AXI4-Stream to Video Out (4.0)' for IP 'design_1_v_axi4s_vid_out_0_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_one_0' is locked:
+* IP definition 'Constant (1.1)' for IP 'bd_afc3_one_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_s00mmu_0' is locked:
+* IP definition 'SC MMU (1.0)' for IP 'bd_afc3_s00mmu_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_s00tr_0' is locked:
+* IP definition 'SC TRANSACTION_REGULATOR (1.0)' for IP 'bd_afc3_s00tr_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_s00sic_0' is locked:
+* IP definition 'SC SI_CONVERTER (1.0)' for IP 'bd_afc3_s00sic_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_sarn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_afc3_sarn_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_srn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_afc3_srn_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_s01mmu_0' is locked:
+* IP definition 'SC MMU (1.0)' for IP 'bd_afc3_s01mmu_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_s01tr_0' is locked:
+* IP definition 'SC TRANSACTION_REGULATOR (1.0)' for IP 'bd_afc3_s01tr_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_s01sic_0' is locked:
+* IP definition 'SC SI_CONVERTER (1.0)' for IP 'bd_afc3_s01sic_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_sawn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_afc3_sawn_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_swn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_afc3_swn_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_sbn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_afc3_sbn_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_m00arn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_afc3_m00arn_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_m00rn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_afc3_m00rn_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_m00awn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_afc3_m00awn_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_m00wn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_afc3_m00wn_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_m00bn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_afc3_m00bn_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_afc3_m00e_0' is locked:
+* IP definition 'SC EXIT (1.0)' for IP 'bd_afc3_m00e_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_axi_smc_0' is locked:
+* IP definition 'AXI SmartConnect (1.0)' for IP 'design_1_axi_smc_0' (customized with software release 2018.3) has a different revision in the IP Catalog. * IP 'design_1_axi_smc_0' contains one or more locked subcores.
+WARNING: [IP_Flow 19-2162] IP 'design_1_ps7_0_axi_periph_0' is locked:
+* IP definition 'AXI Interconnect (2.1)' for IP 'design_1_ps7_0_axi_periph_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_xbar_0' is locked:
+* IP definition 'AXI Crossbar (2.1)' for IP 'design_1_xbar_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_auto_pc_0' is locked:
+* IP definition 'AXI Protocol Converter (2.1)' for IP 'design_1_auto_pc_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_axi_vdma_0_0
+design_1_v_tc_0_0
+design_1_v_axi4s_vid_out_0_0
+design_1_axi_smc_0
+design_1_xbar_0
+design_1_ps7_0_axi_periph_0
+design_1_auto_pc_0
+
+save_project_as: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1136.395 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 27 21:36:30 2024...

@@ -15035,11 +15035,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Dec 25 12:57:33 UTC 2024</spirit:value>
+            <spirit:value>Fri Dec 27 14:45:35 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1cf8a8eb</spirit:value>
+            <spirit:value>9:795ae7be</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15050,7 +15050,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1cf8a8eb</spirit:value>
+            <spirit:value>9:795ae7be</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15066,11 +15066,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Dec 25 12:57:33 UTC 2024</spirit:value>
+            <spirit:value>Fri Dec 27 14:45:35 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1cf8a8eb</spirit:value>
+            <spirit:value>9:795ae7be</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15091,7 +15091,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:453ddce8</spirit:value>
+            <spirit:value>9:ea124ca3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15107,11 +15107,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Dec 25 12:57:33 UTC 2024</spirit:value>
+            <spirit:value>Fri Dec 27 14:45:35 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4c75afbb</spirit:value>
+            <spirit:value>9:82232b89</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15130,11 +15130,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Dec 25 12:57:33 UTC 2024</spirit:value>
+            <spirit:value>Fri Dec 27 14:45:35 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5841c0dc</spirit:value>
+            <spirit:value>9:a5823111</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15157,11 +15157,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Dec 25 12:57:33 UTC 2024</spirit:value>
+            <spirit:value>Fri Dec 27 14:45:36 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:453ddce8</spirit:value>
+            <spirit:value>9:ea124ca3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15177,11 +15177,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Dec 25 12:57:33 UTC 2024</spirit:value>
+            <spirit:value>Fri Dec 27 14:45:36 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4c75afbb</spirit:value>
+            <spirit:value>9:82232b89</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15200,11 +15200,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Dec 25 12:57:35 UTC 2024</spirit:value>
+            <spirit:value>Fri Dec 27 14:45:37 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5841c0dc</spirit:value>
+            <spirit:value>9:a5823111</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15222,11 +15222,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Dec 25 12:58:11 UTC 2024</spirit:value>
+            <spirit:value>Fri Dec 27 14:46:15 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1cf8a8eb</spirit:value>
+            <spirit:value>9:795ae7be</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -32444,6 +32444,22 @@
       <spirit:enumeration>3</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
+      <spirit:name>choice_list_7f27baa5</spirit:name>
+      <spirit:enumeration>DDR3_800D</spirit:enumeration>
+      <spirit:enumeration>DDR3_800E</spirit:enumeration>
+      <spirit:enumeration>DDR3_1066E</spirit:enumeration>
+      <spirit:enumeration>DDR3_1066F</spirit:enumeration>
+      <spirit:enumeration>DDR3_1066G</spirit:enumeration>
+      <spirit:enumeration>DDR3_1333F</spirit:enumeration>
+      <spirit:enumeration>DDR3_1333G</spirit:enumeration>
+      <spirit:enumeration>DDR3_1333H</spirit:enumeration>
+      <spirit:enumeration>DDR3_1333J</spirit:enumeration>
+      <spirit:enumeration>DDR3_1600G</spirit:enumeration>
+      <spirit:enumeration>DDR3_1600H</spirit:enumeration>
+      <spirit:enumeration>DDR3_1600J</spirit:enumeration>
+      <spirit:enumeration>DDR3_1600K</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
       <spirit:name>choice_list_82c3921b</spirit:name>
       <spirit:enumeration>0xE0008FFF</spirit:enumeration>
     </spirit:choice>
@@ -32783,20 +32799,6 @@
       <spirit:enumeration>MIO 2 .. 9</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_bbba28a6</spirit:name>
-      <spirit:enumeration>DDR3_1066E</spirit:enumeration>
-      <spirit:enumeration>DDR3_1066F</spirit:enumeration>
-      <spirit:enumeration>DDR3_1066G</spirit:enumeration>
-      <spirit:enumeration>DDR3_1333F</spirit:enumeration>
-      <spirit:enumeration>DDR3_1333G</spirit:enumeration>
-      <spirit:enumeration>DDR3_1333H</spirit:enumeration>
-      <spirit:enumeration>DDR3_1333J</spirit:enumeration>
-      <spirit:enumeration>DDR3_1600G</spirit:enumeration>
-      <spirit:enumeration>DDR3_1600H</spirit:enumeration>
-      <spirit:enumeration>DDR3_1600J</spirit:enumeration>
-      <spirit:enumeration>DDR3_1600K</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
       <spirit:name>choice_list_bc805c93</spirit:name>
       <spirit:enumeration>&lt;Select></spirit:enumeration>
       <spirit:enumeration>x1</spirit:enumeration>
@@ -32967,12 +32969,6 @@
       <spirit:enumeration>MIO 51</spirit:enumeration>
       <spirit:enumeration>MIO 52</spirit:enumeration>
       <spirit:enumeration>MIO 53</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_list_d88af9c3</spirit:name>
-      <spirit:enumeration>&lt;Select></spirit:enumeration>
-      <spirit:enumeration>Share reset pin</spirit:enumeration>
-      <spirit:enumeration>Separate reset pins</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_da0dabdb</spirit:name>
@@ -36060,7 +36056,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_S_AXI_HP1_DATA_WIDTH" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_S_AXI_HP1)) = 1) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_S_AXI_HP1_DATA_WIDTH" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_S_AXI_HP1)) = 1) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36084,7 +36080,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_S_AXI_HP2_DATA_WIDTH" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_S_AXI_HP2)) = 1) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_S_AXI_HP2_DATA_WIDTH" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_S_AXI_HP2)) = 1) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36108,7 +36104,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_S_AXI_HP3_DATA_WIDTH" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_S_AXI_HP3)) = 1) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_S_AXI_HP3_DATA_WIDTH" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_S_AXI_HP3)) = 1) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36765,7 +36761,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_IRQ_F2P_MODE" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_IRQ_F2P_INTR)) = 1) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_IRQ_F2P_MODE" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_IRQ_F2P_INTR)) = 1) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36866,7 +36862,7 @@
     <spirit:parameter>
       <spirit:name>PCW_UIPARAM_DDR_MEMORY_TYPE</spirit:name>
       <spirit:displayName>PCW UIPARAM DDR MEMORY TYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_MEMORY_TYPE" spirit:choiceRef="choice_list_c5ebb0ea" spirit:order="13000">DDR 3 (Low Voltage)</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_MEMORY_TYPE" spirit:choiceRef="choice_list_c5ebb0ea" spirit:order="13000">DDR 3</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_UIPARAM_DDR_ECC</spirit:name>
@@ -36898,7 +36894,7 @@
     <spirit:parameter>
       <spirit:name>PCW_UIPARAM_DDR_PARTNO</spirit:name>
       <spirit:displayName>PCW UIPARAM DDR PARTNO</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_PARTNO" spirit:choiceRef="choice_list_be8ca58c" spirit:order="13600">MT41K128M16 JT-125</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_PARTNO" spirit:choiceRef="choice_list_be8ca58c" spirit:order="13600">MT41J128M16 HA-125</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_UIPARAM_DDR_DRAM_WIDTH</spirit:name>
@@ -36927,7 +36923,7 @@
     <spirit:parameter>
       <spirit:name>PCW_UIPARAM_DDR_SPEED_BIN</spirit:name>
       <spirit:displayName>PCW UIPARAM DDR SPEED BIN</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_SPEED_BIN" spirit:choiceRef="choice_list_bbba28a6" spirit:order="14000">DDR3_1066F</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UIPARAM_DDR_SPEED_BIN" spirit:choiceRef="choice_list_7f27baa5" spirit:order="14000">DDR3_1066F</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -37553,7 +37549,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_ENET_RESET_SELECT</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_ENET_RESET_SELECT" spirit:choiceRef="choice_list_d88af9c3" spirit:order="6103">&lt;Select></spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_ENET_RESET_SELECT" spirit:choiceRef="choice_list_fe5d5471" spirit:order="6103">&lt;Select></spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>

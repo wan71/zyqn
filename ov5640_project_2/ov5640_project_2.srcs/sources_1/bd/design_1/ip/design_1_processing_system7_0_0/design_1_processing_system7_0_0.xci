@@ -1375,8 +1375,8 @@ assigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unass
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_UIPARAM_DDR_ENABLE">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_UIPARAM_DDR_FREQ_MHZ">533.333333</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_UIPARAM_DDR_HIGH_TEMP">Normal (0-85)</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_UIPARAM_DDR_MEMORY_TYPE">DDR 3 (Low Voltage)</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_UIPARAM_DDR_PARTNO">MT41K128M16 JT-125</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_UIPARAM_DDR_MEMORY_TYPE">DDR 3</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_UIPARAM_DDR_PARTNO">MT41J128M16 HA-125</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_UIPARAM_DDR_ROW_ADDR_COUNT">14</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_UIPARAM_DDR_SPEED_BIN">DDR3_1066F</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_UIPARAM_DDR_TRAIN_DATA_EYE">1</spirit:configurableElementValue>

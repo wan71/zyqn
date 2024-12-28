@@ -316,6 +316,12 @@
                   "auto_ds/S_AXI"
                 ]
               },
+              "s00_data_fifo_to_s00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "s00_data_fifo/M_AXI"
+                ]
+              },
               "auto_pc_to_s00_data_fifo": {
                 "interface_ports": [
                   "s00_data_fifo/S_AXI",
@@ -326,12 +332,6 @@
                 "interface_ports": [
                   "auto_ds/M_AXI",
                   "auto_pc/S_AXI"
-                ]
-              },
-              "s00_data_fifo_to_s00_couplers": {
-                "interface_ports": [
-                  "M_AXI",
-                  "s00_data_fifo/M_AXI"
                 ]
               }
             },
@@ -852,6 +852,9 @@
           "PCW_INCLUDE_ACP_TRANS_CHECK": {
             "value": "0"
           },
+          "PCW_IRQ_F2P_MODE": {
+            "value": "DIRECT"
+          },
           "PCW_MIO_14_IOTYPE": {
             "value": "LVCMOS 3.3V"
           },
@@ -1110,6 +1113,15 @@
           "PCW_S_AXI_HP0_ID_WIDTH": {
             "value": "6"
           },
+          "PCW_S_AXI_HP1_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP2_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP3_DATA_WIDTH": {
+            "value": "64"
+          },
           "PCW_TPIU_PERIPHERAL_CLKSRC": {
             "value": "External"
           },
@@ -1351,10 +1363,10 @@
             "value": "Normal (0-85)"
           },
           "PCW_UIPARAM_DDR_MEMORY_TYPE": {
-            "value": "DDR 3 (Low Voltage)"
+            "value": "DDR 3"
           },
           "PCW_UIPARAM_DDR_PARTNO": {
-            "value": "MT41K128M16 JT-125"
+            "value": "MT41J128M16 HA-125"
           },
           "PCW_UIPARAM_DDR_TRAIN_DATA_EYE": {
             "value": "1"
@@ -1508,18 +1520,6 @@
       }
     },
     "interface_nets": {
-      "FDMA_S_0_1": {
-        "interface_ports": [
-          "FDMA_S_0",
-          "uiFDMA_0/FDMA_S"
-        ]
-      },
-      "uiFDMA_0_M_AXI": {
-        "interface_ports": [
-          "uiFDMA_0/M_AXI",
-          "axi_interconnect_0/S00_AXI"
-        ]
-      },
       "processing_system7_0_FIXED_IO": {
         "interface_ports": [
           "FIXED_IO",
@@ -1536,6 +1536,18 @@
         "interface_ports": [
           "axi_interconnect_0/M00_AXI",
           "processing_system7_0/S_AXI_HP0"
+        ]
+      },
+      "uiFDMA_0_M_AXI": {
+        "interface_ports": [
+          "uiFDMA_0/M_AXI",
+          "axi_interconnect_0/S00_AXI"
+        ]
+      },
+      "FDMA_S_0_1": {
+        "interface_ports": [
+          "FDMA_S_0",
+          "uiFDMA_0/FDMA_S"
         ]
       }
     },
