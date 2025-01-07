@@ -3,9 +3,6 @@
 
 # XDC: new/system_wrapper1.xdc
 
-# IP: ip/fifo_in_32/fifo_in_32.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fifo_in_32 || ORIG_REF_NAME==fifo_in_32} -quiet] -quiet
-
 # Block Designs: bd/system/system.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system || ORIG_REF_NAME==system} -quiet] -quiet
 
@@ -54,9 +51,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xlco
 # IP: bd/system/ip/system_Bic_top_0_0/system_Bic_top_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_Bic_top_0_0 || ORIG_REF_NAME==system_Bic_top_0_0} -quiet] -quiet
 
-# IP: ip/fifo_in_32/fifo_in_32.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fifo_in_32 || ORIG_REF_NAME==fifo_in_32} -quiet] -quiet
-
 # IP: bd/system/ip/system_auto_us_0/system_auto_us_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_auto_us_0 || ORIG_REF_NAME==system_auto_us_0} -quiet] -quiet
 
@@ -75,10 +69,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_s02_
 # IP: bd/system/ip/system_auto_pc_1/system_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_auto_pc_1 || ORIG_REF_NAME==system_auto_pc_1} -quiet] -quiet
 
-# XDC: d:/FPGA/HDMI/bmp_hdmi1113/bmp_hdmi1113.gen/sources_1/ip/fifo_in_32/fifo_in_32.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_in_32 || ORIG_REF_NAME==fifo_in_32} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: d:/FPGA/HDMI/bmp_hdmi1113/bmp_hdmi1113.gen/sources_1/ip/fifo_in_32/fifo_in_32.xdc
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_in_32 || ORIG_REF_NAME==fifo_in_32} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: D:/FPGA/HDMI/bmp_hdmi1113/bmp_hdmi1113.gen/sources_1/bd/system/system_ooc.xdc
+# XDC: d:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.gen/sources_1/bd/system/system_ooc.xdc

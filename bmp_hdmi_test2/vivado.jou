@@ -2,17 +2,21 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Dec 25 21:07:36 2024
-# Process ID: 13324
+# Start of session at: Mon Jan  6 21:50:28 2025
+# Process ID: 1564
 # Current directory: D:/github_project/zyqn/zyqn/bmp_hdmi_test2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32980 D:\github_project\zyqn\zyqn\bmp_hdmi_test2\bmp_hdmi_test2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23692 D:\github_project\zyqn\zyqn\bmp_hdmi_test2\bmp_hdmi_test2.xpr
 # Log file: D:/github_project/zyqn/zyqn/bmp_hdmi_test2/vivado.log
 # Journal file: D:/github_project/zyqn/zyqn/bmp_hdmi_test2\vivado.jou
 #-----------------------------------------------------------
-start_gui
-open_project D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.xpr
+sstart_guioopen_project D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.xpr
 update_compile_order -fileset sources_1
+update_module_reference system_Bic_top_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
 open_run impl_1
+write_hw_platform -fixed -include_bit -force -file D:/github_project/zyqn/zyqn/bmp_hdmi_test2/vitis/system_wrapper.xsa
 open_hw_manager
 connect_hw_server -allow_non_jtag
 open_hw_target
@@ -21,13 +25,57 @@ set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_te
 set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
 current_hw_device [get_hw_devices xc7z010_1]
 refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+close_design
+update_module_reference system_Bic_top_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file D:/github_project/zyqn/zyqn/bmp_hdmi_test2/vitis/system_wrapper.xsa
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
 set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
 set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
-set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
-program_hw_devices [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
 refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+update_module_reference system_Bic_top_0_0
+close_bd_design [get_bd_designs system]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+close_design
+reset_run synth_1
+reset_run system_Bic_top_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file D:/github_project/zyqn/zyqn/bmp_hdmi_test2/vitis/system_wrapper.xsa
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
 set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
 set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
-set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
-program_hw_devices [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
 refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

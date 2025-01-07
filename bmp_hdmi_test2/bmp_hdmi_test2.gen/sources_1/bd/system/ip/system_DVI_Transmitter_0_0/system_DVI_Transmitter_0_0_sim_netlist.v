@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu Jun  8 15:25:46 2023
-// Host        : DESKTOP-Q5T8P6I running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               f:/2020_project/ZYNQ_Vitis_7010/23_sd_bmp_hdmi/sd_bmp_hdmi.gen/sources_1/bd/system/ip/system_DVI_Transmitter_0_0/system_DVI_Transmitter_0_0_sim_netlist.v
+// Date        : Fri Jan  3 01:18:23 2025
+// Host        : DESKTOP-3OAFHV8 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim -rename_top system_DVI_Transmitter_0_0 -prefix
+//               system_DVI_Transmitter_0_0_ system_DVI_Transmitter_0_0_sim_netlist.v
 // Design      : system_DVI_Transmitter_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,66 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_DVI_Transmitter_0_0,dvi_transmitter_top,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "package_project" *) 
-(* X_CORE_INFO = "dvi_transmitter_top,Vivado 2020.2" *) 
-(* NotValidForBitStream *)
-module system_DVI_Transmitter_0_0
-   (pclk,
-    pclk_x5,
-    reset_n,
-    video_din,
-    video_hsync,
-    video_vsync,
-    video_de,
-    tmds_clk_p,
-    tmds_clk_n,
-    tmds_data_p,
-    tmds_data_n,
-    tmds_oen);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 pclk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME pclk, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input pclk;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 pclk_x5 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME pclk_x5, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input pclk_x5;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME reset_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input reset_n;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:vid_io:1.0 Video_In DATA" *) input [23:0]video_din;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:vid_io:1.0 Video_In HSYNC" *) input video_hsync;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:vid_io:1.0 Video_In VSYNC" *) input video_vsync;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:vid_io:1.0 Video_In ACTIVE_VIDEO" *) input video_de;
-  (* X_INTERFACE_INFO = "openedv.com:user:TMDS:1.0 TMDS tmds_clk_p" *) output tmds_clk_p;
-  (* X_INTERFACE_INFO = "openedv.com:user:TMDS:1.0 TMDS tmds_clk_n" *) output tmds_clk_n;
-  (* X_INTERFACE_INFO = "openedv.com:user:TMDS:1.0 TMDS tmds_data_p" *) output [2:0]tmds_data_p;
-  (* X_INTERFACE_INFO = "openedv.com:user:TMDS:1.0 TMDS tmds_data_n" *) output [2:0]tmds_data_n;
-  output tmds_oen;
-
-  wire \<const1> ;
-  wire pclk;
-  wire pclk_x5;
-  wire reset_n;
-  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire tmds_clk_n;
-  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire tmds_clk_p;
-  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire [2:0]tmds_data_n;
-  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire [2:0]tmds_data_p;
-  wire video_de;
-  wire [23:0]video_din;
-  wire video_hsync;
-  wire video_vsync;
-
-  assign tmds_oen = \<const1> ;
-  VCC VCC
-       (.P(\<const1> ));
-  system_DVI_Transmitter_0_0_dvi_transmitter_top inst
-       (.pclk(pclk),
-        .pclk_x5(pclk_x5),
-        .reset_n(reset_n),
-        .tmds_clk_n(tmds_clk_n),
-        .tmds_clk_p(tmds_clk_p),
-        .tmds_data_n(tmds_data_n),
-        .tmds_data_p(tmds_data_p),
-        .video_de(video_de),
-        .video_din(video_din),
-        .video_hsync(video_hsync),
-        .video_vsync(video_vsync));
-endmodule
-
-(* ORIG_REF_NAME = "asyn_rst_syn" *) 
 module system_DVI_Transmitter_0_0_asyn_rst_syn
    (AR,
     pclk,
@@ -105,7 +45,6 @@ module system_DVI_Transmitter_0_0_asyn_rst_syn
         .Q(AR));
 endmodule
 
-(* ORIG_REF_NAME = "dvi_encoder" *) 
 module system_DVI_Transmitter_0_0_dvi_encoder
    (de_reg,
     Q,
@@ -3518,7 +3457,6 @@ module system_DVI_Transmitter_0_0_dvi_encoder_1
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "dvi_transmitter_top" *) 
 module system_DVI_Transmitter_0_0_dvi_transmitter_top
    (tmds_data_p,
     tmds_data_n,
@@ -3638,7 +3576,6 @@ module system_DVI_Transmitter_0_0_dvi_transmitter_top
         .serial_data_out(tmds_data_serial_2));
 endmodule
 
-(* ORIG_REF_NAME = "serializer_10_to_1" *) 
 module system_DVI_Transmitter_0_0_serializer_10_to_1
    (serial_data_out,
     pclk_x5,
@@ -4217,6 +4154,65 @@ module system_DVI_Transmitter_0_0_serializer_10_to_1_4
         .TCE(1'b0),
         .TFB(NLW_OSERDESE2_Slave_TFB_UNCONNECTED),
         .TQ(NLW_OSERDESE2_Slave_TQ_UNCONNECTED));
+endmodule
+
+(* CHECK_LICENSE_TYPE = "system_DVI_Transmitter_0_0,dvi_transmitter_top,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "package_project" *) 
+(* X_CORE_INFO = "dvi_transmitter_top,Vivado 2020.2" *) 
+(* NotValidForBitStream *)
+module system_DVI_Transmitter_0_0
+   (pclk,
+    pclk_x5,
+    reset_n,
+    video_din,
+    video_hsync,
+    video_vsync,
+    video_de,
+    tmds_clk_p,
+    tmds_clk_n,
+    tmds_data_p,
+    tmds_data_n,
+    tmds_oen);
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 pclk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME pclk, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input pclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 pclk_x5 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME pclk_x5, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input pclk_x5;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME reset_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input reset_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:vid_io:1.0 Video_In DATA" *) input [23:0]video_din;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:vid_io:1.0 Video_In HSYNC" *) input video_hsync;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:vid_io:1.0 Video_In VSYNC" *) input video_vsync;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:vid_io:1.0 Video_In ACTIVE_VIDEO" *) input video_de;
+  (* X_INTERFACE_INFO = "openedv.com:user:TMDS:1.0 TMDS tmds_clk_p" *) output tmds_clk_p;
+  (* X_INTERFACE_INFO = "openedv.com:user:TMDS:1.0 TMDS tmds_clk_n" *) output tmds_clk_n;
+  (* X_INTERFACE_INFO = "openedv.com:user:TMDS:1.0 TMDS tmds_data_p" *) output [2:0]tmds_data_p;
+  (* X_INTERFACE_INFO = "openedv.com:user:TMDS:1.0 TMDS tmds_data_n" *) output [2:0]tmds_data_n;
+  output tmds_oen;
+
+  wire \<const1> ;
+  wire pclk;
+  wire pclk_x5;
+  wire reset_n;
+  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire tmds_clk_n;
+  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire tmds_clk_p;
+  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire [2:0]tmds_data_n;
+  (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire [2:0]tmds_data_p;
+  wire video_de;
+  wire [23:0]video_din;
+  wire video_hsync;
+  wire video_vsync;
+
+  assign tmds_oen = \<const1> ;
+  VCC VCC
+       (.P(\<const1> ));
+  system_DVI_Transmitter_0_0_dvi_transmitter_top inst
+       (.pclk(pclk),
+        .pclk_x5(pclk_x5),
+        .reset_n(reset_n),
+        .tmds_clk_n(tmds_clk_n),
+        .tmds_clk_p(tmds_clk_p),
+        .tmds_data_n(tmds_data_n),
+        .tmds_data_p(tmds_data_p),
+        .video_de(video_de),
+        .video_din(video_din),
+        .video_hsync(video_hsync),
+        .video_vsync(video_vsync));
 endmodule
 `ifndef GLBL
 `define GLBL

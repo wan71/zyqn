@@ -22,45 +22,24 @@
                             "slave_index": 0,
                             "bscan_switch_index": 0
                         },
-                        "uuid": "23E7D65A79BC59F7BC47406C1714DFAE",
+                        "uuid": "23e7d65a79bc59f7bc47406c1714dfae",
                         "pins": [
                             {
                                 "name": "probe0",
                                 "id": 0,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
-                                "isVector": true,
+                                "isVector": false,
                                 "leftIndex": 0,
-                                "rightIndex": 7,
+                                "rightIndex": 0,
                                 "portIndex": 0,
                                 "nets": [
                                     {
-                                        "name": "system_i/Bic_top_0/inst/s_axis_tdata",
+                                        "name": "system_i/Bic_top_0/inst/readData00",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[7]"
-                                            },
-                                            {
-                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[6]"
-                                            },
-                                            {
-                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[5]"
-                                            },
-                                            {
-                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[4]"
-                                            },
-                                            {
-                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[3]"
-                                            },
-                                            {
-                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[2]"
-                                            },
-                                            {
-                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[1]"
-                                            },
-                                            {
-                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[0]"
+                                                "name": "system_i/Bic_top_0/inst/readData00[0]"
                                             }
                                         ]
                                     }
@@ -73,8 +52,62 @@
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 7,
+                                "rightIndex": 11,
                                 "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "system_i/Bic_top_0/inst/writeRowCount",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeRowCount[11]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeRowCount[10]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeRowCount[9]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeRowCount[8]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeRowCount[7]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeRowCount[6]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeRowCount[5]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeRowCount[4]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeRowCount[3]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeRowCount[2]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeRowCount[1]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeRowCount[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 2,
                                 "nets": [
                                     {
                                         "name": "system_i/Bic_top_0/inst/m_axis_tdata",
@@ -109,23 +142,6 @@
                                 ]
                             },
                             {
-                                "name": "probe2",
-                                "id": 2,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": false,
-                                "leftIndex": 0,
-                                "rightIndex": 0,
-                                "portIndex": 2,
-                                "nets": [
-                                    {
-                                        "name": "system_i/Bic_top_0/inst/clk",
-                                        "isBus": false,
-                                        "parentNetId": 16
-                                    }
-                                ]
-                            },
-                            {
                                 "name": "probe3",
                                 "id": 3,
                                 "type": "DATA_TRIGGER",
@@ -136,8 +152,13 @@
                                 "portIndex": 3,
                                 "nets": [
                                     {
-                                        "name": "system_i/Bic_top_0/inst/fifo_empty",
-                                        "isBus": false
+                                        "name": "system_i/Bic_top_0/inst/readData01",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/readData01[0]"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -146,14 +167,52 @@
                                 "id": 4,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
-                                "isVector": false,
+                                "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 0,
+                                "rightIndex": 11,
                                 "portIndex": 4,
                                 "nets": [
                                     {
-                                        "name": "system_i/Bic_top_0/inst/fifo_full",
-                                        "isBus": false
+                                        "name": "system_i/Bic_top_0/inst/writeColCount",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeColCount[11]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeColCount[10]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeColCount[9]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeColCount[8]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeColCount[7]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeColCount[6]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeColCount[5]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeColCount[4]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeColCount[3]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeColCount[2]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeColCount[1]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeColCount[0]"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -162,14 +221,52 @@
                                 "id": 5,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
-                                "isVector": false,
+                                "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 0,
+                                "rightIndex": 11,
                                 "portIndex": 5,
                                 "nets": [
                                     {
-                                        "name": "system_i/Bic_top_0/inst/fifo_rd_en",
-                                        "isBus": false
+                                        "name": "system_i/Bic_top_0/inst/writeNextValidLine",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeNextValidLine[11]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeNextValidLine[10]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeNextValidLine[9]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeNextValidLine[8]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeNextValidLine[7]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeNextValidLine[6]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeNextValidLine[5]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeNextValidLine[4]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeNextValidLine[3]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeNextValidLine[2]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeNextValidLine[1]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeNextValidLine[0]"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -184,8 +281,13 @@
                                 "portIndex": 6,
                                 "nets": [
                                     {
-                                        "name": "system_i/Bic_top_0/inst/fifo_wr_en",
-                                        "isBus": false
+                                        "name": "system_i/Bic_top_0/inst/readData10",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/readData10[0]"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -194,14 +296,40 @@
                                 "id": 7,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
-                                "isVector": false,
+                                "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 0,
+                                "rightIndex": 7,
                                 "portIndex": 7,
                                 "nets": [
                                     {
-                                        "name": "system_i/Bic_top_0/inst/m_axis_tlast",
-                                        "isBus": false
+                                        "name": "system_i/Bic_top_0/inst/readData11",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/readData11[7]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/readData11[6]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/readData11[5]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/readData11[4]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/readData11[3]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/readData11[2]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/readData11[1]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/readData11[0]"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -210,14 +338,40 @@
                                 "id": 8,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
-                                "isVector": false,
+                                "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 0,
+                                "rightIndex": 7,
                                 "portIndex": 8,
                                 "nets": [
                                     {
-                                        "name": "system_i/Bic_top_0/inst/m_axis_tready",
-                                        "isBus": false
+                                        "name": "system_i/Bic_top_0/inst/s_axis_tdata",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[7]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[6]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[5]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[4]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[3]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[2]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[1]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/s_axis_tdata[0]"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -226,14 +380,25 @@
                                 "id": 9,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
-                                "isVector": false,
+                                "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 0,
+                                "rightIndex": 2,
                                 "portIndex": 9,
                                 "nets": [
                                     {
-                                        "name": "system_i/Bic_top_0/inst/m_axis_tvalid",
-                                        "isBus": false
+                                        "name": "system_i/Bic_top_0/inst/fillCount",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/fillCount[2]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/fillCount[1]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/fillCount[0]"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -242,14 +407,22 @@
                                 "id": 10,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
-                                "isVector": false,
+                                "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 0,
+                                "rightIndex": 1,
                                 "portIndex": 10,
                                 "nets": [
                                     {
-                                        "name": "system_i/Bic_top_0/inst/s_axis_tlast",
-                                        "isBus": false
+                                        "name": "system_i/Bic_top_0/inst/writeState",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeState[1]"
+                                            },
+                                            {
+                                                "name": "system_i/Bic_top_0/inst/writeState[0]"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -264,7 +437,7 @@
                                 "portIndex": 11,
                                 "nets": [
                                     {
-                                        "name": "system_i/Bic_top_0/inst/s_axis_tready",
+                                        "name": "system_i/Bic_top_0/inst/advanceWrite",
                                         "isBus": false
                                     }
                                 ]
@@ -280,78 +453,184 @@
                                 "portIndex": 12,
                                 "nets": [
                                     {
-                                        "name": "system_i/Bic_top_0/inst/s_axis_tvalid",
+                                        "name": "system_i/Bic_top_0/inst/allDataWritten",
                                         "isBus": false
                                     }
                                 ]
-                            }
-                        ]
-                    },
-                    {
-                        "type": "ILA_V3",
-                        "name": "u_ila_1",
-                        "spec": "labtools_ila_v6",
-                        "core_location": {
-                            "user_chain": 1,
-                            "slave_index": 1,
-                            "bscan_switch_index": 0
-                        },
-                        "uuid": "3B505A030738513C98471D25F5B1F848",
-                        "pins": [
+                            },
                             {
-                                "name": "probe0",
+                                "name": "probe13",
                                 "id": 13,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
                                 "leftIndex": 0,
                                 "rightIndex": 0,
-                                "portIndex": 0,
+                                "portIndex": 13,
                                 "nets": [
                                     {
-                                        "name": "system_i/Bic_top_0/inst/rst_n",
+                                        "name": "system_i/Bic_top_0/inst/discardInput",
                                         "isBus": false
                                     }
                                 ]
-                            }
-                        ]
-                    }
-                ],
-                "parent_nets": [
-                    {
-                        "id": 16,
-                        "name": "system_i/processing_system7_0/inst/FCLK_CLK1",
-                        "state_reg": [
+                            },
                             {
-                                "name": "u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/current_state_reg[0]",
-                                "states": [
+                                "name": "probe14",
+                                "id": 14,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 14,
+                                "nets": [
                                     {
-                                        "name": "RESET_ADDR",
-                                        "val": "0000001"
-                                    },
+                                        "name": "system_i/Bic_top_0/inst/enableNextDin",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe15",
+                                "id": 15,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 15,
+                                "nets": [
                                     {
-                                        "name": "REQUEST_READ",
-                                        "val": "0000010"
-                                    },
+                                        "name": "system_i/Bic_top_0/inst/forceRead",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe16",
+                                "id": 16,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 16,
+                                "nets": [
                                     {
-                                        "name": "WAIT_READ_ACK",
-                                        "val": "0000100"
-                                    },
+                                        "name": "system_i/Bic_top_0/inst/i_vid_de",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe17",
+                                "id": 17,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 17,
+                                "nets": [
                                     {
-                                        "name": "OUTPUT_DATA",
-                                        "val": "0001000"
-                                    },
+                                        "name": "system_i/Bic_top_0/inst/i_vid_vs",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe18",
+                                "id": 18,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 18,
+                                "nets": [
                                     {
-                                        "name": "IDLE",
-                                        "val": "0010000"
-                                    },
+                                        "name": "system_i/Bic_top_0/inst/m_axis_tready",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe19",
+                                "id": 19,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 19,
+                                "nets": [
                                     {
-                                        "name": "INCREMENT_ADDRESS",
-                                        "val": "1000000"
-                                    },
+                                        "name": "system_i/Bic_top_0/inst/m_axis_tvalid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe20",
+                                "id": 20,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 20,
+                                "nets": [
                                     {
-                                        "name": "INCREMENT_BLOCK",
-                                        "val": "0100000"
+                                        "name": "system_i/Bic_top_0/inst/o_vid_fifo_read",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe21",
+                                "id": 21,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 21,
+                                "nets": [
+                                    {
+                                        "name": "system_i/Bic_top_0/inst/s_axis_tlast",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe22",
+                                "id": 22,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 22,
+                                "nets": [
+                                    {
+                                        "name": "system_i/Bic_top_0/inst/s_axis_tready",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe23",
+                                "id": 23,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 23,
+                                "nets": [
+                                    {
+                                        "name": "system_i/Bic_top_0/inst/s_axis_tvalid",
+                                        "isBus": false
                                     }
                                 ]
                             }

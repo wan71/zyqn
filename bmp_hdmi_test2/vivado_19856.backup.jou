@@ -1,0 +1,613 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jan  5 22:26:48 2025
+# Process ID: 19856
+# Current directory: D:/github_project/zyqn/zyqn/bmp_hdmi_test2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15100 D:\github_project\zyqn\zyqn\bmp_hdmi_test2\bmp_hdmi_test2.xpr
+# Log file: D:/github_project/zyqn/zyqn/bmp_hdmi_test2/vivado.log
+# Journal file: D:/github_project/zyqn/zyqn/bmp_hdmi_test2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+update_module_reference system_Bic_top_0_0
+update_compile_order -fileset sources_1
+update_module_reference system_Bic_top_0_0
+update_module_reference system_Bic_top_0_0
+update_module_reference system_Bic_top_0_0
+update_module_reference system_Bic_top_0_0
+update_module_reference system_Bic_top_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+close_design
+update_module_reference system_Bic_top_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list system_i/processing_system7_0/inst/FCLK_CLK1 ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {system_i/Bic_top_0/inst/s_axis_tdata[0]} {system_i/Bic_top_0/inst/s_axis_tdata[1]} {system_i/Bic_top_0/inst/s_axis_tdata[2]} {system_i/Bic_top_0/inst/s_axis_tdata[3]} {system_i/Bic_top_0/inst/s_axis_tdata[4]} {system_i/Bic_top_0/inst/s_axis_tdata[5]} {system_i/Bic_top_0/inst/s_axis_tdata[6]} {system_i/Bic_top_0/inst/s_axis_tdata[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {system_i/Bic_top_0/inst/m_axis_tdata[0]} {system_i/Bic_top_0/inst/m_axis_tdata[1]} {system_i/Bic_top_0/inst/m_axis_tdata[2]} {system_i/Bic_top_0/inst/m_axis_tdata[3]} {system_i/Bic_top_0/inst/m_axis_tdata[4]} {system_i/Bic_top_0/inst/m_axis_tdata[5]} {system_i/Bic_top_0/inst/m_axis_tdata[6]} {system_i/Bic_top_0/inst/m_axis_tdata[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {system_i/Bic_top_0/inst/readData11[0]} {system_i/Bic_top_0/inst/readData11[1]} {system_i/Bic_top_0/inst/readData11[2]} {system_i/Bic_top_0/inst/readData11[3]} {system_i/Bic_top_0/inst/readData11[4]} {system_i/Bic_top_0/inst/readData11[5]} {system_i/Bic_top_0/inst/readData11[6]} {system_i/Bic_top_0/inst/readData11[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 9 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {system_i/Bic_top_0/inst/writeRowCount[0]} {system_i/Bic_top_0/inst/writeRowCount[1]} {system_i/Bic_top_0/inst/writeRowCount[2]} {system_i/Bic_top_0/inst/writeRowCount[3]} {system_i/Bic_top_0/inst/writeRowCount[4]} {system_i/Bic_top_0/inst/writeRowCount[5]} {system_i/Bic_top_0/inst/writeRowCount[6]} {system_i/Bic_top_0/inst/writeRowCount[7]} {system_i/Bic_top_0/inst/writeRowCount[8]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {system_i/Bic_top_0/inst/writeColCount[0]} {system_i/Bic_top_0/inst/writeColCount[1]} {system_i/Bic_top_0/inst/writeColCount[2]} {system_i/Bic_top_0/inst/writeColCount[3]} {system_i/Bic_top_0/inst/writeColCount[4]} {system_i/Bic_top_0/inst/writeColCount[5]} {system_i/Bic_top_0/inst/writeColCount[6]} {system_i/Bic_top_0/inst/writeColCount[7]} {system_i/Bic_top_0/inst/writeColCount[8]} {system_i/Bic_top_0/inst/writeColCount[9]} {system_i/Bic_top_0/inst/writeColCount[10]} {system_i/Bic_top_0/inst/writeColCount[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list system_i/Bic_top_0/inst/forceRead ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list system_i/Bic_top_0/inst/i_vid_vs ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list system_i/Bic_top_0/inst/m_axis_tready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list system_i/Bic_top_0/inst/m_axis_tvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list system_i/Bic_top_0/inst/s_axis_tlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list system_i/Bic_top_0/inst/s_axis_tready ]]
+open_bd_design {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.srcs/sources_1/bd/system/system.bd}
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list system_i/processing_system7_0/inst/FCLK_CLK1 ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {system_i/Bic_top_0/inst/s_axis_tdata[0]} {system_i/Bic_top_0/inst/s_axis_tdata[1]} {system_i/Bic_top_0/inst/s_axis_tdata[2]} {system_i/Bic_top_0/inst/s_axis_tdata[3]} {system_i/Bic_top_0/inst/s_axis_tdata[4]} {system_i/Bic_top_0/inst/s_axis_tdata[5]} {system_i/Bic_top_0/inst/s_axis_tdata[6]} {system_i/Bic_top_0/inst/s_axis_tdata[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {system_i/Bic_top_0/inst/m_axis_tdata[0]} {system_i/Bic_top_0/inst/m_axis_tdata[1]} {system_i/Bic_top_0/inst/m_axis_tdata[2]} {system_i/Bic_top_0/inst/m_axis_tdata[3]} {system_i/Bic_top_0/inst/m_axis_tdata[4]} {system_i/Bic_top_0/inst/m_axis_tdata[5]} {system_i/Bic_top_0/inst/m_axis_tdata[6]} {system_i/Bic_top_0/inst/m_axis_tdata[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {system_i/Bic_top_0/inst/readData11[0]} {system_i/Bic_top_0/inst/readData11[1]} {system_i/Bic_top_0/inst/readData11[2]} {system_i/Bic_top_0/inst/readData11[3]} {system_i/Bic_top_0/inst/readData11[4]} {system_i/Bic_top_0/inst/readData11[5]} {system_i/Bic_top_0/inst/readData11[6]} {system_i/Bic_top_0/inst/readData11[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 9 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {system_i/Bic_top_0/inst/writeRowCount[0]} {system_i/Bic_top_0/inst/writeRowCount[1]} {system_i/Bic_top_0/inst/writeRowCount[2]} {system_i/Bic_top_0/inst/writeRowCount[3]} {system_i/Bic_top_0/inst/writeRowCount[4]} {system_i/Bic_top_0/inst/writeRowCount[5]} {system_i/Bic_top_0/inst/writeRowCount[6]} {system_i/Bic_top_0/inst/writeRowCount[7]} {system_i/Bic_top_0/inst/writeRowCount[8]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {system_i/Bic_top_0/inst/writeColCount[0]} {system_i/Bic_top_0/inst/writeColCount[1]} {system_i/Bic_top_0/inst/writeColCount[2]} {system_i/Bic_top_0/inst/writeColCount[3]} {system_i/Bic_top_0/inst/writeColCount[4]} {system_i/Bic_top_0/inst/writeColCount[5]} {system_i/Bic_top_0/inst/writeColCount[6]} {system_i/Bic_top_0/inst/writeColCount[7]} {system_i/Bic_top_0/inst/writeColCount[8]} {system_i/Bic_top_0/inst/writeColCount[9]} {system_i/Bic_top_0/inst/writeColCount[10]} {system_i/Bic_top_0/inst/writeColCount[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list system_i/Bic_top_0/inst/forceRead ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list system_i/Bic_top_0/inst/i_vid_vs ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list system_i/Bic_top_0/inst/m_axis_tready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list system_i/Bic_top_0/inst/m_axis_tvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list system_i/Bic_top_0/inst/s_axis_tlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list system_i/Bic_top_0/inst/s_axis_tready ]]
+save_constraints
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file D:/github_project/zyqn/zyqn/bmp_hdmi_test2/vitis/system_wrapper.xsa
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/readData11} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/forceRead} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+update_module_reference system_Bic_top_0_0
+update_module_reference system_Bic_top_0_0
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list system_i/processing_system7_0/inst/FCLK_CLK1 ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {system_i/Bic_top_0/inst/m_axis_tdata[0]} {system_i/Bic_top_0/inst/m_axis_tdata[1]} {system_i/Bic_top_0/inst/m_axis_tdata[2]} {system_i/Bic_top_0/inst/m_axis_tdata[3]} {system_i/Bic_top_0/inst/m_axis_tdata[4]} {system_i/Bic_top_0/inst/m_axis_tdata[5]} {system_i/Bic_top_0/inst/m_axis_tdata[6]} {system_i/Bic_top_0/inst/m_axis_tdata[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {system_i/Bic_top_0/inst/readData10[0]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {system_i/Bic_top_0/inst/writeColCount[0]} {system_i/Bic_top_0/inst/writeColCount[1]} {system_i/Bic_top_0/inst/writeColCount[2]} {system_i/Bic_top_0/inst/writeColCount[3]} {system_i/Bic_top_0/inst/writeColCount[4]} {system_i/Bic_top_0/inst/writeColCount[5]} {system_i/Bic_top_0/inst/writeColCount[6]} {system_i/Bic_top_0/inst/writeColCount[7]} {system_i/Bic_top_0/inst/writeColCount[8]} {system_i/Bic_top_0/inst/writeColCount[9]} {system_i/Bic_top_0/inst/writeColCount[10]} {system_i/Bic_top_0/inst/writeColCount[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {system_i/Bic_top_0/inst/fillCount[0]} {system_i/Bic_top_0/inst/fillCount[1]} {system_i/Bic_top_0/inst/fillCount[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {system_i/Bic_top_0/inst/readData01[0]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {system_i/Bic_top_0/inst/writeRowCount[0]} {system_i/Bic_top_0/inst/writeRowCount[1]} {system_i/Bic_top_0/inst/writeRowCount[2]} {system_i/Bic_top_0/inst/writeRowCount[3]} {system_i/Bic_top_0/inst/writeRowCount[4]} {system_i/Bic_top_0/inst/writeRowCount[5]} {system_i/Bic_top_0/inst/writeRowCount[6]} {system_i/Bic_top_0/inst/writeRowCount[7]} {system_i/Bic_top_0/inst/writeRowCount[8]} {system_i/Bic_top_0/inst/writeRowCount[9]} {system_i/Bic_top_0/inst/writeRowCount[10]} {system_i/Bic_top_0/inst/writeRowCount[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {system_i/Bic_top_0/inst/readData00[0]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {system_i/Bic_top_0/inst/s_axis_tdata[0]} {system_i/Bic_top_0/inst/s_axis_tdata[1]} {system_i/Bic_top_0/inst/s_axis_tdata[2]} {system_i/Bic_top_0/inst/s_axis_tdata[3]} {system_i/Bic_top_0/inst/s_axis_tdata[4]} {system_i/Bic_top_0/inst/s_axis_tdata[5]} {system_i/Bic_top_0/inst/s_axis_tdata[6]} {system_i/Bic_top_0/inst/s_axis_tdata[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {system_i/Bic_top_0/inst/readData11[0]} {system_i/Bic_top_0/inst/readData11[1]} {system_i/Bic_top_0/inst/readData11[2]} {system_i/Bic_top_0/inst/readData11[3]} {system_i/Bic_top_0/inst/readData11[4]} {system_i/Bic_top_0/inst/readData11[5]} {system_i/Bic_top_0/inst/readData11[6]} {system_i/Bic_top_0/inst/readData11[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list system_i/Bic_top_0/inst/advanceWrite ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list system_i/Bic_top_0/inst/allDataWritten ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list system_i/Bic_top_0/inst/discardInput ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list system_i/Bic_top_0/inst/enableNextDin ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list system_i/Bic_top_0/inst/forceRead ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list system_i/Bic_top_0/inst/i_vid_de ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list system_i/Bic_top_0/inst/i_vid_vs ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list system_i/Bic_top_0/inst/m_axis_tready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list system_i/Bic_top_0/inst/m_axis_tvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list system_i/Bic_top_0/inst/o_vid_fifo_read ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list system_i/Bic_top_0/inst/s_axis_tlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe20]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list system_i/Bic_top_0/inst/s_axis_tready ]]
+save_constraints
+close_design
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file D:/github_project/zyqn/zyqn/bmp_hdmi_test2/vitis/system_wrapper.xsa
+set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/forceRead} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/advanceWrite} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/o_vid_fifo_read} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/enableNextDin} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/discardInput} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/advanceWrite} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/fillCount} }
+set_property TRIGGER_COMPARE_VALUE eq1'hX [get_hw_probes system_i/Bic_top_0/inst/s_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes system_i/Bic_top_0/inst/s_axis_tready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'u1 [get_hw_probes system_i/Bic_top_0/inst/s_axis_tready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'hX [get_hw_probes system_i/Bic_top_0/inst/s_axis_tready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq8'u0 [get_hw_probes system_i/Bic_top_0/inst/s_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq8'h00 [get_hw_probes system_i/Bic_top_0/inst/s_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq8'hXX [get_hw_probes system_i/Bic_top_0/inst/s_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq8'h6C [get_hw_probes system_i/Bic_top_0/inst/s_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+close_design
+update_module_reference system_Bic_top_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+update_module_reference system_Bic_top_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list system_i/processing_system7_0/inst/FCLK_CLK1 ]]
+set_property port_width 12 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {system_i/Bic_top_0/inst/writeColCount[0]} {system_i/Bic_top_0/inst/writeColCount[1]} {system_i/Bic_top_0/inst/writeColCount[2]} {system_i/Bic_top_0/inst/writeColCount[3]} {system_i/Bic_top_0/inst/writeColCount[4]} {system_i/Bic_top_0/inst/writeColCount[5]} {system_i/Bic_top_0/inst/writeColCount[6]} {system_i/Bic_top_0/inst/writeColCount[7]} {system_i/Bic_top_0/inst/writeColCount[8]} {system_i/Bic_top_0/inst/writeColCount[9]} {system_i/Bic_top_0/inst/writeColCount[10]} {system_i/Bic_top_0/inst/writeColCount[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {system_i/Bic_top_0/inst/fillCount[0]} {system_i/Bic_top_0/inst/fillCount[1]} {system_i/Bic_top_0/inst/fillCount[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {system_i/Bic_top_0/inst/readData11[0]} {system_i/Bic_top_0/inst/readData11[1]} {system_i/Bic_top_0/inst/readData11[2]} {system_i/Bic_top_0/inst/readData11[3]} {system_i/Bic_top_0/inst/readData11[4]} {system_i/Bic_top_0/inst/readData11[5]} {system_i/Bic_top_0/inst/readData11[6]} {system_i/Bic_top_0/inst/readData11[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {system_i/Bic_top_0/inst/readData10[0]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {system_i/Bic_top_0/inst/s_axis_tdata[0]} {system_i/Bic_top_0/inst/s_axis_tdata[1]} {system_i/Bic_top_0/inst/s_axis_tdata[2]} {system_i/Bic_top_0/inst/s_axis_tdata[3]} {system_i/Bic_top_0/inst/s_axis_tdata[4]} {system_i/Bic_top_0/inst/s_axis_tdata[5]} {system_i/Bic_top_0/inst/s_axis_tdata[6]} {system_i/Bic_top_0/inst/s_axis_tdata[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {system_i/Bic_top_0/inst/writeRowCount[0]} {system_i/Bic_top_0/inst/writeRowCount[1]} {system_i/Bic_top_0/inst/writeRowCount[2]} {system_i/Bic_top_0/inst/writeRowCount[3]} {system_i/Bic_top_0/inst/writeRowCount[4]} {system_i/Bic_top_0/inst/writeRowCount[5]} {system_i/Bic_top_0/inst/writeRowCount[6]} {system_i/Bic_top_0/inst/writeRowCount[7]} {system_i/Bic_top_0/inst/writeRowCount[8]} {system_i/Bic_top_0/inst/writeRowCount[9]} {system_i/Bic_top_0/inst/writeRowCount[10]} {system_i/Bic_top_0/inst/writeRowCount[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {system_i/Bic_top_0/inst/readData01[0]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {system_i/Bic_top_0/inst/readData00[0]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {system_i/Bic_top_0/inst/m_axis_tdata[0]} {system_i/Bic_top_0/inst/m_axis_tdata[1]} {system_i/Bic_top_0/inst/m_axis_tdata[2]} {system_i/Bic_top_0/inst/m_axis_tdata[3]} {system_i/Bic_top_0/inst/m_axis_tdata[4]} {system_i/Bic_top_0/inst/m_axis_tdata[5]} {system_i/Bic_top_0/inst/m_axis_tdata[6]} {system_i/Bic_top_0/inst/m_axis_tdata[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list system_i/Bic_top_0/inst/advanceWrite ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list system_i/Bic_top_0/inst/allDataWritten ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list system_i/Bic_top_0/inst/discardInput ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list system_i/Bic_top_0/inst/enableNextDin ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list system_i/Bic_top_0/inst/forceRead ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list system_i/Bic_top_0/inst/i_vid_de ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list system_i/Bic_top_0/inst/i_vid_vs ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list system_i/Bic_top_0/inst/m_axis_tready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list system_i/Bic_top_0/inst/m_axis_tvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list system_i/Bic_top_0/inst/o_vid_fifo_read ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list system_i/Bic_top_0/inst/s_axis_tlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe20]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list system_i/Bic_top_0/inst/s_axis_tready ]]
+save_constraints
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+update_module_reference system_Bic_top_0_0
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file D:/github_project/zyqn/zyqn/bmp_hdmi_test2/vitis/system_wrapper.xsa
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/o_vid_fifo_read} }
+save_wave_config {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+close_design
+update_module_reference system_Bic_top_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file D:/github_project/zyqn/zyqn/bmp_hdmi_test2/vitis/system_wrapper.xsa
+close_design
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/enableNextDin} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/discardInput} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/fillCount} }
+close_hw_manager
+update_module_reference system_Bic_top_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list system_i/processing_system7_0/inst/FCLK_CLK1 ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {system_i/Bic_top_0/inst/readData00[0]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {system_i/Bic_top_0/inst/writeRowCount[0]} {system_i/Bic_top_0/inst/writeRowCount[1]} {system_i/Bic_top_0/inst/writeRowCount[2]} {system_i/Bic_top_0/inst/writeRowCount[3]} {system_i/Bic_top_0/inst/writeRowCount[4]} {system_i/Bic_top_0/inst/writeRowCount[5]} {system_i/Bic_top_0/inst/writeRowCount[6]} {system_i/Bic_top_0/inst/writeRowCount[7]} {system_i/Bic_top_0/inst/writeRowCount[8]} {system_i/Bic_top_0/inst/writeRowCount[9]} {system_i/Bic_top_0/inst/writeRowCount[10]} {system_i/Bic_top_0/inst/writeRowCount[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {system_i/Bic_top_0/inst/m_axis_tdata[0]} {system_i/Bic_top_0/inst/m_axis_tdata[1]} {system_i/Bic_top_0/inst/m_axis_tdata[2]} {system_i/Bic_top_0/inst/m_axis_tdata[3]} {system_i/Bic_top_0/inst/m_axis_tdata[4]} {system_i/Bic_top_0/inst/m_axis_tdata[5]} {system_i/Bic_top_0/inst/m_axis_tdata[6]} {system_i/Bic_top_0/inst/m_axis_tdata[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {system_i/Bic_top_0/inst/readData01[0]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {system_i/Bic_top_0/inst/writeColCount[0]} {system_i/Bic_top_0/inst/writeColCount[1]} {system_i/Bic_top_0/inst/writeColCount[2]} {system_i/Bic_top_0/inst/writeColCount[3]} {system_i/Bic_top_0/inst/writeColCount[4]} {system_i/Bic_top_0/inst/writeColCount[5]} {system_i/Bic_top_0/inst/writeColCount[6]} {system_i/Bic_top_0/inst/writeColCount[7]} {system_i/Bic_top_0/inst/writeColCount[8]} {system_i/Bic_top_0/inst/writeColCount[9]} {system_i/Bic_top_0/inst/writeColCount[10]} {system_i/Bic_top_0/inst/writeColCount[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {system_i/Bic_top_0/inst/writeNextValidLine[0]} {system_i/Bic_top_0/inst/writeNextValidLine[1]} {system_i/Bic_top_0/inst/writeNextValidLine[2]} {system_i/Bic_top_0/inst/writeNextValidLine[3]} {system_i/Bic_top_0/inst/writeNextValidLine[4]} {system_i/Bic_top_0/inst/writeNextValidLine[5]} {system_i/Bic_top_0/inst/writeNextValidLine[6]} {system_i/Bic_top_0/inst/writeNextValidLine[7]} {system_i/Bic_top_0/inst/writeNextValidLine[8]} {system_i/Bic_top_0/inst/writeNextValidLine[9]} {system_i/Bic_top_0/inst/writeNextValidLine[10]} {system_i/Bic_top_0/inst/writeNextValidLine[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {system_i/Bic_top_0/inst/readData10[0]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {system_i/Bic_top_0/inst/readData11[0]} {system_i/Bic_top_0/inst/readData11[1]} {system_i/Bic_top_0/inst/readData11[2]} {system_i/Bic_top_0/inst/readData11[3]} {system_i/Bic_top_0/inst/readData11[4]} {system_i/Bic_top_0/inst/readData11[5]} {system_i/Bic_top_0/inst/readData11[6]} {system_i/Bic_top_0/inst/readData11[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {system_i/Bic_top_0/inst/s_axis_tdata[0]} {system_i/Bic_top_0/inst/s_axis_tdata[1]} {system_i/Bic_top_0/inst/s_axis_tdata[2]} {system_i/Bic_top_0/inst/s_axis_tdata[3]} {system_i/Bic_top_0/inst/s_axis_tdata[4]} {system_i/Bic_top_0/inst/s_axis_tdata[5]} {system_i/Bic_top_0/inst/s_axis_tdata[6]} {system_i/Bic_top_0/inst/s_axis_tdata[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list {system_i/Bic_top_0/inst/fillCount[0]} {system_i/Bic_top_0/inst/fillCount[1]} {system_i/Bic_top_0/inst/fillCount[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 2 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list {system_i/Bic_top_0/inst/writeState[0]} {system_i/Bic_top_0/inst/writeState[1]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list system_i/Bic_top_0/inst/advanceWrite ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list system_i/Bic_top_0/inst/allDataWritten ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list system_i/Bic_top_0/inst/discardInput ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list system_i/Bic_top_0/inst/enableNextDin ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list system_i/Bic_top_0/inst/forceRead ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list system_i/Bic_top_0/inst/i_vid_de ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list system_i/Bic_top_0/inst/i_vid_vs ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list system_i/Bic_top_0/inst/m_axis_tready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list system_i/Bic_top_0/inst/m_axis_tvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe20]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list system_i/Bic_top_0/inst/o_vid_fifo_read ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe21]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe21]
+connect_debug_port u_ila_0/probe21 [get_nets [list system_i/Bic_top_0/inst/s_axis_tlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe22]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe22]
+connect_debug_port u_ila_0/probe22 [get_nets [list system_i/Bic_top_0/inst/s_axis_tready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe23]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe23]
+connect_debug_port u_ila_0/probe23 [get_nets [list system_i/Bic_top_0/inst/s_axis_tvalid ]]
+save_constraints
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file D:/github_project/zyqn/zyqn/bmp_hdmi_test2/vitis/system_wrapper.xsa
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/advanceWrite} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/writeState} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/writeNextValidLine} }

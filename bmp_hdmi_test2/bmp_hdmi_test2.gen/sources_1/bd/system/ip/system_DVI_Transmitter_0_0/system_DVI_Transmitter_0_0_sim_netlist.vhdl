@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Thu Jun  8 15:25:46 2023
--- Host        : DESKTOP-Q5T8P6I running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               f:/2020_project/ZYNQ_Vitis_7010/23_sd_bmp_hdmi/sd_bmp_hdmi.gen/sources_1/bd/system/ip/system_DVI_Transmitter_0_0/system_DVI_Transmitter_0_0_sim_netlist.vhdl
+-- Date        : Fri Jan  3 01:18:23 2025
+-- Host        : DESKTOP-3OAFHV8 running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_DVI_Transmitter_0_0 -prefix
+--               system_DVI_Transmitter_0_0_ system_DVI_Transmitter_0_0_sim_netlist.vhdl
 -- Design      : system_DVI_Transmitter_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,8 +20,6 @@ entity system_DVI_Transmitter_0_0_asyn_rst_syn is
     pclk : in STD_LOGIC;
     reset_n : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_DVI_Transmitter_0_0_asyn_rst_syn : entity is "asyn_rst_syn";
 end system_DVI_Transmitter_0_0_asyn_rst_syn;
 
 architecture STRUCTURE of system_DVI_Transmitter_0_0_asyn_rst_syn is
@@ -68,8 +66,6 @@ entity system_DVI_Transmitter_0_0_dvi_encoder is
     video_din : in STD_LOGIC_VECTOR ( 7 downto 0 );
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_DVI_Transmitter_0_0_dvi_encoder : entity is "dvi_encoder";
 end system_DVI_Transmitter_0_0_dvi_encoder;
 
 architecture STRUCTURE of system_DVI_Transmitter_0_0_dvi_encoder is
@@ -4458,8 +4454,6 @@ entity system_DVI_Transmitter_0_0_serializer_10_to_1 is
     paralell_data : in STD_LOGIC_VECTOR ( 9 downto 0 );
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_DVI_Transmitter_0_0_serializer_10_to_1 : entity is "serializer_10_to_1";
 end system_DVI_Transmitter_0_0_serializer_10_to_1;
 
 architecture STRUCTURE of system_DVI_Transmitter_0_0_serializer_10_to_1 is
@@ -5067,8 +5061,6 @@ entity system_DVI_Transmitter_0_0_dvi_transmitter_top is
     video_vsync : in STD_LOGIC;
     reset_n : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_DVI_Transmitter_0_0_dvi_transmitter_top : entity is "dvi_transmitter_top";
 end system_DVI_Transmitter_0_0_dvi_transmitter_top;
 
 architecture STRUCTURE of system_DVI_Transmitter_0_0_dvi_transmitter_top is

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/FPGA/HDMI/bmp_hdmi1113/bmp_hdmi1113.runs/synth_1'
+HD_PWD='D:/github_project/zyqn/zyqn/bmp_hdmi_test2/bmp_hdmi_test2.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
