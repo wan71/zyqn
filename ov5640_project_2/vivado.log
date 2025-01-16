@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Jan  6 21:54:48 2025
-# Process ID: 37924
+# Start of session at: Thu Jan 16 23:28:05 2025
+# Process ID: 20108
 # Current directory: D:/github_project/zyqn/zyqn/ov5640_project_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent39920 D:\github_project\zyqn\zyqn\ov5640_project_2\ov5640_project_2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17880 D:\github_project\zyqn\zyqn\ov5640_project_2\ov5640_project_2.xpr
 # Log file: D:/github_project/zyqn/zyqn/ov5640_project_2/vivado.log
 # Journal file: D:/github_project/zyqn/zyqn/ov5640_project_2\vivado.jou
 #-----------------------------------------------------------
@@ -17,15 +17,5 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/uifdma'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1134.379 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1110.082 ; gain = 0.000
 update_compile_order -fileset sources_1
-reset_run impl_2 -prev_step 
-launch_runs impl_2 -to_step write_bitstream -jobs 10
-[Mon Jan  6 21:58:30 2025] Launched impl_2...
-Run output will be captured here: D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.runs/impl_2/runme.log
-reset_run impl_2 -prev_step 
-WARNING: [Vivado 12-1017] Problems encountered:
-1. PID not specified
-
-exit
-INFO: [Common 17-206] Exiting Vivado at Mon Jan  6 22:15:47 2025...

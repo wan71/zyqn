@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jan 15 22:44:37 2025
+# Process ID: 14892
+# Current directory: D:/github_project/zyqn/zyqn/ov5640_project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent884 D:\github_project\zyqn\zyqn\ov5640_project_2\ov5640_project_2.xpr
+# Log file: D:/github_project/zyqn/zyqn/ov5640_project_2/vivado.log
+# Journal file: D:/github_project/zyqn/zyqn/ov5640_project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_project/zyqn/zyqn/ov5640_project_2/ov5640_project_2.xpr
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/wiat/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+ScScanning sources..FiFinished scanning sourceINFO: [IP_Flow 19-234] Refreshing IP repositories
+ININFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/github_project/zyqn/zyqn/V08_Zynq7020_OV5640_Resize_HDMI/helai_ip/uifdma'INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1113.266 ; gain = 0.000
+update_compile_ordeWARNING: [Vivado 12-1exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 15 22:51:36 2025...
+6] Exiting Vivado at Wed Jan 15 22:45:25 2025...

@@ -1,0 +1,61 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.004",
+   "Default View_TopLeft":"2701,393",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 4100 -y 570 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 4100 -y 590 -defaultsOSRD
+preplace port TMDS_0 -pg 1 -lvl 7 -x 4100 -y 130 -defaultsOSRD
+preplace inst DVI_Transmitter_0 -pg 1 -lvl 5 -x 3390 -y 100 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 4 -x 1430 -y 602 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 3 -x 930 -y 110 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 508 -y 520 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 3390 -y 830 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 508 -y 290 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 160 -y 510 -defaultsOSRD
+preplace inst rst_ps7_0_150M -pg 1 -lvl 3 -x 930 -y 620 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 4 -x 1430 -y 180 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 3 -x 930 -y 390 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 6 -x 3880 -y 390 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 6 -x 3880 -y 600 -defaultsOSRD
+preplace inst Bic_top_0 -pg 1 -lvl 5 -x 3390 -y 620 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_out1 1 2 3 680 -10 1190 40 1620J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 -10 610 NJ 610 710 782 NJ 782 1620J 720 3620
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 5 340 130 690 230 1140 350 1600 440 N
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 2 3 740 -20 NJ -20 1580
+preplace netloc clk_wiz_0_clk_out2 1 2 3 660J -40 NJ -40 1630
+preplace netloc clk_wiz_0_locked 1 2 3 700J -30 NJ -30 1600
+preplace netloc rst_ps7_0_100M_peripheral_reset 1 1 1 N 510
+preplace netloc processing_system7_0_FCLK_CLK1 1 2 4 750 0 1120 792 1610 530 3680
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -10 410 330 120 730 220 1150J 360 1590 380 3640
+preplace netloc rst_ps7_0_150M_peripheral_aresetn 1 3 1 1110 562n
+preplace netloc axi_dma_0_mm2s_introut 1 5 2 3710 510 4050
+preplace netloc axi_dma_0_s2mm_introut 1 5 2 3700 250 4070
+preplace netloc xlconcat_0_dout 1 4 3 1630 540 3660J 670 4050
+preplace netloc Bic_top_0_m_axis 1 5 1 3650 360n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 4 1180 320 NJ 320 3650J 260 4060
+preplace netloc processing_system7_0_FIXED_IO 1 5 2 3690J 530 4050
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 670 60n
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 3 1 1160 80n
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 4 1 1590 70n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 710 290n
+preplace netloc processing_system7_0_DDR 1 5 2 3670J 520 4070
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 4 720 240 1130J 340 NJ 340 NJ
+preplace netloc v_tc_0_vtiming_out 1 3 1 1170 120n
+preplace netloc DVI_Transmitter_0_TMDS 1 5 2 NJ 90 4080
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 4 3 1620 240 NJ 240 4080
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 350 -50 NJ -50 NJ -50 NJ -50 3630
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 3 1 N 100
+preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1580 602n
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 4 1190 330 NJ 330 3690J 270 4050
+levelinfo -pg 1 -30 160 508 930 1430 3390 3880 4100
+pagesize -pg 1 -db -bbox -sgen -30 -160 4220 1200
+"
+}
+{
+   "da_axi4_cnt":"11",
+   "da_board_cnt":"1",
+   "da_ps7_cnt":"1"
+}

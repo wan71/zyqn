@@ -1,0 +1,10 @@
+22:58:16 **** Incremental Build of project system_wrapper ****
+buildplatform.bat 53941 system_wrapper no_domain_build 
+XSDB Server Channel: tcfchan#5
+22:58:21 **** Incremental Build of configuration Debug for project sd_bmp_hdmi ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.
