@@ -6,8 +6,10 @@ proc init_gui { IPINST } {
   ipgui::add_param $IPINST -name "BUFFER_SIZE" -parent ${Page_0}
   ipgui::add_param $IPINST -name "BUFFER_SIZE_WIDTH" -parent ${Page_0}
   ipgui::add_param $IPINST -name "CHANNELS" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "COEFF_WIDTH" -parent ${Page_0}
   ipgui::add_param $IPINST -name "DATA_WIDTH" -parent ${Page_0}
   ipgui::add_param $IPINST -name "DISCARD_CNT_WIDTH" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "FRACTION_BITS" -parent ${Page_0}
   ipgui::add_param $IPINST -name "INPUT_X_RES_WIDTH" -parent ${Page_0}
   ipgui::add_param $IPINST -name "INPUT_Y_RES_WIDTH" -parent ${Page_0}
   ipgui::add_param $IPINST -name "OUTPUT_X_RES_WIDTH" -parent ${Page_0}
@@ -52,6 +54,15 @@ proc validate_PARAM_VALUE.CHANNELS { PARAM_VALUE.CHANNELS } {
 	return true
 }
 
+proc update_PARAM_VALUE.COEFF_WIDTH { PARAM_VALUE.COEFF_WIDTH } {
+	# Procedure called to update COEFF_WIDTH when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.COEFF_WIDTH { PARAM_VALUE.COEFF_WIDTH } {
+	# Procedure called to validate COEFF_WIDTH
+	return true
+}
+
 proc update_PARAM_VALUE.DATA_WIDTH { PARAM_VALUE.DATA_WIDTH } {
 	# Procedure called to update DATA_WIDTH when any of the dependent parameters in the arguments change
 }
@@ -67,6 +78,15 @@ proc update_PARAM_VALUE.DISCARD_CNT_WIDTH { PARAM_VALUE.DISCARD_CNT_WIDTH } {
 
 proc validate_PARAM_VALUE.DISCARD_CNT_WIDTH { PARAM_VALUE.DISCARD_CNT_WIDTH } {
 	# Procedure called to validate DISCARD_CNT_WIDTH
+	return true
+}
+
+proc update_PARAM_VALUE.FRACTION_BITS { PARAM_VALUE.FRACTION_BITS } {
+	# Procedure called to update FRACTION_BITS when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.FRACTION_BITS { PARAM_VALUE.FRACTION_BITS } {
+	# Procedure called to validate FRACTION_BITS
 	return true
 }
 
@@ -276,5 +296,15 @@ proc update_MODELPARAM_VALUE.WS_READ { MODELPARAM_VALUE.WS_READ PARAM_VALUE.WS_R
 proc update_MODELPARAM_VALUE.WS_DONE { MODELPARAM_VALUE.WS_DONE PARAM_VALUE.WS_DONE } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	set_property value [get_property value ${PARAM_VALUE.WS_DONE}] ${MODELPARAM_VALUE.WS_DONE}
+}
+
+proc update_MODELPARAM_VALUE.FRACTION_BITS { MODELPARAM_VALUE.FRACTION_BITS PARAM_VALUE.FRACTION_BITS } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.FRACTION_BITS}] ${MODELPARAM_VALUE.FRACTION_BITS}
+}
+
+proc update_MODELPARAM_VALUE.COEFF_WIDTH { MODELPARAM_VALUE.COEFF_WIDTH PARAM_VALUE.COEFF_WIDTH } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.COEFF_WIDTH}] ${MODELPARAM_VALUE.COEFF_WIDTH}
 }
 

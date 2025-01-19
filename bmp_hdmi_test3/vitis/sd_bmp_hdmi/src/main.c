@@ -60,9 +60,8 @@ int main(void)
 	adds_init((u8*)out_bmg_addr,vd_mode.height,vd_mode.width);
 	int x_offset = (FRAME_WIDTH - IMAGE_WIDTH) / 2;    // X轴偏移
 	int y_offset = (FRAME_HEIGHT - IMAGE_HEIGHT) / 2;  // Y轴偏移
-//	length=512*3;
-//	length=64*3;
-	length=640*3;
+	length=512*3;
+//	length=100;
 	unsigned int rx_dma_addr=out_bmg_addr;
 	unsigned int frame_buffer_addr =in_bmg_addr;  //frame buffer的起始地址
 
@@ -71,10 +70,10 @@ int main(void)
 		dma_loop_init();
 		frame_buffer_addr=in_bmg_addr+(i*length);
 		rx_dma_addr=out_bmg_addr+((i + y_offset) * FRAME_WIDTH + x_offset) * 3;
-//		dma_loop_rx(rx_dma_addr,length);
+		dma_loop_rx(rx_dma_addr,length);
 		dma_loop_tx(frame_buffer_addr,length);
 //		printf("this is %d\r\n",i);
-		while (!tx_done && !error);
+		while(!tx_done && !error);
 //		while (!rx_done && !error); //等待 AXI DMA 搬运完从 AXI Stream Data FIFO 到 DDR3 的数据
 	}
 	dma_loop_end();

@@ -10,7 +10,7 @@ module Bic_top (
     
     // 输出数据流接口 (M_AXIS_S2MM)
     (*mark_debug="true"*)output wire [7:0]  m_axis_tdata,    // 输出数据
-    (*mark_debug="true"*)output reg         m_axis_tvalid,   // 输出数据有效信号
+    (*mark_debug="true"*)output wire         m_axis_tvalid,   // 输出数据有效信号
     output reg         m_axis_tlast,    // 输出数据最后信号
     (*mark_debug="true"*)input  wire        m_axis_tready    // 输出数据准备好接收信号
 );
@@ -27,15 +27,15 @@ parameter	BUFFER_SIZE_WIDTH  = ((BUFFER_SIZE+1) <= 2)  ? 1 :	    //wide enough t
 									 ((BUFFER_SIZE+1) <= 16) ? 4 :
 									 ((BUFFER_SIZE+1) <= 32) ? 5 :
 									 ((BUFFER_SIZE+1) <= 64) ? 6 : 7;
-reg [SCALE_BITS-1:0]			      i_scaler_x_ratio=(0.5)* (1<<SCALE_FRAC_BITS);
-reg [SCALE_BITS-1:0]			      i_scaler_y_ratio=(0.5) * (1<<SCALE_FRAC_BITS);
+reg [SCALE_BITS-1:0]			      i_scaler_x_ratio=(1.0)* (1<<SCALE_FRAC_BITS);
+reg [SCALE_BITS-1:0]			      i_scaler_y_ratio=(1.0) * (1<<SCALE_FRAC_BITS);
 
 
 (*mark_debug="true"*)wire [BUFFER_SIZE_WIDTH-1:0] 	             fillCount              ;	// Numbers used rams in the ram fifo
-(*mark_debug="true"*)wire							                 o_vid_fifo_read;
+wire							                 o_vid_fifo_read;
 //-----------------------Internal signals and registers------------------------
 (*mark_debug="true"*)reg								             advanceRead1=0           ;
-(*mark_debug="true"*)reg								             advanceRead2=0           ;                 								            
+reg								             advanceRead2=0           ;                 								            
 (*mark_debug="true"*)wire [DATA_WIDTH*CHANNELS-1:0]	             readData00             ;
 (*mark_debug="true"*)wire [DATA_WIDTH*CHANNELS-1:0]	             readData01             ;
 (*mark_debug="true"*)wire [DATA_WIDTH*CHANNELS-1:0]	             readData10             ;
@@ -53,18 +53,18 @@ reg  [INPUT_Y_RES_WIDTH-1+SCALE_FRAC_BITS:0] yScaleAmount           ;	// Fractio
 reg  [INPUT_Y_RES_WIDTH-1+SCALE_FRAC_BITS:0] yScaleAmountNext       ;	// Fractional and integer components of input pixel select (multiply result)
 (*mark_debug="true"*)wire [BUFFER_SIZE_WIDTH-1:0] 	             fillCount              ;	// Numbers used rams in the ram fifo
 reg                 			             lineSwitchOutputDisable;	// On the end of an output line, disable the output for one cycle to let the RAM data become valid
-reg								             dOutValidInt           ;
-//reg  [COEFF_WIDTH-1:0]		                 xBlend                                                                             ;
-//wire [COEFF_WIDTH-1:0]		                 yBlend      = {1'b0, yScaleAmount[SCALE_FRAC_BITS-1:SCALE_FRAC_BITS-FRACTION_BITS]};							                
+(*mark_debug="true"*)reg								             dOutValidInt           ;
+reg  [COEFF_WIDTH-1:0]		                 xBlend  ;
+wire [COEFF_WIDTH-1:0]	yBlend      = {1'b0, yScaleAmount[SCALE_FRAC_BITS-1:SCALE_FRAC_BITS-FRACTION_BITS]};							                
 (*mark_debug="true"*)wire [INPUT_X_RES_WIDTH-1:0]                 xPixLow     = xScaleAmount[INPUT_X_RES_WIDTH-1+SCALE_FRAC_BITS:SCALE_FRAC_BITS]    ;
 (*mark_debug="true"*)wire [INPUT_Y_RES_WIDTH-1:0]                 yPixLow     = yScaleAmount[INPUT_Y_RES_WIDTH-1+SCALE_FRAC_BITS:SCALE_FRAC_BITS]    ;
-(*mark_debug="true"*)wire [INPUT_Y_RES_WIDTH-1:0]                 yPixLowNext = yScaleAmountNext[INPUT_Y_RES_WIDTH-1+SCALE_FRAC_BITS:SCALE_FRAC_BITS];							                
+wire [INPUT_Y_RES_WIDTH-1:0]                 yPixLowNext = yScaleAmountNext[INPUT_Y_RES_WIDTH-1+SCALE_FRAC_BITS:SCALE_FRAC_BITS];							                
 (*mark_debug="true"*)wire 						                 allDataWritten;		//Indicates that all data from input has been read in
 (*mark_debug="true"*)reg 						                 readState     ;
 reg [OUTPUT_X_RES_WIDTH-1+SCALE_FRAC_BITS:0] i_left_offset =0;
 //assign o_vout_vs=i_vid_vs; 
  (*mark_debug="true"*)wire							                 i_vout_read=1;
- wire [OUTPUT_X_RES_WIDTH-1:0]	             i_des_image_x=64*3-1;
+ wire [OUTPUT_X_RES_WIDTH-1:0]	             i_des_image_x=512*3-1;
 //States for read state machine
 parameter RS_START     = 0;
 parameter RS_READ_LINE = 1;
@@ -171,7 +171,7 @@ parameter	SCALE_INT_BITS     = 4;// Width of integer component of scaling factor
 parameter 	DISCARD_CNT_WIDTH  = 8;
 parameter	SCALE_FRAC_BITS    = 14;	// Width of fractional component of scaling factor 比例因子分数分量的宽度
 parameter	SCALE_BITS         = SCALE_INT_BITS + SCALE_FRAC_BITS;	
-(*mark_debug="true"*)reg [INPUT_Y_RES_WIDTH-1 :0] writeNextValidLine;	/*用于标记下一行有效数据的行号。*/
+reg [INPUT_Y_RES_WIDTH-1 :0] writeNextValidLine;	/*用于标记下一行有效数据的行号。*/
 reg [INPUT_Y_RES_WIDTH-1 :0] writeNextPlusOne  ;	
 (*mark_debug="true"*)reg [INPUT_Y_RES_WIDTH-1 :0] writeRowCount     ;	/*用于标记插值行，即当前行的下一行是否需要读出。*/
 reg [OUTPUT_Y_RES_WIDTH-1:0] writeOutputLine   ;/*当前写入输出缓冲区的行计数，基于目标图像的行数递增。*/
@@ -179,7 +179,7 @@ reg							 getNextPlusOne    ;
 reg [1:0]	                 i_top_offset=0; //偏移量
 reg 							 readyForRead;	
 reg [DISCARD_CNT_WIDTH-1:0]	                 i_discard_cnt=0;  //需要丢弃的像素数量。
-reg  [INPUT_X_RES_WIDTH-1:0]	                 i_src_image_x= 64*3-1;
+reg  [INPUT_X_RES_WIDTH-1:0]	                 i_src_image_x= 512*3-1;
 reg [INPUT_Y_RES_WIDTH-1:0]	                 i_src_image_y= 512-1;
 
 
@@ -212,12 +212,12 @@ always @(posedge clk or negedge rst_n) begin
 	end
 end
 
-(*mark_debug="true"*)reg			                discardInput   ;
+reg			                discardInput   ;
 reg [DISCARD_CNT_WIDTH-1:0] discardCountReg;
 (*mark_debug="true"*)wire		                advanceWrite   ;
-(*mark_debug="true"*)reg [1:0]	                writeState     ;
-(*mark_debug="true"*)reg [INPUT_X_RES_WIDTH-1:0] writeColCount  ;
-(*mark_debug="true"*)reg			                enableNextDin  ;
+reg [1:0]	                writeState     ;
+reg [INPUT_X_RES_WIDTH-1:0] writeColCount  ;
+reg			                enableNextDin  ;
 (*mark_debug="true"*)reg			                forceRead      ;
 
 //Write state machine
@@ -319,6 +319,121 @@ ramFifo #(
 	.readData11  (readData11                                                ),
 	.readAddress (readAddress                                               )
 );
+
+
+//-----------------------Output data generation-----------------------------
+//Scale amount values are used to generate coefficients for the four pixels coming out of the RRB to be multiplied with.
+
+//Coefficients for each of the four pixels
+//Format Q1.FRACTION_BITS
+//			   yx
+parameter	FRACTION_BITS      = 8;
+parameter	COEFF_WIDTH        = FRACTION_BITS + 1;
+(*mark_debug="true"*)reg [COEFF_WIDTH-1:0] coeff00;	// Top left
+(*mark_debug="true"*)reg [COEFF_WIDTH-1:0] coeff01;	// Top right
+(*mark_debug="true"*)reg [COEFF_WIDTH-1:0] coeff10;	// Bottom left
+(*mark_debug="true"*)reg [COEFF_WIDTH-1:0] coeff11;	// Bottom right
+
+//Coefficient value of one, format Q1.COEFF_WIDTH-1
+wire [COEFF_WIDTH-1:0] coeffOne = {1'b1, {(COEFF_WIDTH-1){1'b0}}};	//One in MSb, zeros elsewhere
+//Coefficient value of one half, format Q1.COEFF_WIDTH-1
+wire [COEFF_WIDTH-1:0] coeffHalf = {2'b01, {(COEFF_WIDTH-2){1'b0}}};
+
+//Compute bilinear interpolation coefficinets. Done here because these pre-registerd values are used twice.
+//Adding coeffHalf to get the nearest value.
+wire [COEFF_WIDTH-1:0] preCoeff00 = (((coeffOne - xBlend) * (coeffOne - yBlend) + (coeffHalf - 1)) >> FRACTION_BITS) & {{COEFF_WIDTH{1'b0}} , {COEFF_WIDTH{1'b1}}};
+wire [COEFF_WIDTH-1:0] preCoeff01 = ((xBlend * (coeffOne - yBlend) + (coeffHalf - 1)) >> FRACTION_BITS) & 				{{COEFF_WIDTH{1'b0}}, {COEFF_WIDTH{1'b1}}};
+wire [COEFF_WIDTH-1:0] preCoeff10 = (((coeffOne - xBlend) * yBlend + (coeffHalf - 1)) >> FRACTION_BITS) &				{{COEFF_WIDTH{1'b0}}, {COEFF_WIDTH{1'b1}}};
+
+// 璁＄畻绯绘暟--Compute the coefficients
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n) begin
+		coeff00 <= 0;
+		coeff01 <= 0;
+		coeff10 <= 0;
+		coeff11 <= 0;
+		xBlend  <= 0;
+	end
+	else begin
+		xBlend <= {1'b0, xScaleAmount[SCALE_FRAC_BITS-1:SCALE_FRAC_BITS-FRACTION_BITS]};	//Changed to registered to improve timing
+			//Normal bilinear interpolation
+			coeff00 <= preCoeff00;
+			coeff01 <= preCoeff01;
+			coeff10 <= preCoeff10;
+			coeff11 <= ((xBlend * yBlend + (coeffHalf - 1)) >> FRACTION_BITS) & {{COEFF_WIDTH{1'b0}}, {COEFF_WIDTH{1'b1}}};
+			//coeff11 <= coeffOne - preCoeff00 - preCoeff01 - preCoeff10;		//Guarantee that all coefficients sum to coeffOne. Saves a multiply too. Reverted to previous method due to timing issues.
+	end
+end
+
+//Generate the blending multipliers
+reg [(DATA_WIDTH+COEFF_WIDTH)*CHANNELS-1:0]	product00, product01, product10, product11;
+(*mark_debug="true"*)reg [DATA_WIDTH*CHANNELS-1:0]                 o_vout_data;/*output*/
+generate
+genvar channel;
+	for(channel = 0; channel < CHANNELS; channel = channel + 1)
+		begin : blend_mult_generate
+			always @(posedge clk or negedge rst_n) begin
+				if(!rst_n) begin
+					//productxx[channel] <= 0;
+					product00[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= 0;
+					product01[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= 0;
+					product10[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= 0;
+					product11[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= 0;
+					
+					//readDataxxReg[channel] <= 0;
+					readData00Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= 0;
+					readData01Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= 0;
+					readData10Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= 0;
+					readData11Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= 0;
+					
+					//o_vout_data[channel] <= 0;
+					o_vout_data[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= 0;
+				end
+				else begin
+					//readDataxxReg[channel] <= readDataxx[channel];
+					readData00Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= readData00[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel];
+					readData01Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= readData01[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel];
+					readData10Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= readData10[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel];
+					readData11Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= readData11[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel];
+				
+					//productxx[channel] <= readDataxxReg[channel] * coeffxx
+					product00[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= readData00Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] * coeff00;
+					product01[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= readData01Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] * coeff01;
+					product10[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= readData10Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] * coeff10;
+					product11[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= readData11Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] * coeff11;
+					
+					//o_vout_data[channel] <= (((product00[channel]) + 
+					//					(product01[channel]) +
+					//					(product10[channel]) +
+					//					(product11[channel])) >> FRACTION_BITS) & ({ {COEFF_WIDTH{1'b0}}, {DATA_WIDTH{1'b1}} });
+					o_vout_data[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <=
+							(((product00[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel]) + 
+							  (product01[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel]) +
+							  (product10[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel]) +
+							  (product11[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel])) >> FRACTION_BITS) & ({{COEFF_WIDTH{1'b0}},{DATA_WIDTH{1'b1}}});
+
+				end
+			end
+		end
+endgenerate
+
+assign   m_axis_tdata[7:0] = o_vout_data[DATA_WIDTH*CHANNELS-1:0];
+assign   m_axis_tvalid = o_vout_vail;
+// 延时寄存器，用于延迟 readstate 信号 4 个周期
+reg [3:0] pipeline_delay;  // 存储延迟的状态
+wire o_vout_vail;
+// 延时信号输出
+assign o_vout_vail = pipeline_delay[3]; // 输出第 4 个时钟周期的状态
+
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        pipeline_delay <= 4'b0000; // 复位时清零
+    end else begin
+        // 移位寄存器实现延时，每个时钟周期将 readstate 推入延迟链
+        pipeline_delay <= {pipeline_delay[2:0], dOutValidInt};
+    end
+end
+
 
 
 endmodule

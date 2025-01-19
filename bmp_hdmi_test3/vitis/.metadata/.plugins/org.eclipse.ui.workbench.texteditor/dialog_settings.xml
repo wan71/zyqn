@@ -6,11 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="tx_intr_handler"/>
+		<item key="selection" value="rx_done"/>
 		<list key="findhistory">
+			<item value="rx_done"/>
 			<item value="tx_intr_handler"/>
 			<item value="tx_done"/>
-			<item value="rx_done"/>
 			<item value="StartTransfer"/>
 		</list>
 		<list key="replacehistory">

@@ -1,6 +1,2 @@
-22:58:16 **** Incremental Build of project system_wrapper ****
-buildplatform.bat 53941 system_wrapper no_domain_build 
-XSDB Server Channel: tcfchan#5
-
-22:58:19 Build Finished (took 2s.487ms)
+Nothing to build in platform 'system_wrapper'
 
