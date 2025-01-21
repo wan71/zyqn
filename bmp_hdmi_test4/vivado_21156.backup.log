@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jan 21 23:53:21 2025
+# Process ID: 21156
+# Current directory: D:/github_project/zyqn/zyqn/bmp_hdmi_test4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20180 D:\github_project\zyqn\zyqn\bmp_hdmi_test4\bmp_hdmi_test4.xpr
+# Log file: D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vivado.log
+# Journal file: D:/github_project/zyqn/zyqn/bmp_hdmi_test4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/HDMI/sd_bmp_hdmi27/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1116.570 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 21 23:59:33 2025...

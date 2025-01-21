@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jan 21 23:53:21 2025
+# Process ID: 21156
+# Current directory: D:/github_project/zyqn/zyqn/bmp_hdmi_test4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20180 D:\github_project\zyqn\zyqn\bmp_hdmi_test4\bmp_hdmi_test4.xpr
+# Log file: D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vivado.log
+# Journal file: D:/github_project/zyqn/zyqn/bmp_hdmi_test4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.xpr
+update_compile_order -fileset sources_1
