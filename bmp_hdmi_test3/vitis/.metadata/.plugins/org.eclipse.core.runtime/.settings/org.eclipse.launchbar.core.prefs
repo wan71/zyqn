@@ -5,4 +5,4 @@ configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_sd_bm
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_sd_bmp_hdmi-Default/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_sd_bmp_hdmi-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
-org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_sd_bmp_hdmi_system/activeLaunchMode=systemrun
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_sd_bmp_hdmi_system/activeLaunchMode=debug
