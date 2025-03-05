@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jan 22 00:23:01 2025
+# Process ID: 16804
+# Current directory: D:/github_project/zyqn/zyqn/bmp_hdmi_test4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24324 D:\github_project\zyqn\zyqn\bmp_hdmi_test4\bmp_hdmi_test4.xpr
+# Log file: D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vivado.log
+# Journal file: D:/github_project/zyqn/zyqn/bmp_hdmi_test4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes system_i/Bic_top_0/inst/dOutValidInt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'bXXXX_XXXX_XXXX [get_hw_probes system_i/Bic_top_0/inst/yPixLow -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'hXXX [get_hw_probes system_i/Bic_top_0/inst/yPixLow -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'u0 [get_hw_probes system_i/Bic_top_0/inst/yPixLow -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'u1 [get_hw_probes system_i/Bic_top_0/inst/yPixLow -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/Bic_top_0/inst/fillCount} }
+set_property TRIGGER_COMPARE_VALUE eq12'hXXX [get_hw_probes system_i/Bic_top_0/inst/yPixLow -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes system_i/Bic_top_0/inst/dOutValidInt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]

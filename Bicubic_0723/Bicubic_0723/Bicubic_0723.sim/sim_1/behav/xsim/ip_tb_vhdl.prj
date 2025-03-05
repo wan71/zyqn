@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/ip/add_30/sim/add_30.vhd" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/ip/add_29/sim/add_29.vhd" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/ip/add_28/sim/add_28.vhd" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/ip/add_27_1/sim/add_27.vhd" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/ip/mult_8x19/sim/mult_8x19.vhd" \
+
+# Do not sort compile order
+nosort

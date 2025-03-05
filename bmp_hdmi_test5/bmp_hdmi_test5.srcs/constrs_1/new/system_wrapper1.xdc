@@ -1,0 +1,235 @@
+set_property PACKAGE_PIN L16 [get_ports {TMDS_0_tmds_data_p[2]}]
+set_property PACKAGE_PIN M14 [get_ports {TMDS_0_tmds_data_p[1]}]
+set_property PACKAGE_PIN K19 [get_ports {TMDS_0_tmds_data_p[0]}]
+set_property PACKAGE_PIN L14 [get_ports TMDS_0_tmds_clk_p]
+
+
+
+
+connect_debug_port u_ila_1/probe0 [get_nets [list system_i/Bic_top_0/inst/n_0_11]]
+
+
+
+
+
+connect_debug_port u_ila_0/probe6 [get_nets [list system_i/Bic_top_0/inst/m_axis_tlast]]
+connect_debug_port u_ila_0/probe11 [get_nets [list system_i/Bic_top_0/inst/s_axis_tvalid]]
+
+
+
+
+
+connect_debug_port u_ila_0/probe23 [get_nets [list system_i/Bic_top_0/inst/i_vid_vs]]
+
+
+connect_debug_port u_ila_0/probe10 [get_nets [list {system_i/Bic_top_0/inst/writeColCount[0]} {system_i/Bic_top_0/inst/writeColCount[1]} {system_i/Bic_top_0/inst/writeColCount[2]} {system_i/Bic_top_0/inst/writeColCount[3]} {system_i/Bic_top_0/inst/writeColCount[4]} {system_i/Bic_top_0/inst/writeColCount[5]} {system_i/Bic_top_0/inst/writeColCount[6]} {system_i/Bic_top_0/inst/writeColCount[7]} {system_i/Bic_top_0/inst/writeColCount[8]} {system_i/Bic_top_0/inst/writeColCount[9]} {system_i/Bic_top_0/inst/writeColCount[10]} {system_i/Bic_top_0/inst/writeColCount[11]}]]
+connect_debug_port u_ila_0/probe18 [get_nets [list {system_i/Bic_top_0/inst/writeState[0]} {system_i/Bic_top_0/inst/writeState[1]}]]
+connect_debug_port u_ila_0/probe21 [get_nets [list system_i/Bic_top_0/inst/advanceRead2]]
+connect_debug_port u_ila_0/probe24 [get_nets [list system_i/Bic_top_0/inst/discardInput]]
+connect_debug_port u_ila_0/probe31 [get_nets [list system_i/Bic_top_0/inst/o_vid_fifo_read]]
+
+connect_debug_port u_ila_0/probe0 [get_nets [list {system_i/Bic_top_0/inst/coeff01[0]} {system_i/Bic_top_0/inst/coeff01[1]} {system_i/Bic_top_0/inst/coeff01[2]} {system_i/Bic_top_0/inst/coeff01[3]} {system_i/Bic_top_0/inst/coeff01[4]} {system_i/Bic_top_0/inst/coeff01[5]} {system_i/Bic_top_0/inst/coeff01[6]} {system_i/Bic_top_0/inst/coeff01[7]} {system_i/Bic_top_0/inst/coeff01[8]}]]
+connect_debug_port u_ila_0/probe1 [get_nets [list {system_i/Bic_top_0/inst/coeff10[0]} {system_i/Bic_top_0/inst/coeff10[1]} {system_i/Bic_top_0/inst/coeff10[2]} {system_i/Bic_top_0/inst/coeff10[3]} {system_i/Bic_top_0/inst/coeff10[4]} {system_i/Bic_top_0/inst/coeff10[5]} {system_i/Bic_top_0/inst/coeff10[6]} {system_i/Bic_top_0/inst/coeff10[7]} {system_i/Bic_top_0/inst/coeff10[8]}]]
+connect_debug_port u_ila_0/probe4 [get_nets [list {system_i/Bic_top_0/inst/o_vout_data[0]} {system_i/Bic_top_0/inst/o_vout_data[1]} {system_i/Bic_top_0/inst/o_vout_data[2]} {system_i/Bic_top_0/inst/o_vout_data[3]} {system_i/Bic_top_0/inst/o_vout_data[4]} {system_i/Bic_top_0/inst/o_vout_data[5]} {system_i/Bic_top_0/inst/o_vout_data[6]} {system_i/Bic_top_0/inst/o_vout_data[7]}]]
+connect_debug_port u_ila_0/probe5 [get_nets [list {system_i/Bic_top_0/inst/coeff00[0]} {system_i/Bic_top_0/inst/coeff00[1]} {system_i/Bic_top_0/inst/coeff00[2]} {system_i/Bic_top_0/inst/coeff00[3]} {system_i/Bic_top_0/inst/coeff00[4]} {system_i/Bic_top_0/inst/coeff00[5]} {system_i/Bic_top_0/inst/coeff00[6]} {system_i/Bic_top_0/inst/coeff00[7]} {system_i/Bic_top_0/inst/coeff00[8]}]]
+connect_debug_port u_ila_0/probe6 [get_nets [list {system_i/Bic_top_0/inst/readData00[0]} {system_i/Bic_top_0/inst/readData00[1]} {system_i/Bic_top_0/inst/readData00[2]} {system_i/Bic_top_0/inst/readData00[3]} {system_i/Bic_top_0/inst/readData00[4]} {system_i/Bic_top_0/inst/readData00[5]} {system_i/Bic_top_0/inst/readData00[6]} {system_i/Bic_top_0/inst/readData00[7]}]]
+connect_debug_port u_ila_0/probe7 [get_nets [list {system_i/Bic_top_0/inst/coeff11[0]} {system_i/Bic_top_0/inst/coeff11[1]} {system_i/Bic_top_0/inst/coeff11[2]} {system_i/Bic_top_0/inst/coeff11[3]} {system_i/Bic_top_0/inst/coeff11[4]} {system_i/Bic_top_0/inst/coeff11[5]} {system_i/Bic_top_0/inst/coeff11[6]} {system_i/Bic_top_0/inst/coeff11[7]} {system_i/Bic_top_0/inst/coeff11[8]}]]
+connect_debug_port u_ila_0/probe9 [get_nets [list {system_i/Bic_top_0/inst/readData10[0]} {system_i/Bic_top_0/inst/readData10[1]} {system_i/Bic_top_0/inst/readData10[2]} {system_i/Bic_top_0/inst/readData10[3]} {system_i/Bic_top_0/inst/readData10[4]} {system_i/Bic_top_0/inst/readData10[5]} {system_i/Bic_top_0/inst/readData10[6]} {system_i/Bic_top_0/inst/readData10[7]}]]
+connect_debug_port u_ila_0/probe13 [get_nets [list {system_i/Bic_top_0/inst/readData11[0]} {system_i/Bic_top_0/inst/readData11[1]} {system_i/Bic_top_0/inst/readData11[2]} {system_i/Bic_top_0/inst/readData11[3]} {system_i/Bic_top_0/inst/readData11[4]} {system_i/Bic_top_0/inst/readData11[5]} {system_i/Bic_top_0/inst/readData11[6]} {system_i/Bic_top_0/inst/readData11[7]}]]
+connect_debug_port u_ila_0/probe14 [get_nets [list {system_i/Bic_top_0/inst/readData01[0]} {system_i/Bic_top_0/inst/readData01[1]} {system_i/Bic_top_0/inst/readData01[2]} {system_i/Bic_top_0/inst/readData01[3]} {system_i/Bic_top_0/inst/readData01[4]} {system_i/Bic_top_0/inst/readData01[5]} {system_i/Bic_top_0/inst/readData01[6]} {system_i/Bic_top_0/inst/readData01[7]}]]
+
+
+connect_debug_port u_ila_0/probe19 [get_nets [list {system_i/Bic_top_0/inst/writeRowCount[0]} {system_i/Bic_top_0/inst/writeRowCount[1]} {system_i/Bic_top_0/inst/writeRowCount[2]} {system_i/Bic_top_0/inst/writeRowCount[3]} {system_i/Bic_top_0/inst/writeRowCount[4]} {system_i/Bic_top_0/inst/writeRowCount[5]} {system_i/Bic_top_0/inst/writeRowCount[6]} {system_i/Bic_top_0/inst/writeRowCount[7]} {system_i/Bic_top_0/inst/writeRowCount[8]} {system_i/Bic_top_0/inst/writeRowCount[9]} {system_i/Bic_top_0/inst/writeRowCount[10]} {system_i/Bic_top_0/inst/writeRowCount[11]}]]
+connect_debug_port u_ila_0/probe29 [get_nets [list system_i/Bic_top_0/inst/allDataWritten]]
+connect_debug_port u_ila_0/probe34 [get_nets [list system_i/Bic_top_0/inst/i_vout_read]]
+
+connect_debug_port u_ila_0/probe10 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData31[0]} {system_i/Bic_top_0/inst/ramRB/readData31[1]} {system_i/Bic_top_0/inst/ramRB/readData31[2]} {system_i/Bic_top_0/inst/ramRB/readData31[3]} {system_i/Bic_top_0/inst/ramRB/readData31[4]} {system_i/Bic_top_0/inst/ramRB/readData31[5]} {system_i/Bic_top_0/inst/ramRB/readData31[6]} {system_i/Bic_top_0/inst/ramRB/readData31[7]}]]
+connect_debug_port u_ila_0/probe14 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData22[0]} {system_i/Bic_top_0/inst/ramRB/readData22[1]} {system_i/Bic_top_0/inst/ramRB/readData22[2]} {system_i/Bic_top_0/inst/ramRB/readData22[3]} {system_i/Bic_top_0/inst/ramRB/readData22[4]} {system_i/Bic_top_0/inst/ramRB/readData22[5]} {system_i/Bic_top_0/inst/ramRB/readData22[6]} {system_i/Bic_top_0/inst/ramRB/readData22[7]}]]
+connect_debug_port u_ila_0/probe15 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData23[0]} {system_i/Bic_top_0/inst/ramRB/readData23[1]} {system_i/Bic_top_0/inst/ramRB/readData23[2]} {system_i/Bic_top_0/inst/ramRB/readData23[3]} {system_i/Bic_top_0/inst/ramRB/readData23[4]} {system_i/Bic_top_0/inst/ramRB/readData23[5]} {system_i/Bic_top_0/inst/ramRB/readData23[6]} {system_i/Bic_top_0/inst/ramRB/readData23[7]}]]
+connect_debug_port u_ila_0/probe18 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData20[0]} {system_i/Bic_top_0/inst/ramRB/readData20[1]} {system_i/Bic_top_0/inst/ramRB/readData20[2]} {system_i/Bic_top_0/inst/ramRB/readData20[3]} {system_i/Bic_top_0/inst/ramRB/readData20[4]} {system_i/Bic_top_0/inst/ramRB/readData20[5]} {system_i/Bic_top_0/inst/ramRB/readData20[6]} {system_i/Bic_top_0/inst/ramRB/readData20[7]}]]
+connect_debug_port u_ila_0/probe19 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData32[0]} {system_i/Bic_top_0/inst/ramRB/readData32[1]} {system_i/Bic_top_0/inst/ramRB/readData32[2]} {system_i/Bic_top_0/inst/ramRB/readData32[3]} {system_i/Bic_top_0/inst/ramRB/readData32[4]} {system_i/Bic_top_0/inst/ramRB/readData32[5]} {system_i/Bic_top_0/inst/ramRB/readData32[6]} {system_i/Bic_top_0/inst/ramRB/readData32[7]}]]
+connect_debug_port u_ila_0/probe20 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData33[0]} {system_i/Bic_top_0/inst/ramRB/readData33[1]} {system_i/Bic_top_0/inst/ramRB/readData33[2]} {system_i/Bic_top_0/inst/ramRB/readData33[3]} {system_i/Bic_top_0/inst/ramRB/readData33[4]} {system_i/Bic_top_0/inst/ramRB/readData33[5]} {system_i/Bic_top_0/inst/ramRB/readData33[6]} {system_i/Bic_top_0/inst/ramRB/readData33[7]}]]
+connect_debug_port u_ila_0/probe23 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData21[0]} {system_i/Bic_top_0/inst/ramRB/readData21[1]} {system_i/Bic_top_0/inst/ramRB/readData21[2]} {system_i/Bic_top_0/inst/ramRB/readData21[3]} {system_i/Bic_top_0/inst/ramRB/readData21[4]} {system_i/Bic_top_0/inst/ramRB/readData21[5]} {system_i/Bic_top_0/inst/ramRB/readData21[6]} {system_i/Bic_top_0/inst/ramRB/readData21[7]}]]
+connect_debug_port u_ila_0/probe26 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData30[0]} {system_i/Bic_top_0/inst/ramRB/readData30[1]} {system_i/Bic_top_0/inst/ramRB/readData30[2]} {system_i/Bic_top_0/inst/ramRB/readData30[3]} {system_i/Bic_top_0/inst/ramRB/readData30[4]} {system_i/Bic_top_0/inst/ramRB/readData30[5]} {system_i/Bic_top_0/inst/ramRB/readData30[6]} {system_i/Bic_top_0/inst/ramRB/readData30[7]}]]
+
+
+connect_debug_port u_ila_0/probe14 [get_nets [list {system_i/Bic_top_0/inst/xPixLow_valid[0]} {system_i/Bic_top_0/inst/xPixLow_valid[1]} {system_i/Bic_top_0/inst/xPixLow_valid[2]} {system_i/Bic_top_0/inst/xPixLow_valid[3]} {system_i/Bic_top_0/inst/xPixLow_valid[4]} {system_i/Bic_top_0/inst/xPixLow_valid[5]} {system_i/Bic_top_0/inst/xPixLow_valid[6]} {system_i/Bic_top_0/inst/xPixLow_valid[7]} {system_i/Bic_top_0/inst/xPixLow_valid[8]} {system_i/Bic_top_0/inst/xPixLow_valid[9]} {system_i/Bic_top_0/inst/xPixLow_valid[10]} {system_i/Bic_top_0/inst/xPixLow_valid[11]}]]
+connect_debug_port u_ila_0/probe23 [get_nets [list {system_i/Bic_top_0/inst/yPixLow_valid[0]} {system_i/Bic_top_0/inst/yPixLow_valid[1]} {system_i/Bic_top_0/inst/yPixLow_valid[2]} {system_i/Bic_top_0/inst/yPixLow_valid[3]} {system_i/Bic_top_0/inst/yPixLow_valid[4]} {system_i/Bic_top_0/inst/yPixLow_valid[5]} {system_i/Bic_top_0/inst/yPixLow_valid[6]} {system_i/Bic_top_0/inst/yPixLow_valid[7]} {system_i/Bic_top_0/inst/yPixLow_valid[8]} {system_i/Bic_top_0/inst/yPixLow_valid[9]} {system_i/Bic_top_0/inst/yPixLow_valid[10]} {system_i/Bic_top_0/inst/yPixLow_valid[11]}]]
+
+connect_debug_port u_ila_0/probe0 [get_nets [list {system_i/Bic_top_0/inst/coeff00[0]} {system_i/Bic_top_0/inst/coeff00[1]} {system_i/Bic_top_0/inst/coeff00[2]} {system_i/Bic_top_0/inst/coeff00[3]} {system_i/Bic_top_0/inst/coeff00[4]} {system_i/Bic_top_0/inst/coeff00[5]} {system_i/Bic_top_0/inst/coeff00[6]} {system_i/Bic_top_0/inst/coeff00[7]} {system_i/Bic_top_0/inst/coeff00[8]}]]
+connect_debug_port u_ila_0/probe1 [get_nets [list {system_i/Bic_top_0/inst/coeff10[0]} {system_i/Bic_top_0/inst/coeff10[1]} {system_i/Bic_top_0/inst/coeff10[2]} {system_i/Bic_top_0/inst/coeff10[3]} {system_i/Bic_top_0/inst/coeff10[4]} {system_i/Bic_top_0/inst/coeff10[5]} {system_i/Bic_top_0/inst/coeff10[6]} {system_i/Bic_top_0/inst/coeff10[7]} {system_i/Bic_top_0/inst/coeff10[8]}]]
+connect_debug_port u_ila_0/probe3 [get_nets [list {system_i/Bic_top_0/inst/o_vout_data[0]} {system_i/Bic_top_0/inst/o_vout_data[1]} {system_i/Bic_top_0/inst/o_vout_data[2]} {system_i/Bic_top_0/inst/o_vout_data[3]} {system_i/Bic_top_0/inst/o_vout_data[4]} {system_i/Bic_top_0/inst/o_vout_data[5]} {system_i/Bic_top_0/inst/o_vout_data[6]} {system_i/Bic_top_0/inst/o_vout_data[7]} {system_i/Bic_top_0/inst/o_vout_data[8]} {system_i/Bic_top_0/inst/o_vout_data[9]} {system_i/Bic_top_0/inst/o_vout_data[10]} {system_i/Bic_top_0/inst/o_vout_data[11]} {system_i/Bic_top_0/inst/o_vout_data[12]} {system_i/Bic_top_0/inst/o_vout_data[13]} {system_i/Bic_top_0/inst/o_vout_data[14]} {system_i/Bic_top_0/inst/o_vout_data[15]} {system_i/Bic_top_0/inst/o_vout_data[16]} {system_i/Bic_top_0/inst/o_vout_data[17]} {system_i/Bic_top_0/inst/o_vout_data[18]} {system_i/Bic_top_0/inst/o_vout_data[19]} {system_i/Bic_top_0/inst/o_vout_data[20]} {system_i/Bic_top_0/inst/o_vout_data[21]} {system_i/Bic_top_0/inst/o_vout_data[22]} {system_i/Bic_top_0/inst/o_vout_data[23]}]]
+connect_debug_port u_ila_0/probe8 [get_nets [list {system_i/Bic_top_0/inst/coeff11[0]} {system_i/Bic_top_0/inst/coeff11[1]} {system_i/Bic_top_0/inst/coeff11[2]} {system_i/Bic_top_0/inst/coeff11[3]} {system_i/Bic_top_0/inst/coeff11[4]} {system_i/Bic_top_0/inst/coeff11[5]} {system_i/Bic_top_0/inst/coeff11[6]} {system_i/Bic_top_0/inst/coeff11[7]} {system_i/Bic_top_0/inst/coeff11[8]}]]
+connect_debug_port u_ila_0/probe9 [get_nets [list {system_i/Bic_top_0/inst/coeff01[0]} {system_i/Bic_top_0/inst/coeff01[1]} {system_i/Bic_top_0/inst/coeff01[2]} {system_i/Bic_top_0/inst/coeff01[3]} {system_i/Bic_top_0/inst/coeff01[4]} {system_i/Bic_top_0/inst/coeff01[5]} {system_i/Bic_top_0/inst/coeff01[6]} {system_i/Bic_top_0/inst/coeff01[7]} {system_i/Bic_top_0/inst/coeff01[8]}]]
+
+
+
+
+connect_debug_port u_ila_0/probe12 [get_nets [list {system_i/Bic_top_0/inst/out_y[0]} {system_i/Bic_top_0/inst/out_y[1]} {system_i/Bic_top_0/inst/out_y[2]} {system_i/Bic_top_0/inst/out_y[3]} {system_i/Bic_top_0/inst/out_y[4]} {system_i/Bic_top_0/inst/out_y[5]} {system_i/Bic_top_0/inst/out_y[6]} {system_i/Bic_top_0/inst/out_y[7]} {system_i/Bic_top_0/inst/out_y[8]} {system_i/Bic_top_0/inst/out_y[9]} {system_i/Bic_top_0/inst/out_y[10]} {system_i/Bic_top_0/inst/out_y[11]} {system_i/Bic_top_0/inst/out_y[12]} {system_i/Bic_top_0/inst/out_y[13]} {system_i/Bic_top_0/inst/out_y[14]} {system_i/Bic_top_0/inst/out_y[15]} {system_i/Bic_top_0/inst/out_y[16]} {system_i/Bic_top_0/inst/out_y[17]} {system_i/Bic_top_0/inst/out_y[18]} {system_i/Bic_top_0/inst/out_y[19]} {system_i/Bic_top_0/inst/out_y[20]} {system_i/Bic_top_0/inst/out_y[21]} {system_i/Bic_top_0/inst/out_y[22]} {system_i/Bic_top_0/inst/out_y[23]}]]
+
+create_debug_core u_ila_0 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list system_i/processing_system7_0/inst/FCLK_CLK1]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+set_property port_width 24 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData12[0]} {system_i/Bic_top_0/inst/ramRB/readData12[1]} {system_i/Bic_top_0/inst/ramRB/readData12[2]} {system_i/Bic_top_0/inst/ramRB/readData12[3]} {system_i/Bic_top_0/inst/ramRB/readData12[4]} {system_i/Bic_top_0/inst/ramRB/readData12[5]} {system_i/Bic_top_0/inst/ramRB/readData12[6]} {system_i/Bic_top_0/inst/ramRB/readData12[7]} {system_i/Bic_top_0/inst/ramRB/readData12[8]} {system_i/Bic_top_0/inst/ramRB/readData12[9]} {system_i/Bic_top_0/inst/ramRB/readData12[10]} {system_i/Bic_top_0/inst/ramRB/readData12[11]} {system_i/Bic_top_0/inst/ramRB/readData12[12]} {system_i/Bic_top_0/inst/ramRB/readData12[13]} {system_i/Bic_top_0/inst/ramRB/readData12[14]} {system_i/Bic_top_0/inst/ramRB/readData12[15]} {system_i/Bic_top_0/inst/ramRB/readData12[16]} {system_i/Bic_top_0/inst/ramRB/readData12[17]} {system_i/Bic_top_0/inst/ramRB/readData12[18]} {system_i/Bic_top_0/inst/ramRB/readData12[19]} {system_i/Bic_top_0/inst/ramRB/readData12[20]} {system_i/Bic_top_0/inst/ramRB/readData12[21]} {system_i/Bic_top_0/inst/ramRB/readData12[22]} {system_i/Bic_top_0/inst/ramRB/readData12[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 24 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData01[0]} {system_i/Bic_top_0/inst/ramRB/readData01[1]} {system_i/Bic_top_0/inst/ramRB/readData01[2]} {system_i/Bic_top_0/inst/ramRB/readData01[3]} {system_i/Bic_top_0/inst/ramRB/readData01[4]} {system_i/Bic_top_0/inst/ramRB/readData01[5]} {system_i/Bic_top_0/inst/ramRB/readData01[6]} {system_i/Bic_top_0/inst/ramRB/readData01[7]} {system_i/Bic_top_0/inst/ramRB/readData01[8]} {system_i/Bic_top_0/inst/ramRB/readData01[9]} {system_i/Bic_top_0/inst/ramRB/readData01[10]} {system_i/Bic_top_0/inst/ramRB/readData01[11]} {system_i/Bic_top_0/inst/ramRB/readData01[12]} {system_i/Bic_top_0/inst/ramRB/readData01[13]} {system_i/Bic_top_0/inst/ramRB/readData01[14]} {system_i/Bic_top_0/inst/ramRB/readData01[15]} {system_i/Bic_top_0/inst/ramRB/readData01[16]} {system_i/Bic_top_0/inst/ramRB/readData01[17]} {system_i/Bic_top_0/inst/ramRB/readData01[18]} {system_i/Bic_top_0/inst/ramRB/readData01[19]} {system_i/Bic_top_0/inst/ramRB/readData01[20]} {system_i/Bic_top_0/inst/ramRB/readData01[21]} {system_i/Bic_top_0/inst/ramRB/readData01[22]} {system_i/Bic_top_0/inst/ramRB/readData01[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+set_property port_width 24 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData02[0]} {system_i/Bic_top_0/inst/ramRB/readData02[1]} {system_i/Bic_top_0/inst/ramRB/readData02[2]} {system_i/Bic_top_0/inst/ramRB/readData02[3]} {system_i/Bic_top_0/inst/ramRB/readData02[4]} {system_i/Bic_top_0/inst/ramRB/readData02[5]} {system_i/Bic_top_0/inst/ramRB/readData02[6]} {system_i/Bic_top_0/inst/ramRB/readData02[7]} {system_i/Bic_top_0/inst/ramRB/readData02[8]} {system_i/Bic_top_0/inst/ramRB/readData02[9]} {system_i/Bic_top_0/inst/ramRB/readData02[10]} {system_i/Bic_top_0/inst/ramRB/readData02[11]} {system_i/Bic_top_0/inst/ramRB/readData02[12]} {system_i/Bic_top_0/inst/ramRB/readData02[13]} {system_i/Bic_top_0/inst/ramRB/readData02[14]} {system_i/Bic_top_0/inst/ramRB/readData02[15]} {system_i/Bic_top_0/inst/ramRB/readData02[16]} {system_i/Bic_top_0/inst/ramRB/readData02[17]} {system_i/Bic_top_0/inst/ramRB/readData02[18]} {system_i/Bic_top_0/inst/ramRB/readData02[19]} {system_i/Bic_top_0/inst/ramRB/readData02[20]} {system_i/Bic_top_0/inst/ramRB/readData02[21]} {system_i/Bic_top_0/inst/ramRB/readData02[22]} {system_i/Bic_top_0/inst/ramRB/readData02[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+set_property port_width 24 [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData13[0]} {system_i/Bic_top_0/inst/ramRB/readData13[1]} {system_i/Bic_top_0/inst/ramRB/readData13[2]} {system_i/Bic_top_0/inst/ramRB/readData13[3]} {system_i/Bic_top_0/inst/ramRB/readData13[4]} {system_i/Bic_top_0/inst/ramRB/readData13[5]} {system_i/Bic_top_0/inst/ramRB/readData13[6]} {system_i/Bic_top_0/inst/ramRB/readData13[7]} {system_i/Bic_top_0/inst/ramRB/readData13[8]} {system_i/Bic_top_0/inst/ramRB/readData13[9]} {system_i/Bic_top_0/inst/ramRB/readData13[10]} {system_i/Bic_top_0/inst/ramRB/readData13[11]} {system_i/Bic_top_0/inst/ramRB/readData13[12]} {system_i/Bic_top_0/inst/ramRB/readData13[13]} {system_i/Bic_top_0/inst/ramRB/readData13[14]} {system_i/Bic_top_0/inst/ramRB/readData13[15]} {system_i/Bic_top_0/inst/ramRB/readData13[16]} {system_i/Bic_top_0/inst/ramRB/readData13[17]} {system_i/Bic_top_0/inst/ramRB/readData13[18]} {system_i/Bic_top_0/inst/ramRB/readData13[19]} {system_i/Bic_top_0/inst/ramRB/readData13[20]} {system_i/Bic_top_0/inst/ramRB/readData13[21]} {system_i/Bic_top_0/inst/ramRB/readData13[22]} {system_i/Bic_top_0/inst/ramRB/readData13[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+set_property port_width 24 [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData10[0]} {system_i/Bic_top_0/inst/ramRB/readData10[1]} {system_i/Bic_top_0/inst/ramRB/readData10[2]} {system_i/Bic_top_0/inst/ramRB/readData10[3]} {system_i/Bic_top_0/inst/ramRB/readData10[4]} {system_i/Bic_top_0/inst/ramRB/readData10[5]} {system_i/Bic_top_0/inst/ramRB/readData10[6]} {system_i/Bic_top_0/inst/ramRB/readData10[7]} {system_i/Bic_top_0/inst/ramRB/readData10[8]} {system_i/Bic_top_0/inst/ramRB/readData10[9]} {system_i/Bic_top_0/inst/ramRB/readData10[10]} {system_i/Bic_top_0/inst/ramRB/readData10[11]} {system_i/Bic_top_0/inst/ramRB/readData10[12]} {system_i/Bic_top_0/inst/ramRB/readData10[13]} {system_i/Bic_top_0/inst/ramRB/readData10[14]} {system_i/Bic_top_0/inst/ramRB/readData10[15]} {system_i/Bic_top_0/inst/ramRB/readData10[16]} {system_i/Bic_top_0/inst/ramRB/readData10[17]} {system_i/Bic_top_0/inst/ramRB/readData10[18]} {system_i/Bic_top_0/inst/ramRB/readData10[19]} {system_i/Bic_top_0/inst/ramRB/readData10[20]} {system_i/Bic_top_0/inst/ramRB/readData10[21]} {system_i/Bic_top_0/inst/ramRB/readData10[22]} {system_i/Bic_top_0/inst/ramRB/readData10[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+set_property port_width 24 [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData11[0]} {system_i/Bic_top_0/inst/ramRB/readData11[1]} {system_i/Bic_top_0/inst/ramRB/readData11[2]} {system_i/Bic_top_0/inst/ramRB/readData11[3]} {system_i/Bic_top_0/inst/ramRB/readData11[4]} {system_i/Bic_top_0/inst/ramRB/readData11[5]} {system_i/Bic_top_0/inst/ramRB/readData11[6]} {system_i/Bic_top_0/inst/ramRB/readData11[7]} {system_i/Bic_top_0/inst/ramRB/readData11[8]} {system_i/Bic_top_0/inst/ramRB/readData11[9]} {system_i/Bic_top_0/inst/ramRB/readData11[10]} {system_i/Bic_top_0/inst/ramRB/readData11[11]} {system_i/Bic_top_0/inst/ramRB/readData11[12]} {system_i/Bic_top_0/inst/ramRB/readData11[13]} {system_i/Bic_top_0/inst/ramRB/readData11[14]} {system_i/Bic_top_0/inst/ramRB/readData11[15]} {system_i/Bic_top_0/inst/ramRB/readData11[16]} {system_i/Bic_top_0/inst/ramRB/readData11[17]} {system_i/Bic_top_0/inst/ramRB/readData11[18]} {system_i/Bic_top_0/inst/ramRB/readData11[19]} {system_i/Bic_top_0/inst/ramRB/readData11[20]} {system_i/Bic_top_0/inst/ramRB/readData11[21]} {system_i/Bic_top_0/inst/ramRB/readData11[22]} {system_i/Bic_top_0/inst/ramRB/readData11[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+set_property port_width 24 [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData00[0]} {system_i/Bic_top_0/inst/ramRB/readData00[1]} {system_i/Bic_top_0/inst/ramRB/readData00[2]} {system_i/Bic_top_0/inst/ramRB/readData00[3]} {system_i/Bic_top_0/inst/ramRB/readData00[4]} {system_i/Bic_top_0/inst/ramRB/readData00[5]} {system_i/Bic_top_0/inst/ramRB/readData00[6]} {system_i/Bic_top_0/inst/ramRB/readData00[7]} {system_i/Bic_top_0/inst/ramRB/readData00[8]} {system_i/Bic_top_0/inst/ramRB/readData00[9]} {system_i/Bic_top_0/inst/ramRB/readData00[10]} {system_i/Bic_top_0/inst/ramRB/readData00[11]} {system_i/Bic_top_0/inst/ramRB/readData00[12]} {system_i/Bic_top_0/inst/ramRB/readData00[13]} {system_i/Bic_top_0/inst/ramRB/readData00[14]} {system_i/Bic_top_0/inst/ramRB/readData00[15]} {system_i/Bic_top_0/inst/ramRB/readData00[16]} {system_i/Bic_top_0/inst/ramRB/readData00[17]} {system_i/Bic_top_0/inst/ramRB/readData00[18]} {system_i/Bic_top_0/inst/ramRB/readData00[19]} {system_i/Bic_top_0/inst/ramRB/readData00[20]} {system_i/Bic_top_0/inst/ramRB/readData00[21]} {system_i/Bic_top_0/inst/ramRB/readData00[22]} {system_i/Bic_top_0/inst/ramRB/readData00[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+set_property port_width 24 [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readData03[0]} {system_i/Bic_top_0/inst/ramRB/readData03[1]} {system_i/Bic_top_0/inst/ramRB/readData03[2]} {system_i/Bic_top_0/inst/ramRB/readData03[3]} {system_i/Bic_top_0/inst/ramRB/readData03[4]} {system_i/Bic_top_0/inst/ramRB/readData03[5]} {system_i/Bic_top_0/inst/ramRB/readData03[6]} {system_i/Bic_top_0/inst/ramRB/readData03[7]} {system_i/Bic_top_0/inst/ramRB/readData03[8]} {system_i/Bic_top_0/inst/ramRB/readData03[9]} {system_i/Bic_top_0/inst/ramRB/readData03[10]} {system_i/Bic_top_0/inst/ramRB/readData03[11]} {system_i/Bic_top_0/inst/ramRB/readData03[12]} {system_i/Bic_top_0/inst/ramRB/readData03[13]} {system_i/Bic_top_0/inst/ramRB/readData03[14]} {system_i/Bic_top_0/inst/ramRB/readData03[15]} {system_i/Bic_top_0/inst/ramRB/readData03[16]} {system_i/Bic_top_0/inst/ramRB/readData03[17]} {system_i/Bic_top_0/inst/ramRB/readData03[18]} {system_i/Bic_top_0/inst/ramRB/readData03[19]} {system_i/Bic_top_0/inst/ramRB/readData03[20]} {system_i/Bic_top_0/inst/ramRB/readData03[21]} {system_i/Bic_top_0/inst/ramRB/readData03[22]} {system_i/Bic_top_0/inst/ramRB/readData03[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+set_property port_width 6 [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {system_i/Bic_top_0/inst/ramRB/writeSelect[0]} {system_i/Bic_top_0/inst/ramRB/writeSelect[1]} {system_i/Bic_top_0/inst/ramRB/writeSelect[2]} {system_i/Bic_top_0/inst/ramRB/writeSelect[3]} {system_i/Bic_top_0/inst/ramRB/writeSelect[4]} {system_i/Bic_top_0/inst/ramRB/writeSelect[5]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+set_property port_width 6 [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list {system_i/Bic_top_0/inst/ramRB/readSelect[0]} {system_i/Bic_top_0/inst/ramRB/readSelect[1]} {system_i/Bic_top_0/inst/ramRB/readSelect[2]} {system_i/Bic_top_0/inst/ramRB/readSelect[3]} {system_i/Bic_top_0/inst/ramRB/readSelect[4]} {system_i/Bic_top_0/inst/ramRB/readSelect[5]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+set_property port_width 24 [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list {system_i/Bic_top_0/inst/out_y4[0]} {system_i/Bic_top_0/inst/out_y4[1]} {system_i/Bic_top_0/inst/out_y4[2]} {system_i/Bic_top_0/inst/out_y4[3]} {system_i/Bic_top_0/inst/out_y4[4]} {system_i/Bic_top_0/inst/out_y4[5]} {system_i/Bic_top_0/inst/out_y4[6]} {system_i/Bic_top_0/inst/out_y4[7]} {system_i/Bic_top_0/inst/out_y4[8]} {system_i/Bic_top_0/inst/out_y4[9]} {system_i/Bic_top_0/inst/out_y4[10]} {system_i/Bic_top_0/inst/out_y4[11]} {system_i/Bic_top_0/inst/out_y4[12]} {system_i/Bic_top_0/inst/out_y4[13]} {system_i/Bic_top_0/inst/out_y4[14]} {system_i/Bic_top_0/inst/out_y4[15]} {system_i/Bic_top_0/inst/out_y4[16]} {system_i/Bic_top_0/inst/out_y4[17]} {system_i/Bic_top_0/inst/out_y4[18]} {system_i/Bic_top_0/inst/out_y4[19]} {system_i/Bic_top_0/inst/out_y4[20]} {system_i/Bic_top_0/inst/out_y4[21]} {system_i/Bic_top_0/inst/out_y4[22]} {system_i/Bic_top_0/inst/out_y4[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+set_property port_width 24 [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list {system_i/Bic_top_0/inst/out_y3[0]} {system_i/Bic_top_0/inst/out_y3[1]} {system_i/Bic_top_0/inst/out_y3[2]} {system_i/Bic_top_0/inst/out_y3[3]} {system_i/Bic_top_0/inst/out_y3[4]} {system_i/Bic_top_0/inst/out_y3[5]} {system_i/Bic_top_0/inst/out_y3[6]} {system_i/Bic_top_0/inst/out_y3[7]} {system_i/Bic_top_0/inst/out_y3[8]} {system_i/Bic_top_0/inst/out_y3[9]} {system_i/Bic_top_0/inst/out_y3[10]} {system_i/Bic_top_0/inst/out_y3[11]} {system_i/Bic_top_0/inst/out_y3[12]} {system_i/Bic_top_0/inst/out_y3[13]} {system_i/Bic_top_0/inst/out_y3[14]} {system_i/Bic_top_0/inst/out_y3[15]} {system_i/Bic_top_0/inst/out_y3[16]} {system_i/Bic_top_0/inst/out_y3[17]} {system_i/Bic_top_0/inst/out_y3[18]} {system_i/Bic_top_0/inst/out_y3[19]} {system_i/Bic_top_0/inst/out_y3[20]} {system_i/Bic_top_0/inst/out_y3[21]} {system_i/Bic_top_0/inst/out_y3[22]} {system_i/Bic_top_0/inst/out_y3[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+set_property port_width 12 [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list {system_i/Bic_top_0/inst/xPixLow[0]} {system_i/Bic_top_0/inst/xPixLow[1]} {system_i/Bic_top_0/inst/xPixLow[2]} {system_i/Bic_top_0/inst/xPixLow[3]} {system_i/Bic_top_0/inst/xPixLow[4]} {system_i/Bic_top_0/inst/xPixLow[5]} {system_i/Bic_top_0/inst/xPixLow[6]} {system_i/Bic_top_0/inst/xPixLow[7]} {system_i/Bic_top_0/inst/xPixLow[8]} {system_i/Bic_top_0/inst/xPixLow[9]} {system_i/Bic_top_0/inst/xPixLow[10]} {system_i/Bic_top_0/inst/xPixLow[11]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+set_property port_width 32 [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list {system_i/Bic_top_0/inst/s_axis_tdata[0]} {system_i/Bic_top_0/inst/s_axis_tdata[1]} {system_i/Bic_top_0/inst/s_axis_tdata[2]} {system_i/Bic_top_0/inst/s_axis_tdata[3]} {system_i/Bic_top_0/inst/s_axis_tdata[4]} {system_i/Bic_top_0/inst/s_axis_tdata[5]} {system_i/Bic_top_0/inst/s_axis_tdata[6]} {system_i/Bic_top_0/inst/s_axis_tdata[7]} {system_i/Bic_top_0/inst/s_axis_tdata[8]} {system_i/Bic_top_0/inst/s_axis_tdata[9]} {system_i/Bic_top_0/inst/s_axis_tdata[10]} {system_i/Bic_top_0/inst/s_axis_tdata[11]} {system_i/Bic_top_0/inst/s_axis_tdata[12]} {system_i/Bic_top_0/inst/s_axis_tdata[13]} {system_i/Bic_top_0/inst/s_axis_tdata[14]} {system_i/Bic_top_0/inst/s_axis_tdata[15]} {system_i/Bic_top_0/inst/s_axis_tdata[16]} {system_i/Bic_top_0/inst/s_axis_tdata[17]} {system_i/Bic_top_0/inst/s_axis_tdata[18]} {system_i/Bic_top_0/inst/s_axis_tdata[19]} {system_i/Bic_top_0/inst/s_axis_tdata[20]} {system_i/Bic_top_0/inst/s_axis_tdata[21]} {system_i/Bic_top_0/inst/s_axis_tdata[22]} {system_i/Bic_top_0/inst/s_axis_tdata[23]} {system_i/Bic_top_0/inst/s_axis_tdata[24]} {system_i/Bic_top_0/inst/s_axis_tdata[25]} {system_i/Bic_top_0/inst/s_axis_tdata[26]} {system_i/Bic_top_0/inst/s_axis_tdata[27]} {system_i/Bic_top_0/inst/s_axis_tdata[28]} {system_i/Bic_top_0/inst/s_axis_tdata[29]} {system_i/Bic_top_0/inst/s_axis_tdata[30]} {system_i/Bic_top_0/inst/s_axis_tdata[31]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+set_property port_width 11 [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list {system_i/Bic_top_0/inst/writeNextValidLine[0]} {system_i/Bic_top_0/inst/writeNextValidLine[1]} {system_i/Bic_top_0/inst/writeNextValidLine[2]} {system_i/Bic_top_0/inst/writeNextValidLine[3]} {system_i/Bic_top_0/inst/writeNextValidLine[4]} {system_i/Bic_top_0/inst/writeNextValidLine[5]} {system_i/Bic_top_0/inst/writeNextValidLine[6]} {system_i/Bic_top_0/inst/writeNextValidLine[7]} {system_i/Bic_top_0/inst/writeNextValidLine[8]} {system_i/Bic_top_0/inst/writeNextValidLine[9]} {system_i/Bic_top_0/inst/writeNextValidLine[10]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+set_property port_width 9 [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list {system_i/Bic_top_0/inst/yBlend[0]} {system_i/Bic_top_0/inst/yBlend[1]} {system_i/Bic_top_0/inst/yBlend[2]} {system_i/Bic_top_0/inst/yBlend[3]} {system_i/Bic_top_0/inst/yBlend[4]} {system_i/Bic_top_0/inst/yBlend[5]} {system_i/Bic_top_0/inst/yBlend[6]} {system_i/Bic_top_0/inst/yBlend[7]} {system_i/Bic_top_0/inst/yBlend[8]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+set_property port_width 26 [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list {system_i/Bic_top_0/inst/xScaleAmount_valid[0]} {system_i/Bic_top_0/inst/xScaleAmount_valid[1]} {system_i/Bic_top_0/inst/xScaleAmount_valid[2]} {system_i/Bic_top_0/inst/xScaleAmount_valid[3]} {system_i/Bic_top_0/inst/xScaleAmount_valid[4]} {system_i/Bic_top_0/inst/xScaleAmount_valid[5]} {system_i/Bic_top_0/inst/xScaleAmount_valid[6]} {system_i/Bic_top_0/inst/xScaleAmount_valid[7]} {system_i/Bic_top_0/inst/xScaleAmount_valid[8]} {system_i/Bic_top_0/inst/xScaleAmount_valid[9]} {system_i/Bic_top_0/inst/xScaleAmount_valid[10]} {system_i/Bic_top_0/inst/xScaleAmount_valid[11]} {system_i/Bic_top_0/inst/xScaleAmount_valid[12]} {system_i/Bic_top_0/inst/xScaleAmount_valid[13]} {system_i/Bic_top_0/inst/xScaleAmount_valid[14]} {system_i/Bic_top_0/inst/xScaleAmount_valid[15]} {system_i/Bic_top_0/inst/xScaleAmount_valid[16]} {system_i/Bic_top_0/inst/xScaleAmount_valid[17]} {system_i/Bic_top_0/inst/xScaleAmount_valid[18]} {system_i/Bic_top_0/inst/xScaleAmount_valid[19]} {system_i/Bic_top_0/inst/xScaleAmount_valid[20]} {system_i/Bic_top_0/inst/xScaleAmount_valid[21]} {system_i/Bic_top_0/inst/xScaleAmount_valid[22]} {system_i/Bic_top_0/inst/xScaleAmount_valid[23]} {system_i/Bic_top_0/inst/xScaleAmount_valid[24]} {system_i/Bic_top_0/inst/xScaleAmount_valid[25]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+set_property port_width 12 [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list {system_i/Bic_top_0/inst/yPixLow[0]} {system_i/Bic_top_0/inst/yPixLow[1]} {system_i/Bic_top_0/inst/yPixLow[2]} {system_i/Bic_top_0/inst/yPixLow[3]} {system_i/Bic_top_0/inst/yPixLow[4]} {system_i/Bic_top_0/inst/yPixLow[5]} {system_i/Bic_top_0/inst/yPixLow[6]} {system_i/Bic_top_0/inst/yPixLow[7]} {system_i/Bic_top_0/inst/yPixLow[8]} {system_i/Bic_top_0/inst/yPixLow[9]} {system_i/Bic_top_0/inst/yPixLow[10]} {system_i/Bic_top_0/inst/yPixLow[11]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+set_property port_width 24 [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list {system_i/Bic_top_0/inst/out_y1[0]} {system_i/Bic_top_0/inst/out_y1[1]} {system_i/Bic_top_0/inst/out_y1[2]} {system_i/Bic_top_0/inst/out_y1[3]} {system_i/Bic_top_0/inst/out_y1[4]} {system_i/Bic_top_0/inst/out_y1[5]} {system_i/Bic_top_0/inst/out_y1[6]} {system_i/Bic_top_0/inst/out_y1[7]} {system_i/Bic_top_0/inst/out_y1[8]} {system_i/Bic_top_0/inst/out_y1[9]} {system_i/Bic_top_0/inst/out_y1[10]} {system_i/Bic_top_0/inst/out_y1[11]} {system_i/Bic_top_0/inst/out_y1[12]} {system_i/Bic_top_0/inst/out_y1[13]} {system_i/Bic_top_0/inst/out_y1[14]} {system_i/Bic_top_0/inst/out_y1[15]} {system_i/Bic_top_0/inst/out_y1[16]} {system_i/Bic_top_0/inst/out_y1[17]} {system_i/Bic_top_0/inst/out_y1[18]} {system_i/Bic_top_0/inst/out_y1[19]} {system_i/Bic_top_0/inst/out_y1[20]} {system_i/Bic_top_0/inst/out_y1[21]} {system_i/Bic_top_0/inst/out_y1[22]} {system_i/Bic_top_0/inst/out_y1[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+set_property port_width 26 [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list {system_i/Bic_top_0/inst/yScaleAmount_valid[0]} {system_i/Bic_top_0/inst/yScaleAmount_valid[1]} {system_i/Bic_top_0/inst/yScaleAmount_valid[2]} {system_i/Bic_top_0/inst/yScaleAmount_valid[3]} {system_i/Bic_top_0/inst/yScaleAmount_valid[4]} {system_i/Bic_top_0/inst/yScaleAmount_valid[5]} {system_i/Bic_top_0/inst/yScaleAmount_valid[6]} {system_i/Bic_top_0/inst/yScaleAmount_valid[7]} {system_i/Bic_top_0/inst/yScaleAmount_valid[8]} {system_i/Bic_top_0/inst/yScaleAmount_valid[9]} {system_i/Bic_top_0/inst/yScaleAmount_valid[10]} {system_i/Bic_top_0/inst/yScaleAmount_valid[11]} {system_i/Bic_top_0/inst/yScaleAmount_valid[12]} {system_i/Bic_top_0/inst/yScaleAmount_valid[13]} {system_i/Bic_top_0/inst/yScaleAmount_valid[14]} {system_i/Bic_top_0/inst/yScaleAmount_valid[15]} {system_i/Bic_top_0/inst/yScaleAmount_valid[16]} {system_i/Bic_top_0/inst/yScaleAmount_valid[17]} {system_i/Bic_top_0/inst/yScaleAmount_valid[18]} {system_i/Bic_top_0/inst/yScaleAmount_valid[19]} {system_i/Bic_top_0/inst/yScaleAmount_valid[20]} {system_i/Bic_top_0/inst/yScaleAmount_valid[21]} {system_i/Bic_top_0/inst/yScaleAmount_valid[22]} {system_i/Bic_top_0/inst/yScaleAmount_valid[23]} {system_i/Bic_top_0/inst/yScaleAmount_valid[24]} {system_i/Bic_top_0/inst/yScaleAmount_valid[25]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+set_property port_width 24 [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list {system_i/Bic_top_0/inst/out_y2[0]} {system_i/Bic_top_0/inst/out_y2[1]} {system_i/Bic_top_0/inst/out_y2[2]} {system_i/Bic_top_0/inst/out_y2[3]} {system_i/Bic_top_0/inst/out_y2[4]} {system_i/Bic_top_0/inst/out_y2[5]} {system_i/Bic_top_0/inst/out_y2[6]} {system_i/Bic_top_0/inst/out_y2[7]} {system_i/Bic_top_0/inst/out_y2[8]} {system_i/Bic_top_0/inst/out_y2[9]} {system_i/Bic_top_0/inst/out_y2[10]} {system_i/Bic_top_0/inst/out_y2[11]} {system_i/Bic_top_0/inst/out_y2[12]} {system_i/Bic_top_0/inst/out_y2[13]} {system_i/Bic_top_0/inst/out_y2[14]} {system_i/Bic_top_0/inst/out_y2[15]} {system_i/Bic_top_0/inst/out_y2[16]} {system_i/Bic_top_0/inst/out_y2[17]} {system_i/Bic_top_0/inst/out_y2[18]} {system_i/Bic_top_0/inst/out_y2[19]} {system_i/Bic_top_0/inst/out_y2[20]} {system_i/Bic_top_0/inst/out_y2[21]} {system_i/Bic_top_0/inst/out_y2[22]} {system_i/Bic_top_0/inst/out_y2[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe21]
+set_property port_width 12 [get_debug_ports u_ila_0/probe21]
+connect_debug_port u_ila_0/probe21 [get_nets [list {system_i/Bic_top_0/inst/yPixLowNext[0]} {system_i/Bic_top_0/inst/yPixLowNext[1]} {system_i/Bic_top_0/inst/yPixLowNext[2]} {system_i/Bic_top_0/inst/yPixLowNext[3]} {system_i/Bic_top_0/inst/yPixLowNext[4]} {system_i/Bic_top_0/inst/yPixLowNext[5]} {system_i/Bic_top_0/inst/yPixLowNext[6]} {system_i/Bic_top_0/inst/yPixLowNext[7]} {system_i/Bic_top_0/inst/yPixLowNext[8]} {system_i/Bic_top_0/inst/yPixLowNext[9]} {system_i/Bic_top_0/inst/yPixLowNext[10]} {system_i/Bic_top_0/inst/yPixLowNext[11]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe22]
+set_property port_width 12 [get_debug_ports u_ila_0/probe22]
+connect_debug_port u_ila_0/probe22 [get_nets [list {system_i/Bic_top_0/inst/outputColumn[0]} {system_i/Bic_top_0/inst/outputColumn[1]} {system_i/Bic_top_0/inst/outputColumn[2]} {system_i/Bic_top_0/inst/outputColumn[3]} {system_i/Bic_top_0/inst/outputColumn[4]} {system_i/Bic_top_0/inst/outputColumn[5]} {system_i/Bic_top_0/inst/outputColumn[6]} {system_i/Bic_top_0/inst/outputColumn[7]} {system_i/Bic_top_0/inst/outputColumn[8]} {system_i/Bic_top_0/inst/outputColumn[9]} {system_i/Bic_top_0/inst/outputColumn[10]} {system_i/Bic_top_0/inst/outputColumn[11]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe23]
+set_property port_width 8 [get_debug_ports u_ila_0/probe23]
+connect_debug_port u_ila_0/probe23 [get_nets [list {system_i/Bic_top_0/inst/m_axis_tdata[0]} {system_i/Bic_top_0/inst/m_axis_tdata[1]} {system_i/Bic_top_0/inst/m_axis_tdata[2]} {system_i/Bic_top_0/inst/m_axis_tdata[3]} {system_i/Bic_top_0/inst/m_axis_tdata[4]} {system_i/Bic_top_0/inst/m_axis_tdata[5]} {system_i/Bic_top_0/inst/m_axis_tdata[6]} {system_i/Bic_top_0/inst/m_axis_tdata[7]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe24]
+set_property port_width 3 [get_debug_ports u_ila_0/probe24]
+connect_debug_port u_ila_0/probe24 [get_nets [list {system_i/Bic_top_0/inst/fillCount[0]} {system_i/Bic_top_0/inst/fillCount[1]} {system_i/Bic_top_0/inst/fillCount[2]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe25]
+set_property port_width 1 [get_debug_ports u_ila_0/probe25]
+connect_debug_port u_ila_0/probe25 [get_nets [list system_i/Bic_top_0/inst/advanceRead1]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe26]
+set_property port_width 1 [get_debug_ports u_ila_0/probe26]
+connect_debug_port u_ila_0/probe26 [get_nets [list system_i/Bic_top_0/inst/advanceWrite]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe27]
+set_property port_width 1 [get_debug_ports u_ila_0/probe27]
+connect_debug_port u_ila_0/probe27 [get_nets [list system_i/Bic_top_0/inst/dOutValidInt]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe28]
+set_property port_width 1 [get_debug_ports u_ila_0/probe28]
+connect_debug_port u_ila_0/probe28 [get_nets [list system_i/Bic_top_0/inst/enableNextDin]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe29]
+set_property port_width 1 [get_debug_ports u_ila_0/probe29]
+connect_debug_port u_ila_0/probe29 [get_nets [list system_i/Bic_top_0/inst/forceRead]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe30]
+set_property port_width 1 [get_debug_ports u_ila_0/probe30]
+connect_debug_port u_ila_0/probe30 [get_nets [list system_i/Bic_top_0/inst/i_vid_de]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe31]
+set_property port_width 1 [get_debug_ports u_ila_0/probe31]
+connect_debug_port u_ila_0/probe31 [get_nets [list system_i/Bic_top_0/inst/liushui_valid]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe32]
+set_property port_width 1 [get_debug_ports u_ila_0/probe32]
+connect_debug_port u_ila_0/probe32 [get_nets [list system_i/Bic_top_0/inst/m_axis_tready]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe33]
+set_property port_width 1 [get_debug_ports u_ila_0/probe33]
+connect_debug_port u_ila_0/probe33 [get_nets [list system_i/Bic_top_0/inst/m_axis_tvalid]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe34]
+set_property port_width 1 [get_debug_ports u_ila_0/probe34]
+connect_debug_port u_ila_0/probe34 [get_nets [list system_i/Bic_top_0/inst/readState]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe35]
+set_property port_width 1 [get_debug_ports u_ila_0/probe35]
+connect_debug_port u_ila_0/probe35 [get_nets [list system_i/Bic_top_0/inst/s_axis_tlast]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe36]
+set_property port_width 1 [get_debug_ports u_ila_0/probe36]
+connect_debug_port u_ila_0/probe36 [get_nets [list system_i/Bic_top_0/inst/s_axis_tready]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe37]
+set_property port_width 1 [get_debug_ports u_ila_0/probe37]
+connect_debug_port u_ila_0/probe37 [get_nets [list system_i/Bic_top_0/inst/s_axis_tvalid]]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets u_ila_0_FCLK_CLK1]

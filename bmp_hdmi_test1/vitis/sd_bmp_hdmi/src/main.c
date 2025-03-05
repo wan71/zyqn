@@ -36,6 +36,7 @@ VideoMode    vd_mode;
 bmpsize o_bmp;
 
 extern int rx_done; //接收完成标志
+extern int tx_done; //接收完成标志
 extern int error; //传输出错标志
 
 int main(void)
@@ -64,16 +65,33 @@ int main(void)
 	unsigned int rx_dma_addr=out_bmg_addr;
 	unsigned int frame_buffer_addr =in_bmg_addr;  //frame buffer的起始地址
 
-	for(unsigned int i=0;i<512;i++)
-	{
-		dma_loop_init();
-		frame_buffer_addr=in_bmg_addr+(i*length);
-		rx_dma_addr=out_bmg_addr+((i + y_offset) * FRAME_WIDTH + x_offset) * 3;
-		dma_loop_rx(rx_dma_addr,length);
-		dma_loop_tx(frame_buffer_addr,length);
-		printf("this is %d\r\n",i);
-		while (!rx_done && !error); //等待 AXI DMA 搬运完从 AXI Stream Data FIFO 到 DDR3 的数据
-	}
+	//	for(unsigned int i=0;i<512;i++)
+	//	{
+	//		dma_loop_init();
+	//		frame_buffer_addr=in_bmg_addr+(i*length);
+	//		rx_dma_addr=out_bmg_addr+((i + y_offset) * FRAME_WIDTH + x_offset) * 3;
+	//		dma_loop_rx(rx_dma_addr,length);
+	//		dma_loop_tx(frame_buffer_addr,length);
+	//		printf("this is %d\r\n",i);
+	//		while (!rx_done && !error); //等待 AXI DMA 搬运完从 AXI Stream Data FIFO 到 DDR3 的数据
+	//	}
+
+		for(unsigned int i=0;i<512;i++)
+		{
+			dma_loop_init();
+			rx_dma_addr=out_bmg_addr+((i + y_offset) * FRAME_WIDTH + x_offset) * 3;
+			dma_loop_tx(frame_buffer_addr,length);
+	//		printf("this is %d\r\n",i);
+	//		while (!rx_done && !error); //等待 AXI DMA 搬运完从 AXI Stream Data FIFO 到 DDR3 的数据
+		}
+			for(unsigned int i=0;i<512;i++)
+			{
+				dma_loop_init();
+				frame_buffer_addr=in_bmg_addr+(i*length);
+				dma_loop_tx(frame_buffer_addr,length);
+				printf("this is %d\r\n",i);
+				while (!tx_done && !error); //等待 AXI DMA 搬运完从 AXI Stream Data FIFO 到 DDR3 的数据
+			}
 	dma_loop_end();
 	/*
 	 * 5.从DDR输出到HDMI：

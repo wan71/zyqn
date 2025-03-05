@@ -141,7 +141,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9cf1a625</spirit:value>
+            <spirit:value>137707f9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -154,7 +154,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9cf1a625</spirit:value>
+            <spirit:value>137707f9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -417,6 +417,11 @@
         <spirit:displayName>Coeff Width</spirit:displayName>
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_WIDTH" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.FRACTION_BITS&apos;)) + 1)">9</spirit:value>
       </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>LIUSHUI_NUM</spirit:name>
+        <spirit:displayName>Liushui Num</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.LIUSHUI_NUM">4</spirit:value>
+      </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
   <spirit:choices>
@@ -432,7 +437,7 @@
       <spirit:file>
         <spirit:name>xgui/Bic_top_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_664bac1c</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_46f95c62</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -540,6 +545,11 @@
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_WIDTH">9</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
+      <spirit:name>LIUSHUI_NUM</spirit:name>
+      <spirit:displayName>Liushui Num</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.LIUSHUI_NUM">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">Bic_top_v1_0</spirit:value>
     </spirit:parameter>
@@ -559,7 +569,7 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-01-20T17:16:47Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2025-01-23T14:52:20Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>

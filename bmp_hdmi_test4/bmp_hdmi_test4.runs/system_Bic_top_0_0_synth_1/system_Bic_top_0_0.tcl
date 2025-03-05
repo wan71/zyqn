@@ -91,6 +91,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
+  D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/delay.v
   D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/ramDualPort.v
   D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/ramFifo.v
   D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v

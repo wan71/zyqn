@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jan 21 23:59:43 2025
+# Process ID: 19404
+# Current directory: D:/github_project/zyqn/zyqn/bmp_hdmi_test3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23880 D:\github_project\zyqn\zyqn\bmp_hdmi_test3\bmp_hdmi_test3.xpr
+# Log file: D:/github_project/zyqn/zyqn/bmp_hdmi_test3/vivado.log
+# Journal file: D:/github_project/zyqn/zyqn/bmp_hdmi_test3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_project/zyqn/zyqn/bmp_hdmi_test3/bmp_hdmi_test3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/HDMI/sd_bmp_hdmi27/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1139.059 ; gain = 0.000
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1139.059 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2615.785 ; gain = 1476.727
+set_property PROGRAM.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test3/bmp_hdmi_test3.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test3/bmp_hdmi_test3.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/github_project/zyqn/zyqn/bmp_hdmi_test3/bmp_hdmi_test3.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1973] Mismatch between the design programmed into the device xc7z010 (JTAG device index = 1) and the probes file(s) D:/github_project/zyqn/zyqn/bmp_hdmi_test3/bmp_hdmi_test3.runs/impl_1/system_wrapper.ltx.
+ The device core at location uuid_23E7D65A79BC59F7BC47406C1714DFAE, has 41 ILA Input port(s), but the core in the probes file(s) have 32 ILA Input port(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 22 01:15:27 2025...

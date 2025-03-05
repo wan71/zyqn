@@ -53,7 +53,7 @@
 (* X_CORE_INFO = "Bic_top,Vivado 2020.2" *)
 (* CHECK_LICENSE_TYPE = "system_Bic_top_0_0,Bic_top,{}" *)
 (* CORE_GENERATION_INFO = "system_Bic_top_0_0,Bic_top,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=Bic_top,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,DATA_WIDTH=8,CHANNELS=1,BUFFER_SIZE=6,INPUT_X_RES_WIDTH=12,INPUT_Y_RES_WIDTH=12,OUTPUT_X_RES_WIDTH=12,OUTPUT_Y_RES_WIDTH=12,BUFFER_SIZE_WIDTH=3,RS_START=0,RS_READ_LINE=1,SCALE_INT_BITS=4,DISCARD_CNT_WIDTH=8,SCALE_FRAC_BITS=14,SCALE_BITS=18,WS_START=0,WS_DISCARD=1,WS_READ=2,WS_DONE=3,FRACTION_BITS=8,COEFF_\
-WIDTH=9}" *)
+WIDTH=9,LIUSHUI_NUM=4}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_Bic_top_0_0 (
@@ -114,7 +114,8 @@ input wire m_axis_tready;
     .WS_READ(2),
     .WS_DONE(3),
     .FRACTION_BITS(8),
-    .COEFF_WIDTH(9)
+    .COEFF_WIDTH(9),
+    .LIUSHUI_NUM(4)
   ) inst (
     .clk(clk),
     .rst_n(rst_n),

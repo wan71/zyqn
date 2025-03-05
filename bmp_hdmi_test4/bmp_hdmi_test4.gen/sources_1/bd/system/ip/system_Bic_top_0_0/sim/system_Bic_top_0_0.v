@@ -112,7 +112,8 @@ input wire m_axis_tready;
     .WS_READ(2),
     .WS_DONE(3),
     .FRACTION_BITS(8),
-    .COEFF_WIDTH(9)
+    .COEFF_WIDTH(9),
+    .LIUSHUI_NUM(4)
   ) inst (
     .clk(clk),
     .rst_n(rst_n),

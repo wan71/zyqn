@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"Bicubic_tb_func_synth.v" \
+"../../../../../Bicubic.srcs/sim_1/new/Bic_B2A.v" \
+"../../../../../Bicubic.srcs/sim_1/imports/new/Bicubic_tb.v" \
+
+# Do not sort compile order
+nosort

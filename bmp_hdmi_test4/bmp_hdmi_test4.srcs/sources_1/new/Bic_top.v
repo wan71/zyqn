@@ -16,7 +16,7 @@ module Bic_top (
 );
 parameter	DATA_WIDTH         = 8 ;	// 每个像素通道的位宽，如RGB888表示每个通道为8位。
 parameter	CHANNELS           = 1 ;	// 像素通道数量，如RGB888有3个通道。
-parameter	BUFFER_SIZE        = 6 ;
+parameter	BUFFER_SIZE        = 6 ;  //rom缓冲区大小
 parameter	INPUT_X_RES_WIDTH  = 12;//输入/输出分辨率信号的宽度 (本来只用512的，但是现在要x3)
 parameter	INPUT_Y_RES_WIDTH  = 12;	//输入/输出分辨率信号的宽度。
 parameter	OUTPUT_X_RES_WIDTH = 12;
@@ -32,9 +32,9 @@ reg [SCALE_BITS-1:0]			      i_scaler_y_ratio=(1.0) * (1<<SCALE_FRAC_BITS);
 
 
 (*mark_debug="true"*)wire [BUFFER_SIZE_WIDTH-1:0] 	             fillCount              ;	// Numbers used rams in the ram fifo
-wire							                 o_vid_fifo_read;
+wire							                 o_vid_fifo_read;  /* 好像没啥用*/
 //-----------------------Internal signals and registers------------------------
-(*mark_debug="true"*)reg								             advanceRead1=0           ;
+(*mark_debug="true"*)reg								advanceRead1=0           ; 
 reg								             advanceRead2=0           ;                 								            
 wire [DATA_WIDTH*CHANNELS-1:0]	             readData00             ;
 wire [DATA_WIDTH*CHANNELS-1:0]	             readData01             ;
@@ -53,17 +53,17 @@ reg  [INPUT_Y_RES_WIDTH-1+SCALE_FRAC_BITS:0] yScaleAmount           ;	// Fractio
 reg  [INPUT_Y_RES_WIDTH-1+SCALE_FRAC_BITS:0] yScaleAmountNext       ;	// Fractional and integer components of input pixel select (multiply result)
 (*mark_debug="true"*)wire [BUFFER_SIZE_WIDTH-1:0] 	             fillCount              ;	// Numbers used rams in the ram fifo
 reg                 			             lineSwitchOutputDisable;	// On the end of an output line, disable the output for one cycle to let the RAM data become valid
-(*mark_debug="true"*)reg								             dOutValidInt           ;
-reg  [COEFF_WIDTH-1:0]		                 xBlend  ;
+(*mark_debug="true"*)reg								             dOutValidInt           ;/*读使能，有效信号*/
+reg  [COEFF_WIDTH-1:0]		                 xBlend  ; /* 系数*/
 wire [COEFF_WIDTH-1:0]	yBlend      = {1'b0, yScaleAmount[SCALE_FRAC_BITS-1:SCALE_FRAC_BITS-FRACTION_BITS]};							                
-(*mark_debug="true"*)wire [INPUT_X_RES_WIDTH-1:0]                 xPixLow     = xScaleAmount[INPUT_X_RES_WIDTH-1+SCALE_FRAC_BITS:SCALE_FRAC_BITS]    ;
+(*mark_debug="true"*)wire [INPUT_X_RES_WIDTH-1:0]                 xPixLow     = xScaleAmount[INPUT_X_RES_WIDTH-1+SCALE_FRAC_BITS:SCALE_FRAC_BITS]    ; /*输出图像的x和y轴（整数部分）*/
 (*mark_debug="true"*)wire [INPUT_Y_RES_WIDTH-1:0]                 yPixLow     = yScaleAmount[INPUT_Y_RES_WIDTH-1+SCALE_FRAC_BITS:SCALE_FRAC_BITS]    ;
 wire [INPUT_Y_RES_WIDTH-1:0]                 yPixLowNext = yScaleAmountNext[INPUT_Y_RES_WIDTH-1+SCALE_FRAC_BITS:SCALE_FRAC_BITS];							                
-(*mark_debug="true"*)wire 						                 allDataWritten;		//Indicates that all data from input has been read in
-(*mark_debug="true"*)reg 						                 readState     ;
+wire 						                 allDataWritten;		//Indicates that all data from input has been read in输入全部读完
+reg 						                 readState     ;
 reg [OUTPUT_X_RES_WIDTH-1+SCALE_FRAC_BITS:0] i_left_offset =0;
 //assign o_vout_vs=i_vid_vs; 
- (*mark_debug="true"*)wire							                 i_vout_read=1;
+ wire							                 i_vout_read=1;
  wire [OUTPUT_X_RES_WIDTH-1:0]	             i_des_image_x=512*3-1;
 //States for read state machine
 parameter RS_START     = 0;
@@ -170,10 +170,10 @@ assign  s_axis_tready=o_vid_fifo_read & enableNextDin ;
 parameter	SCALE_INT_BITS     = 4;// Width of integer component of scaling factor. The maximum input data width to.
 parameter 	DISCARD_CNT_WIDTH  = 8;
 parameter	SCALE_FRAC_BITS    = 14;	// Width of fractional component of scaling factor 比例因子分数分量的宽度
-parameter	SCALE_BITS         = SCALE_INT_BITS + SCALE_FRAC_BITS;	
+parameter	SCALE_BITS         = SCALE_INT_BITS + SCALE_FRAC_BITS;	  /*这两个数据是表示整数位宽 和 小数位宽*/
 reg [INPUT_Y_RES_WIDTH-1 :0] writeNextValidLine;	/*用于标记下一行有效数据的行号。*/
 reg [INPUT_Y_RES_WIDTH-1 :0] writeNextPlusOne  ;	
-(*mark_debug="true"*)reg [INPUT_Y_RES_WIDTH-1 :0] writeRowCount     ;	/*用于标记插值行，即当前行的下一行是否需要读出。*/
+reg [INPUT_Y_RES_WIDTH-1 :0] writeRowCount     ;	/*用于标记插值行，即当前行的下一行是否需要读出。但是对我用处不塌大，我一般是放大*/
 reg [OUTPUT_Y_RES_WIDTH-1:0] writeOutputLine   ;/*当前写入输出缓冲区的行计数，基于目标图像的行数递增。*/
 reg							 getNextPlusOne    ;		
 reg [1:0]	                 i_top_offset=0; //偏移量
@@ -181,15 +181,6 @@ reg 							 readyForRead;
 reg [DISCARD_CNT_WIDTH-1:0]	                 i_discard_cnt=0;  //需要丢弃的像素数量。
 reg  [INPUT_X_RES_WIDTH-1:0]	                 i_src_image_x= 512*3-1;
 reg [INPUT_Y_RES_WIDTH-1:0]	                 i_src_image_y= 512-1;
-
-
-//always @(posedge clk or posedge rst_n) begin
-//    if (!rst_n) begin
-//        i_discard_cnt <= 0;
-//        i_src_image_x <= 512*3-1;
-//        i_src_image_y <= 512-1;
-//    end
-//end
 
 //Determine which lines to read out and which to discard.
 //writeNextValidLine is the next valid line number that needs to be read out above current value writeRowCount
@@ -329,110 +320,45 @@ ramFifo #(
 ////			   yx
 parameter	FRACTION_BITS      = 8;
 parameter	COEFF_WIDTH        = FRACTION_BITS + 1;
-//(*mark_debug="true"*)reg [COEFF_WIDTH-1:0] coeff00;	// Top left
-//(*mark_debug="true"*)reg [COEFF_WIDTH-1:0] coeff01;	// Top right
-//(*mark_debug="true"*)reg [COEFF_WIDTH-1:0] coeff10;	// Bottom left
-//(*mark_debug="true"*)reg [COEFF_WIDTH-1:0] coeff11;	// Bottom right
+parameter LIUSHUI_NUM = 4; /*用于表述流水延时*/
+(*mark_debug="true"*)wire [INPUT_X_RES_WIDTH-1:0]                 xPixLow_valid;
+(*mark_debug="true"*)wire [INPUT_X_RES_WIDTH-1:0]                 yPixLow_valid;
+(*mark_debug="true"*)wire               liushui_valid;
 
-////Coefficient value of one, format Q1.COEFF_WIDTH-1
-//wire [COEFF_WIDTH-1:0] coeffOne = {1'b1, {(COEFF_WIDTH-1){1'b0}}};	//One in MSb, zeros elsewhere
-////Coefficient value of one half, format Q1.COEFF_WIDTH-1
-//wire [COEFF_WIDTH-1:0] coeffHalf = {2'b01, {(COEFF_WIDTH-2){1'b0}}};
-
-////Compute bilinear interpolation coefficinets. Done here because these pre-registerd values are used twice.
-////Adding coeffHalf to get the nearest value.
-//wire [COEFF_WIDTH-1:0] preCoeff00 = (((coeffOne - xBlend) * (coeffOne - yBlend) + (coeffHalf - 1)) >> FRACTION_BITS) & {{COEFF_WIDTH{1'b0}} , {COEFF_WIDTH{1'b1}}};
-//wire [COEFF_WIDTH-1:0] preCoeff01 = ((xBlend * (coeffOne - yBlend) + (coeffHalf - 1)) >> FRACTION_BITS) & 				{{COEFF_WIDTH{1'b0}}, {COEFF_WIDTH{1'b1}}};
-//wire [COEFF_WIDTH-1:0] preCoeff10 = (((coeffOne - xBlend) * yBlend + (coeffHalf - 1)) >> FRACTION_BITS) &				{{COEFF_WIDTH{1'b0}}, {COEFF_WIDTH{1'b1}}};
-
-//// 璁＄畻绯绘暟--Compute the coefficients
-//always @(posedge clk or negedge rst_n) begin
-//	if(!rst_n) begin
-//		coeff00 <= 0;
-//		coeff01 <= 0;
-//		coeff10 <= 0;
-//		coeff11 <= 0;
-//		xBlend  <= 0;
-//	end
-//	else begin
-//		xBlend <= {1'b0, xScaleAmount[SCALE_FRAC_BITS-1:SCALE_FRAC_BITS-FRACTION_BITS]};	//Changed to registered to improve timing
-//			//Normal bilinear interpolation
-//			coeff00 <= preCoeff00;
-//			coeff01 <= preCoeff01;
-//			coeff10 <= preCoeff10;
-//			coeff11 <= ((xBlend * yBlend + (coeffHalf - 1)) >> FRACTION_BITS) & {{COEFF_WIDTH{1'b0}}, {COEFF_WIDTH{1'b1}}};
-//			//coeff11 <= coeffOne - preCoeff00 - preCoeff01 - preCoeff10;		//Guarantee that all coefficients sum to coeffOne. Saves a multiply too. Reverted to previous method due to timing issues.
-//	end
-//end
-
-////Generate the blending multipliers
-//reg [(DATA_WIDTH+COEFF_WIDTH)*CHANNELS-1:0]	product00, product01, product10, product11;
-//(*mark_debug="true"*)reg [DATA_WIDTH*CHANNELS-1:0]                 o_vout_data;/*output*/
-//generate
-//genvar channel;
-//	for(channel = 0; channel < CHANNELS; channel = channel + 1)
-//		begin : blend_mult_generate
-//			always @(posedge clk or negedge rst_n) begin
-//				if(!rst_n) begin
-//					//productxx[channel] <= 0;
-//					product00[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= 0;
-//					product01[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= 0;
-//					product10[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= 0;
-//					product11[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= 0;
-					
-//					//readDataxxReg[channel] <= 0;
-//					readData00Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= 0;
-//					readData01Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= 0;
-//					readData10Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= 0;
-//					readData11Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= 0;
-					
-//					//o_vout_data[channel] <= 0;
-//					o_vout_data[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= 0;
-//				end
-//				else begin
-//					//readDataxxReg[channel] <= readDataxx[channel];
-//					readData00Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= readData00[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel];
-//					readData01Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= readData01[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel];
-//					readData10Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= readData10[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel];
-//					readData11Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <= readData11[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel];
-				
-//					//productxx[channel] <= readDataxxReg[channel] * coeffxx
-//					product00[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= readData00Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] * coeff00;
-//					product01[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= readData01Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] * coeff01;
-//					product10[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= readData10Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] * coeff10;
-//					product11[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel] <= readData11Reg[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] * coeff11;
-					
-//					//o_vout_data[channel] <= (((product00[channel]) + 
-//					//					(product01[channel]) +
-//					//					(product10[channel]) +
-//					//					(product11[channel])) >> FRACTION_BITS) & ({ {COEFF_WIDTH{1'b0}}, {DATA_WIDTH{1'b1}} });
-//					o_vout_data[DATA_WIDTH*(channel+1)-1 : DATA_WIDTH*channel] <=
-//							(((product00[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel]) + 
-//							  (product01[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel]) +
-//							  (product10[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel]) +
-//							  (product11[(DATA_WIDTH+COEFF_WIDTH)*(channel+1)-1 : (DATA_WIDTH+COEFF_WIDTH)*channel])) >> FRACTION_BITS) & ({{COEFF_WIDTH{1'b0}},{DATA_WIDTH{1'b1}}});
-
-//				end
-//			end
-//		end
-//endgenerate
-
-//assign   m_axis_tdata[7:0] = o_vout_data[DATA_WIDTH*CHANNELS-1:0];
-//assign   m_axis_tvalid = o_vout_vail;
-//// 延时寄存器，用于延迟 readstate 信号 4 个周期
-//reg [3:0] pipeline_delay;  // 存储延迟的状态
-//wire o_vout_vail;
-//// 延时信号输出
-//assign o_vout_vail = pipeline_delay[3]; // 输出第 4 个时钟周期的状态
-
-//always @(posedge clk or negedge rst_n) begin
-//    if (!rst_n) begin
-//        pipeline_delay <= 4'b0000; // 复位时清零
-//    end else begin
-//        // 移位寄存器实现延时，每个时钟周期将 readstate 推入延迟链
-//        pipeline_delay <= {pipeline_delay[2:0], dOutValidInt};
-//    end
-//end
+    // 延迟实例化
+    delay #(
+        .DATA_WIDTH(INPUT_X_RES_WIDTH),
+        .DELAY_CYCLES(LIUSHUI_NUM)
+    ) delay_xPixLow (
+        .clk(clk),
+        .rst_n(rst_n),
+        .din(xPixLow),
+        .dout(xPixLow_valid)
+    );
+    
+   
+     // 延迟实例化
+    delay #(
+        .DATA_WIDTH(INPUT_X_RES_WIDTH),
+        .DELAY_CYCLES(LIUSHUI_NUM)
+    ) delay_yPixLow_valid (
+        .clk(clk),
+        .rst_n(rst_n),
+        .din(yPixLow),
+        .dout(yPixLow_valid)
+    );
+    
+ 
+      // 延迟实例化
+    delay #(
+        .DATA_WIDTH(1),
+        .DELAY_CYCLES(LIUSHUI_NUM)
+    ) delay_liushui (
+        .clk(clk),
+        .rst_n(rst_n),
+        .din(dOutValidInt),
+        .dout(liushui_valid)
+    );
 
 
 

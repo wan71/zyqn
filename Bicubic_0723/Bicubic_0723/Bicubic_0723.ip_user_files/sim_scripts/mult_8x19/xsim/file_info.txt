@@ -1,0 +1,2 @@
+mult_8x19.vhd,vhdl,xil_defaultlib,../../../../Bicubic.srcs/sources_1/ip/mult_8x19/sim/mult_8x19.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

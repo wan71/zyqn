@@ -12,6 +12,7 @@ proc init_gui { IPINST } {
   ipgui::add_param $IPINST -name "FRACTION_BITS" -parent ${Page_0}
   ipgui::add_param $IPINST -name "INPUT_X_RES_WIDTH" -parent ${Page_0}
   ipgui::add_param $IPINST -name "INPUT_Y_RES_WIDTH" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "LIUSHUI_NUM" -parent ${Page_0}
   ipgui::add_param $IPINST -name "OUTPUT_X_RES_WIDTH" -parent ${Page_0}
   ipgui::add_param $IPINST -name "OUTPUT_Y_RES_WIDTH" -parent ${Page_0}
   ipgui::add_param $IPINST -name "RS_READ_LINE" -parent ${Page_0}
@@ -105,6 +106,15 @@ proc update_PARAM_VALUE.INPUT_Y_RES_WIDTH { PARAM_VALUE.INPUT_Y_RES_WIDTH } {
 
 proc validate_PARAM_VALUE.INPUT_Y_RES_WIDTH { PARAM_VALUE.INPUT_Y_RES_WIDTH } {
 	# Procedure called to validate INPUT_Y_RES_WIDTH
+	return true
+}
+
+proc update_PARAM_VALUE.LIUSHUI_NUM { PARAM_VALUE.LIUSHUI_NUM } {
+	# Procedure called to update LIUSHUI_NUM when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.LIUSHUI_NUM { PARAM_VALUE.LIUSHUI_NUM } {
+	# Procedure called to validate LIUSHUI_NUM
 	return true
 }
 
@@ -306,5 +316,10 @@ proc update_MODELPARAM_VALUE.FRACTION_BITS { MODELPARAM_VALUE.FRACTION_BITS PARA
 proc update_MODELPARAM_VALUE.COEFF_WIDTH { MODELPARAM_VALUE.COEFF_WIDTH PARAM_VALUE.COEFF_WIDTH } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	set_property value [get_property value ${PARAM_VALUE.COEFF_WIDTH}] ${MODELPARAM_VALUE.COEFF_WIDTH}
+}
+
+proc update_MODELPARAM_VALUE.LIUSHUI_NUM { MODELPARAM_VALUE.LIUSHUI_NUM PARAM_VALUE.LIUSHUI_NUM } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.LIUSHUI_NUM}] ${MODELPARAM_VALUE.LIUSHUI_NUM}
 }
 

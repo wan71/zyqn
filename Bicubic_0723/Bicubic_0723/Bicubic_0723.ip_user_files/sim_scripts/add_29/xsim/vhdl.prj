@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../Bicubic.srcs/sources_1/ip/add_29/sim/add_29.vhd" \
+
+nosort

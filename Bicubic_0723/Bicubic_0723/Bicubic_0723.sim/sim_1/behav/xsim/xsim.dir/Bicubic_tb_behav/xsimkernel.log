@@ -1,0 +1,7 @@
+Running: xsim.dir/Bicubic_tb_behav/xsimk.exe -simmode gui -wdb Bicubic_tb_behav.wdb -simrunnum 0 -socket 5840
+Design successfully loaded
+Design Loading Memory Usage: 31576 KB (Peak: 31576 KB)
+Design Loading CPU Usage: 155 ms
+Simulation completed
+Simulation Memory Usage: 40000 KB (Peak: 40000 KB)
+Simulation CPU Usage: 331937 ms

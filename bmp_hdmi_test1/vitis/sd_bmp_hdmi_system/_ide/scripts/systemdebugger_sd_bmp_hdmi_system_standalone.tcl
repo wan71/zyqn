@@ -25,5 +25,4 @@ ps7_post_config
 targets -set -nocase -filter {name =~ "*A9*#0"}
 dow D:/github_project/zyqn/zyqn/bmp_hdmi_test1/vitis/sd_bmp_hdmi/Debug/sd_bmp_hdmi.elf
 configparams force-mem-access 0
-targets -set -nocase -filter {name =~ "*A9*#0"}
-con
+bpadd -addr &main

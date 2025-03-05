@@ -441,7 +441,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3fca43cd</spirit:value>
+            <spirit:value>9:b22fe763</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -452,7 +452,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3fca43cd</spirit:value>
+            <spirit:value>9:b22fe763</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -468,11 +468,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jan 20 17:17:48 UTC 2025</spirit:value>
+            <spirit:value>Thu Jan 23 14:52:48 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3fca43cd</spirit:value>
+            <spirit:value>9:b22fe763</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -484,7 +484,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ab9a356e</spirit:value>
+            <spirit:value>9:1d410eb5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -500,11 +500,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jan 20 17:17:48 UTC 2025</spirit:value>
+            <spirit:value>Thu Jan 23 14:52:48 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ab9a356e</spirit:value>
+            <spirit:value>9:1d410eb5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -518,11 +518,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jan 20 17:18:26 UTC 2025</spirit:value>
+            <spirit:value>Thu Jan 23 14:53:26 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3fca43cd</spirit:value>
+            <spirit:value>9:b22fe763</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -777,6 +777,11 @@
         <spirit:displayName>Coeff Width</spirit:displayName>
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_WIDTH" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.FRACTION_BITS&apos;)) + 1)">9</spirit:value>
       </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>LIUSHUI_NUM</spirit:name>
+        <spirit:displayName>Liushui Num</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.LIUSHUI_NUM">4</spirit:value>
+      </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
   <spirit:choices>
@@ -941,6 +946,11 @@
       <spirit:name>COEFF_WIDTH</spirit:name>
       <spirit:displayName>Coeff Width</spirit:displayName>
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_WIDTH">9</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>LIUSHUI_NUM</spirit:name>
+      <spirit:displayName>Liushui Num</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.LIUSHUI_NUM">4</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>

@@ -1,0 +1,2 @@
+add_28.vhd,vhdl,xil_defaultlib,../../../../Bicubic.srcs/sources_1/ip/add_28/sim/add_28.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

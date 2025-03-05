@@ -18,21 +18,26 @@
 //宏定义
 #define VDMA_ID            XPAR_AXIVDMA_0_DEVICE_ID   //VDMA器件ID
 #define DISP_VTC_ID        XPAR_VTC_0_DEVICE_ID       //VTC器件ID
-
-//函数声明
-void adds_init(u8 *frame,UINT height,UINT width);
-void load_sd_bmp_to_dma(u8 *frame);
-//全局变量
-XAxiVdma     vdma;
-DisplayCtrl  dispCtrl;
-VideoMode    vd_mode;
-
 #define IMAGE_WIDTH   512
 #define IMAGE_HEIGHT  512
 #define FRAME_WIDTH   1920
 #define FRAME_HEIGHT  1080
 #define out_bmg_addr 0x4000000
+#define bmg_addr 0x3000000
 #define in_bmg_addr 0x2000000
+
+
+//函数声明
+void adds_init(u8 *frame,UINT height,UINT width);
+void load_sd_bmp_to_dma(u8 *frame);
+void convert_24bit_to_32bit(u8* in_addr, u32* out_addr);
+//全局变量
+XAxiVdma     vdma;
+DisplayCtrl  dispCtrl;
+VideoMode    vd_mode;
+
+
+
 bmpsize o_bmp;
 
 extern int tx_done;
@@ -49,7 +54,8 @@ int main(void)
     	使用PS端的软件通过SD卡接口将512x512的图片数据读取到DDR3中。此过程可以通过FATFS库完成，读取图片到DDR的指定位置
 	  */
 	//读取SD卡图片并显示
-	load_sd_bmp_to_dma((u8*)in_bmg_addr);
+	load_sd_bmp_to_dma((u8*)bmg_addr);
+	convert_24bit_to_32bit((u8*)bmg_addr,(u32*)in_bmg_addr);
 
 //	xil_printf("\r\n width = %d, height = %d, size = 0x%lx bytes \n\r",
 //				*o_bmp.bmp_width,*o_bmp.bmp_height,*o_bmp.bmp_size);
@@ -108,6 +114,20 @@ void adds_init(u8 *frame,UINT height,UINT width)
 	        frame[i+1] = 0xFF;    // Green
 	        frame[i+2] = 0xFF;    // Blue
 	    }
+}
+
+// 24 位 -> 32 位转换
+void convert_24bit_to_32bit(u8* in_addr, u32* out_addr) {
+    int i;
+    // 遍历每个像素
+    for (i = 0; i < IMAGE_WIDTH * IMAGE_HEIGHT; i++) {
+        // 读取 24 位数据，每个像素 3 字节（RGB）
+        u8 r = in_addr[i * 3];     // 红色通道
+        u8 g = in_addr[i * 3 + 1]; // 绿色通道
+        u8 b = in_addr[i * 3 + 2]; // 蓝色通道
+        // 将 24 位数据转换为 32 位（前 8 位补零）
+        out_addr[i] = (0x00 << 24) | (r << 16) | (g << 8) | b;
+    }
 }
 
 void load_sd_bmp_to_dma(u8 *frame)

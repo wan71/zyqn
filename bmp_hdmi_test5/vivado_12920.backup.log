@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan 24 20:34:12 2025
+# Process ID: 12920
+# Current directory: D:/github_project/zyqn/zyqn/bmp_hdmi_test5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4328 D:\github_project\zyqn\zyqn\bmp_hdmi_test5\bmp_hdmi_test5.xpr
+# Log file: D:/github_project/zyqn/zyqn/bmp_hdmi_test5/vivado.log
+# Journal file: D:/github_project/zyqn/zyqn/bmp_hdmi_test5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_project/zyqn/zyqn/bmp_hdmi_test5/bmp_hdmi_test5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/HDMI/sd_bmp_hdmi27/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See D:/github_project/zyqn/zyqn/bmp_hdmi_test5/vivado_pid12920.debug)
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1135.590 ; gain = 0.000
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 24 20:35:03 2025...

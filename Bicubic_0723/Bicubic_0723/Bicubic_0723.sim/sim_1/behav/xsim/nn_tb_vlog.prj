@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Bicubic_0720.srcs/sources_1/bd/design_0716_1/ipshared/ec67/hdl" --include "../../../../Bicubic_0720.srcs/sources_1/bd/design_0716_1/ipshared/2d50/hdl" --include "../../../../Bicubic_0720.srcs/sources_1/bd/design_0716_1/ipshared/8713/hdl" --include "../../../../Bicubic_0720.ip_user_files/ipstatic/hdl" --include "D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../../Bicubic_0720.srcs/sim_1/new/Bic_B2A.v" \
+"../../../../Bicubic_0720.srcs/sources_1/new/nn.v" \
+"../../../../Bicubic_0720.srcs/sim_1/new/nn_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

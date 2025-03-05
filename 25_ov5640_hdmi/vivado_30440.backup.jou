@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec 27 21:34:20 2024
+# Process ID: 30440
+# Current directory: D:/github_project/zyqn/zyqn/25_ov5640_hdmi
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent41300 D:\github_project\zyqn\zyqn\25_ov5640_hdmi\ov5640_hdmi.xpr
+# Log file: D:/github_project/zyqn/zyqn/25_ov5640_hdmi/vivado.log
+# Journal file: D:/github_project/zyqn/zyqn/25_ov5640_hdmi\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github_project/zyqn/zyqn/25_ov5640_hdmi/ov5640_hdmi.xpr
+update_compile_order -fileset sources_1
+save_project_as ov5640_hdmi_2 D:/github_project/zyqn/zyqn/ov5640_hdmi_2 -force

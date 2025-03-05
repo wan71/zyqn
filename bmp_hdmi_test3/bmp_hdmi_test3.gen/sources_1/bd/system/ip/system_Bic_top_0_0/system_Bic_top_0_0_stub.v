@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sat Jan 18 16:17:55 2025
+// Date        : Fri Jan 24 21:34:32 2025
 // Host        : DESKTOP-3OAFHV8 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               d:/github_project/zyqn/zyqn/bmp_hdmi_test3/bmp_hdmi_test3.gen/sources_1/bd/system/ip/system_Bic_top_0_0/system_Bic_top_0_0_stub.v

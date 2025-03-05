@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Jan 21 01:17:57 2025
-# Process ID: 12104
+# Start of session at: Thu Jan 23 22:52:56 2025
+# Process ID: 17420
 # Current directory: D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.runs/system_Bic_top_0_0_synth_1
 # Command line: vivado.exe -log system_Bic_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_Bic_top_0_0.tcl
 # Log file: D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.runs/system_Bic_top_0_0_synth_1/system_Bic_top_0_0.vds
@@ -22,7 +22,7 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 6348
+INFO: [Synth 8-7075] Helper process launched with PID 21548
 CRITICAL WARNING: [Synth 8-976] fillCount has already been declared [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:54]
 CRITICAL WARNING: [Synth 8-2654] second declaration of fillCount ignored [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:54]
 INFO: [Synth 8-994] fillCount is declared here [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:34]
@@ -53,7 +53,7 @@ WARNING: [Synth 8-6901] identifier 'i_top_offset' is used before its declaration
 WARNING: [Synth 8-6901] identifier 'discardInput' is used before its declaration [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:165]
 WARNING: [Synth 8-6901] identifier 'enableNextDin' is used before its declaration [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:168]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1135.453 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1137.531 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'system_Bic_top_0_0' [d:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.gen/sources_1/bd/system/ip/system_Bic_top_0_0/synth/system_Bic_top_0_0.v:59]
 INFO: [Synth 8-6157] synthesizing module 'Bic_top' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:1]
@@ -77,6 +77,7 @@ INFO: [Synth 8-6157] synthesizing module 'Bic_top' [D:/github_project/zyqn/zyqn/
 	Parameter WS_DONE bound to: 3 - type: integer 
 	Parameter FRACTION_BITS bound to: 8 - type: integer 
 	Parameter COEFF_WIDTH bound to: 9 - type: integer 
+	Parameter LIUSHUI_NUM bound to: 4 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'ramFifo' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/ramFifo.v:3]
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
 	Parameter ADDRESS_WIDTH bound to: 12 - type: integer 
@@ -117,60 +118,71 @@ WARNING: [Synth 8-7071] port 'weB' of module 'ramDualPort' is unconnected for in
 WARNING: [Synth 8-7071] port 'qB' of module 'ramDualPort' is unconnected for instance 'ram_inst_i' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/ramFifo.v:85]
 WARNING: [Synth 8-7023] instance 'ram_inst_i' of module 'ramDualPort' has 9 connections declared, but only 5 given [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/ramFifo.v:85]
 INFO: [Synth 8-6155] done synthesizing module 'ramFifo' (2#1) [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/ramFifo.v:3]
-WARNING: [Synth 8-7071] port 'readData02' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:305]
-WARNING: [Synth 8-7071] port 'readData03' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:305]
-WARNING: [Synth 8-7071] port 'readData12' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:305]
-WARNING: [Synth 8-7071] port 'readData13' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:305]
-WARNING: [Synth 8-7071] port 'readData20' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:305]
-WARNING: [Synth 8-7071] port 'readData21' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:305]
-WARNING: [Synth 8-7071] port 'readData22' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:305]
-WARNING: [Synth 8-7071] port 'readData23' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:305]
-WARNING: [Synth 8-7071] port 'readData30' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:305]
-WARNING: [Synth 8-7071] port 'readData31' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:305]
-WARNING: [Synth 8-7071] port 'readData32' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:305]
-WARNING: [Synth 8-7071] port 'readData33' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:305]
-WARNING: [Synth 8-7023] instance 'ramRB' of module 'ramFifo' has 27 connections declared, but only 15 given [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:305]
-INFO: [Synth 8-6155] done synthesizing module 'Bic_top' (3#1) [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'system_Bic_top_0_0' (4#1) [d:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.gen/sources_1/bd/system/ip/system_Bic_top_0_0/synth/system_Bic_top_0_0.v:59]
+WARNING: [Synth 8-7071] port 'readData02' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:296]
+WARNING: [Synth 8-7071] port 'readData03' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:296]
+WARNING: [Synth 8-7071] port 'readData12' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:296]
+WARNING: [Synth 8-7071] port 'readData13' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:296]
+WARNING: [Synth 8-7071] port 'readData20' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:296]
+WARNING: [Synth 8-7071] port 'readData21' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:296]
+WARNING: [Synth 8-7071] port 'readData22' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:296]
+WARNING: [Synth 8-7071] port 'readData23' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:296]
+WARNING: [Synth 8-7071] port 'readData30' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:296]
+WARNING: [Synth 8-7071] port 'readData31' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:296]
+WARNING: [Synth 8-7071] port 'readData32' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:296]
+WARNING: [Synth 8-7071] port 'readData33' of module 'ramFifo' is unconnected for instance 'ramRB' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:296]
+WARNING: [Synth 8-7023] instance 'ramRB' of module 'ramFifo' has 27 connections declared, but only 15 given [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:296]
+INFO: [Synth 8-6157] synthesizing module 'delay' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/delay.v:23]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter DELAY_CYCLES bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay' (3#1) [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/delay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'delay__parameterized0' [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/delay.v:23]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter DELAY_CYCLES bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay__parameterized0' (3#1) [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/delay.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'delay_liushui'. This will prevent further optimization [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:356]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'delay_xPixLow'. This will prevent further optimization [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:332]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'delay_yPixLow_valid'. This will prevent further optimization [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:344]
+INFO: [Synth 8-6155] done synthesizing module 'Bic_top' (4#1) [D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.srcs/sources_1/new/Bic_top.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'system_Bic_top_0_0' (5#1) [d:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.gen/sources_1/bd/system/ip/system_Bic_top_0_0/synth/system_Bic_top_0_0.v:59]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1143.426 ; gain = 7.973
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1144.219 ; gain = 6.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1143.426 ; gain = 7.973
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1144.219 ; gain = 6.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1143.426 ; gain = 7.973
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1144.219 ; gain = 6.688
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1145.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1144.219 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1264.930 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1246.512 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1264.930 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1246.512 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1246.512 ; gain = 108.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1246.512 ; gain = 108.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1246.512 ; gain = 108.980
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'writeState_reg' in module 'Bic_top'
 INFO: [Synth 8-3971] The signal "ramDualPort:/ram_reg" was recognized as a true dual port RAM template.
@@ -183,7 +195,7 @@ INFO: [Synth 8-3971] The signal "ramDualPort:/ram_reg" was recognized as a true 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'writeState_reg' using encoding 'one-hot' in module 'Bic_top'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1246.512 ; gain = 108.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -191,27 +203,26 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input   13 Bit       Adders := 2     
-	   2 Input   12 Bit       Adders := 4     
+	   2 Input   12 Bit       Adders := 3     
 	   2 Input    8 Bit       Adders := 1     
 	   2 Input    3 Bit       Adders := 3     
 +---Registers : 
 	               26 Bit    Registers := 3     
-	               12 Bit    Registers := 5     
+	               12 Bit    Registers := 12    
 	                8 Bit    Registers := 29    
 	                6 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 10    
+	                1 Bit    Registers := 14    
 +---RAMs : 
 	              32K Bit	(4096 X 8 bit)          RAMs := 6     
 +---Muxes : 
 	   2 Input   26 Bit        Muxes := 3     
-	   2 Input   12 Bit        Muxes := 11    
-	   3 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 10    
 	   2 Input    6 Bit        Muxes := 2     
 	   2 Input    3 Bit        Muxes := 4     
 	   3 Input    3 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 28    
-	   3 Input    1 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 27    
+	   3 Input    1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -234,7 +245,7 @@ INFO: [Synth 8-3971] The signal "inst/ramRB/ram_generate[3].ram_inst_i/ram_reg" 
 INFO: [Synth 8-3971] The signal "inst/ramRB/ram_generate[4].ram_inst_i/ram_reg" was recognized as a true dual port RAM template.
 INFO: [Synth 8-3971] The signal "inst/ramRB/ram_generate[5].ram_inst_i/ram_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1246.512 ; gain = 108.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -260,13 +271,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1246.512 ; gain = 108.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1246.512 ; gain = 108.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -297,7 +308,7 @@ INFO: [Synth 8-7052] The timing for the instance inst/ramRB/ram_generate[3].ram_
 INFO: [Synth 8-7052] The timing for the instance inst/ramRB/ram_generate[4].ram_inst_i/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance inst/ramRB/ram_generate[5].ram_inst_i/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1256.570 ; gain = 119.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -324,37 +335,51 @@ INFO: [Synth 8-3295] tying undriven pin m_axis_tdata_inferred:in0[1] to constant
 INFO: [Synth 8-3295] tying undriven pin m_axis_tdata_inferred:in0[0] to constant 0
 INFO: [Synth 8-3295] tying undriven pin m_axis_tvalid_inferred:in0 to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1263.797 ; gain = 126.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1263.797 ; gain = 126.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1263.797 ; gain = 126.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1263.797 ; gain = 126.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1263.848 ; gain = 126.316
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1263.848 ; gain = 126.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|delay       | delay_regs_reg[3][11] | 4      | 24    | YES          | NO                 | YES               | 24     | 0       | 
++------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -371,40 +396,42 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |CARRY4   |    40|
-|2     |LUT1     |    17|
-|3     |LUT2     |    37|
+|2     |LUT1     |    20|
+|3     |LUT2     |    57|
 |4     |LUT3     |    73|
-|5     |LUT4     |    46|
-|6     |LUT5     |    97|
-|7     |LUT6     |    97|
+|5     |LUT4     |    34|
+|6     |LUT5     |   109|
+|7     |LUT6     |    82|
 |8     |MUXF7    |    24|
 |9     |RAMB36E1 |     6|
-|10    |FDCE     |   271|
-|11    |FDPE     |     5|
+|10    |SRL16E   |    24|
+|11    |FDCE     |   305|
+|12    |FDPE     |     5|
+|13    |FDRE     |    24|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1263.848 ; gain = 126.316
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1264.930 ; gain = 7.973
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1264.930 ; gain = 129.477
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1263.848 ; gain = 24.023
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1263.848 ; gain = 126.316
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1264.930 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1275.902 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1275.613 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1275.902 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-51 Infos, 67 Warnings, 4 Critical Warnings and 0 Errors encountered.
+58 Infos, 67 Warnings, 4 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1275.613 ; gain = 140.160
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1275.902 ; gain = 138.371
 INFO: [Common 17-1381] The checkpoint 'D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.runs/system_Bic_top_0_0_synth_1/system_Bic_top_0_0.dcp' has been generated.
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Coretcl 2-1174] Renamed 8 cell refs.
+INFO: [Coretcl 2-1174] Renamed 11 cell refs.
 INFO: [Common 17-1381] The checkpoint 'D:/github_project/zyqn/zyqn/bmp_hdmi_test4/bmp_hdmi_test4.runs/system_Bic_top_0_0_synth_1/system_Bic_top_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_Bic_top_0_0_utilization_synth.rpt -pb system_Bic_top_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 21 01:18:26 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 23 22:53:26 2025...

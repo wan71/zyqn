@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Feb 27 20:15:32 2025
+# Process ID: 20068
+# Current directory: D:/github_project/zyqn/zyqn/bmp_hdmi_test7/bmp_hdmi_test7.runs/system_Bic_top_0_0_synth_1
+# Command line: vivado.exe -log system_Bic_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_Bic_top_0_0.tcl
+# Log file: D:/github_project/zyqn/zyqn/bmp_hdmi_test7/bmp_hdmi_test7.runs/system_Bic_top_0_0_synth_1/system_Bic_top_0_0.vds
+# Journal file: D:/github_project/zyqn/zyqn/bmp_hdmi_test7/bmp_hdmi_test7.runs/system_Bic_top_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_Bic_top_0_0.tcl -notrace

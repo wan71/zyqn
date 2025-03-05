@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/ip/fifo_25x32/sim/fifo_25x32.v" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/ip/fifo_24x8192/sim/fifo_24x8192.v" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/ip/fifo_8x4096/sim/fifo_8x4096.v" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/new/Bic_A2W.v" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/new/Bic_CAL.v" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/new/Bic_SW.v" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/new/Bic_stream2bmp.v" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/new/Bic_w2s.v" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/new/Bicubic.v" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sources_1/new/Bic_top.v" \
+"../../../../Bicubic.srcs/sources_1/ip/Bicubic_v1_0/sim/Bicubic_v1_0.v" \
+"../../../../Bicubic.srcs/sim_1/new/Bic_B2A.v" \
+"../../../../Bicubic.srcs/sim_1/new/ip_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

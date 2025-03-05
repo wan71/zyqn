@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Oct 26 15:52:06 2024
+# Process ID: 23044
+# Current directory: D:/FPGA/Bicubic_0723/Bicubic_0723
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent43740 D:\FPGA\Bicubic_0723\Bicubic_0723\Bicubic_0723.xpr
+# Log file: D:/FPGA/Bicubic_0723/Bicubic_0723/vivado.log
+# Journal file: D:/FPGA/Bicubic_0723/Bicubic_0723\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only D:/FPGA/Bicubic_0723/Bicubic_0723/Bicubic_0723.xpr
+INFO: [Project 1-313] Project file moved from 'D:/VivadoProject/Bicubic_0723' since last save.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'D:/FPGA/Bicubic_0723/ip_repo/test_0717_ip_1.0', nor could it be found using path 'D:/VivadoProject/ip_repo/test_0717_ip_1.0'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'D:/FPGA/Bicubic_0723/Bicubic/Bicubic.srcs', nor could it be found using path 'D:/VivadoProject/Bicubic/Bicubic.srcs'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'D:/FPGA/Bicubic_0723/ip_repo/Bicubic_1.0', nor could it be found using path 'D:/VivadoProject/ip_repo/Bicubic_1.0'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/FPGA/Bicubic_0723/Bicubic/Bicubic.srcs/component.xml', nor could it be found using path 'D:/VivadoProject/Bicubic/Bicubic.srcs/component.xml'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/FPGA/Bicubic_0723/ip_repo/test_0717_ip_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/FPGA/Bicubic_0723/Bicubic/Bicubic.srcs'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/FPGA/Bicubic_0723/ip_repo/Bicubic_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'fifo_24x2048' is locked:
+* Project containing IP 'fifo_24x2048' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'fifo_24x8192' is locked:
+* Project containing IP 'fifo_24x8192' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'add_30' is locked:
+* Project containing IP 'add_30' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'add_29' is locked:
+* Project containing IP 'add_29' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'add_28' is locked:
+* Project containing IP 'add_28' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'add_27' is locked:
+* Project containing IP 'add_27' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'mult_8x19' is locked:
+* Project containing IP 'mult_8x19' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'fifo_8x4096' is locked:
+* Project containing IP 'fifo_8x4096' is read-only.
+WARNING: [BD 41-1663] The design 'design_0716_1.bd' cannot be modified due to following reason(s):
+* Project is read-only. Please run 'save_project_as' before making any change to the bd-design. 
+
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_0716_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_0716_1_axi_mem_intercon_0
+design_0716_1_processing_system7_0_0
+design_0716_1_rst_ps7_0_50M_0
+design_0716_1_axi_dma_0_0
+design_0716_1_xlconcat_0_0
+design_0716_1_auto_pc_0
+design_0716_1_xbar_0
+design_0716_1_ps7_0_axi_periph_0
+design_0716_1_auto_us_0
+design_0716_1_auto_us_1
+design_0716_1_auto_pc_1
+
+WARNING: [IP_Flow 19-2162] IP 'fifo_25x32' is locked:
+* Project containing IP 'fifo_25x32' is read-only.
+WARNING: [Project 1-229] Project 'Bicubic_0723.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1134.297 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 26 15:53:15 2024...
