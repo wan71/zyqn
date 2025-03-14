@@ -22,12 +22,14 @@
 #define IMAGE_HEIGHT  512
 #define FRAME_WIDTH   1920
 #define FRAME_HEIGHT  1080
-#define out_bmg_addr 0x4000000
-#define bmg_addr 0x3000000
-#define in_bmg_addr 0x2000000
+#define out_bmg_addr 0x3000000
+#define bmg_addr 0x2000000
+#define in_bmg_addr 0x2400000
+#define bmg_out_hdmi 0x4000000
 
 
 //函数声明
+void change_bmg(uint32_t src_addr,uint32_t out_addr, uint32_t num_pixels);
 void adds_init(u8 *frame,UINT height,UINT width);
 void load_sd_bmp_to_dma(u8 *frame);
 void convert_24bit_to_32bit(u8* in_addr, u32* out_addr);
@@ -60,7 +62,7 @@ int main(void)
 	 * 2.DMA数据传输到PL端：
     	使用AXI-DMA将DDR3中的图像数据流发送到PL端（FPGA逻辑部分）。AXI-DMA用于从DDR到PL的高效数据传输。
 	 * */
-	adds_init((u8*)out_bmg_addr,vd_mode.height,vd_mode.width);
+	adds_init((u8*)bmg_out_hdmi,vd_mode.height,vd_mode.width);
 	int x_offset = (FRAME_WIDTH - IMAGE_WIDTH) / 2;    // X轴偏移
 	int y_offset = (FRAME_HEIGHT - IMAGE_HEIGHT) / 2;  // Y轴偏移
 	length=512*4;
@@ -68,31 +70,53 @@ int main(void)
 	unsigned int rx_dma_addr=out_bmg_addr;
 	unsigned int frame_buffer_addr =in_bmg_addr;  //frame buffer的起始地址
 
-	for(unsigned int i=0;i<512;i++)
+	dma_loop_init();
+	dma_loop_rx(rx_dma_addr,2*length);
+	for(unsigned int i=0;i<4;i++)
+	{
+		frame_buffer_addr=in_bmg_addr + (i * length);
+		dma_loop_tx(frame_buffer_addr,length);
+		while(!tx_done && !error);
+	}
+//	dma_loop_init();
+//	dma_loop_rx(rx_dma_addr,length);
+	while (!rx_done && !error);
+
+
+	for(unsigned int i=1;i<513;i++)
 	{
 		dma_loop_init();
-		frame_buffer_addr=in_bmg_addr+(i*length);
-		rx_dma_addr=out_bmg_addr+((i + y_offset) * FRAME_WIDTH + x_offset) * 3;
-		dma_loop_rx(rx_dma_addr,length);
+		frame_buffer_addr=frame_buffer_addr +length;
+		rx_dma_addr= rx_dma_addr + 2*length;
+		dma_loop_rx(rx_dma_addr,2*length);
 		dma_loop_tx(frame_buffer_addr,length);
-//		printf("this is %d\r\n",i);
-		while(!tx_done && !error);
-//		while (!rx_done && !error); //等待 AXI DMA 搬运完从 AXI Stream Data FIFO 到 DDR3 的数据
+//		while(!tx_done && !error);
+
+		while (!rx_done && !error);
 	}
+
+
 	dma_loop_end();
 	/*
 	 * 5.从DDR输出到HDMI：
 		VDMA从DDR中读取处理后的图像数据，通过AXI-VDMA流式输出给HDMI显示控制器，将图像显示在屏幕上。
 		VDMA从DDR中读取处理后的图像数据，通过AXI-VDMA流式输出给HDMI显示控制器，将图像显示在屏幕上。
 	 * */
-	xil_printf("HDMI Display 1920*1080 \r\n");
+
+
+
 	// 刷新缓存并启动显示
 	Xil_DCacheFlushRange((UINTPTR)rx_dma_addr, FRAME_WIDTH * FRAME_HEIGHT * 3);
 
+
+	change_bmg(0x3000000,0x4000000,1024*512);
+	Xil_DCacheFlushRange((UINTPTR)bmg_out_hdmi, FRAME_WIDTH * FRAME_HEIGHT * 3);
 	//配置VDMA
 	run_vdma_frame_buffer(&vdma, VDMA_ID, vd_mode.width, vd_mode.height,
-			out_bmg_addr,0, 0,ONLY_READ);
+			bmg_out_hdmi,0, 0,ONLY_READ);
 
+
+	xil_printf("HDMI Display 1920*1080 \r\n");
     //初始化Display controller
 	DisplayInitialize(&dispCtrl, DISP_VTC_ID);
     //设置VideoMode
@@ -102,6 +126,47 @@ int main(void)
 
     return 0;
 }
+
+
+void change_bmg(uint32_t src_addr,uint32_t out_addr, uint32_t num_pixels)
+{
+    // 将源地址按32位（4字节）数据来读取
+    volatile uint32_t *pSrc = (volatile uint32_t *)src_addr;
+    // 目标地址按8位访问，每个像素3字节
+    volatile uint8_t *pDst = (volatile uint8_t *)out_addr;
+    uint8_t data8_1,data8_2,data8_3;
+    uint32_t data32;
+    uint32_t x=0;
+    uint32_t y=0;
+    uint32_t x_off=255;
+    uint32_t y_off=128;
+
+    for (uint32_t i = 0; i < num_pixels; i++)
+    {
+        // 读取源数据，每次读取一个32位数据
+    	data32 = *(volatile uint32_t *)(src_addr+i*4);
+    	data8_1 = *(volatile uint8_t *)((src_addr+i*4)+0x1);
+    	data8_2 = *(volatile uint8_t *)((src_addr+i*4)+0x2);
+    	data8_3 = *(volatile uint8_t *)((src_addr+i*4)+0x3);
+    	pDst = (volatile uint8_t *)(out_addr+(((y_off+y)*FRAME_WIDTH+y_off)+(x+x_off))*3);
+    	pDst[0]=data8_3;
+    	pDst[1]=data8_2;
+    	pDst[2]=data8_1;
+
+    	if(x==1024)
+    	{
+    		y++;
+    		x=0;
+    	}
+    	x++;
+
+        // 你也可以添加调试输出，比如：
+//        printf("原始数据: 0x%08X,0x%08X,0x%08X,0x%08X\n", data32,data8_1,data8_2,data8_3);
+
+    }
+}
+
+
 
 void adds_init(u8 *frame,UINT height,UINT width)
 {
@@ -155,12 +220,6 @@ void load_sd_bmp_to_dma(u8 *frame)
 	xil_printf("\r\n width = %d, height = %d, size = 0x%lx bytes \n\r",
 			*o_bmp.bmp_width,*o_bmp.bmp_height,*o_bmp.bmp_size);
 
-//	// 初始化frame buffer为白色 (0xFFFFFF)
-//	  for(i = 0; i < (*o_bmp.bmp_width) * (*o_bmp.bmp_height) * 3+10; i+=3){
-//	        frame[i] = 0xFF;      // Red
-//	        frame[i+1] = 0xFF;    // Green
-//	        frame[i+2] = 0xFF;    // Blue
-//	    }
 
 	  //读出图片，写入 DDR
 	for(i=*o_bmp.bmp_height-4;i>=0;i--){

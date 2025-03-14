@@ -20,8 +20,8 @@ module cubic_interpolation #(
     // Stage 1: 计算插值系数 t, t?, t? 和系数 a, b, c, d
     // =========================================================================
 
-    (*mark_debug="true"*) reg [7:0] t, t2, t3;
-    (*mark_debug="true"*) reg signed [15:0] a, b, c, d;
+   reg [7:0] t, t2, t3;
+  reg signed [15:0] a, b, c, d;
     always @(posedge clk) begin
         // 计算系数（Catmull-Rom 公式，Q1.7 格式）
         a <= ((-64 * t3) + (128 * t2) - (64 * t))>>7;    // -0.5t? + t? - 0.5t

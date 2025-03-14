@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Feb  3 22:29:05 2025
+| Date         : Wed Mar  5 13:32:30 2025
 | Host         : DESKTOP-3OAFHV8 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
 | Design       : system_wrapper
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 130
+             Violations found: 25
 +-----------+------------------+----------------------------------------------------+------------+
 | Rule      | Severity         | Description                                        | Violations |
 +-----------+------------------+----------------------------------------------------+------------+
@@ -35,7 +35,6 @@ Table of Contents
 | LUTAR-1   | Warning          | LUT drives async reset alert                       | 8          |
 | PDRC-190  | Warning          | Suboptimally placed synchronized register chain    | 10         |
 | TIMING-9  | Warning          | Unknown CDC Logic                                  | 1          |
-| TIMING-16 | Warning          | Large setup violation                              | 105        |
 | ULMTCS-1  | Warning          | Control Sets use limits recommend reduction        | 1          |
 +-----------+------------------+----------------------------------------------------+------------+
 
@@ -163,582 +162,57 @@ Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X33Y85 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X36Y97 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X31Y85 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X39Y96 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X30Y85 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X38Y96 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X32Y85 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X37Y97 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X35Y85 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X35Y95 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X34Y85 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X34Y95 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X36Y84 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X36Y95 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X39Y89 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X32Y96 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X40Y90 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X33Y97 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X41Y91 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X34Y97 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-9#1 Warning
 Unknown CDC Logic  
 One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
-Related violations: <none>
-
-TIMING-16#1 Warning
-Large setup violation  
-There is a large setup violation of -1.014 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][204]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#2 Warning
-Large setup violation  
-There is a large setup violation of -1.025 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[18].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[22]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#3 Warning
-Large setup violation  
-There is a large setup violation of -1.031 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[11].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[5]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#4 Warning
-Large setup violation  
-There is a large setup violation of -1.036 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[10].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[13]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#5 Warning
-Large setup violation  
-There is a large setup violation of -1.053 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[20].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[5]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#6 Warning
-Large setup violation  
-There is a large setup violation of -1.058 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][423]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#7 Warning
-Large setup violation  
-There is a large setup violation of -1.063 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[10].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[21]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#8 Warning
-Large setup violation  
-There is a large setup violation of -1.064 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][373]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#9 Warning
-Large setup violation  
-There is a large setup violation of -1.066 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[18].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[12]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#10 Warning
-Large setup violation  
-There is a large setup violation of -1.090 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[18].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[23]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#11 Warning
-Large setup violation  
-There is a large setup violation of -1.125 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[20].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[12]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#12 Warning
-Large setup violation  
-There is a large setup violation of -1.141 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][205]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#13 Warning
-Large setup violation  
-There is a large setup violation of -1.154 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][356]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#14 Warning
-Large setup violation  
-There is a large setup violation of -1.181 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[11].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[14]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#15 Warning
-Large setup violation  
-There is a large setup violation of -1.184 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][246]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#16 Warning
-Large setup violation  
-There is a large setup violation of -1.192 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][405]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#17 Warning
-Large setup violation  
-There is a large setup violation of -1.201 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][363]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#18 Warning
-Large setup violation  
-There is a large setup violation of -1.204 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][357]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#19 Warning
-Large setup violation  
-There is a large setup violation of -1.205 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[11].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[22]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#20 Warning
-Large setup violation  
-There is a large setup violation of -1.212 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[18].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[13]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#21 Warning
-Large setup violation  
-There is a large setup violation of -1.213 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[18].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[6]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#22 Warning
-Large setup violation  
-There is a large setup violation of -1.226 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[10].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[14]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#23 Warning
-Large setup violation  
-There is a large setup violation of -1.238 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[20].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[13]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#24 Warning
-Large setup violation  
-There is a large setup violation of -1.241 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[11].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[15]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#25 Warning
-Large setup violation  
-There is a large setup violation of -1.263 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][374]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#26 Warning
-Large setup violation  
-There is a large setup violation of -1.265 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[11].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[23]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#27 Warning
-Large setup violation  
-There is a large setup violation of -1.267 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][229]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#28 Warning
-Large setup violation  
-There is a large setup violation of -1.272 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][238]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#29 Warning
-Large setup violation  
-There is a large setup violation of -1.273 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[18].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[7]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#30 Warning
-Large setup violation  
-There is a large setup violation of -1.278 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][375]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#31 Warning
-Large setup violation  
-There is a large setup violation of -1.281 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][215]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#32 Warning
-Large setup violation  
-There is a large setup violation of -1.283 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][414]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#33 Warning
-Large setup violation  
-There is a large setup violation of -1.287 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][359]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#34 Warning
-Large setup violation  
-There is a large setup violation of -1.296 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][206]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#35 Warning
-Large setup violation  
-There is a large setup violation of -1.296 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[10].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[6]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#36 Warning
-Large setup violation  
-There is a large setup violation of -1.296 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[11].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[6]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#37 Warning
-Large setup violation  
-There is a large setup violation of -1.305 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][230]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#38 Warning
-Large setup violation  
-There is a large setup violation of -1.313 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][223]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#39 Warning
-Large setup violation  
-There is a large setup violation of -1.314 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][358]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#40 Warning
-Large setup violation  
-There is a large setup violation of -1.317 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[10].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[22]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#41 Warning
-Large setup violation  
-There is a large setup violation of -1.320 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[10].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[15]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#42 Warning
-Large setup violation  
-There is a large setup violation of -1.329 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][207]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#43 Warning
-Large setup violation  
-There is a large setup violation of -1.341 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][415]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#44 Warning
-Large setup violation  
-There is a large setup violation of -1.350 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][231]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#45 Warning
-Large setup violation  
-There is a large setup violation of -1.356 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[11].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[7]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#46 Warning
-Large setup violation  
-There is a large setup violation of -1.361 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[10].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[7]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#47 Warning
-Large setup violation  
-There is a large setup violation of -1.369 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][222]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#48 Warning
-Large setup violation  
-There is a large setup violation of -1.373 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[20].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[6]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#49 Warning
-Large setup violation  
-There is a large setup violation of -1.375 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][214]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#50 Warning
-Large setup violation  
-There is a large setup violation of -1.377 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[10].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[23]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#51 Warning
-Large setup violation  
-There is a large setup violation of -1.389 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][426]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#52 Warning
-Large setup violation  
-There is a large setup violation of -1.403 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][407]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#53 Warning
-Large setup violation  
-There is a large setup violation of -1.417 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][364]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#54 Warning
-Large setup violation  
-There is a large setup violation of -1.433 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[20].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[7]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#55 Warning
-Large setup violation  
-There is a large setup violation of -1.449 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][247]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#56 Warning
-Large setup violation  
-There is a large setup violation of -1.449 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[20].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[14]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#57 Warning
-Large setup violation  
-There is a large setup violation of -1.454 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[18].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[14]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#58 Warning
-Large setup violation  
-There is a large setup violation of -1.499 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][365]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#59 Warning
-Large setup violation  
-There is a large setup violation of -1.509 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][425]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#60 Warning
-Large setup violation  
-There is a large setup violation of -1.509 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[20].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[15]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#61 Warning
-Large setup violation  
-There is a large setup violation of -1.515 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][406]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#62 Warning
-Large setup violation  
-There is a large setup violation of -1.520 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[18].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[15]/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#63 Warning
-Large setup violation  
-There is a large setup violation of -1.535 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][239]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#64 Warning
-Large setup violation  
-There is a large setup violation of -1.537 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][224]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#65 Warning
-Large setup violation  
-There is a large setup violation of -1.540 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][240]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#66 Warning
-Large setup violation  
-There is a large setup violation of -1.599 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][427]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#67 Warning
-Large setup violation  
-There is a large setup violation of -1.622 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][217]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#68 Warning
-Large setup violation  
-There is a large setup violation of -1.641 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][208]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#69 Warning
-Large setup violation  
-There is a large setup violation of -1.654 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][248]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#70 Warning
-Large setup violation  
-There is a large setup violation of -1.655 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][225]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#71 Warning
-Large setup violation  
-There is a large setup violation of -1.678 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][424]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#72 Warning
-Large setup violation  
-There is a large setup violation of -1.683 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][409]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#73 Warning
-Large setup violation  
-There is a large setup violation of -1.726 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][216]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#74 Warning
-Large setup violation  
-There is a large setup violation of -1.758 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][367]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#75 Warning
-Large setup violation  
-There is a large setup violation of -1.763 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][209]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#76 Warning
-Large setup violation  
-There is a large setup violation of -1.765 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][416]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#77 Warning
-Large setup violation  
-There is a large setup violation of -1.778 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][233]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#78 Warning
-Large setup violation  
-There is a large setup violation of -1.782 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][241]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#79 Warning
-Large setup violation  
-There is a large setup violation of -1.786 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][366]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#80 Warning
-Large setup violation  
-There is a large setup violation of -1.804 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][242]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#81 Warning
-Large setup violation  
-There is a large setup violation of -1.806 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][249]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#82 Warning
-Large setup violation  
-There is a large setup violation of -1.816 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][232]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#83 Warning
-Large setup violation  
-There is a large setup violation of -1.845 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][408]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#84 Warning
-Large setup violation  
-There is a large setup violation of -1.849 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][417]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#85 Warning
-Large setup violation  
-There is a large setup violation of -1.855 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][243]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#86 Warning
-Large setup violation  
-There is a large setup violation of -1.899 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][226]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#87 Warning
-Large setup violation  
-There is a large setup violation of -1.922 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][234]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#88 Warning
-Large setup violation  
-There is a large setup violation of -1.932 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][360]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#89 Warning
-Large setup violation  
-There is a large setup violation of -1.935 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][376]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#90 Warning
-Large setup violation  
-There is a large setup violation of -1.968 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][210]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#91 Warning
-Large setup violation  
-There is a large setup violation of -1.973 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][218]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#92 Warning
-Large setup violation  
-There is a large setup violation of -1.974 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][235]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#93 Warning
-Large setup violation  
-There is a large setup violation of -1.981 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][250]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#94 Warning
-Large setup violation  
-There is a large setup violation of -1.992 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][227]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#95 Warning
-Large setup violation  
-There is a large setup violation of -2.011 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][377]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#96 Warning
-Large setup violation  
-There is a large setup violation of -2.024 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][251]_srl8/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#97 Warning
-Large setup violation  
-There is a large setup violation of -2.025 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][418]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#98 Warning
-Large setup violation  
-There is a large setup violation of -2.032 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][219]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#99 Warning
-Large setup violation  
-There is a large setup violation of -2.044 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][211]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#100 Warning
-Large setup violation  
-There is a large setup violation of -2.058 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][368]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#101 Warning
-Large setup violation  
-There is a large setup violation of -2.090 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][361]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#102 Warning
-Large setup violation  
-There is a large setup violation of -2.091 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][411]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#103 Warning
-Large setup violation  
-There is a large setup violation of -2.104 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][369]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#104 Warning
-Large setup violation  
-There is a large setup violation of -2.111 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][419]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#105 Warning
-Large setup violation  
-There is a large setup violation of -2.118 ns between system_i/Bic_top_0/inst/delay_yScaleAmount/delay_regs_reg[3][13]/C (clocked by clk_fpga_1) and u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][410]_srl8_srlopt/D (clocked by clk_fpga_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 ULMTCS-1#1 Warning

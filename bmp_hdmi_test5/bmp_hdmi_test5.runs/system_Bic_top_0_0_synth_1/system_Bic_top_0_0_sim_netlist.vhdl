@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Mon Feb  3 22:24:31 2025
+-- Date        : Wed Mar  5 13:27:17 2025
 -- Host        : DESKTOP-3OAFHV8 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ system_Bic_top_0_0_sim_netlist.vhdl
@@ -1183,7 +1183,6 @@ end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1\;
 architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1\ is
   signal \<const0>\ : STD_LOGIC;
   signal \delay_regs[3][25]_i_1_n_0\ : STD_LOGIC;
-  signal \delay_regs_reg[1][13]_srl2_delay_regs_reg_c_0_n_0\ : STD_LOGIC;
   signal \delay_regs_reg[1][14]_srl2_delay_regs_reg_c_0_n_0\ : STD_LOGIC;
   signal \delay_regs_reg[1][15]_srl2_delay_regs_reg_c_0_n_0\ : STD_LOGIC;
   signal \delay_regs_reg[1][16]_srl2_delay_regs_reg_c_0_n_0\ : STD_LOGIC;
@@ -1196,7 +1195,6 @@ architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1\ i
   signal \delay_regs_reg[1][23]_srl2_delay_regs_reg_c_0_n_0\ : STD_LOGIC;
   signal \delay_regs_reg[1][24]_srl2_delay_regs_reg_c_0_n_0\ : STD_LOGIC;
   signal \delay_regs_reg[1][25]_srl2_delay_regs_reg_c_0_n_0\ : STD_LOGIC;
-  signal \delay_regs_reg[2][13]_delay_regs_reg_c_1_n_0\ : STD_LOGIC;
   signal \delay_regs_reg[2][14]_delay_regs_reg_c_1_n_0\ : STD_LOGIC;
   signal \delay_regs_reg[2][15]_delay_regs_reg_c_1_n_0\ : STD_LOGIC;
   signal \delay_regs_reg[2][16]_delay_regs_reg_c_1_n_0\ : STD_LOGIC;
@@ -1214,7 +1212,6 @@ architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1\ i
   signal delay_regs_reg_c_n_0 : STD_LOGIC;
   signal \delay_regs_reg_gate__0_n_0\ : STD_LOGIC;
   signal \delay_regs_reg_gate__10_n_0\ : STD_LOGIC;
-  signal \delay_regs_reg_gate__11_n_0\ : STD_LOGIC;
   signal \delay_regs_reg_gate__1_n_0\ : STD_LOGIC;
   signal \delay_regs_reg_gate__2_n_0\ : STD_LOGIC;
   signal \delay_regs_reg_gate__3_n_0\ : STD_LOGIC;
@@ -1225,12 +1222,10 @@ architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1\ i
   signal \delay_regs_reg_gate__8_n_0\ : STD_LOGIC;
   signal \delay_regs_reg_gate__9_n_0\ : STD_LOGIC;
   signal delay_regs_reg_gate_n_0 : STD_LOGIC;
-  signal \^dout\ : STD_LOGIC_VECTOR ( 25 downto 13 );
+  signal \^dout\ : STD_LOGIC_VECTOR ( 25 downto 14 );
   attribute srl_bus_name : string;
-  attribute srl_bus_name of \delay_regs_reg[1][13]_srl2_delay_regs_reg_c_0\ : label is "inst/delay_yScaleAmount/\delay_regs_reg[1] ";
-  attribute srl_name : string;
-  attribute srl_name of \delay_regs_reg[1][13]_srl2_delay_regs_reg_c_0\ : label is "inst/delay_yScaleAmount/\delay_regs_reg[1][13]_srl2_delay_regs_reg_c_0 ";
   attribute srl_bus_name of \delay_regs_reg[1][14]_srl2_delay_regs_reg_c_0\ : label is "inst/delay_yScaleAmount/\delay_regs_reg[1] ";
+  attribute srl_name : string;
   attribute srl_name of \delay_regs_reg[1][14]_srl2_delay_regs_reg_c_0\ : label is "inst/delay_yScaleAmount/\delay_regs_reg[1][14]_srl2_delay_regs_reg_c_0 ";
   attribute srl_bus_name of \delay_regs_reg[1][15]_srl2_delay_regs_reg_c_0\ : label is "inst/delay_yScaleAmount/\delay_regs_reg[1] ";
   attribute srl_name of \delay_regs_reg[1][15]_srl2_delay_regs_reg_c_0\ : label is "inst/delay_yScaleAmount/\delay_regs_reg[1][15]_srl2_delay_regs_reg_c_0 ";
@@ -1268,7 +1263,8 @@ architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1\ i
   attribute SOFT_HLUTNM of \delay_regs_reg_gate__8\ : label is "soft_lutpair53";
   attribute SOFT_HLUTNM of \delay_regs_reg_gate__9\ : label is "soft_lutpair54";
 begin
-  dout(25 downto 13) <= \^dout\(25 downto 13);
+  dout(25 downto 14) <= \^dout\(25 downto 14);
+  dout(13) <= \<const0>\;
   dout(12) <= \<const0>\;
   dout(11) <= \<const0>\;
   dout(10) <= \<const0>\;
@@ -1293,17 +1289,6 @@ GND: unisim.vcomponents.GND
         port map (
       I0 => rst_n,
       O => \delay_regs[3][25]_i_1_n_0\
-    );
-\delay_regs_reg[1][13]_srl2_delay_regs_reg_c_0\: unisim.vcomponents.SRL16E
-     port map (
-      A0 => '1',
-      A1 => '0',
-      A2 => '0',
-      A3 => '0',
-      CE => '1',
-      CLK => clk,
-      D => din(13),
-      Q => \delay_regs_reg[1][13]_srl2_delay_regs_reg_c_0_n_0\
     );
 \delay_regs_reg[1][14]_srl2_delay_regs_reg_c_0\: unisim.vcomponents.SRL16E
      port map (
@@ -1437,14 +1422,6 @@ GND: unisim.vcomponents.GND
       D => din(25),
       Q => \delay_regs_reg[1][25]_srl2_delay_regs_reg_c_0_n_0\
     );
-\delay_regs_reg[2][13]_delay_regs_reg_c_1\: unisim.vcomponents.FDRE
-     port map (
-      C => clk,
-      CE => '1',
-      D => \delay_regs_reg[1][13]_srl2_delay_regs_reg_c_0_n_0\,
-      Q => \delay_regs_reg[2][13]_delay_regs_reg_c_1_n_0\,
-      R => '0'
-    );
 \delay_regs_reg[2][14]_delay_regs_reg_c_1\: unisim.vcomponents.FDRE
      port map (
       C => clk,
@@ -1540,14 +1517,6 @@ GND: unisim.vcomponents.GND
       D => \delay_regs_reg[1][25]_srl2_delay_regs_reg_c_0_n_0\,
       Q => \delay_regs_reg[2][25]_delay_regs_reg_c_1_n_0\,
       R => '0'
-    );
-\delay_regs_reg[3][13]\: unisim.vcomponents.FDCE
-     port map (
-      C => clk,
-      CE => '1',
-      CLR => \delay_regs[3][25]_i_1_n_0\,
-      D => \delay_regs_reg_gate__11_n_0\,
-      Q => \^dout\(13)
     );
 \delay_regs_reg[3][14]\: unisim.vcomponents.FDCE
      port map (
@@ -1704,15 +1673,6 @@ delay_regs_reg_gate: unisim.vcomponents.LUT2
       I0 => \delay_regs_reg[2][14]_delay_regs_reg_c_1_n_0\,
       I1 => delay_regs_reg_c_1_n_0,
       O => \delay_regs_reg_gate__10_n_0\
-    );
-\delay_regs_reg_gate__11\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \delay_regs_reg[2][13]_delay_regs_reg_c_1_n_0\,
-      I1 => delay_regs_reg_c_1_n_0,
-      O => \delay_regs_reg_gate__11_n_0\
     );
 \delay_regs_reg_gate__2\: unisim.vcomponents.LUT2
     generic map(
@@ -53451,6 +53411,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top is
   attribute MARK_DEBUG : boolean;
   attribute MARK_DEBUG of advanceRead1 : signal is std.standard.true;
   signal advanceRead1_i_1_n_0 : STD_LOGIC;
+  signal advanceRead1_i_2_n_0 : STD_LOGIC;
   signal advanceRead2_i_10_n_0 : STD_LOGIC;
   signal advanceRead2_i_11_n_0 : STD_LOGIC;
   signal advanceRead2_i_12_n_0 : STD_LOGIC;
@@ -53504,6 +53465,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top is
   signal dOutValidInt_i_4_n_0 : STD_LOGIC;
   signal dOutValidInt_i_5_n_0 : STD_LOGIC;
   signal dOutValidInt_i_6_n_0 : STD_LOGIC;
+  signal dOutValidInt_i_7_n_0 : STD_LOGIC;
   signal discardCountReg : STD_LOGIC;
   signal discardInput2 : STD_LOGIC;
   signal discardInput20_out : STD_LOGIC;
@@ -53693,8 +53655,9 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top is
   signal writeEnable0 : STD_LOGIC;
   signal writeNextPlusOne : STD_LOGIC;
   signal \writeNextPlusOne[0]_i_1_n_0\ : STD_LOGIC;
-  signal \writeNextPlusOne_reg[11]_i_2_n_1\ : STD_LOGIC;
+  signal \writeNextPlusOne_reg[11]_i_2_n_2\ : STD_LOGIC;
   signal \writeNextPlusOne_reg[11]_i_2_n_3\ : STD_LOGIC;
+  signal \writeNextPlusOne_reg[11]_i_2_n_5\ : STD_LOGIC;
   signal \writeNextPlusOne_reg[11]_i_2_n_6\ : STD_LOGIC;
   signal \writeNextPlusOne_reg[11]_i_2_n_7\ : STD_LOGIC;
   signal \writeNextPlusOne_reg[4]_i_1_n_0\ : STD_LOGIC;
@@ -53725,27 +53688,27 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top is
   signal \writeNextPlusOne_reg_n_0_[7]\ : STD_LOGIC;
   signal \writeNextPlusOne_reg_n_0_[8]\ : STD_LOGIC;
   signal \writeNextPlusOne_reg_n_0_[9]\ : STD_LOGIC;
-  signal writeNextValidLine : STD_LOGIC_VECTOR ( 10 downto 0 );
-  signal \writeNextValidLine[10]_i_10_n_0\ : STD_LOGIC;
-  signal \writeNextValidLine[10]_i_11_n_0\ : STD_LOGIC;
-  signal \writeNextValidLine[10]_i_12_n_0\ : STD_LOGIC;
-  signal \writeNextValidLine[10]_i_13_n_0\ : STD_LOGIC;
-  signal \writeNextValidLine[10]_i_14_n_0\ : STD_LOGIC;
-  signal \writeNextValidLine[10]_i_3_n_0\ : STD_LOGIC;
-  signal \writeNextValidLine[10]_i_4_n_0\ : STD_LOGIC;
-  signal \writeNextValidLine[10]_i_5_n_0\ : STD_LOGIC;
-  signal \writeNextValidLine[10]_i_6_n_0\ : STD_LOGIC;
-  signal \writeNextValidLine[10]_i_7_n_0\ : STD_LOGIC;
-  signal \writeNextValidLine[10]_i_8_n_0\ : STD_LOGIC;
-  signal \writeNextValidLine[10]_i_9_n_0\ : STD_LOGIC;
-  signal \writeNextValidLine_reg[10]_i_1_n_2\ : STD_LOGIC;
-  signal \writeNextValidLine_reg[10]_i_1_n_3\ : STD_LOGIC;
-  signal \writeNextValidLine_reg[10]_i_2_n_0\ : STD_LOGIC;
-  signal \writeNextValidLine_reg[10]_i_2_n_1\ : STD_LOGIC;
-  signal \writeNextValidLine_reg[10]_i_2_n_2\ : STD_LOGIC;
-  signal \writeNextValidLine_reg[10]_i_2_n_3\ : STD_LOGIC;
+  signal writeNextValidLine : STD_LOGIC_VECTOR ( 11 downto 0 );
+  signal \writeNextValidLine[11]_i_10_n_0\ : STD_LOGIC;
+  signal \writeNextValidLine[11]_i_11_n_0\ : STD_LOGIC;
+  signal \writeNextValidLine[11]_i_12_n_0\ : STD_LOGIC;
+  signal \writeNextValidLine[11]_i_13_n_0\ : STD_LOGIC;
+  signal \writeNextValidLine[11]_i_14_n_0\ : STD_LOGIC;
+  signal \writeNextValidLine[11]_i_3_n_0\ : STD_LOGIC;
+  signal \writeNextValidLine[11]_i_4_n_0\ : STD_LOGIC;
+  signal \writeNextValidLine[11]_i_5_n_0\ : STD_LOGIC;
+  signal \writeNextValidLine[11]_i_6_n_0\ : STD_LOGIC;
+  signal \writeNextValidLine[11]_i_7_n_0\ : STD_LOGIC;
+  signal \writeNextValidLine[11]_i_8_n_0\ : STD_LOGIC;
+  signal \writeNextValidLine[11]_i_9_n_0\ : STD_LOGIC;
+  signal \writeNextValidLine_reg[11]_i_1_n_2\ : STD_LOGIC;
+  signal \writeNextValidLine_reg[11]_i_1_n_3\ : STD_LOGIC;
+  signal \writeNextValidLine_reg[11]_i_2_n_0\ : STD_LOGIC;
+  signal \writeNextValidLine_reg[11]_i_2_n_1\ : STD_LOGIC;
+  signal \writeNextValidLine_reg[11]_i_2_n_2\ : STD_LOGIC;
+  signal \writeNextValidLine_reg[11]_i_2_n_3\ : STD_LOGIC;
   signal \writeOutputLine[0]_i_2_n_0\ : STD_LOGIC;
-  signal writeOutputLine_reg : STD_LOGIC_VECTOR ( 11 downto 1 );
+  signal writeOutputLine_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \writeOutputLine_reg[0]_i_1_n_0\ : STD_LOGIC;
   signal \writeOutputLine_reg[0]_i_1_n_1\ : STD_LOGIC;
   signal \writeOutputLine_reg[0]_i_1_n_2\ : STD_LOGIC;
@@ -53769,7 +53732,6 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top is
   signal \writeOutputLine_reg[8]_i_1_n_5\ : STD_LOGIC;
   signal \writeOutputLine_reg[8]_i_1_n_6\ : STD_LOGIC;
   signal \writeOutputLine_reg[8]_i_1_n_7\ : STD_LOGIC;
-  signal \writeOutputLine_reg_n_0_[0]\ : STD_LOGIC;
   signal \writeRowCount[0]_i_1_n_0\ : STD_LOGIC;
   signal \writeRowCount[0]_i_3_n_0\ : STD_LOGIC;
   signal \writeRowCount[0]_i_4_n_0\ : STD_LOGIC;
@@ -53846,20 +53808,18 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top is
   signal yPixLow : STD_LOGIC_VECTOR ( 11 downto 0 );
   attribute MARK_DEBUG of yPixLow : signal is std.standard.true;
   signal yPixLowNext : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal yScaleAmount : STD_LOGIC_VECTOR ( 25 downto 13 );
-  signal yScaleAmountNext0 : STD_LOGIC_VECTOR ( 12 downto 0 );
-  signal \yScaleAmountNext_reg[17]_i_1_n_0\ : STD_LOGIC;
-  signal \yScaleAmountNext_reg[17]_i_1_n_1\ : STD_LOGIC;
-  signal \yScaleAmountNext_reg[17]_i_1_n_2\ : STD_LOGIC;
-  signal \yScaleAmountNext_reg[17]_i_1_n_3\ : STD_LOGIC;
-  signal \yScaleAmountNext_reg[21]_i_1_n_0\ : STD_LOGIC;
-  signal \yScaleAmountNext_reg[21]_i_1_n_1\ : STD_LOGIC;
-  signal \yScaleAmountNext_reg[21]_i_1_n_2\ : STD_LOGIC;
-  signal \yScaleAmountNext_reg[21]_i_1_n_3\ : STD_LOGIC;
+  signal yScaleAmount : STD_LOGIC_VECTOR ( 25 downto 14 );
+  signal yScaleAmountNext0 : STD_LOGIC_VECTOR ( 11 downto 0 );
+  signal \yScaleAmountNext_reg[18]_i_1_n_0\ : STD_LOGIC;
+  signal \yScaleAmountNext_reg[18]_i_1_n_1\ : STD_LOGIC;
+  signal \yScaleAmountNext_reg[18]_i_1_n_2\ : STD_LOGIC;
+  signal \yScaleAmountNext_reg[18]_i_1_n_3\ : STD_LOGIC;
+  signal \yScaleAmountNext_reg[22]_i_1_n_0\ : STD_LOGIC;
+  signal \yScaleAmountNext_reg[22]_i_1_n_1\ : STD_LOGIC;
+  signal \yScaleAmountNext_reg[22]_i_1_n_2\ : STD_LOGIC;
+  signal \yScaleAmountNext_reg[22]_i_1_n_3\ : STD_LOGIC;
   signal \yScaleAmountNext_reg[25]_i_1_n_2\ : STD_LOGIC;
   signal \yScaleAmountNext_reg[25]_i_1_n_3\ : STD_LOGIC;
-  signal \yScaleAmountNext_reg_n_0_[13]\ : STD_LOGIC;
-  signal \yScaleAmount[13]_i_1_n_0\ : STD_LOGIC;
   signal \yScaleAmount[14]_i_1_n_0\ : STD_LOGIC;
   signal \yScaleAmount[15]_i_1_n_0\ : STD_LOGIC;
   signal \yScaleAmount[16]_i_1_n_0\ : STD_LOGIC;
@@ -53873,7 +53833,6 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top is
   signal \yScaleAmount[24]_i_1_n_0\ : STD_LOGIC;
   signal \yScaleAmount[25]_i_1_n_0\ : STD_LOGIC;
   signal \yScaleAmount[25]_i_2_n_0\ : STD_LOGIC;
-  signal \yScaleAmount[25]_i_3_n_0\ : STD_LOGIC;
   signal yScaleAmount_valid : STD_LOGIC_VECTOR ( 25 downto 0 );
   attribute MARK_DEBUG of yScaleAmount_valid : signal is std.standard.true;
   signal NLW_advanceRead2_reg_i_2_CO_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
@@ -53883,7 +53842,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top is
   signal NLW_advanceRead2_reg_i_5_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_advanceRead2_reg_i_6_CO_UNCONNECTED : STD_LOGIC_VECTOR ( 3 to 3 );
   signal NLW_advanceRead2_reg_i_7_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_delay_yScaleAmount_dout_UNCONNECTED : STD_LOGIC_VECTOR ( 12 downto 0 );
+  signal NLW_delay_yScaleAmount_dout_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal NLW_discardInput_reg_i_2_CO_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
   signal NLW_discardInput_reg_i_2_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_discardInput_reg_i_3_CO_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 1 );
@@ -53902,15 +53861,15 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top is
   signal NLW_ramRB_readData32_UNCONNECTED : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal NLW_ramRB_readData33_UNCONNECTED : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal \NLW_writeColCount_reg[8]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
-  signal \NLW_writeNextPlusOne_reg[11]_i_2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
-  signal \NLW_writeNextPlusOne_reg[11]_i_2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
-  signal \NLW_writeNextValidLine_reg[10]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
-  signal \NLW_writeNextValidLine_reg[10]_i_1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_writeNextValidLine_reg[10]_i_2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_writeNextPlusOne_reg[11]_i_2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
+  signal \NLW_writeNextPlusOne_reg[11]_i_2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal \NLW_writeNextValidLine_reg[11]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
+  signal \NLW_writeNextValidLine_reg[11]_i_1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_writeNextValidLine_reg[11]_i_2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_writeOutputLine_reg[8]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_writeRowCount_reg[8]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_xScaleAmount_reg[25]_i_3_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
-  signal \NLW_yScaleAmountNext_reg[25]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 to 2 );
+  signal \NLW_yScaleAmountNext_reg[25]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   signal \NLW_yScaleAmountNext_reg[25]_i_1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   attribute FSM_ENCODED_STATES : string;
   attribute FSM_ENCODED_STATES of \FSM_onehot_writeState_reg[0]\ : label is "WS_DISCARD:01,WS_READ:010,WS_START:001,WS_DONE:100";
@@ -53978,8 +53937,11 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top is
   attribute ADDER_THRESHOLD of \writeColCount_reg[0]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \writeColCount_reg[4]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \writeColCount_reg[8]_i_1\ : label is 11;
-  attribute COMPARATOR_THRESHOLD of \writeNextValidLine_reg[10]_i_1\ : label is 11;
-  attribute COMPARATOR_THRESHOLD of \writeNextValidLine_reg[10]_i_2\ : label is 11;
+  attribute ADDER_THRESHOLD of \writeNextPlusOne_reg[11]_i_2\ : label is 35;
+  attribute ADDER_THRESHOLD of \writeNextPlusOne_reg[4]_i_1\ : label is 35;
+  attribute ADDER_THRESHOLD of \writeNextPlusOne_reg[8]_i_1\ : label is 35;
+  attribute COMPARATOR_THRESHOLD of \writeNextValidLine_reg[11]_i_1\ : label is 11;
+  attribute COMPARATOR_THRESHOLD of \writeNextValidLine_reg[11]_i_2\ : label is 11;
   attribute ADDER_THRESHOLD of \writeOutputLine_reg[0]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \writeOutputLine_reg[4]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \writeOutputLine_reg[8]_i_1\ : label is 11;
@@ -54149,16 +54111,29 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-advanceRead1_i_1: unisim.vcomponents.LUT4
+advanceRead1_i_1: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"A888"
+      INIT => X"4F404F00"
     )
         port map (
-      I0 => \yScaleAmount[25]_i_1_n_0\,
-      I1 => advanceRead1,
-      I2 => advanceRead2_reg_i_2_n_3,
-      I3 => readState,
+      I0 => advanceRead1_i_2_n_0,
+      I1 => dOutValidInt_i_2_n_0,
+      I2 => readState,
+      I3 => advanceRead1,
+      I4 => advanceRead2_reg_i_2_n_3,
       O => advanceRead1_i_1_n_0
+    );
+advanceRead1_i_2: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFDFFFF"
+    )
+        port map (
+      I0 => outputColumn(8),
+      I1 => outputColumn(9),
+      I2 => outputColumn(10),
+      I3 => outputColumn(11),
+      I4 => dOutValidInt,
+      O => advanceRead1_i_2_n_0
     );
 advanceRead1_reg: unisim.vcomponents.FDCE
     generic map(
@@ -54530,15 +54505,15 @@ dOutValidInt_i_2: unisim.vcomponents.LUT5
     );
 dOutValidInt_i_3: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFFFFFFE0E0C0FF"
+      INIT => X"FFFFFFFFF8F8F0FF"
     )
         port map (
-      I0 => fillCount(0),
-      I1 => fillCount(1),
-      I2 => fillCount(2),
+      I0 => fillCount(2),
+      I1 => fillCount(0),
+      I2 => dOutValidInt_i_6_n_0,
       I3 => advanceRead2_reg_i_3_n_1,
       I4 => advanceRead2_reg_i_2_n_3,
-      I5 => dOutValidInt_i_6_n_0,
+      I5 => dOutValidInt_i_7_n_0,
       O => dOutValidInt_i_3_n_0
     );
 dOutValidInt_i_4: unisim.vcomponents.LUT5
@@ -54566,14 +54541,23 @@ dOutValidInt_i_5: unisim.vcomponents.LUT4
     );
 dOutValidInt_i_6: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"FFFD"
+      INIT => X"FFF8"
     )
         port map (
-      I0 => outputColumn(8),
-      I1 => outputColumn(9),
+      I0 => fillCount(1),
+      I1 => fillCount(2),
       I2 => outputColumn(11),
-      I3 => outputColumn(10),
+      I3 => outputColumn(9),
       O => dOutValidInt_i_6_n_0
+    );
+dOutValidInt_i_7: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"B"
+    )
+        port map (
+      I0 => outputColumn(10),
+      I1 => outputColumn(8),
+      O => dOutValidInt_i_7_n_0
     );
 dOutValidInt_reg: unisim.vcomponents.FDCE
      port map (
@@ -54612,10 +54596,10 @@ delay_xScaleAmount: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
 delay_yScaleAmount: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1\
      port map (
       clk => clk,
-      din(25 downto 13) => yScaleAmount(25 downto 13),
-      din(12 downto 0) => B"0000000000000",
-      dout(25 downto 13) => yScaleAmount_valid(25 downto 13),
-      dout(12 downto 0) => NLW_delay_yScaleAmount_dout_UNCONNECTED(12 downto 0),
+      din(25 downto 14) => yScaleAmount(25 downto 14),
+      din(13 downto 0) => B"00000000000000",
+      dout(25 downto 14) => yScaleAmount_valid(25 downto 14),
+      dout(13 downto 0) => NLW_delay_yScaleAmount_dout_UNCONNECTED(13 downto 0),
       rst_n => rst_n
     );
 discardInput_i_1: unisim.vcomponents.LUT6
@@ -54677,10 +54661,10 @@ discardInput_i_14: unisim.vcomponents.LUT6
         port map (
       I0 => \writeNextPlusOne_reg_n_0_[5]\,
       I1 => discardInput3(5),
-      I2 => \writeNextPlusOne_reg_n_0_[4]\,
-      I3 => discardInput3(4),
-      I4 => discardInput3(3),
-      I5 => \writeNextPlusOne_reg_n_0_[3]\,
+      I2 => \writeNextPlusOne_reg_n_0_[3]\,
+      I3 => discardInput3(3),
+      I4 => discardInput3(4),
+      I5 => \writeNextPlusOne_reg_n_0_[4]\,
       O => discardInput_i_14_n_0
     );
 discardInput_i_15: unisim.vcomponents.LUT6
@@ -54696,16 +54680,17 @@ discardInput_i_15: unisim.vcomponents.LUT6
       I5 => \writeNextPlusOne_reg_n_0_[1]\,
       O => discardInput_i_15_n_0
     );
-discardInput_i_7: unisim.vcomponents.LUT5
+discardInput_i_7: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"09000009"
+      INIT => X"9009000000009009"
     )
         port map (
-      I0 => writeNextValidLine(10),
-      I1 => discardInput3(10),
-      I2 => discardInput3(11),
-      I3 => discardInput3(9),
-      I4 => writeNextValidLine(9),
+      I0 => writeNextValidLine(11),
+      I1 => discardInput3(11),
+      I2 => writeNextValidLine(10),
+      I3 => discardInput3(10),
+      I4 => discardInput3(9),
+      I5 => writeNextValidLine(9),
       O => discardInput_i_7_n_0
     );
 discardInput_i_8: unisim.vcomponents.LUT6
@@ -54890,7 +54875,7 @@ getNextPlusOne_i_1: unisim.vcomponents.LUT1
       INIT => X"1"
     )
         port map (
-      I0 => \writeNextValidLine_reg[10]_i_1_n_2\,
+      I0 => \writeNextValidLine_reg[11]_i_1_n_2\,
       O => \p_0_in__0\
     );
 getNextPlusOne_reg: unisim.vcomponents.FDPE
@@ -54923,7 +54908,7 @@ i_10: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => yScaleAmount_valid(11)
+      O => yScaleAmount_valid(12)
     );
 i_11: unisim.vcomponents.LUT1
     generic map(
@@ -54931,7 +54916,7 @@ i_11: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => yScaleAmount_valid(10)
+      O => yScaleAmount_valid(11)
     );
 i_12: unisim.vcomponents.LUT1
     generic map(
@@ -54939,7 +54924,7 @@ i_12: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => yScaleAmount_valid(9)
+      O => yScaleAmount_valid(10)
     );
 i_13: unisim.vcomponents.LUT1
     generic map(
@@ -54947,7 +54932,7 @@ i_13: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => yScaleAmount_valid(8)
+      O => yScaleAmount_valid(9)
     );
 i_14: unisim.vcomponents.LUT1
     generic map(
@@ -54955,7 +54940,7 @@ i_14: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => yScaleAmount_valid(7)
+      O => yScaleAmount_valid(8)
     );
 i_15: unisim.vcomponents.LUT1
     generic map(
@@ -54963,7 +54948,7 @@ i_15: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => yScaleAmount_valid(6)
+      O => yScaleAmount_valid(7)
     );
 i_16: unisim.vcomponents.LUT1
     generic map(
@@ -54971,7 +54956,7 @@ i_16: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => yScaleAmount_valid(5)
+      O => yScaleAmount_valid(6)
     );
 i_17: unisim.vcomponents.LUT1
     generic map(
@@ -54979,7 +54964,7 @@ i_17: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => yScaleAmount_valid(4)
+      O => yScaleAmount_valid(5)
     );
 i_18: unisim.vcomponents.LUT1
     generic map(
@@ -54987,7 +54972,7 @@ i_18: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => yScaleAmount_valid(3)
+      O => yScaleAmount_valid(4)
     );
 i_19: unisim.vcomponents.LUT1
     generic map(
@@ -54995,7 +54980,7 @@ i_19: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => yScaleAmount_valid(2)
+      O => yScaleAmount_valid(3)
     );
 i_2: unisim.vcomponents.LUT1
     generic map(
@@ -55011,7 +54996,7 @@ i_20: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => yScaleAmount_valid(1)
+      O => yScaleAmount_valid(2)
     );
 i_21: unisim.vcomponents.LUT1
     generic map(
@@ -55019,9 +55004,17 @@ i_21: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => yScaleAmount_valid(0)
+      O => yScaleAmount_valid(1)
     );
 i_22: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => yScaleAmount_valid(0)
+    );
+i_23: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -55083,7 +55076,7 @@ i_9: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => yScaleAmount_valid(12)
+      O => yScaleAmount_valid(13)
     );
 i_vid_de_inferred_i_1: unisim.vcomponents.LUT3
     generic map(
@@ -55187,9 +55180,9 @@ linear4: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_liner
       INIT => X"FEFFFFFF"
     )
         port map (
-      I0 => outputColumn(10),
+      I0 => outputColumn(9),
       I1 => outputColumn(11),
-      I2 => outputColumn(9),
+      I2 => outputColumn(10),
       I3 => outputColumn(8),
       I4 => dOutValidInt_i_2_n_0,
       O => \outputColumn[11]_i_3_n_0\
@@ -56007,7 +56000,7 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
     )
         port map (
       I0 => getNextPlusOne,
-      I1 => \writeNextValidLine_reg[10]_i_1_n_2\,
+      I1 => \writeNextValidLine_reg[11]_i_1_n_2\,
       O => writeNextPlusOne
     );
 \writeNextPlusOne_reg[0]\: unisim.vcomponents.FDPE
@@ -56031,23 +56024,23 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
       C => clk,
       CE => writeNextPlusOne,
       CLR => ramRB_i_1_n_0,
-      D => \writeNextPlusOne_reg[11]_i_2_n_1\,
+      D => \writeNextPlusOne_reg[11]_i_2_n_5\,
       Q => \writeNextPlusOne_reg_n_0_[11]\
     );
 \writeNextPlusOne_reg[11]_i_2\: unisim.vcomponents.CARRY4
      port map (
       CI => \writeNextPlusOne_reg[8]_i_1_n_0\,
-      CO(3) => \NLW_writeNextPlusOne_reg[11]_i_2_CO_UNCONNECTED\(3),
-      CO(2) => \writeNextPlusOne_reg[11]_i_2_n_1\,
-      CO(1) => \NLW_writeNextPlusOne_reg[11]_i_2_CO_UNCONNECTED\(1),
+      CO(3 downto 2) => \NLW_writeNextPlusOne_reg[11]_i_2_CO_UNCONNECTED\(3 downto 2),
+      CO(1) => \writeNextPlusOne_reg[11]_i_2_n_2\,
       CO(0) => \writeNextPlusOne_reg[11]_i_2_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3 downto 2) => \NLW_writeNextPlusOne_reg[11]_i_2_O_UNCONNECTED\(3 downto 2),
+      O(3) => \NLW_writeNextPlusOne_reg[11]_i_2_O_UNCONNECTED\(3),
+      O(2) => \writeNextPlusOne_reg[11]_i_2_n_5\,
       O(1) => \writeNextPlusOne_reg[11]_i_2_n_6\,
       O(0) => \writeNextPlusOne_reg[11]_i_2_n_7\,
-      S(3 downto 2) => B"01",
-      S(1 downto 0) => writeNextValidLine(10 downto 9)
+      S(3) => '0',
+      S(2 downto 0) => writeNextValidLine(11 downto 9)
     );
 \writeNextPlusOne_reg[1]\: unisim.vcomponents.FDCE
      port map (
@@ -56151,7 +56144,7 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
       D => \writeNextPlusOne_reg[11]_i_2_n_7\,
       Q => \writeNextPlusOne_reg_n_0_[9]\
     );
-\writeNextValidLine[10]_i_10\: unisim.vcomponents.LUT4
+\writeNextValidLine[11]_i_10\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"2B22"
     )
@@ -56160,9 +56153,9 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
       I1 => writeNextValidLine(1),
       I2 => writeNextValidLine(0),
       I3 => writeRowCount_reg(0),
-      O => \writeNextValidLine[10]_i_10_n_0\
+      O => \writeNextValidLine[11]_i_10_n_0\
     );
-\writeNextValidLine[10]_i_11\: unisim.vcomponents.LUT4
+\writeNextValidLine[11]_i_11\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"9009"
     )
@@ -56171,9 +56164,9 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
       I1 => writeRowCount_reg(7),
       I2 => writeNextValidLine(6),
       I3 => writeRowCount_reg(6),
-      O => \writeNextValidLine[10]_i_11_n_0\
+      O => \writeNextValidLine[11]_i_11_n_0\
     );
-\writeNextValidLine[10]_i_12\: unisim.vcomponents.LUT4
+\writeNextValidLine[11]_i_12\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"9009"
     )
@@ -56182,9 +56175,9 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
       I1 => writeRowCount_reg(5),
       I2 => writeNextValidLine(4),
       I3 => writeRowCount_reg(4),
-      O => \writeNextValidLine[10]_i_12_n_0\
+      O => \writeNextValidLine[11]_i_12_n_0\
     );
-\writeNextValidLine[10]_i_13\: unisim.vcomponents.LUT4
+\writeNextValidLine[11]_i_13\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"9009"
     )
@@ -56193,9 +56186,9 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
       I1 => writeRowCount_reg(3),
       I2 => writeNextValidLine(2),
       I3 => writeRowCount_reg(2),
-      O => \writeNextValidLine[10]_i_13_n_0\
+      O => \writeNextValidLine[11]_i_13_n_0\
     );
-\writeNextValidLine[10]_i_14\: unisim.vcomponents.LUT4
+\writeNextValidLine[11]_i_14\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"9009"
     )
@@ -56204,19 +56197,20 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
       I1 => writeRowCount_reg(1),
       I2 => writeNextValidLine(0),
       I3 => writeRowCount_reg(0),
-      O => \writeNextValidLine[10]_i_14_n_0\
+      O => \writeNextValidLine[11]_i_14_n_0\
     );
-\writeNextValidLine[10]_i_3\: unisim.vcomponents.LUT3
+\writeNextValidLine[11]_i_3\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"BA"
+      INIT => X"22B2"
     )
         port map (
       I0 => writeRowCount_reg(11),
-      I1 => writeNextValidLine(10),
+      I1 => writeNextValidLine(11),
       I2 => writeRowCount_reg(10),
-      O => \writeNextValidLine[10]_i_3_n_0\
+      I3 => writeNextValidLine(10),
+      O => \writeNextValidLine[11]_i_3_n_0\
     );
-\writeNextValidLine[10]_i_4\: unisim.vcomponents.LUT4
+\writeNextValidLine[11]_i_4\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"22B2"
     )
@@ -56225,19 +56219,20 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
       I1 => writeNextValidLine(9),
       I2 => writeRowCount_reg(8),
       I3 => writeNextValidLine(8),
-      O => \writeNextValidLine[10]_i_4_n_0\
+      O => \writeNextValidLine[11]_i_4_n_0\
     );
-\writeNextValidLine[10]_i_5\: unisim.vcomponents.LUT3
+\writeNextValidLine[11]_i_5\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"41"
+      INIT => X"9009"
     )
         port map (
-      I0 => writeRowCount_reg(11),
-      I1 => writeNextValidLine(10),
-      I2 => writeRowCount_reg(10),
-      O => \writeNextValidLine[10]_i_5_n_0\
+      I0 => writeNextValidLine(11),
+      I1 => writeRowCount_reg(11),
+      I2 => writeNextValidLine(10),
+      I3 => writeRowCount_reg(10),
+      O => \writeNextValidLine[11]_i_5_n_0\
     );
-\writeNextValidLine[10]_i_6\: unisim.vcomponents.LUT4
+\writeNextValidLine[11]_i_6\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"9009"
     )
@@ -56246,9 +56241,9 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
       I1 => writeRowCount_reg(9),
       I2 => writeNextValidLine(8),
       I3 => writeRowCount_reg(8),
-      O => \writeNextValidLine[10]_i_6_n_0\
+      O => \writeNextValidLine[11]_i_6_n_0\
     );
-\writeNextValidLine[10]_i_7\: unisim.vcomponents.LUT4
+\writeNextValidLine[11]_i_7\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"22B2"
     )
@@ -56257,9 +56252,9 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
       I1 => writeNextValidLine(7),
       I2 => writeRowCount_reg(6),
       I3 => writeNextValidLine(6),
-      O => \writeNextValidLine[10]_i_7_n_0\
+      O => \writeNextValidLine[11]_i_7_n_0\
     );
-\writeNextValidLine[10]_i_8\: unisim.vcomponents.LUT4
+\writeNextValidLine[11]_i_8\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"22B2"
     )
@@ -56268,9 +56263,9 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
       I1 => writeNextValidLine(5),
       I2 => writeRowCount_reg(4),
       I3 => writeNextValidLine(4),
-      O => \writeNextValidLine[10]_i_8_n_0\
+      O => \writeNextValidLine[11]_i_8_n_0\
     );
-\writeNextValidLine[10]_i_9\: unisim.vcomponents.LUT4
+\writeNextValidLine[11]_i_9\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"22B2"
     )
@@ -56279,127 +56274,135 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
       I1 => writeNextValidLine(3),
       I2 => writeRowCount_reg(2),
       I3 => writeNextValidLine(2),
-      O => \writeNextValidLine[10]_i_9_n_0\
+      O => \writeNextValidLine[11]_i_9_n_0\
     );
 \writeNextValidLine_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
-      D => writeOutputLine_reg(1),
+      D => writeOutputLine_reg(0),
       Q => writeNextValidLine(0)
     );
 \writeNextValidLine_reg[10]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
-      D => writeOutputLine_reg(11),
+      D => writeOutputLine_reg(10),
       Q => writeNextValidLine(10)
     );
-\writeNextValidLine_reg[10]_i_1\: unisim.vcomponents.CARRY4
+\writeNextValidLine_reg[11]\: unisim.vcomponents.FDCE
      port map (
-      CI => \writeNextValidLine_reg[10]_i_2_n_0\,
-      CO(3 downto 2) => \NLW_writeNextValidLine_reg[10]_i_1_CO_UNCONNECTED\(3 downto 2),
-      CO(1) => \writeNextValidLine_reg[10]_i_1_n_2\,
-      CO(0) => \writeNextValidLine_reg[10]_i_1_n_3\,
+      C => clk,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
+      CLR => ramRB_i_1_n_0,
+      D => writeOutputLine_reg(11),
+      Q => writeNextValidLine(11)
+    );
+\writeNextValidLine_reg[11]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \writeNextValidLine_reg[11]_i_2_n_0\,
+      CO(3 downto 2) => \NLW_writeNextValidLine_reg[11]_i_1_CO_UNCONNECTED\(3 downto 2),
+      CO(1) => \writeNextValidLine_reg[11]_i_1_n_2\,
+      CO(0) => \writeNextValidLine_reg[11]_i_1_n_3\,
       CYINIT => '0',
       DI(3 downto 2) => B"00",
-      DI(1) => \writeNextValidLine[10]_i_3_n_0\,
-      DI(0) => \writeNextValidLine[10]_i_4_n_0\,
-      O(3 downto 0) => \NLW_writeNextValidLine_reg[10]_i_1_O_UNCONNECTED\(3 downto 0),
+      DI(1) => \writeNextValidLine[11]_i_3_n_0\,
+      DI(0) => \writeNextValidLine[11]_i_4_n_0\,
+      O(3 downto 0) => \NLW_writeNextValidLine_reg[11]_i_1_O_UNCONNECTED\(3 downto 0),
       S(3 downto 2) => B"00",
-      S(1) => \writeNextValidLine[10]_i_5_n_0\,
-      S(0) => \writeNextValidLine[10]_i_6_n_0\
+      S(1) => \writeNextValidLine[11]_i_5_n_0\,
+      S(0) => \writeNextValidLine[11]_i_6_n_0\
     );
-\writeNextValidLine_reg[10]_i_2\: unisim.vcomponents.CARRY4
+\writeNextValidLine_reg[11]_i_2\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => \writeNextValidLine_reg[10]_i_2_n_0\,
-      CO(2) => \writeNextValidLine_reg[10]_i_2_n_1\,
-      CO(1) => \writeNextValidLine_reg[10]_i_2_n_2\,
-      CO(0) => \writeNextValidLine_reg[10]_i_2_n_3\,
+      CO(3) => \writeNextValidLine_reg[11]_i_2_n_0\,
+      CO(2) => \writeNextValidLine_reg[11]_i_2_n_1\,
+      CO(1) => \writeNextValidLine_reg[11]_i_2_n_2\,
+      CO(0) => \writeNextValidLine_reg[11]_i_2_n_3\,
       CYINIT => '1',
-      DI(3) => \writeNextValidLine[10]_i_7_n_0\,
-      DI(2) => \writeNextValidLine[10]_i_8_n_0\,
-      DI(1) => \writeNextValidLine[10]_i_9_n_0\,
-      DI(0) => \writeNextValidLine[10]_i_10_n_0\,
-      O(3 downto 0) => \NLW_writeNextValidLine_reg[10]_i_2_O_UNCONNECTED\(3 downto 0),
-      S(3) => \writeNextValidLine[10]_i_11_n_0\,
-      S(2) => \writeNextValidLine[10]_i_12_n_0\,
-      S(1) => \writeNextValidLine[10]_i_13_n_0\,
-      S(0) => \writeNextValidLine[10]_i_14_n_0\
+      DI(3) => \writeNextValidLine[11]_i_7_n_0\,
+      DI(2) => \writeNextValidLine[11]_i_8_n_0\,
+      DI(1) => \writeNextValidLine[11]_i_9_n_0\,
+      DI(0) => \writeNextValidLine[11]_i_10_n_0\,
+      O(3 downto 0) => \NLW_writeNextValidLine_reg[11]_i_2_O_UNCONNECTED\(3 downto 0),
+      S(3) => \writeNextValidLine[11]_i_11_n_0\,
+      S(2) => \writeNextValidLine[11]_i_12_n_0\,
+      S(1) => \writeNextValidLine[11]_i_13_n_0\,
+      S(0) => \writeNextValidLine[11]_i_14_n_0\
     );
 \writeNextValidLine_reg[1]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
-      D => writeOutputLine_reg(2),
+      D => writeOutputLine_reg(1),
       Q => writeNextValidLine(1)
     );
 \writeNextValidLine_reg[2]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
-      D => writeOutputLine_reg(3),
+      D => writeOutputLine_reg(2),
       Q => writeNextValidLine(2)
     );
 \writeNextValidLine_reg[3]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
-      D => writeOutputLine_reg(4),
+      D => writeOutputLine_reg(3),
       Q => writeNextValidLine(3)
     );
 \writeNextValidLine_reg[4]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
-      D => writeOutputLine_reg(5),
+      D => writeOutputLine_reg(4),
       Q => writeNextValidLine(4)
     );
 \writeNextValidLine_reg[5]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
-      D => writeOutputLine_reg(6),
+      D => writeOutputLine_reg(5),
       Q => writeNextValidLine(5)
     );
 \writeNextValidLine_reg[6]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
-      D => writeOutputLine_reg(7),
+      D => writeOutputLine_reg(6),
       Q => writeNextValidLine(6)
     );
 \writeNextValidLine_reg[7]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
-      D => writeOutputLine_reg(8),
+      D => writeOutputLine_reg(7),
       Q => writeNextValidLine(7)
     );
 \writeNextValidLine_reg[8]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
-      D => writeOutputLine_reg(9),
+      D => writeOutputLine_reg(8),
       Q => writeNextValidLine(8)
     );
 \writeNextValidLine_reg[9]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
-      D => writeOutputLine_reg(10),
+      D => writeOutputLine_reg(9),
       Q => writeNextValidLine(9)
     );
 \writeOutputLine[0]_i_2\: unisim.vcomponents.LUT1
@@ -56407,16 +56410,16 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
       INIT => X"1"
     )
         port map (
-      I0 => \writeOutputLine_reg_n_0_[0]\,
+      I0 => writeOutputLine_reg(0),
       O => \writeOutputLine[0]_i_2_n_0\
     );
 \writeOutputLine_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
       D => \writeOutputLine_reg[0]_i_1_n_7\,
-      Q => \writeOutputLine_reg_n_0_[0]\
+      Q => writeOutputLine_reg(0)
     );
 \writeOutputLine_reg[0]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -56437,7 +56440,7 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
 \writeOutputLine_reg[10]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
       D => \writeOutputLine_reg[8]_i_1_n_5\,
       Q => writeOutputLine_reg(10)
@@ -56445,7 +56448,7 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
 \writeOutputLine_reg[11]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
       D => \writeOutputLine_reg[8]_i_1_n_4\,
       Q => writeOutputLine_reg(11)
@@ -56453,7 +56456,7 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
 \writeOutputLine_reg[1]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
       D => \writeOutputLine_reg[0]_i_1_n_6\,
       Q => writeOutputLine_reg(1)
@@ -56461,7 +56464,7 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
 \writeOutputLine_reg[2]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
       D => \writeOutputLine_reg[0]_i_1_n_5\,
       Q => writeOutputLine_reg(2)
@@ -56469,7 +56472,7 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
 \writeOutputLine_reg[3]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
       D => \writeOutputLine_reg[0]_i_1_n_4\,
       Q => writeOutputLine_reg(3)
@@ -56477,7 +56480,7 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
 \writeOutputLine_reg[4]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
       D => \writeOutputLine_reg[4]_i_1_n_7\,
       Q => writeOutputLine_reg(4)
@@ -56500,7 +56503,7 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
 \writeOutputLine_reg[5]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
       D => \writeOutputLine_reg[4]_i_1_n_6\,
       Q => writeOutputLine_reg(5)
@@ -56508,7 +56511,7 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
 \writeOutputLine_reg[6]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
       D => \writeOutputLine_reg[4]_i_1_n_5\,
       Q => writeOutputLine_reg(6)
@@ -56516,7 +56519,7 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
 \writeOutputLine_reg[7]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
       D => \writeOutputLine_reg[4]_i_1_n_4\,
       Q => writeOutputLine_reg(7)
@@ -56524,7 +56527,7 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
 \writeOutputLine_reg[8]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
       D => \writeOutputLine_reg[8]_i_1_n_7\,
       Q => writeOutputLine_reg(8)
@@ -56547,7 +56550,7 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
 \writeOutputLine_reg[9]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
-      CE => \writeNextValidLine_reg[10]_i_1_n_2\,
+      CE => \writeNextValidLine_reg[11]_i_1_n_2\,
       CLR => ramRB_i_1_n_0,
       D => \writeOutputLine_reg[8]_i_1_n_6\,
       Q => writeOutputLine_reg(9)
@@ -56564,12 +56567,12 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
     );
 \writeRowCount[0]_i_3\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFFFF7F"
+      INIT => X"FFFFFFDF"
     )
         port map (
-      I0 => \writeColCount_reg_n_0_[3]\,
-      I1 => \writeColCount_reg_n_0_[1]\,
-      I2 => \writeColCount_reg_n_0_[2]\,
+      I0 => \writeColCount_reg_n_0_[2]\,
+      I1 => \writeColCount_reg_n_0_[9]\,
+      I2 => \writeColCount_reg_n_0_[1]\,
       I3 => \writeRowCount[0]_i_5_n_0\,
       I4 => \writeRowCount[0]_i_6_n_0\,
       O => \writeRowCount[0]_i_3_n_0\
@@ -56589,19 +56592,19 @@ s_axis_tready_inferred_i_1: unisim.vcomponents.LUT3
         port map (
       I0 => \writeColCount_reg_n_0_[10]\,
       I1 => \writeColCount_reg_n_0_[5]\,
-      I2 => \writeColCount_reg_n_0_[0]\,
+      I2 => \writeColCount_reg_n_0_[3]\,
       I3 => \writeColCount_reg_n_0_[11]\,
       O => \writeRowCount[0]_i_5_n_0\
     );
 \writeRowCount[0]_i_6\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"DFFF"
+      INIT => X"7FFF"
     )
         port map (
-      I0 => \writeColCount_reg_n_0_[8]\,
-      I1 => \writeColCount_reg_n_0_[9]\,
-      I2 => \writeColCount_reg_n_0_[6]\,
-      I3 => \writeColCount_reg_n_0_[7]\,
+      I0 => \writeColCount_reg_n_0_[6]\,
+      I1 => \writeColCount_reg_n_0_[0]\,
+      I2 => \writeColCount_reg_n_0_[7]\,
+      I3 => \writeColCount_reg_n_0_[8]\,
       O => \writeRowCount[0]_i_6_n_0\
     );
 \writeRowCount_reg[0]\: unisim.vcomponents.FDCE
@@ -57115,7 +57118,7 @@ xScaleAmount_valid_inst: unisim.vcomponents.LUT1
       I0 => xScaleAmount_valid(15),
       O => xPixLow(1)
     );
-\yScaleAmountNext[13]_i_1\: unisim.vcomponents.LUT1
+\yScaleAmountNext[14]_i_1\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
@@ -57123,20 +57126,12 @@ xScaleAmount_valid_inst: unisim.vcomponents.LUT1
       I0 => outputLine_reg(0),
       O => yScaleAmountNext0(0)
     );
-\yScaleAmountNext_reg[13]\: unisim.vcomponents.FDCE
-     port map (
-      C => clk,
-      CE => '1',
-      CLR => ramRB_i_1_n_0,
-      D => yScaleAmountNext0(0),
-      Q => \yScaleAmountNext_reg_n_0_[13]\
-    );
 \yScaleAmountNext_reg[14]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => '1',
       CLR => ramRB_i_1_n_0,
-      D => yScaleAmountNext0(1),
+      D => yScaleAmountNext0(0),
       Q => yPixLowNext(0)
     );
 \yScaleAmountNext_reg[15]\: unisim.vcomponents.FDCE
@@ -57144,7 +57139,7 @@ xScaleAmount_valid_inst: unisim.vcomponents.LUT1
       C => clk,
       CE => '1',
       CLR => ramRB_i_1_n_0,
-      D => yScaleAmountNext0(2),
+      D => yScaleAmountNext0(1),
       Q => yPixLowNext(1)
     );
 \yScaleAmountNext_reg[16]\: unisim.vcomponents.FDCE
@@ -57152,7 +57147,7 @@ xScaleAmount_valid_inst: unisim.vcomponents.LUT1
       C => clk,
       CE => '1',
       CLR => ramRB_i_1_n_0,
-      D => yScaleAmountNext0(3),
+      D => yScaleAmountNext0(2),
       Q => yPixLowNext(2)
     );
 \yScaleAmountNext_reg[17]\: unisim.vcomponents.FDCE
@@ -57160,35 +57155,35 @@ xScaleAmount_valid_inst: unisim.vcomponents.LUT1
       C => clk,
       CE => '1',
       CLR => ramRB_i_1_n_0,
-      D => yScaleAmountNext0(4),
+      D => yScaleAmountNext0(3),
       Q => yPixLowNext(3)
-    );
-\yScaleAmountNext_reg[17]_i_1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => '0',
-      CO(3) => \yScaleAmountNext_reg[17]_i_1_n_0\,
-      CO(2) => \yScaleAmountNext_reg[17]_i_1_n_1\,
-      CO(1) => \yScaleAmountNext_reg[17]_i_1_n_2\,
-      CO(0) => \yScaleAmountNext_reg[17]_i_1_n_3\,
-      CYINIT => outputLine_reg(0),
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => yScaleAmountNext0(4 downto 1),
-      S(3 downto 0) => outputLine_reg(4 downto 1)
     );
 \yScaleAmountNext_reg[18]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => '1',
       CLR => ramRB_i_1_n_0,
-      D => yScaleAmountNext0(5),
+      D => yScaleAmountNext0(4),
       Q => yPixLowNext(4)
+    );
+\yScaleAmountNext_reg[18]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => '0',
+      CO(3) => \yScaleAmountNext_reg[18]_i_1_n_0\,
+      CO(2) => \yScaleAmountNext_reg[18]_i_1_n_1\,
+      CO(1) => \yScaleAmountNext_reg[18]_i_1_n_2\,
+      CO(0) => \yScaleAmountNext_reg[18]_i_1_n_3\,
+      CYINIT => outputLine_reg(0),
+      DI(3 downto 0) => B"0000",
+      O(3 downto 0) => yScaleAmountNext0(4 downto 1),
+      S(3 downto 0) => outputLine_reg(4 downto 1)
     );
 \yScaleAmountNext_reg[19]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => '1',
       CLR => ramRB_i_1_n_0,
-      D => yScaleAmountNext0(6),
+      D => yScaleAmountNext0(5),
       Q => yPixLowNext(5)
     );
 \yScaleAmountNext_reg[20]\: unisim.vcomponents.FDCE
@@ -57196,7 +57191,7 @@ xScaleAmount_valid_inst: unisim.vcomponents.LUT1
       C => clk,
       CE => '1',
       CLR => ramRB_i_1_n_0,
-      D => yScaleAmountNext0(7),
+      D => yScaleAmountNext0(6),
       Q => yPixLowNext(6)
     );
 \yScaleAmountNext_reg[21]\: unisim.vcomponents.FDCE
@@ -57204,35 +57199,35 @@ xScaleAmount_valid_inst: unisim.vcomponents.LUT1
       C => clk,
       CE => '1',
       CLR => ramRB_i_1_n_0,
-      D => yScaleAmountNext0(8),
+      D => yScaleAmountNext0(7),
       Q => yPixLowNext(7)
-    );
-\yScaleAmountNext_reg[21]_i_1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \yScaleAmountNext_reg[17]_i_1_n_0\,
-      CO(3) => \yScaleAmountNext_reg[21]_i_1_n_0\,
-      CO(2) => \yScaleAmountNext_reg[21]_i_1_n_1\,
-      CO(1) => \yScaleAmountNext_reg[21]_i_1_n_2\,
-      CO(0) => \yScaleAmountNext_reg[21]_i_1_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => yScaleAmountNext0(8 downto 5),
-      S(3 downto 0) => outputLine_reg(8 downto 5)
     );
 \yScaleAmountNext_reg[22]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => '1',
       CLR => ramRB_i_1_n_0,
-      D => yScaleAmountNext0(9),
+      D => yScaleAmountNext0(8),
       Q => yPixLowNext(8)
+    );
+\yScaleAmountNext_reg[22]_i_1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \yScaleAmountNext_reg[18]_i_1_n_0\,
+      CO(3) => \yScaleAmountNext_reg[22]_i_1_n_0\,
+      CO(2) => \yScaleAmountNext_reg[22]_i_1_n_1\,
+      CO(1) => \yScaleAmountNext_reg[22]_i_1_n_2\,
+      CO(0) => \yScaleAmountNext_reg[22]_i_1_n_3\,
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3 downto 0) => yScaleAmountNext0(8 downto 5),
+      S(3 downto 0) => outputLine_reg(8 downto 5)
     );
 \yScaleAmountNext_reg[23]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => '1',
       CLR => ramRB_i_1_n_0,
-      D => yScaleAmountNext0(10),
+      D => yScaleAmountNext0(9),
       Q => yPixLowNext(9)
     );
 \yScaleAmountNext_reg[24]\: unisim.vcomponents.FDCE
@@ -57240,7 +57235,7 @@ xScaleAmount_valid_inst: unisim.vcomponents.LUT1
       C => clk,
       CE => '1',
       CLR => ramRB_i_1_n_0,
-      D => yScaleAmountNext0(11),
+      D => yScaleAmountNext0(10),
       Q => yPixLowNext(10)
     );
 \yScaleAmountNext_reg[25]\: unisim.vcomponents.FDCE
@@ -57248,31 +57243,21 @@ xScaleAmount_valid_inst: unisim.vcomponents.LUT1
       C => clk,
       CE => '1',
       CLR => ramRB_i_1_n_0,
-      D => yScaleAmountNext0(12),
+      D => yScaleAmountNext0(11),
       Q => yPixLowNext(11)
     );
 \yScaleAmountNext_reg[25]_i_1\: unisim.vcomponents.CARRY4
      port map (
-      CI => \yScaleAmountNext_reg[21]_i_1_n_0\,
-      CO(3) => yScaleAmountNext0(12),
-      CO(2) => \NLW_yScaleAmountNext_reg[25]_i_1_CO_UNCONNECTED\(2),
+      CI => \yScaleAmountNext_reg[22]_i_1_n_0\,
+      CO(3 downto 2) => \NLW_yScaleAmountNext_reg[25]_i_1_CO_UNCONNECTED\(3 downto 2),
       CO(1) => \yScaleAmountNext_reg[25]_i_1_n_2\,
       CO(0) => \yScaleAmountNext_reg[25]_i_1_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
       O(3) => \NLW_yScaleAmountNext_reg[25]_i_1_O_UNCONNECTED\(3),
       O(2 downto 0) => yScaleAmountNext0(11 downto 9),
-      S(3) => '1',
+      S(3) => '0',
       S(2 downto 0) => outputLine_reg(11 downto 9)
-    );
-\yScaleAmount[13]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => readState,
-      I1 => \yScaleAmountNext_reg_n_0_[13]\,
-      O => \yScaleAmount[13]_i_1_n_0\
     );
 \yScaleAmount[14]_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -57373,17 +57358,14 @@ xScaleAmount_valid_inst: unisim.vcomponents.LUT1
       I1 => yPixLowNext(10),
       O => \yScaleAmount[24]_i_1_n_0\
     );
-\yScaleAmount[25]_i_1\: unisim.vcomponents.LUT6
+\yScaleAmount[25]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"20000000FFFFFFFF"
+      INIT => X"4F"
     )
         port map (
-      I0 => outputColumn(8),
-      I1 => outputColumn(9),
-      I2 => \yScaleAmount[25]_i_3_n_0\,
-      I3 => dOutValidInt,
-      I4 => dOutValidInt_i_2_n_0,
-      I5 => readState,
+      I0 => advanceRead1_i_2_n_0,
+      I1 => dOutValidInt_i_2_n_0,
+      I2 => readState,
       O => \yScaleAmount[25]_i_1_n_0\
     );
 \yScaleAmount[25]_i_2\: unisim.vcomponents.LUT2
@@ -57394,23 +57376,6 @@ xScaleAmount_valid_inst: unisim.vcomponents.LUT1
       I0 => readState,
       I1 => yPixLowNext(11),
       O => \yScaleAmount[25]_i_2_n_0\
-    );
-\yScaleAmount[25]_i_3\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => outputColumn(10),
-      I1 => outputColumn(11),
-      O => \yScaleAmount[25]_i_3_n_0\
-    );
-\yScaleAmount_reg[13]\: unisim.vcomponents.FDCE
-     port map (
-      C => clk,
-      CE => \yScaleAmount[25]_i_1_n_0\,
-      CLR => ramRB_i_1_n_0,
-      D => \yScaleAmount[13]_i_1_n_0\,
-      Q => yScaleAmount(13)
     );
 \yScaleAmount_reg[14]\: unisim.vcomponents.FDCE
      port map (

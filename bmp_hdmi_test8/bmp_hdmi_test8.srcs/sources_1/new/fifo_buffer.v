@@ -13,8 +13,8 @@ module fifo_buffer (
   reg  [31:0] din;    // 写入FIFO的数据
   wire [31:0] dout;   // FIFO输出数据
   
-  (*mark_debug="true"*)wire empty;
-  (*mark_debug="true"*) wire full;
+wire empty;
+wire full;
 
 
   // 实例化FIFO IP核（fifo_generator_0）

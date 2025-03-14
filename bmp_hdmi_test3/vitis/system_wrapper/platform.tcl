@@ -247,3 +247,6 @@ platform generate -domains
 platform active {system_wrapper}
 platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test3/vitis/system_wrapper.xsa}
 platform generate -domains 
+platform active {system_wrapper}
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test3/vitis/system_wrapper.xsa}
+platform generate -domains 

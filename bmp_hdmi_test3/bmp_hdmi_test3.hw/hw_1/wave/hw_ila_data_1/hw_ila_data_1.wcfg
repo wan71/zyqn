@@ -9,15 +9,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="513fs"></ZoomStartTime>
-      <ZoomEndTime time="520fs"></ZoomEndTime>
-      <Cursor1Time time="516fs"></Cursor1Time>
+      <ZoomStartTime time="488fs"></ZoomStartTime>
+      <ZoomEndTime time="543fs"></ZoomEndTime>
+      <Cursor1Time time="431fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="444"></NameColumnWidth>
-      <ValueColumnWidth column_width="141"></ValueColumnWidth>
+      <ValueColumnWidth column_width="129"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="29" />
+   <WVObjectSize size="23" />
    <wave_markers>
       <marker time="100000000000000512" label="" />
    </wave_markers>
@@ -148,26 +148,10 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="system_i/Bic_top_0/inst/readData01" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">system_i/Bic_top_0/inst/readData01[7:0]</obj_property>
-      <obj_property name="ObjectShortName">readData01[7:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
    <wvobject fp_name="system_i/Bic_top_0/inst/readData10" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">system_i/Bic_top_0/inst/readData10[7:0]</obj_property>
       <obj_property name="ObjectShortName">readData10[7:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="system_i/Bic_top_0/inst/readData11" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">system_i/Bic_top_0/inst/readData11[7:0]</obj_property>
-      <obj_property name="ObjectShortName">readData11[7:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
@@ -214,38 +198,6 @@
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">system_i/Bic_top_0/inst/dOutValidInt</obj_property>
       <obj_property name="ObjectShortName">dOutValidInt</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="system_i/Bic_top_0/inst/coeff00" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">system_i/Bic_top_0/inst/coeff00[8:0]</obj_property>
-      <obj_property name="ObjectShortName">coeff00[8:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="system_i/Bic_top_0/inst/coeff01" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">system_i/Bic_top_0/inst/coeff01[8:0]</obj_property>
-      <obj_property name="ObjectShortName">coeff01[8:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="system_i/Bic_top_0/inst/coeff10" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">system_i/Bic_top_0/inst/coeff10[8:0]</obj_property>
-      <obj_property name="ObjectShortName">coeff10[8:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="system_i/Bic_top_0/inst/coeff11" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">system_i/Bic_top_0/inst/coeff11[8:0]</obj_property>
-      <obj_property name="ObjectShortName">coeff11[8:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>

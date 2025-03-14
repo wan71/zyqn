@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Mon Feb  3 22:24:31 2025
+// Date        : Wed Mar  5 13:27:17 2025
 // Host        : DESKTOP-3OAFHV8 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ system_Bic_top_0_0_sim_netlist.v
@@ -54,6 +54,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
   wire \FSM_onehot_writeState_reg_n_0_[2] ;
   (* MARK_DEBUG *) wire advanceRead1;
   wire advanceRead1_i_1_n_0;
+  wire advanceRead1_i_2_n_0;
   wire advanceRead2_i_10_n_0;
   wire advanceRead2_i_11_n_0;
   wire advanceRead2_i_12_n_0;
@@ -106,6 +107,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
   wire dOutValidInt_i_4_n_0;
   wire dOutValidInt_i_5_n_0;
   wire dOutValidInt_i_6_n_0;
+  wire dOutValidInt_i_7_n_0;
   wire discardCountReg;
   wire discardInput2;
   wire discardInput20_out;
@@ -292,8 +294,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
   wire writeEnable0;
   wire writeNextPlusOne;
   wire \writeNextPlusOne[0]_i_1_n_0 ;
-  wire \writeNextPlusOne_reg[11]_i_2_n_1 ;
+  wire \writeNextPlusOne_reg[11]_i_2_n_2 ;
   wire \writeNextPlusOne_reg[11]_i_2_n_3 ;
+  wire \writeNextPlusOne_reg[11]_i_2_n_5 ;
   wire \writeNextPlusOne_reg[11]_i_2_n_6 ;
   wire \writeNextPlusOne_reg[11]_i_2_n_7 ;
   wire \writeNextPlusOne_reg[4]_i_1_n_0 ;
@@ -324,27 +327,27 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
   wire \writeNextPlusOne_reg_n_0_[7] ;
   wire \writeNextPlusOne_reg_n_0_[8] ;
   wire \writeNextPlusOne_reg_n_0_[9] ;
-  wire [10:0]writeNextValidLine;
-  wire \writeNextValidLine[10]_i_10_n_0 ;
-  wire \writeNextValidLine[10]_i_11_n_0 ;
-  wire \writeNextValidLine[10]_i_12_n_0 ;
-  wire \writeNextValidLine[10]_i_13_n_0 ;
-  wire \writeNextValidLine[10]_i_14_n_0 ;
-  wire \writeNextValidLine[10]_i_3_n_0 ;
-  wire \writeNextValidLine[10]_i_4_n_0 ;
-  wire \writeNextValidLine[10]_i_5_n_0 ;
-  wire \writeNextValidLine[10]_i_6_n_0 ;
-  wire \writeNextValidLine[10]_i_7_n_0 ;
-  wire \writeNextValidLine[10]_i_8_n_0 ;
-  wire \writeNextValidLine[10]_i_9_n_0 ;
-  wire \writeNextValidLine_reg[10]_i_1_n_2 ;
-  wire \writeNextValidLine_reg[10]_i_1_n_3 ;
-  wire \writeNextValidLine_reg[10]_i_2_n_0 ;
-  wire \writeNextValidLine_reg[10]_i_2_n_1 ;
-  wire \writeNextValidLine_reg[10]_i_2_n_2 ;
-  wire \writeNextValidLine_reg[10]_i_2_n_3 ;
+  wire [11:0]writeNextValidLine;
+  wire \writeNextValidLine[11]_i_10_n_0 ;
+  wire \writeNextValidLine[11]_i_11_n_0 ;
+  wire \writeNextValidLine[11]_i_12_n_0 ;
+  wire \writeNextValidLine[11]_i_13_n_0 ;
+  wire \writeNextValidLine[11]_i_14_n_0 ;
+  wire \writeNextValidLine[11]_i_3_n_0 ;
+  wire \writeNextValidLine[11]_i_4_n_0 ;
+  wire \writeNextValidLine[11]_i_5_n_0 ;
+  wire \writeNextValidLine[11]_i_6_n_0 ;
+  wire \writeNextValidLine[11]_i_7_n_0 ;
+  wire \writeNextValidLine[11]_i_8_n_0 ;
+  wire \writeNextValidLine[11]_i_9_n_0 ;
+  wire \writeNextValidLine_reg[11]_i_1_n_2 ;
+  wire \writeNextValidLine_reg[11]_i_1_n_3 ;
+  wire \writeNextValidLine_reg[11]_i_2_n_0 ;
+  wire \writeNextValidLine_reg[11]_i_2_n_1 ;
+  wire \writeNextValidLine_reg[11]_i_2_n_2 ;
+  wire \writeNextValidLine_reg[11]_i_2_n_3 ;
   wire \writeOutputLine[0]_i_2_n_0 ;
-  wire [11:1]writeOutputLine_reg;
+  wire [11:0]writeOutputLine_reg;
   wire \writeOutputLine_reg[0]_i_1_n_0 ;
   wire \writeOutputLine_reg[0]_i_1_n_1 ;
   wire \writeOutputLine_reg[0]_i_1_n_2 ;
@@ -368,7 +371,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
   wire \writeOutputLine_reg[8]_i_1_n_5 ;
   wire \writeOutputLine_reg[8]_i_1_n_6 ;
   wire \writeOutputLine_reg[8]_i_1_n_7 ;
-  wire \writeOutputLine_reg_n_0_[0] ;
   wire \writeRowCount[0]_i_1_n_0 ;
   wire \writeRowCount[0]_i_3_n_0 ;
   wire \writeRowCount[0]_i_4_n_0 ;
@@ -441,20 +443,18 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
   (* MARK_DEBUG *) wire [8:0]yBlend;
   (* MARK_DEBUG *) wire [11:0]yPixLow;
   wire [11:0]yPixLowNext;
-  wire [25:13]yScaleAmount;
-  wire [12:0]yScaleAmountNext0;
-  wire \yScaleAmountNext_reg[17]_i_1_n_0 ;
-  wire \yScaleAmountNext_reg[17]_i_1_n_1 ;
-  wire \yScaleAmountNext_reg[17]_i_1_n_2 ;
-  wire \yScaleAmountNext_reg[17]_i_1_n_3 ;
-  wire \yScaleAmountNext_reg[21]_i_1_n_0 ;
-  wire \yScaleAmountNext_reg[21]_i_1_n_1 ;
-  wire \yScaleAmountNext_reg[21]_i_1_n_2 ;
-  wire \yScaleAmountNext_reg[21]_i_1_n_3 ;
+  wire [25:14]yScaleAmount;
+  wire [11:0]yScaleAmountNext0;
+  wire \yScaleAmountNext_reg[18]_i_1_n_0 ;
+  wire \yScaleAmountNext_reg[18]_i_1_n_1 ;
+  wire \yScaleAmountNext_reg[18]_i_1_n_2 ;
+  wire \yScaleAmountNext_reg[18]_i_1_n_3 ;
+  wire \yScaleAmountNext_reg[22]_i_1_n_0 ;
+  wire \yScaleAmountNext_reg[22]_i_1_n_1 ;
+  wire \yScaleAmountNext_reg[22]_i_1_n_2 ;
+  wire \yScaleAmountNext_reg[22]_i_1_n_3 ;
   wire \yScaleAmountNext_reg[25]_i_1_n_2 ;
   wire \yScaleAmountNext_reg[25]_i_1_n_3 ;
-  wire \yScaleAmountNext_reg_n_0_[13] ;
-  wire \yScaleAmount[13]_i_1_n_0 ;
   wire \yScaleAmount[14]_i_1_n_0 ;
   wire \yScaleAmount[15]_i_1_n_0 ;
   wire \yScaleAmount[16]_i_1_n_0 ;
@@ -468,7 +468,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
   wire \yScaleAmount[24]_i_1_n_0 ;
   wire \yScaleAmount[25]_i_1_n_0 ;
   wire \yScaleAmount[25]_i_2_n_0 ;
-  wire \yScaleAmount[25]_i_3_n_0 ;
   (* MARK_DEBUG *) wire [25:0]yScaleAmount_valid;
   wire [3:1]NLW_advanceRead2_reg_i_2_CO_UNCONNECTED;
   wire [3:0]NLW_advanceRead2_reg_i_2_O_UNCONNECTED;
@@ -477,7 +476,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
   wire [3:0]NLW_advanceRead2_reg_i_5_O_UNCONNECTED;
   wire [3:3]NLW_advanceRead2_reg_i_6_CO_UNCONNECTED;
   wire [3:0]NLW_advanceRead2_reg_i_7_O_UNCONNECTED;
-  wire [12:0]NLW_delay_yScaleAmount_dout_UNCONNECTED;
+  wire [13:0]NLW_delay_yScaleAmount_dout_UNCONNECTED;
   wire [3:1]NLW_discardInput_reg_i_2_CO_UNCONNECTED;
   wire [3:0]NLW_discardInput_reg_i_2_O_UNCONNECTED;
   wire [3:1]NLW_discardInput_reg_i_3_CO_UNCONNECTED;
@@ -496,15 +495,15 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
   wire [23:0]NLW_ramRB_readData32_UNCONNECTED;
   wire [23:0]NLW_ramRB_readData33_UNCONNECTED;
   wire [3:3]\NLW_writeColCount_reg[8]_i_1_CO_UNCONNECTED ;
-  wire [3:1]\NLW_writeNextPlusOne_reg[11]_i_2_CO_UNCONNECTED ;
-  wire [3:2]\NLW_writeNextPlusOne_reg[11]_i_2_O_UNCONNECTED ;
-  wire [3:2]\NLW_writeNextValidLine_reg[10]_i_1_CO_UNCONNECTED ;
-  wire [3:0]\NLW_writeNextValidLine_reg[10]_i_1_O_UNCONNECTED ;
-  wire [3:0]\NLW_writeNextValidLine_reg[10]_i_2_O_UNCONNECTED ;
+  wire [3:2]\NLW_writeNextPlusOne_reg[11]_i_2_CO_UNCONNECTED ;
+  wire [3:3]\NLW_writeNextPlusOne_reg[11]_i_2_O_UNCONNECTED ;
+  wire [3:2]\NLW_writeNextValidLine_reg[11]_i_1_CO_UNCONNECTED ;
+  wire [3:0]\NLW_writeNextValidLine_reg[11]_i_1_O_UNCONNECTED ;
+  wire [3:0]\NLW_writeNextValidLine_reg[11]_i_2_O_UNCONNECTED ;
   wire [3:3]\NLW_writeOutputLine_reg[8]_i_1_CO_UNCONNECTED ;
   wire [3:3]\NLW_writeRowCount_reg[8]_i_1_CO_UNCONNECTED ;
   wire [3:3]\NLW_xScaleAmount_reg[25]_i_3_CO_UNCONNECTED ;
-  wire [2:2]\NLW_yScaleAmountNext_reg[25]_i_1_CO_UNCONNECTED ;
+  wire [3:2]\NLW_yScaleAmountNext_reg[25]_i_1_CO_UNCONNECTED ;
   wire [3:3]\NLW_yScaleAmountNext_reg[25]_i_1_O_UNCONNECTED ;
 
   assign m_axis_tlast = \<const0> ;
@@ -604,14 +603,24 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
         .Q(\FSM_onehot_writeState_reg_n_0_[2] ));
   GND GND
        (.G(\<const0> ));
-  LUT4 #(
-    .INIT(16'hA888)) 
+  LUT5 #(
+    .INIT(32'h4F404F00)) 
     advanceRead1_i_1
-       (.I0(\yScaleAmount[25]_i_1_n_0 ),
-        .I1(advanceRead1),
-        .I2(advanceRead2_reg_i_2_n_3),
-        .I3(readState),
+       (.I0(advanceRead1_i_2_n_0),
+        .I1(dOutValidInt_i_2_n_0),
+        .I2(readState),
+        .I3(advanceRead1),
+        .I4(advanceRead2_reg_i_2_n_3),
         .O(advanceRead1_i_1_n_0));
+  LUT5 #(
+    .INIT(32'hFFFDFFFF)) 
+    advanceRead1_i_2
+       (.I0(outputColumn[8]),
+        .I1(outputColumn[9]),
+        .I2(outputColumn[10]),
+        .I3(outputColumn[11]),
+        .I4(dOutValidInt),
+        .O(advanceRead1_i_2_n_0));
   (* KEEP = "yes" *) 
   FDCE #(
     .INIT(1'b0)) 
@@ -865,14 +874,14 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
         .I4(dOutValidInt_i_5_n_0),
         .O(dOutValidInt_i_2_n_0));
   LUT6 #(
-    .INIT(64'hFFFFFFFFE0E0C0FF)) 
+    .INIT(64'hFFFFFFFFF8F8F0FF)) 
     dOutValidInt_i_3
-       (.I0(fillCount[0]),
-        .I1(fillCount[1]),
-        .I2(fillCount[2]),
+       (.I0(fillCount[2]),
+        .I1(fillCount[0]),
+        .I2(dOutValidInt_i_6_n_0),
         .I3(advanceRead2_reg_i_3_n_1),
         .I4(advanceRead2_reg_i_2_n_3),
-        .I5(dOutValidInt_i_6_n_0),
+        .I5(dOutValidInt_i_7_n_0),
         .O(dOutValidInt_i_3_n_0));
   LUT5 #(
     .INIT(32'h000000F2)) 
@@ -892,13 +901,19 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
         .I3(outputColumn[2]),
         .O(dOutValidInt_i_5_n_0));
   LUT4 #(
-    .INIT(16'hFFFD)) 
+    .INIT(16'hFFF8)) 
     dOutValidInt_i_6
-       (.I0(outputColumn[8]),
-        .I1(outputColumn[9]),
+       (.I0(fillCount[1]),
+        .I1(fillCount[2]),
         .I2(outputColumn[11]),
-        .I3(outputColumn[10]),
+        .I3(outputColumn[9]),
         .O(dOutValidInt_i_6_n_0));
+  LUT2 #(
+    .INIT(4'hB)) 
+    dOutValidInt_i_7
+       (.I0(outputColumn[10]),
+        .I1(outputColumn[8]),
+        .O(dOutValidInt_i_7_n_0));
   (* KEEP = "yes" *) 
   FDCE dOutValidInt_reg
        (.C(clk),
@@ -927,8 +942,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
   (* KEEP_HIERARCHY = "soft" *) 
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1 delay_yScaleAmount
        (.clk(clk),
-        .din({yScaleAmount,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .dout({yScaleAmount_valid[25:13],NLW_delay_yScaleAmount_dout_UNCONNECTED[12:0]}),
+        .din({yScaleAmount,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .dout({yScaleAmount_valid[25:14],NLW_delay_yScaleAmount_dout_UNCONNECTED[13:0]}),
         .rst_n(rst_n));
   LUT6 #(
     .INIT(64'h040404FF04040400)) 
@@ -975,10 +990,10 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
     discardInput_i_14
        (.I0(\writeNextPlusOne_reg_n_0_[5] ),
         .I1(discardInput3[5]),
-        .I2(\writeNextPlusOne_reg_n_0_[4] ),
-        .I3(discardInput3[4]),
-        .I4(discardInput3[3]),
-        .I5(\writeNextPlusOne_reg_n_0_[3] ),
+        .I2(\writeNextPlusOne_reg_n_0_[3] ),
+        .I3(discardInput3[3]),
+        .I4(discardInput3[4]),
+        .I5(\writeNextPlusOne_reg_n_0_[4] ),
         .O(discardInput_i_14_n_0));
   LUT6 #(
     .INIT(64'h0990000000000990)) 
@@ -990,14 +1005,15 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
         .I4(discardInput3[1]),
         .I5(\writeNextPlusOne_reg_n_0_[1] ),
         .O(discardInput_i_15_n_0));
-  LUT5 #(
-    .INIT(32'h09000009)) 
+  LUT6 #(
+    .INIT(64'h9009000000009009)) 
     discardInput_i_7
-       (.I0(writeNextValidLine[10]),
-        .I1(discardInput3[10]),
-        .I2(discardInput3[11]),
-        .I3(discardInput3[9]),
-        .I4(writeNextValidLine[9]),
+       (.I0(writeNextValidLine[11]),
+        .I1(discardInput3[11]),
+        .I2(writeNextValidLine[10]),
+        .I3(discardInput3[10]),
+        .I4(discardInput3[9]),
+        .I5(writeNextValidLine[9]),
         .O(discardInput_i_7_n_0));
   LUT6 #(
     .INIT(64'h9009000000009009)) 
@@ -1118,7 +1134,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
   LUT1 #(
     .INIT(2'h1)) 
     getNextPlusOne_i_1
-       (.I0(\writeNextValidLine_reg[10]_i_1_n_2 ),
+       (.I0(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .O(p_0_in__0));
   FDPE getNextPlusOne_reg
        (.C(clk),
@@ -1140,52 +1156,52 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
     .INIT(2'h2)) 
     i_10
        (.I0(1'b0),
-        .O(yScaleAmount_valid[11]));
+        .O(yScaleAmount_valid[12]));
   LUT1 #(
     .INIT(2'h2)) 
     i_11
        (.I0(1'b0),
-        .O(yScaleAmount_valid[10]));
+        .O(yScaleAmount_valid[11]));
   LUT1 #(
     .INIT(2'h2)) 
     i_12
        (.I0(1'b0),
-        .O(yScaleAmount_valid[9]));
+        .O(yScaleAmount_valid[10]));
   LUT1 #(
     .INIT(2'h2)) 
     i_13
        (.I0(1'b0),
-        .O(yScaleAmount_valid[8]));
+        .O(yScaleAmount_valid[9]));
   LUT1 #(
     .INIT(2'h2)) 
     i_14
        (.I0(1'b0),
-        .O(yScaleAmount_valid[7]));
+        .O(yScaleAmount_valid[8]));
   LUT1 #(
     .INIT(2'h2)) 
     i_15
        (.I0(1'b0),
-        .O(yScaleAmount_valid[6]));
+        .O(yScaleAmount_valid[7]));
   LUT1 #(
     .INIT(2'h2)) 
     i_16
        (.I0(1'b0),
-        .O(yScaleAmount_valid[5]));
+        .O(yScaleAmount_valid[6]));
   LUT1 #(
     .INIT(2'h2)) 
     i_17
        (.I0(1'b0),
-        .O(yScaleAmount_valid[4]));
+        .O(yScaleAmount_valid[5]));
   LUT1 #(
     .INIT(2'h2)) 
     i_18
        (.I0(1'b0),
-        .O(yScaleAmount_valid[3]));
+        .O(yScaleAmount_valid[4]));
   LUT1 #(
     .INIT(2'h2)) 
     i_19
        (.I0(1'b0),
-        .O(yScaleAmount_valid[2]));
+        .O(yScaleAmount_valid[3]));
   LUT1 #(
     .INIT(2'h2)) 
     i_2
@@ -1195,15 +1211,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
     .INIT(2'h2)) 
     i_20
        (.I0(1'b0),
-        .O(yScaleAmount_valid[1]));
+        .O(yScaleAmount_valid[2]));
   LUT1 #(
     .INIT(2'h2)) 
     i_21
        (.I0(1'b0),
-        .O(yScaleAmount_valid[0]));
+        .O(yScaleAmount_valid[1]));
   LUT1 #(
     .INIT(2'h2)) 
     i_22
+       (.I0(1'b0),
+        .O(yScaleAmount_valid[0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_23
        (.I0(1'b0),
         .O(yBlend[8]));
   LUT1 #(
@@ -1240,7 +1261,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
     .INIT(2'h2)) 
     i_9
        (.I0(1'b0),
-        .O(yScaleAmount_valid[12]));
+        .O(yScaleAmount_valid[13]));
   LUT3 #(
     .INIT(8'h08)) 
     i_vid_de_inferred_i_1
@@ -1329,9 +1350,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
   LUT5 #(
     .INIT(32'hFEFFFFFF)) 
     \outputColumn[11]_i_3 
-       (.I0(outputColumn[10]),
+       (.I0(outputColumn[9]),
         .I1(outputColumn[11]),
-        .I2(outputColumn[9]),
+        .I2(outputColumn[10]),
         .I3(outputColumn[8]),
         .I4(dOutValidInt_i_2_n_0),
         .O(\outputColumn[11]_i_3_n_0 ));
@@ -1906,7 +1927,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
     .INIT(4'h8)) 
     \writeNextPlusOne[11]_i_1 
        (.I0(getNextPlusOne),
-        .I1(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .I1(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .O(writeNextPlusOne));
   FDPE \writeNextPlusOne_reg[0] 
        (.C(clk),
@@ -1924,15 +1945,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
        (.C(clk),
         .CE(writeNextPlusOne),
         .CLR(ramRB_i_1_n_0),
-        .D(\writeNextPlusOne_reg[11]_i_2_n_1 ),
+        .D(\writeNextPlusOne_reg[11]_i_2_n_5 ),
         .Q(\writeNextPlusOne_reg_n_0_[11] ));
+  (* ADDER_THRESHOLD = "35" *) 
   CARRY4 \writeNextPlusOne_reg[11]_i_2 
        (.CI(\writeNextPlusOne_reg[8]_i_1_n_0 ),
-        .CO({\NLW_writeNextPlusOne_reg[11]_i_2_CO_UNCONNECTED [3],\writeNextPlusOne_reg[11]_i_2_n_1 ,\NLW_writeNextPlusOne_reg[11]_i_2_CO_UNCONNECTED [1],\writeNextPlusOne_reg[11]_i_2_n_3 }),
+        .CO({\NLW_writeNextPlusOne_reg[11]_i_2_CO_UNCONNECTED [3:2],\writeNextPlusOne_reg[11]_i_2_n_2 ,\writeNextPlusOne_reg[11]_i_2_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\NLW_writeNextPlusOne_reg[11]_i_2_O_UNCONNECTED [3:2],\writeNextPlusOne_reg[11]_i_2_n_6 ,\writeNextPlusOne_reg[11]_i_2_n_7 }),
-        .S({1'b0,1'b1,writeNextValidLine[10:9]}));
+        .O({\NLW_writeNextPlusOne_reg[11]_i_2_O_UNCONNECTED [3],\writeNextPlusOne_reg[11]_i_2_n_5 ,\writeNextPlusOne_reg[11]_i_2_n_6 ,\writeNextPlusOne_reg[11]_i_2_n_7 }),
+        .S({1'b0,writeNextValidLine[11:9]}));
   FDCE \writeNextPlusOne_reg[1] 
        (.C(clk),
         .CE(writeNextPlusOne),
@@ -1957,6 +1979,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
         .CLR(ramRB_i_1_n_0),
         .D(\writeNextPlusOne_reg[4]_i_1_n_4 ),
         .Q(\writeNextPlusOne_reg_n_0_[4] ));
+  (* ADDER_THRESHOLD = "35" *) 
   CARRY4 \writeNextPlusOne_reg[4]_i_1 
        (.CI(1'b0),
         .CO({\writeNextPlusOne_reg[4]_i_1_n_0 ,\writeNextPlusOne_reg[4]_i_1_n_1 ,\writeNextPlusOne_reg[4]_i_1_n_2 ,\writeNextPlusOne_reg[4]_i_1_n_3 }),
@@ -1988,6 +2011,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
         .CLR(ramRB_i_1_n_0),
         .D(\writeNextPlusOne_reg[8]_i_1_n_4 ),
         .Q(\writeNextPlusOne_reg_n_0_[8] ));
+  (* ADDER_THRESHOLD = "35" *) 
   CARRY4 \writeNextPlusOne_reg[8]_i_1 
        (.CI(\writeNextPlusOne_reg[4]_i_1_n_0 ),
         .CO({\writeNextPlusOne_reg[8]_i_1_n_0 ,\writeNextPlusOne_reg[8]_i_1_n_1 ,\writeNextPlusOne_reg[8]_i_1_n_2 ,\writeNextPlusOne_reg[8]_i_1_n_3 }),
@@ -2003,191 +2027,199 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
         .Q(\writeNextPlusOne_reg_n_0_[9] ));
   LUT4 #(
     .INIT(16'h2B22)) 
-    \writeNextValidLine[10]_i_10 
+    \writeNextValidLine[11]_i_10 
        (.I0(writeRowCount_reg[1]),
         .I1(writeNextValidLine[1]),
         .I2(writeNextValidLine[0]),
         .I3(writeRowCount_reg[0]),
-        .O(\writeNextValidLine[10]_i_10_n_0 ));
+        .O(\writeNextValidLine[11]_i_10_n_0 ));
   LUT4 #(
     .INIT(16'h9009)) 
-    \writeNextValidLine[10]_i_11 
+    \writeNextValidLine[11]_i_11 
        (.I0(writeNextValidLine[7]),
         .I1(writeRowCount_reg[7]),
         .I2(writeNextValidLine[6]),
         .I3(writeRowCount_reg[6]),
-        .O(\writeNextValidLine[10]_i_11_n_0 ));
+        .O(\writeNextValidLine[11]_i_11_n_0 ));
   LUT4 #(
     .INIT(16'h9009)) 
-    \writeNextValidLine[10]_i_12 
+    \writeNextValidLine[11]_i_12 
        (.I0(writeNextValidLine[5]),
         .I1(writeRowCount_reg[5]),
         .I2(writeNextValidLine[4]),
         .I3(writeRowCount_reg[4]),
-        .O(\writeNextValidLine[10]_i_12_n_0 ));
+        .O(\writeNextValidLine[11]_i_12_n_0 ));
   LUT4 #(
     .INIT(16'h9009)) 
-    \writeNextValidLine[10]_i_13 
+    \writeNextValidLine[11]_i_13 
        (.I0(writeNextValidLine[3]),
         .I1(writeRowCount_reg[3]),
         .I2(writeNextValidLine[2]),
         .I3(writeRowCount_reg[2]),
-        .O(\writeNextValidLine[10]_i_13_n_0 ));
+        .O(\writeNextValidLine[11]_i_13_n_0 ));
   LUT4 #(
     .INIT(16'h9009)) 
-    \writeNextValidLine[10]_i_14 
+    \writeNextValidLine[11]_i_14 
        (.I0(writeNextValidLine[1]),
         .I1(writeRowCount_reg[1]),
         .I2(writeNextValidLine[0]),
         .I3(writeRowCount_reg[0]),
-        .O(\writeNextValidLine[10]_i_14_n_0 ));
-  LUT3 #(
-    .INIT(8'hBA)) 
-    \writeNextValidLine[10]_i_3 
-       (.I0(writeRowCount_reg[11]),
-        .I1(writeNextValidLine[10]),
-        .I2(writeRowCount_reg[10]),
-        .O(\writeNextValidLine[10]_i_3_n_0 ));
+        .O(\writeNextValidLine[11]_i_14_n_0 ));
   LUT4 #(
     .INIT(16'h22B2)) 
-    \writeNextValidLine[10]_i_4 
+    \writeNextValidLine[11]_i_3 
+       (.I0(writeRowCount_reg[11]),
+        .I1(writeNextValidLine[11]),
+        .I2(writeRowCount_reg[10]),
+        .I3(writeNextValidLine[10]),
+        .O(\writeNextValidLine[11]_i_3_n_0 ));
+  LUT4 #(
+    .INIT(16'h22B2)) 
+    \writeNextValidLine[11]_i_4 
        (.I0(writeRowCount_reg[9]),
         .I1(writeNextValidLine[9]),
         .I2(writeRowCount_reg[8]),
         .I3(writeNextValidLine[8]),
-        .O(\writeNextValidLine[10]_i_4_n_0 ));
-  LUT3 #(
-    .INIT(8'h41)) 
-    \writeNextValidLine[10]_i_5 
-       (.I0(writeRowCount_reg[11]),
-        .I1(writeNextValidLine[10]),
-        .I2(writeRowCount_reg[10]),
-        .O(\writeNextValidLine[10]_i_5_n_0 ));
+        .O(\writeNextValidLine[11]_i_4_n_0 ));
   LUT4 #(
     .INIT(16'h9009)) 
-    \writeNextValidLine[10]_i_6 
+    \writeNextValidLine[11]_i_5 
+       (.I0(writeNextValidLine[11]),
+        .I1(writeRowCount_reg[11]),
+        .I2(writeNextValidLine[10]),
+        .I3(writeRowCount_reg[10]),
+        .O(\writeNextValidLine[11]_i_5_n_0 ));
+  LUT4 #(
+    .INIT(16'h9009)) 
+    \writeNextValidLine[11]_i_6 
        (.I0(writeNextValidLine[9]),
         .I1(writeRowCount_reg[9]),
         .I2(writeNextValidLine[8]),
         .I3(writeRowCount_reg[8]),
-        .O(\writeNextValidLine[10]_i_6_n_0 ));
+        .O(\writeNextValidLine[11]_i_6_n_0 ));
   LUT4 #(
     .INIT(16'h22B2)) 
-    \writeNextValidLine[10]_i_7 
+    \writeNextValidLine[11]_i_7 
        (.I0(writeRowCount_reg[7]),
         .I1(writeNextValidLine[7]),
         .I2(writeRowCount_reg[6]),
         .I3(writeNextValidLine[6]),
-        .O(\writeNextValidLine[10]_i_7_n_0 ));
+        .O(\writeNextValidLine[11]_i_7_n_0 ));
   LUT4 #(
     .INIT(16'h22B2)) 
-    \writeNextValidLine[10]_i_8 
+    \writeNextValidLine[11]_i_8 
        (.I0(writeRowCount_reg[5]),
         .I1(writeNextValidLine[5]),
         .I2(writeRowCount_reg[4]),
         .I3(writeNextValidLine[4]),
-        .O(\writeNextValidLine[10]_i_8_n_0 ));
+        .O(\writeNextValidLine[11]_i_8_n_0 ));
   LUT4 #(
     .INIT(16'h22B2)) 
-    \writeNextValidLine[10]_i_9 
+    \writeNextValidLine[11]_i_9 
        (.I0(writeRowCount_reg[3]),
         .I1(writeNextValidLine[3]),
         .I2(writeRowCount_reg[2]),
         .I3(writeNextValidLine[2]),
-        .O(\writeNextValidLine[10]_i_9_n_0 ));
+        .O(\writeNextValidLine[11]_i_9_n_0 ));
   FDCE \writeNextValidLine_reg[0] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
-        .D(writeOutputLine_reg[1]),
+        .D(writeOutputLine_reg[0]),
         .Q(writeNextValidLine[0]));
   FDCE \writeNextValidLine_reg[10] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
+        .CLR(ramRB_i_1_n_0),
+        .D(writeOutputLine_reg[10]),
+        .Q(writeNextValidLine[10]));
+  FDCE \writeNextValidLine_reg[11] 
+       (.C(clk),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
         .D(writeOutputLine_reg[11]),
-        .Q(writeNextValidLine[10]));
+        .Q(writeNextValidLine[11]));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \writeNextValidLine_reg[10]_i_1 
-       (.CI(\writeNextValidLine_reg[10]_i_2_n_0 ),
-        .CO({\NLW_writeNextValidLine_reg[10]_i_1_CO_UNCONNECTED [3:2],\writeNextValidLine_reg[10]_i_1_n_2 ,\writeNextValidLine_reg[10]_i_1_n_3 }),
+  CARRY4 \writeNextValidLine_reg[11]_i_1 
+       (.CI(\writeNextValidLine_reg[11]_i_2_n_0 ),
+        .CO({\NLW_writeNextValidLine_reg[11]_i_1_CO_UNCONNECTED [3:2],\writeNextValidLine_reg[11]_i_1_n_2 ,\writeNextValidLine_reg[11]_i_1_n_3 }),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,\writeNextValidLine[10]_i_3_n_0 ,\writeNextValidLine[10]_i_4_n_0 }),
-        .O(\NLW_writeNextValidLine_reg[10]_i_1_O_UNCONNECTED [3:0]),
-        .S({1'b0,1'b0,\writeNextValidLine[10]_i_5_n_0 ,\writeNextValidLine[10]_i_6_n_0 }));
+        .DI({1'b0,1'b0,\writeNextValidLine[11]_i_3_n_0 ,\writeNextValidLine[11]_i_4_n_0 }),
+        .O(\NLW_writeNextValidLine_reg[11]_i_1_O_UNCONNECTED [3:0]),
+        .S({1'b0,1'b0,\writeNextValidLine[11]_i_5_n_0 ,\writeNextValidLine[11]_i_6_n_0 }));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \writeNextValidLine_reg[10]_i_2 
+  CARRY4 \writeNextValidLine_reg[11]_i_2 
        (.CI(1'b0),
-        .CO({\writeNextValidLine_reg[10]_i_2_n_0 ,\writeNextValidLine_reg[10]_i_2_n_1 ,\writeNextValidLine_reg[10]_i_2_n_2 ,\writeNextValidLine_reg[10]_i_2_n_3 }),
+        .CO({\writeNextValidLine_reg[11]_i_2_n_0 ,\writeNextValidLine_reg[11]_i_2_n_1 ,\writeNextValidLine_reg[11]_i_2_n_2 ,\writeNextValidLine_reg[11]_i_2_n_3 }),
         .CYINIT(1'b1),
-        .DI({\writeNextValidLine[10]_i_7_n_0 ,\writeNextValidLine[10]_i_8_n_0 ,\writeNextValidLine[10]_i_9_n_0 ,\writeNextValidLine[10]_i_10_n_0 }),
-        .O(\NLW_writeNextValidLine_reg[10]_i_2_O_UNCONNECTED [3:0]),
-        .S({\writeNextValidLine[10]_i_11_n_0 ,\writeNextValidLine[10]_i_12_n_0 ,\writeNextValidLine[10]_i_13_n_0 ,\writeNextValidLine[10]_i_14_n_0 }));
+        .DI({\writeNextValidLine[11]_i_7_n_0 ,\writeNextValidLine[11]_i_8_n_0 ,\writeNextValidLine[11]_i_9_n_0 ,\writeNextValidLine[11]_i_10_n_0 }),
+        .O(\NLW_writeNextValidLine_reg[11]_i_2_O_UNCONNECTED [3:0]),
+        .S({\writeNextValidLine[11]_i_11_n_0 ,\writeNextValidLine[11]_i_12_n_0 ,\writeNextValidLine[11]_i_13_n_0 ,\writeNextValidLine[11]_i_14_n_0 }));
   FDCE \writeNextValidLine_reg[1] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
-        .D(writeOutputLine_reg[2]),
+        .D(writeOutputLine_reg[1]),
         .Q(writeNextValidLine[1]));
   FDCE \writeNextValidLine_reg[2] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
-        .D(writeOutputLine_reg[3]),
+        .D(writeOutputLine_reg[2]),
         .Q(writeNextValidLine[2]));
   FDCE \writeNextValidLine_reg[3] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
-        .D(writeOutputLine_reg[4]),
+        .D(writeOutputLine_reg[3]),
         .Q(writeNextValidLine[3]));
   FDCE \writeNextValidLine_reg[4] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
-        .D(writeOutputLine_reg[5]),
+        .D(writeOutputLine_reg[4]),
         .Q(writeNextValidLine[4]));
   FDCE \writeNextValidLine_reg[5] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
-        .D(writeOutputLine_reg[6]),
+        .D(writeOutputLine_reg[5]),
         .Q(writeNextValidLine[5]));
   FDCE \writeNextValidLine_reg[6] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
-        .D(writeOutputLine_reg[7]),
+        .D(writeOutputLine_reg[6]),
         .Q(writeNextValidLine[6]));
   FDCE \writeNextValidLine_reg[7] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
-        .D(writeOutputLine_reg[8]),
+        .D(writeOutputLine_reg[7]),
         .Q(writeNextValidLine[7]));
   FDCE \writeNextValidLine_reg[8] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
-        .D(writeOutputLine_reg[9]),
+        .D(writeOutputLine_reg[8]),
         .Q(writeNextValidLine[8]));
   FDCE \writeNextValidLine_reg[9] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
-        .D(writeOutputLine_reg[10]),
+        .D(writeOutputLine_reg[9]),
         .Q(writeNextValidLine[9]));
   LUT1 #(
     .INIT(2'h1)) 
     \writeOutputLine[0]_i_2 
-       (.I0(\writeOutputLine_reg_n_0_[0] ),
+       (.I0(writeOutputLine_reg[0]),
         .O(\writeOutputLine[0]_i_2_n_0 ));
   FDCE \writeOutputLine_reg[0] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
         .D(\writeOutputLine_reg[0]_i_1_n_7 ),
-        .Q(\writeOutputLine_reg_n_0_[0] ));
+        .Q(writeOutputLine_reg[0]));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \writeOutputLine_reg[0]_i_1 
        (.CI(1'b0),
@@ -2198,37 +2230,37 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
         .S({writeOutputLine_reg[3:1],\writeOutputLine[0]_i_2_n_0 }));
   FDCE \writeOutputLine_reg[10] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
         .D(\writeOutputLine_reg[8]_i_1_n_5 ),
         .Q(writeOutputLine_reg[10]));
   FDCE \writeOutputLine_reg[11] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
         .D(\writeOutputLine_reg[8]_i_1_n_4 ),
         .Q(writeOutputLine_reg[11]));
   FDCE \writeOutputLine_reg[1] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
         .D(\writeOutputLine_reg[0]_i_1_n_6 ),
         .Q(writeOutputLine_reg[1]));
   FDCE \writeOutputLine_reg[2] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
         .D(\writeOutputLine_reg[0]_i_1_n_5 ),
         .Q(writeOutputLine_reg[2]));
   FDCE \writeOutputLine_reg[3] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
         .D(\writeOutputLine_reg[0]_i_1_n_4 ),
         .Q(writeOutputLine_reg[3]));
   FDCE \writeOutputLine_reg[4] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
         .D(\writeOutputLine_reg[4]_i_1_n_7 ),
         .Q(writeOutputLine_reg[4]));
@@ -2242,25 +2274,25 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
         .S(writeOutputLine_reg[7:4]));
   FDCE \writeOutputLine_reg[5] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
         .D(\writeOutputLine_reg[4]_i_1_n_6 ),
         .Q(writeOutputLine_reg[5]));
   FDCE \writeOutputLine_reg[6] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
         .D(\writeOutputLine_reg[4]_i_1_n_5 ),
         .Q(writeOutputLine_reg[6]));
   FDCE \writeOutputLine_reg[7] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
         .D(\writeOutputLine_reg[4]_i_1_n_4 ),
         .Q(writeOutputLine_reg[7]));
   FDCE \writeOutputLine_reg[8] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
         .D(\writeOutputLine_reg[8]_i_1_n_7 ),
         .Q(writeOutputLine_reg[8]));
@@ -2274,7 +2306,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
         .S(writeOutputLine_reg[11:8]));
   FDCE \writeOutputLine_reg[9] 
        (.C(clk),
-        .CE(\writeNextValidLine_reg[10]_i_1_n_2 ),
+        .CE(\writeNextValidLine_reg[11]_i_1_n_2 ),
         .CLR(ramRB_i_1_n_0),
         .D(\writeOutputLine_reg[8]_i_1_n_6 ),
         .Q(writeOutputLine_reg[9]));
@@ -2286,11 +2318,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
         .I2(\writeColCount_reg_n_0_[4] ),
         .O(\writeRowCount[0]_i_1_n_0 ));
   LUT5 #(
-    .INIT(32'hFFFFFF7F)) 
+    .INIT(32'hFFFFFFDF)) 
     \writeRowCount[0]_i_3 
-       (.I0(\writeColCount_reg_n_0_[3] ),
-        .I1(\writeColCount_reg_n_0_[1] ),
-        .I2(\writeColCount_reg_n_0_[2] ),
+       (.I0(\writeColCount_reg_n_0_[2] ),
+        .I1(\writeColCount_reg_n_0_[9] ),
+        .I2(\writeColCount_reg_n_0_[1] ),
         .I3(\writeRowCount[0]_i_5_n_0 ),
         .I4(\writeRowCount[0]_i_6_n_0 ),
         .O(\writeRowCount[0]_i_3_n_0 ));
@@ -2304,16 +2336,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
     \writeRowCount[0]_i_5 
        (.I0(\writeColCount_reg_n_0_[10] ),
         .I1(\writeColCount_reg_n_0_[5] ),
-        .I2(\writeColCount_reg_n_0_[0] ),
+        .I2(\writeColCount_reg_n_0_[3] ),
         .I3(\writeColCount_reg_n_0_[11] ),
         .O(\writeRowCount[0]_i_5_n_0 ));
   LUT4 #(
-    .INIT(16'hDFFF)) 
+    .INIT(16'h7FFF)) 
     \writeRowCount[0]_i_6 
-       (.I0(\writeColCount_reg_n_0_[8] ),
-        .I1(\writeColCount_reg_n_0_[9] ),
-        .I2(\writeColCount_reg_n_0_[6] ),
-        .I3(\writeColCount_reg_n_0_[7] ),
+       (.I0(\writeColCount_reg_n_0_[6] ),
+        .I1(\writeColCount_reg_n_0_[0] ),
+        .I2(\writeColCount_reg_n_0_[7] ),
+        .I3(\writeColCount_reg_n_0_[8] ),
         .O(\writeRowCount[0]_i_6_n_0 ));
   FDCE \writeRowCount_reg[0] 
        (.C(clk),
@@ -2675,114 +2707,102 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
         .O(xPixLow[1]));
   LUT1 #(
     .INIT(2'h1)) 
-    \yScaleAmountNext[13]_i_1 
+    \yScaleAmountNext[14]_i_1 
        (.I0(outputLine_reg[0]),
         .O(yScaleAmountNext0[0]));
-  FDCE \yScaleAmountNext_reg[13] 
-       (.C(clk),
-        .CE(1'b1),
-        .CLR(ramRB_i_1_n_0),
-        .D(yScaleAmountNext0[0]),
-        .Q(\yScaleAmountNext_reg_n_0_[13] ));
   FDCE \yScaleAmountNext_reg[14] 
        (.C(clk),
         .CE(1'b1),
         .CLR(ramRB_i_1_n_0),
-        .D(yScaleAmountNext0[1]),
+        .D(yScaleAmountNext0[0]),
         .Q(yPixLowNext[0]));
   FDCE \yScaleAmountNext_reg[15] 
        (.C(clk),
         .CE(1'b1),
         .CLR(ramRB_i_1_n_0),
-        .D(yScaleAmountNext0[2]),
+        .D(yScaleAmountNext0[1]),
         .Q(yPixLowNext[1]));
   FDCE \yScaleAmountNext_reg[16] 
        (.C(clk),
         .CE(1'b1),
         .CLR(ramRB_i_1_n_0),
-        .D(yScaleAmountNext0[3]),
+        .D(yScaleAmountNext0[2]),
         .Q(yPixLowNext[2]));
   FDCE \yScaleAmountNext_reg[17] 
        (.C(clk),
         .CE(1'b1),
         .CLR(ramRB_i_1_n_0),
-        .D(yScaleAmountNext0[4]),
+        .D(yScaleAmountNext0[3]),
         .Q(yPixLowNext[3]));
-  CARRY4 \yScaleAmountNext_reg[17]_i_1 
-       (.CI(1'b0),
-        .CO({\yScaleAmountNext_reg[17]_i_1_n_0 ,\yScaleAmountNext_reg[17]_i_1_n_1 ,\yScaleAmountNext_reg[17]_i_1_n_2 ,\yScaleAmountNext_reg[17]_i_1_n_3 }),
-        .CYINIT(outputLine_reg[0]),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(yScaleAmountNext0[4:1]),
-        .S(outputLine_reg[4:1]));
   FDCE \yScaleAmountNext_reg[18] 
        (.C(clk),
         .CE(1'b1),
         .CLR(ramRB_i_1_n_0),
-        .D(yScaleAmountNext0[5]),
+        .D(yScaleAmountNext0[4]),
         .Q(yPixLowNext[4]));
+  CARRY4 \yScaleAmountNext_reg[18]_i_1 
+       (.CI(1'b0),
+        .CO({\yScaleAmountNext_reg[18]_i_1_n_0 ,\yScaleAmountNext_reg[18]_i_1_n_1 ,\yScaleAmountNext_reg[18]_i_1_n_2 ,\yScaleAmountNext_reg[18]_i_1_n_3 }),
+        .CYINIT(outputLine_reg[0]),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(yScaleAmountNext0[4:1]),
+        .S(outputLine_reg[4:1]));
   FDCE \yScaleAmountNext_reg[19] 
        (.C(clk),
         .CE(1'b1),
         .CLR(ramRB_i_1_n_0),
-        .D(yScaleAmountNext0[6]),
+        .D(yScaleAmountNext0[5]),
         .Q(yPixLowNext[5]));
   FDCE \yScaleAmountNext_reg[20] 
        (.C(clk),
         .CE(1'b1),
         .CLR(ramRB_i_1_n_0),
-        .D(yScaleAmountNext0[7]),
+        .D(yScaleAmountNext0[6]),
         .Q(yPixLowNext[6]));
   FDCE \yScaleAmountNext_reg[21] 
        (.C(clk),
         .CE(1'b1),
         .CLR(ramRB_i_1_n_0),
-        .D(yScaleAmountNext0[8]),
+        .D(yScaleAmountNext0[7]),
         .Q(yPixLowNext[7]));
-  CARRY4 \yScaleAmountNext_reg[21]_i_1 
-       (.CI(\yScaleAmountNext_reg[17]_i_1_n_0 ),
-        .CO({\yScaleAmountNext_reg[21]_i_1_n_0 ,\yScaleAmountNext_reg[21]_i_1_n_1 ,\yScaleAmountNext_reg[21]_i_1_n_2 ,\yScaleAmountNext_reg[21]_i_1_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(yScaleAmountNext0[8:5]),
-        .S(outputLine_reg[8:5]));
   FDCE \yScaleAmountNext_reg[22] 
        (.C(clk),
         .CE(1'b1),
         .CLR(ramRB_i_1_n_0),
-        .D(yScaleAmountNext0[9]),
+        .D(yScaleAmountNext0[8]),
         .Q(yPixLowNext[8]));
+  CARRY4 \yScaleAmountNext_reg[22]_i_1 
+       (.CI(\yScaleAmountNext_reg[18]_i_1_n_0 ),
+        .CO({\yScaleAmountNext_reg[22]_i_1_n_0 ,\yScaleAmountNext_reg[22]_i_1_n_1 ,\yScaleAmountNext_reg[22]_i_1_n_2 ,\yScaleAmountNext_reg[22]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(yScaleAmountNext0[8:5]),
+        .S(outputLine_reg[8:5]));
   FDCE \yScaleAmountNext_reg[23] 
        (.C(clk),
         .CE(1'b1),
         .CLR(ramRB_i_1_n_0),
-        .D(yScaleAmountNext0[10]),
+        .D(yScaleAmountNext0[9]),
         .Q(yPixLowNext[9]));
   FDCE \yScaleAmountNext_reg[24] 
        (.C(clk),
         .CE(1'b1),
         .CLR(ramRB_i_1_n_0),
-        .D(yScaleAmountNext0[11]),
+        .D(yScaleAmountNext0[10]),
         .Q(yPixLowNext[10]));
   FDCE \yScaleAmountNext_reg[25] 
        (.C(clk),
         .CE(1'b1),
         .CLR(ramRB_i_1_n_0),
-        .D(yScaleAmountNext0[12]),
+        .D(yScaleAmountNext0[11]),
         .Q(yPixLowNext[11]));
   CARRY4 \yScaleAmountNext_reg[25]_i_1 
-       (.CI(\yScaleAmountNext_reg[21]_i_1_n_0 ),
-        .CO({yScaleAmountNext0[12],\NLW_yScaleAmountNext_reg[25]_i_1_CO_UNCONNECTED [2],\yScaleAmountNext_reg[25]_i_1_n_2 ,\yScaleAmountNext_reg[25]_i_1_n_3 }),
+       (.CI(\yScaleAmountNext_reg[22]_i_1_n_0 ),
+        .CO({\NLW_yScaleAmountNext_reg[25]_i_1_CO_UNCONNECTED [3:2],\yScaleAmountNext_reg[25]_i_1_n_2 ,\yScaleAmountNext_reg[25]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O({\NLW_yScaleAmountNext_reg[25]_i_1_O_UNCONNECTED [3],yScaleAmountNext0[11:9]}),
-        .S({1'b1,outputLine_reg[11:9]}));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \yScaleAmount[13]_i_1 
-       (.I0(readState),
-        .I1(\yScaleAmountNext_reg_n_0_[13] ),
-        .O(\yScaleAmount[13]_i_1_n_0 ));
+        .S({1'b0,outputLine_reg[11:9]}));
   (* SOFT_HLUTNM = "soft_lutpair484" *) 
   LUT2 #(
     .INIT(4'h8)) 
@@ -2860,15 +2880,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
        (.I0(readState),
         .I1(yPixLowNext[10]),
         .O(\yScaleAmount[24]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h20000000FFFFFFFF)) 
+  LUT3 #(
+    .INIT(8'h4F)) 
     \yScaleAmount[25]_i_1 
-       (.I0(outputColumn[8]),
-        .I1(outputColumn[9]),
-        .I2(\yScaleAmount[25]_i_3_n_0 ),
-        .I3(dOutValidInt),
-        .I4(dOutValidInt_i_2_n_0),
-        .I5(readState),
+       (.I0(advanceRead1_i_2_n_0),
+        .I1(dOutValidInt_i_2_n_0),
+        .I2(readState),
         .O(\yScaleAmount[25]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair479" *) 
   LUT2 #(
@@ -2877,18 +2894,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Bic_top
        (.I0(readState),
         .I1(yPixLowNext[11]),
         .O(\yScaleAmount[25]_i_2_n_0 ));
-  LUT2 #(
-    .INIT(4'h1)) 
-    \yScaleAmount[25]_i_3 
-       (.I0(outputColumn[10]),
-        .I1(outputColumn[11]),
-        .O(\yScaleAmount[25]_i_3_n_0 ));
-  FDCE \yScaleAmount_reg[13] 
-       (.C(clk),
-        .CE(\yScaleAmount[25]_i_1_n_0 ),
-        .CLR(ramRB_i_1_n_0),
-        .D(\yScaleAmount[13]_i_1_n_0 ),
-        .Q(yScaleAmount[13]));
   FDCE \yScaleAmount_reg[14] 
        (.C(clk),
         .CE(\yScaleAmount[25]_i_1_n_0 ),
@@ -3980,7 +3985,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1
   wire \<const0> ;
   wire clk;
   wire \delay_regs[3][25]_i_1_n_0 ;
-  wire \delay_regs_reg[1][13]_srl2_delay_regs_reg_c_0_n_0 ;
   wire \delay_regs_reg[1][14]_srl2_delay_regs_reg_c_0_n_0 ;
   wire \delay_regs_reg[1][15]_srl2_delay_regs_reg_c_0_n_0 ;
   wire \delay_regs_reg[1][16]_srl2_delay_regs_reg_c_0_n_0 ;
@@ -3993,7 +3997,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1
   wire \delay_regs_reg[1][23]_srl2_delay_regs_reg_c_0_n_0 ;
   wire \delay_regs_reg[1][24]_srl2_delay_regs_reg_c_0_n_0 ;
   wire \delay_regs_reg[1][25]_srl2_delay_regs_reg_c_0_n_0 ;
-  wire \delay_regs_reg[2][13]_delay_regs_reg_c_1_n_0 ;
   wire \delay_regs_reg[2][14]_delay_regs_reg_c_1_n_0 ;
   wire \delay_regs_reg[2][15]_delay_regs_reg_c_1_n_0 ;
   wire \delay_regs_reg[2][16]_delay_regs_reg_c_1_n_0 ;
@@ -4011,7 +4014,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1
   wire delay_regs_reg_c_n_0;
   wire delay_regs_reg_gate__0_n_0;
   wire delay_regs_reg_gate__10_n_0;
-  wire delay_regs_reg_gate__11_n_0;
   wire delay_regs_reg_gate__1_n_0;
   wire delay_regs_reg_gate__2_n_0;
   wire delay_regs_reg_gate__3_n_0;
@@ -4023,10 +4025,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1
   wire delay_regs_reg_gate__9_n_0;
   wire delay_regs_reg_gate_n_0;
   wire [25:0]din;
-  wire [25:13]\^dout ;
+  wire [25:14]\^dout ;
   wire rst_n;
 
-  assign dout[25:13] = \^dout [25:13];
+  assign dout[25:14] = \^dout [25:14];
+  assign dout[13] = \<const0> ;
   assign dout[12] = \<const0> ;
   assign dout[11] = \<const0> ;
   assign dout[10] = \<const0> ;
@@ -4047,17 +4050,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1
     \delay_regs[3][25]_i_1 
        (.I0(rst_n),
         .O(\delay_regs[3][25]_i_1_n_0 ));
-  (* srl_bus_name = "inst/delay_yScaleAmount/\delay_regs_reg[1] " *) 
-  (* srl_name = "inst/delay_yScaleAmount/\delay_regs_reg[1][13]_srl2_delay_regs_reg_c_0 " *) 
-  SRL16E \delay_regs_reg[1][13]_srl2_delay_regs_reg_c_0 
-       (.A0(1'b1),
-        .A1(1'b0),
-        .A2(1'b0),
-        .A3(1'b0),
-        .CE(1'b1),
-        .CLK(clk),
-        .D(din[13]),
-        .Q(\delay_regs_reg[1][13]_srl2_delay_regs_reg_c_0_n_0 ));
   (* srl_bus_name = "inst/delay_yScaleAmount/\delay_regs_reg[1] " *) 
   (* srl_name = "inst/delay_yScaleAmount/\delay_regs_reg[1][14]_srl2_delay_regs_reg_c_0 " *) 
   SRL16E \delay_regs_reg[1][14]_srl2_delay_regs_reg_c_0 
@@ -4190,12 +4182,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1
         .CLK(clk),
         .D(din[25]),
         .Q(\delay_regs_reg[1][25]_srl2_delay_regs_reg_c_0_n_0 ));
-  FDRE \delay_regs_reg[2][13]_delay_regs_reg_c_1 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\delay_regs_reg[1][13]_srl2_delay_regs_reg_c_0_n_0 ),
-        .Q(\delay_regs_reg[2][13]_delay_regs_reg_c_1_n_0 ),
-        .R(1'b0));
   FDRE \delay_regs_reg[2][14]_delay_regs_reg_c_1 
        (.C(clk),
         .CE(1'b1),
@@ -4268,12 +4254,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1
         .D(\delay_regs_reg[1][25]_srl2_delay_regs_reg_c_0_n_0 ),
         .Q(\delay_regs_reg[2][25]_delay_regs_reg_c_1_n_0 ),
         .R(1'b0));
-  FDCE \delay_regs_reg[3][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .CLR(\delay_regs[3][25]_i_1_n_0 ),
-        .D(delay_regs_reg_gate__11_n_0),
-        .Q(\^dout [13]));
   FDCE \delay_regs_reg[3][14] 
        (.C(clk),
         .CE(1'b1),
@@ -4392,12 +4372,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay__1
        (.I0(\delay_regs_reg[2][14]_delay_regs_reg_c_1_n_0 ),
         .I1(delay_regs_reg_c_1_n_0),
         .O(delay_regs_reg_gate__10_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    delay_regs_reg_gate__11
-       (.I0(\delay_regs_reg[2][13]_delay_regs_reg_c_1_n_0 ),
-        .I1(delay_regs_reg_c_1_n_0),
-        .O(delay_regs_reg_gate__11_n_0));
   (* SOFT_HLUTNM = "soft_lutpair50" *) 
   LUT2 #(
     .INIT(4'h8)) 

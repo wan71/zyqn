@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Memory>
-    <Block Addr="0x2000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
-        <Rendering ID="org.eclipse.debug.ui.rendering.raw_memory" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
-        <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
-        <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
-    </Block>
-    <Block Addr="0x2000600" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
-        <Rendering ID="org.eclipse.debug.ui.rendering.raw_memory" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
-        <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
-        <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
-    </Block>
-    <Block Addr="0x2000c00" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+    <Block Addr="0x2400000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
         <Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
-        <Rendering ID="org.eclipse.debug.ui.rendering.raw_memory" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+    </Block>
+    <Block Addr="0x3001000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+        <Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+    </Block>
+    <Block Addr="0x3000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+        <Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
         <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
         <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
     </Block>
     <Block Addr="0x4000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+        <Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+    </Block>
+    <Block Addr="0x2000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+        <Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+    </Block>
+    <Block Addr="0x4004C80" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
         <Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
         <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
         <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>

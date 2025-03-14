@@ -362,3 +362,36 @@ platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/syst
 platform generate -domains 
 platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
 platform generate -domains 
+platform active {system_wrapper}
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform generate -domains 
+platform active {system_wrapper}
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform generate
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform generate -domains 
+platform active {system_wrapper}
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform generate -domains 
+platform active {system_wrapper}
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform generate -domains 
+platform active {system_wrapper}
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform generate -domains 
+platform active {system_wrapper}
+platform config -updatehw {D:/github_project/zyqn/zyqn/bmp_hdmi_test8/vitis/system_wrapper.xsa}
+platform generate -domains 

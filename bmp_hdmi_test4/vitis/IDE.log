@@ -21182,3 +21182,104 @@ con
 
 20:17:24 INFO  : Launch script is exported to file 'D:\github_project\zyqn\zyqn\bmp_hdmi_test4\vitis\sd_bmp_hdmi_system\_ide\scripts\systemdebugger_sd_bmp_hdmi_system_standalone.tcl'
 20:19:00 INFO  : Disconnected from the channel tcfchan#2.
+15:43:50 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\github_project\zyqn\zyqn\bmp_hdmi_test4\vitis\temp_xsdb_launch_script.tcl
+15:43:53 INFO  : XSCT server has started successfully.
+15:43:53 INFO  : Successfully done setting XSCT server connection channel  
+15:43:53 INFO  : plnx-install-location is set to ''
+15:43:53 INFO  : Successfully done setting workspace for the tool. 
+15:43:56 INFO  : Registering command handlers for Vitis TCF services
+15:43:56 INFO  : Platform repository initialization has completed.
+15:44:01 INFO  : Successfully done query RDI_DATADIR 
+15:44:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:44:20 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+15:44:20 INFO  : 'jtag frequency' command is executed.
+15:44:20 INFO  : Context for 'APU' is selected.
+15:44:20 INFO  : System reset is completed.
+15:44:23 INFO  : 'after 3000' command is executed.
+15:44:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-13722093-0"}' command is executed.
+15:44:25 INFO  : Device configured successfully with "D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/sd_bmp_hdmi/_ide/bitstream/system_wrapper.bit"
+15:44:25 INFO  : Context for 'APU' is selected.
+15:44:25 INFO  : Hardware design and registers information is loaded from 'D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+15:44:25 INFO  : 'configparams force-mem-access 1' command is executed.
+15:44:25 INFO  : Context for 'APU' is selected.
+15:44:25 INFO  : Sourcing of 'D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/sd_bmp_hdmi/_ide/psinit/ps7_init.tcl' is done.
+15:44:25 INFO  : 'ps7_init' command is executed.
+15:44:25 INFO  : 'ps7_post_config' command is executed.
+15:44:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:44:26 INFO  : The application 'D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/sd_bmp_hdmi/Debug/sd_bmp_hdmi.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:44:26 INFO  : 'configparams force-mem-access 0' command is executed.
+15:44:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-13722093-0"}
+fpga -file D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/sd_bmp_hdmi/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/sd_bmp_hdmi/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/sd_bmp_hdmi/Debug/sd_bmp_hdmi.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:44:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:44:26 INFO  : 'con' command is executed.
+15:44:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:44:26 INFO  : Launch script is exported to file 'D:\github_project\zyqn\zyqn\bmp_hdmi_test4\vitis\sd_bmp_hdmi_system\_ide\scripts\systemdebugger_sd_bmp_hdmi_system_standalone.tcl'
+15:45:49 INFO  : Checking for BSP changes to sync application flags for project 'sd_bmp_hdmi'...
+15:45:58 INFO  : Disconnected from the channel tcfchan#1.
+15:45:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:45:59 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+15:45:59 INFO  : 'jtag frequency' command is executed.
+15:45:59 INFO  : Context for 'APU' is selected.
+15:45:59 INFO  : System reset is completed.
+15:46:02 INFO  : 'after 3000' command is executed.
+15:46:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-13722093-0"}' command is executed.
+15:46:04 INFO  : Device configured successfully with "D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/sd_bmp_hdmi/_ide/bitstream/system_wrapper.bit"
+15:46:04 INFO  : Context for 'APU' is selected.
+15:46:05 INFO  : Hardware design and registers information is loaded from 'D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+15:46:05 INFO  : 'configparams force-mem-access 1' command is executed.
+15:46:05 INFO  : Context for 'APU' is selected.
+15:46:05 INFO  : Sourcing of 'D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/sd_bmp_hdmi/_ide/psinit/ps7_init.tcl' is done.
+15:46:06 INFO  : 'ps7_init' command is executed.
+15:46:06 INFO  : 'ps7_post_config' command is executed.
+15:46:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:46:06 INFO  : The application 'D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/sd_bmp_hdmi/Debug/sd_bmp_hdmi.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:46:06 INFO  : 'configparams force-mem-access 0' command is executed.
+15:46:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-13722093-0"}
+fpga -file D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/sd_bmp_hdmi/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/sd_bmp_hdmi/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/github_project/zyqn/zyqn/bmp_hdmi_test4/vitis/sd_bmp_hdmi/Debug/sd_bmp_hdmi.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:46:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:46:06 INFO  : 'con' command is executed.
+15:46:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:46:06 INFO  : Launch script is exported to file 'D:\github_project\zyqn\zyqn\bmp_hdmi_test4\vitis\sd_bmp_hdmi_system\_ide\scripts\systemdebugger_sd_bmp_hdmi_system_standalone.tcl'
+15:47:29 INFO  : Disconnected from the channel tcfchan#2.

@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
@@ -145,7 +144,6 @@ OPTRACE "add files" START { }
   add_files -quiet D:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.runs/synth_1/system_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  read_ip -quiet d:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
   add_files D:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.srcs/sources_1/bd/system/system.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }

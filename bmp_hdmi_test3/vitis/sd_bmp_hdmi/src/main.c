@@ -65,12 +65,12 @@ int main(void)
 	unsigned int rx_dma_addr=out_bmg_addr;
 	unsigned int frame_buffer_addr =in_bmg_addr;  //frame buffer的起始地址
 
-	for(unsigned int i=0;i<512;i++)
+	for(unsigned int i=0;i<4;i++)
 	{
 		dma_loop_init();
 		frame_buffer_addr=in_bmg_addr+(i*length);
-		rx_dma_addr=out_bmg_addr+((i + y_offset) * FRAME_WIDTH + x_offset) * 3;
-		dma_loop_rx(rx_dma_addr,length);
+//		rx_dma_addr=out_bmg_addr+((i + y_offset) * FRAME_WIDTH + x_offset) * 3;
+//		dma_loop_rx(rx_dma_addr,length);
 		dma_loop_tx(frame_buffer_addr,length);
 //		printf("this is %d\r\n",i);
 		while(!tx_done && !error);

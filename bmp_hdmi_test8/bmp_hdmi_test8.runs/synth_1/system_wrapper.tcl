@@ -73,7 +73,6 @@ OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
@@ -117,7 +116,6 @@ set_property used_in_implementation false [get_files -all d:/github_project/zyqn
 set_property used_in_implementation false [get_files -all d:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0.xdc]
 set_property used_in_implementation false [get_files -all d:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all d:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.gen/sources_1/bd/system/ip/system_Bic_top_0_0/system_Bic_top_0_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all d:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.gen/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all d:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.gen/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all d:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.gen/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc]

@@ -73,7 +73,6 @@ OPTRACE "system_Bic_top_0_0_synth_1" START { ROLLUP_AUTO }
 set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
@@ -97,17 +96,12 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   D:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.srcs/sources_1/new/cubic_interpolation.v
   D:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.srcs/sources_1/new/delay.v
-  D:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.srcs/sources_1/new/fifo_buffer.v
   D:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.srcs/sources_1/new/liner.v
   D:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.srcs/sources_1/new/ramDualPort.v
   D:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.srcs/sources_1/new/ramFifo.v
   D:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.srcs/sources_1/new/Bic_top.v
 }
-read_ip -quiet d:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
-set_property used_in_implementation false [get_files -all d:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.gen/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc]
-
 read_ip -quiet D:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.srcs/sources_1/bd/system/ip/system_Bic_top_0_0/system_Bic_top_0_0.xci
-set_property used_in_implementation false [get_files -all d:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.gen/sources_1/bd/system/ip/system_Bic_top_0_0/system_Bic_top_0_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -118,8 +112,6 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 OPTRACE "Configure IP Cache" START { }
 

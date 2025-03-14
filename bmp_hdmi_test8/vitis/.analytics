@@ -648,3 +648,152 @@ timestamp=[2025-03-03 17:56:12], mode=PLATFORM_GENERATION, duration=0:00:02.400,
 timestamp=[2025-03-03 17:56:14], mode=BUILD, duration=0:00:00.385, duration_ms=385, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
 timestamp=[2025-03-03 18:03:19], mode=PLATFORM_GENERATION, duration=0:00:02.261, duration_ms=2261, data={name=system_wrapper}
 timestamp=[2025-03-03 18:03:19], mode=BUILD, duration=0:00:00.362, duration_ms=362, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 11:11:37], mode=WORKBENCH_START, duration=0:00:11.180, duration_ms=11180, data={}
+timestamp=[2025-03-05 11:11:38], mode=WORKBENCH_UI_INIT, duration=0:00:00.768, duration_ms=768, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,sd_bmp_hdmi,sd_bmp_hdmi_system,system_wrapper}
+timestamp=[2025-03-05 11:11:39], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.477, duration_ms=477, data={}
+timestamp=[2025-03-05 11:13:04], mode=PLATFORM_GENERATION, duration=0:00:02.645, duration_ms=2645, data={name=system_wrapper}
+timestamp=[2025-03-05 11:13:07], mode=BUILD, duration=0:00:00.734, duration_ms=734, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 11:13:08], mode=BUILD, duration=0:00:00.407, duration_ms=407, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 11:21:33], mode=BUILD, duration=0:00:02.935, duration_ms=2935, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 11:22:51], mode=BUILD, duration=0:00:01.196, duration_ms=1196, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 11:26:07], mode=BUILD, duration=0:00:01.385, duration_ms=1385, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 11:26:21], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 11:27:30], mode=BUILD, duration=0:00:01.056, duration_ms=1056, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 11:29:02], mode=BUILD, duration=0:00:01.071, duration_ms=1071, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 11:30:03], mode=BUILD, duration=0:00:01.057, duration_ms=1057, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 11:32:07], mode=BUILD, duration=0:00:01.068, duration_ms=1068, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 11:39:33], mode=BUILD, duration=0:00:01.338, duration_ms=1338, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 11:40:50], mode=BUILD, duration=0:00:01.283, duration_ms=1283, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 12:35:28], mode=BUILD, duration=0:00:00.416, duration_ms=416, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 12:36:36], mode=BUILD, duration=0:00:01.121, duration_ms=1121, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 12:40:39], mode=BUILD, duration=0:00:01.135, duration_ms=1135, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 13:08:51], mode=PLATFORM_GENERATION, duration=0:00:03.144, duration_ms=3144, data={name=system_wrapper}
+timestamp=[2025-03-05 13:08:53], mode=BUILD, duration=0:00:00.678, duration_ms=678, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 13:10:45], mode=BUILD, duration=0:00:02.331, duration_ms=2331, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 13:11:40], mode=BUILD, duration=0:00:01.192, duration_ms=1192, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 13:12:28], mode=BUILD, duration=0:00:01.186, duration_ms=1186, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 13:28:16], mode=WORKBENCH_START, duration=0:00:12.555, duration_ms=12555, data={}
+timestamp=[2025-03-05 13:28:17], mode=WORKBENCH_UI_INIT, duration=0:00:00.722, duration_ms=722, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,sd_bmp_hdmi,sd_bmp_hdmi_system,system_wrapper}
+timestamp=[2025-03-05 13:28:18], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.191, duration_ms=191, data={}
+timestamp=[2025-03-05 17:06:22], mode=WORKBENCH_START, duration=0:00:09.223, duration_ms=9223, data={}
+timestamp=[2025-03-05 17:06:23], mode=WORKBENCH_UI_INIT, duration=0:00:00.768, duration_ms=768, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,sd_bmp_hdmi,sd_bmp_hdmi_system,system_wrapper}
+timestamp=[2025-03-05 17:06:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.240, duration_ms=240, data={}
+timestamp=[2025-03-05 17:07:00], mode=PLATFORM_GENERATION, duration=0:00:14.270, duration_ms=14270, data={name=system_wrapper}
+timestamp=[2025-03-05 17:07:15], mode=BUILD, duration=0:00:01.431, duration_ms=1431, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 17:09:49], mode=BUILD, duration=0:00:01.176, duration_ms=1176, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 17:09:54], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 17:11:25], mode=BUILD, duration=0:00:00.321, duration_ms=321, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 17:28:16], mode=PLATFORM_GENERATION, duration=0:00:02.477, duration_ms=2477, data={name=system_wrapper}
+timestamp=[2025-03-05 17:28:19], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 17:30:09], mode=BUILD, duration=0:00:01.380, duration_ms=1380, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 17:33:33], mode=BUILD, duration=0:00:01.060, duration_ms=1060, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 17:37:23], mode=BUILD, duration=0:00:01.127, duration_ms=1127, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-05 17:38:38], mode=BUILD, duration=0:00:01.127, duration_ms=1127, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 15:05:01], mode=WORKBENCH_START, duration=0:00:11.543, duration_ms=11543, data={}
+timestamp=[2025-03-10 15:05:02], mode=WORKBENCH_UI_INIT, duration=0:00:00.797, duration_ms=797, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,sd_bmp_hdmi,sd_bmp_hdmi_system,system_wrapper}
+timestamp=[2025-03-10 15:05:03], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.703, duration_ms=703, data={}
+timestamp=[2025-03-10 15:05:34], mode=PLATFORM_GENERATION, duration=0:00:02.883, duration_ms=2883, data={name=system_wrapper}
+timestamp=[2025-03-10 15:05:37], mode=BUILD, duration=0:00:00.992, duration_ms=992, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 15:12:02], mode=BUILD, duration=0:00:04.144, duration_ms=4144, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 15:30:28], mode=PLATFORM_GENERATION, duration=0:00:04.830, duration_ms=4830, data={name=system_wrapper}
+timestamp=[2025-03-10 15:30:31], mode=BUILD, duration=0:00:00.785, duration_ms=785, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 16:16:15], mode=PLATFORM_GENERATION, duration=0:00:04.469, duration_ms=4469, data={name=system_wrapper}
+timestamp=[2025-03-10 16:16:17], mode=BUILD, duration=0:00:00.744, duration_ms=744, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 16:22:08], mode=PLATFORM_GENERATION, duration=0:00:02.846, duration_ms=2846, data={name=system_wrapper}
+timestamp=[2025-03-10 16:22:10], mode=BUILD, duration=0:00:00.381, duration_ms=381, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 16:24:04], mode=BUILD, duration=0:00:03.495, duration_ms=3495, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 16:30:00], mode=BUILD, duration=0:00:02.026, duration_ms=2026, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 16:30:04], mode=BUILD, duration=0:00:00.408, duration_ms=408, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 16:32:12], mode=BUILD, duration=0:00:01.200, duration_ms=1200, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 16:34:03], mode=BUILD, duration=0:00:01.264, duration_ms=1264, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 16:34:07], mode=BUILD, duration=0:00:00.386, duration_ms=386, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 17:14:21], mode=PLATFORM_GENERATION, duration=0:00:03.688, duration_ms=3688, data={name=system_wrapper}
+timestamp=[2025-03-10 17:14:24], mode=BUILD, duration=0:00:00.798, duration_ms=798, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 17:16:29], mode=BUILD, duration=0:00:03.888, duration_ms=3888, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-10 17:53:52], mode=PLATFORM_GENERATION, duration=0:00:03.629, duration_ms=3629, data={name=system_wrapper}
+timestamp=[2025-03-10 17:53:55], mode=BUILD, duration=0:00:00.806, duration_ms=806, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 14:57:48], mode=WORKBENCH_START, duration=0:00:10.378, duration_ms=10378, data={}
+timestamp=[2025-03-11 14:57:49], mode=WORKBENCH_UI_INIT, duration=0:00:00.617, duration_ms=617, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,sd_bmp_hdmi,sd_bmp_hdmi_system,system_wrapper}
+timestamp=[2025-03-11 14:57:50], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.694, duration_ms=694, data={}
+timestamp=[2025-03-11 15:01:06], mode=BUILD, duration=0:00:03.759, duration_ms=3759, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 15:16:43], mode=PLATFORM_GENERATION, duration=0:00:02.714, duration_ms=2714, data={name=system_wrapper}
+timestamp=[2025-03-11 15:16:46], mode=BUILD, duration=0:00:00.936, duration_ms=936, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 15:18:25], mode=BUILD, duration=0:00:03.237, duration_ms=3237, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 15:19:31], mode=BUILD, duration=0:00:02.088, duration_ms=2088, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 15:38:04], mode=WORKBENCH_START, duration=0:00:09.977, duration_ms=9977, data={}
+timestamp=[2025-03-11 15:38:04], mode=WORKBENCH_UI_INIT, duration=0:00:00.569, duration_ms=569, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,sd_bmp_hdmi,sd_bmp_hdmi_system,system_wrapper}
+timestamp=[2025-03-11 15:38:05], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.289, duration_ms=289, data={}
+timestamp=[2025-03-11 15:39:16], mode=PLATFORM_GENERATION, duration=0:00:02.639, duration_ms=2639, data={name=system_wrapper}
+timestamp=[2025-03-11 15:39:19], mode=BUILD, duration=0:00:00.801, duration_ms=801, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 15:49:25], mode=BUILD, duration=0:00:02.344, duration_ms=2344, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 15:53:19], mode=BUILD, duration=0:00:01.198, duration_ms=1198, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:03:16], mode=BUILD, duration=0:00:01.198, duration_ms=1198, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:03:25], mode=BUILD, duration=0:00:00.318, duration_ms=318, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:12:56], mode=BUILD, duration=0:00:01.053, duration_ms=1053, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:20:18], mode=BUILD, duration=0:00:01.135, duration_ms=1135, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:21:13], mode=BUILD, duration=0:00:01.119, duration_ms=1119, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:21:51], mode=BUILD, duration=0:00:01.188, duration_ms=1188, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:25:39], mode=BUILD, duration=0:00:01.135, duration_ms=1135, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:25:50], mode=BUILD, duration=0:00:01.132, duration_ms=1132, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:40:11], mode=BUILD, duration=0:00:00.634, duration_ms=634, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:40:14], mode=BUILD, duration=0:00:00.560, duration_ms=560, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:40:36], mode=BUILD, duration=0:00:00.571, duration_ms=571, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:40:54], mode=BUILD, duration=0:00:00.555, duration_ms=555, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:41:30], mode=BUILD, duration=0:00:00.567, duration_ms=567, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:41:39], mode=BUILD, duration=0:00:00.988, duration_ms=988, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:41:53], mode=BUILD, duration=0:00:01.062, duration_ms=1062, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:44:59], mode=BUILD, duration=0:00:01.123, duration_ms=1123, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:45:31], mode=BUILD, duration=0:00:01.121, duration_ms=1121, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:50:07], mode=BUILD, duration=0:00:01.067, duration_ms=1067, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:52:04], mode=BUILD, duration=0:00:01.049, duration_ms=1049, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:57:38], mode=BUILD, duration=0:00:00.557, duration_ms=557, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:58:01], mode=BUILD, duration=0:00:00.571, duration_ms=571, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 16:59:00], mode=BUILD, duration=0:00:01.127, duration_ms=1127, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:00:07], mode=BUILD, duration=0:00:01.128, duration_ms=1128, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:00:13], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:00:34], mode=BUILD, duration=0:00:01.059, duration_ms=1059, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:02:45], mode=BUILD, duration=0:00:01.051, duration_ms=1051, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:04:21], mode=BUILD, duration=0:00:01.047, duration_ms=1047, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:04:29], mode=BUILD, duration=0:00:06.997, duration_ms=6997, data={name=sd_bmp_hdmi_system, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:05:58], mode=BUILD, duration=0:00:01.060, duration_ms=1060, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:12:21], mode=BUILD, duration=0:00:01.058, duration_ms=1058, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:14:16], mode=WORKBENCH_START, duration=0:00:08.824, duration_ms=8824, data={}
+timestamp=[2025-03-11 17:14:17], mode=WORKBENCH_UI_INIT, duration=0:00:00.746, duration_ms=746, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,sd_bmp_hdmi,sd_bmp_hdmi_system,system_wrapper}
+timestamp=[2025-03-11 17:14:17], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.135, duration_ms=135, data={}
+timestamp=[2025-03-11 17:15:49], mode=BUILD, duration=0:00:01.164, duration_ms=1164, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:41:15], mode=PLATFORM_GENERATION, duration=0:00:04.989, duration_ms=4989, data={name=system_wrapper}
+timestamp=[2025-03-11 17:41:17], mode=BUILD, duration=0:00:00.708, duration_ms=708, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:43:22], mode=BUILD, duration=0:00:00.389, duration_ms=389, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:47:17], mode=BUILD, duration=0:00:02.799, duration_ms=2799, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:48:22], mode=BUILD, duration=0:00:01.072, duration_ms=1072, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:49:32], mode=BUILD, duration=0:00:01.135, duration_ms=1135, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:49:39], mode=BUILD, duration=0:00:00.329, duration_ms=329, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:51:58], mode=BUILD, duration=0:00:01.118, duration_ms=1118, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:56:43], mode=BUILD, duration=0:00:00.583, duration_ms=583, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:57:15], mode=BUILD, duration=0:00:00.558, duration_ms=558, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:57:33], mode=BUILD, duration=0:00:01.053, duration_ms=1053, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:58:59], mode=BUILD, duration=0:00:01.138, duration_ms=1138, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 17:59:42], mode=BUILD, duration=0:00:01.057, duration_ms=1057, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:01:44], mode=BUILD, duration=0:00:01.148, duration_ms=1148, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:03:16], mode=BUILD, duration=0:00:01.073, duration_ms=1073, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:05:07], mode=BUILD, duration=0:00:01.120, duration_ms=1120, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:08:26], mode=BUILD, duration=0:00:00.567, duration_ms=567, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:08:51], mode=BUILD, duration=0:00:01.061, duration_ms=1061, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:11:29], mode=BUILD, duration=0:00:01.134, duration_ms=1134, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:16:27], mode=BUILD, duration=0:00:00.566, duration_ms=566, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:18:26], mode=BUILD, duration=0:00:01.059, duration_ms=1059, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:23:47], mode=BUILD, duration=0:00:01.070, duration_ms=1070, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:25:14], mode=BUILD, duration=0:00:01.068, duration_ms=1068, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:26:47], mode=BUILD, duration=0:00:01.121, duration_ms=1121, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:28:06], mode=BUILD, duration=0:00:01.104, duration_ms=1104, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:30:02], mode=BUILD, duration=0:00:01.127, duration_ms=1127, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:34:06], mode=BUILD, duration=0:00:01.198, duration_ms=1198, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 18:34:23], mode=BUILD, duration=0:00:01.218, duration_ms=1218, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 19:14:05], mode=BUILD, duration=0:00:01.070, duration_ms=1070, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 19:15:54], mode=BUILD, duration=0:00:01.134, duration_ms=1134, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 19:17:21], mode=BUILD, duration=0:00:01.125, duration_ms=1125, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 19:18:50], mode=BUILD, duration=0:00:01.123, duration_ms=1123, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 19:22:57], mode=BUILD, duration=0:00:01.128, duration_ms=1128, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 19:25:19], mode=BUILD, duration=0:00:01.118, duration_ms=1118, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 19:26:31], mode=BUILD, duration=0:00:00.328, duration_ms=328, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}
+timestamp=[2025-03-11 19:27:03], mode=BUILD, duration=0:00:01.056, duration_ms=1056, data={name=sd_bmp_hdmi, configuration=Debug, clean_build=false}

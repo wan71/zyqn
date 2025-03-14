@@ -141,7 +141,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c3de7d55</spirit:value>
+            <spirit:value>3643dea3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -154,7 +154,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c3de7d55</spirit:value>
+            <spirit:value>3643dea3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -554,13 +554,12 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Bic_top_v1_0</xilinx:displayName>
       <xilinx:autoFamilySupportLevel>level_1</xilinx:autoFamilySupportLevel>
-      <xilinx:supportsAutoXDC>dynamic_params</xilinx:supportsAutoXDC>
       <xilinx:definitionSource>module_ref</xilinx:definitionSource>
       <xilinx:designToolContexts>
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-03-03T09:25:39Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2025-03-11T09:22:15Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>

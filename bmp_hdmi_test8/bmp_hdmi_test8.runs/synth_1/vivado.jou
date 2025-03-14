@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Mar  3 17:34:04 2025
-# Process ID: 34504
+# Start of session at: Tue Mar 11 17:23:45 2025
+# Process ID: 28644
 # Current directory: D:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.runs/synth_1
 # Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
 # Log file: D:/github_project/zyqn/zyqn/bmp_hdmi_test8/bmp_hdmi_test8.runs/synth_1/system_wrapper.vds

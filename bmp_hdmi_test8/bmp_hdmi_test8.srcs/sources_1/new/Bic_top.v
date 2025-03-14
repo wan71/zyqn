@@ -38,13 +38,13 @@ parameter	BUFFER_SIZE_WIDTH  = ((BUFFER_SIZE+1) <= 2)  ? 1 :	    //wide enough t
 									 ((BUFFER_SIZE+1) <= 32) ? 5 :
 									 ((BUFFER_SIZE+1) <= 64) ? 6 : 7;
 reg [SCALE_BITS-1:0]			      i_scaler_x_ratio=(0.5)* (1<<SCALE_FRAC_BITS);
-reg [SCALE_BITS-1:0]			      i_scaler_y_ratio=(0.5) * (1<<SCALE_FRAC_BITS);
+reg [SCALE_BITS-1:0]			      i_scaler_y_ratio=(1.0) * (1<<SCALE_FRAC_BITS);
 
 
 wire [BUFFER_SIZE_WIDTH-1:0] 	             fillCount              ;	// Numbers used rams in the ram fifo
 wire							                 o_vid_fifo_read;  /* 好像没啥用*/
 //-----------------------Internal signals and registers------------------------
-reg								advanceRead1=0           ; 
+(*mark_debug="true"*)reg								advanceRead1=0           ; 
 reg								             advanceRead2=0           ;                 								            
 (*mark_debug="true"*)wire [DATA_WIDTH*CHANNELS-1:0]	             readData00             ;
 (*mark_debug="true"*)wire [DATA_WIDTH*CHANNELS-1:0]	             readData01             ;
@@ -155,6 +155,7 @@ always @(posedge clk or negedge rst_n) begin
 	end
 end
 
+
 assign readAddress = xPixLow;
 //---------------------------Data write logic----------------------------------
 //Places input data into the correct ram in the RFIFO (ram FIFO)
@@ -193,7 +194,7 @@ reg							 getNextPlusOne    ;
 reg [1:0]	                 i_top_offset=0; //偏移量
 reg 							 readyForRead;	
 reg [DISCARD_CNT_WIDTH-1:0]	                 i_discard_cnt=0;  //需要丢弃的像素数量。
-reg  [INPUT_X_RES_WIDTH-1:0]	                 i_src_image_x= 512*3-1;
+reg  [INPUT_X_RES_WIDTH-1:0]	                 i_src_image_x= 512-1;
 reg [INPUT_Y_RES_WIDTH-1:0]	                 i_src_image_y= 512-1;
 
 //Determine which lines to read out and which to discard.
@@ -405,14 +406,14 @@ cubic_interpolation #(
     .out_pixel(out)    // 最终插值结果
 );
 
-fifo_buffer (
-   . clk(clk),
-   . rst(!rst_n),           // 异步复位
-   . liushui_valid(liushui_valid), // 当输入数据有效时置1
-   . in_data(out),       // 24位输入数据
-   . m_axis_tready(m_axis_tready), // 外部使能信号：只有为1时允许读FIFO
-   . m_axis_tdata(m_axis_tdata)  // FIFO读出的数据
-);
+//fifo_buffer (
+//   . clk(clk),
+//   . rst(!rst_n),           // 异步复位
+//   . liushui_valid(liushui_valid), // 当输入数据有效时置1
+//   . in_data(out),       // 24位输入数据
+//   . m_axis_tready(m_axis_tready), // 外部使能信号：只有为1时允许读FIFO
+//   . m_axis_tdata(m_axis_tdata)  // FIFO读出的数据
+//);
 
 ////-----------------------Output data generation-----------------------------
 ////Scale amount values are used to generate coefficients for the four pixels coming out of the RRB to be multiplied with.
@@ -449,11 +450,14 @@ fifo_buffer (
       // 延迟实例化
     delay #(
         .DATA_WIDTH(1),
-        .DELAY_CYCLES(13)
+        .DELAY_CYCLES(9)
     ) delay_m_axis_tvalid (
         .clk(clk),
         .rst_n(rst_n),
         .din(dOutValidInt),
         .dout(m_axis_tvalid)
     );
+
+assign m_axis_tdata ={out,8'd0};
+//assign m_axis_tvalid=1;
 endmodule

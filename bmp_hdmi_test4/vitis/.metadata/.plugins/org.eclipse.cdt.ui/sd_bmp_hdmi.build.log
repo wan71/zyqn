@@ -1,4 +1,4 @@
-20:16:20 **** Incremental Build of configuration Debug for project sd_bmp_hdmi ****
+15:45:49 **** Incremental Build of configuration Debug for project sd_bmp_hdmi ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -21,5 +21,5 @@ arm-none-eabi-size sd_bmp_hdmi.elf  |tee "sd_bmp_hdmi.elf.size"
 'Finished building: sd_bmp_hdmi.elf.size'
 ' '
 
-20:16:24 Build Finished (took 3s.539ms)
+15:45:51 Build Finished (took 1s.608ms)
 

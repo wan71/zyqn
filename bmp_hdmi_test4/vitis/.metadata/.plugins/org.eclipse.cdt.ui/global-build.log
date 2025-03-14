@@ -1,6 +1,6 @@
 Nothing to build in platform 'system_wrapper'
 
-20:16:20 **** Incremental Build of configuration Debug for project sd_bmp_hdmi ****
+15:45:49 **** Incremental Build of configuration Debug for project sd_bmp_hdmi ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step

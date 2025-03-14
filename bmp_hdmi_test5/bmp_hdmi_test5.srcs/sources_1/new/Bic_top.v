@@ -37,7 +37,7 @@ parameter	BUFFER_SIZE_WIDTH  = ((BUFFER_SIZE+1) <= 2)  ? 1 :	    //wide enough t
 									 ((BUFFER_SIZE+1) <= 32) ? 5 :
 									 ((BUFFER_SIZE+1) <= 64) ? 6 : 7;
 reg [SCALE_BITS-1:0]			      i_scaler_x_ratio=(1.0)* (1<<SCALE_FRAC_BITS);
-reg [SCALE_BITS-1:0]			      i_scaler_y_ratio=(0.5) * (1<<SCALE_FRAC_BITS);
+reg [SCALE_BITS-1:0]			      i_scaler_y_ratio=(1.0) * (1<<SCALE_FRAC_BITS);
 
 
 (*mark_debug="true"*)wire [BUFFER_SIZE_WIDTH-1:0] 	             fillCount              ;	// Numbers used rams in the ram fifo

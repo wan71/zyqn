@@ -6,9 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="out_bmg_addr"/>
+		<item key="selection" value="change_bmg"/>
 		<list key="findhistory">
+			<item value="change_bmg"/>
+			<item value="bmg_out_hdmi"/>
 			<item value="out_bmg_addr"/>
+			<item value="bmg_addr"/>
+			<item value="in_bmg_addr"/>
 			<item value="rx_done"/>
 			<item value="tx_intr_handler"/>
 			<item value="tx_done"/>
